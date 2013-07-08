@@ -1,0 +1,44 @@
+<!-- 
+	DNS PTR (com.dartware.dns.ptr)
+	Copyright © 2006 Dartware, LLC. All rights reserved.
+	28 Mar 2013 - edited description for User Guide (via Probe Doc Generator) bobm
+
+-->
+
+<header>
+	type			= 	"built-in"
+	package			= 	"com.dartware"
+	probe_name		=	"dns.ptr"
+	human_name		=	"DNS -- (PTR) Reverse Lookup"
+	version			= 	"1.1"
+	address_type	= 	"IP"
+	port_number		=	"53"
+	display_name	=	"Servers-Standard/Domain Name (DNS)/DNS: (PTR) Reverse Lookup"
+
+</header>
+
+
+<description>
+
+\GB\Domain Name Service (DNS): (PTR) Reverse Lookup\P\
+
+The protocol used by TCP/IP network clients to translate IP addresses into Internet names, as defined in \U2=http://www.ietf.org/rfc/rfc1034.txt\RFC 1034\p0\ and \u2=http://www.ietf.org/rfc/rfc1035.txt\RFC 1035\p0\. This probe sends a DNS request to look up the domain name for a specified IP address. Both PTR and CNAME records are accepted in the response. 
+
+\i\IP Address\p\ - the fully qualified IP address to be resolved.
+
+\i\Domain Name\p\ - optional - specify a domain name the IP address should resolve to. If this parameter is non-empty, and one of the returned domain names doesn't match the one provided, a status as specified in \i\Failure Status\p\ is returned.
+
+\i\Recursion Desired\p\ - If the target DNS server cannot resolve the given domain name, and this parameter is \b\True\p\, the DNS server may query an authoritative DNS server. To prevent this behavior, use the default setting of \b\False\p\.
+
+\i\Failure Status\p\ - specifies the device status returned when the DNS response returns a domain name that doesn't match the specified \i\Domain Name\p\. You can choose \b\Down\p\, \b\Alarm\p\ or \b\Warning\p\. By default, mail server mismatches return an \b\Alarm\p\ condition; \b\Down\p\ is reserved for when the DNS server fails to respond at all.
+
+</description>
+
+<parameters>
+
+"IP Address"						=	"127.0.0.1"
+"Domain Name"						=	""
+"Recursion Desired[True,False]"		=	"False"
+"Failure Status[DOWN,ALRM,WARN]"	=	"ALRM"
+
+</parameters>

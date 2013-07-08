@@ -1,0 +1,35 @@
+<!-- 
+	Big Brother Probe (com.dartware.bigbrother)
+	Copyright © 2003-2005 Dartware, LLC. All rights reserved.
+	13 Mar 2013 - edited description for use in User Guide (via Probe Doc Generator) bobm
+
+-->
+
+<header>
+	type			= "big-brother"
+	package			= "com.dartware"
+	probe_name		= "bigbrother"
+	human_name		= "Big Brother Probe"
+	version			= "1.6"
+	address_type	= "IP"
+	port_number		= "1984"
+	
+	display_name	= "Servers-Proprietary/Big Brother Probe"
+</header>
+
+<description>
+\GB\Big Brother Probe\P\
+
+This probe lets you use InterMapper as a Big Brother "BBDISPLAY" to collect information sent by Big Brother clients.
+
+\i\Purple Time\p\ - sets the number of minutes to wait without a report before indicating a problem. In an actual Big Brother server, this is thirty minutes; Big Brother shows a device as purple if it goes this long without a report from the device. This probe shows it as DOWN.
+</description>
+
+
+
+<parameters>
+
+"Purple Time" = "30"
+
+</parameters>
+

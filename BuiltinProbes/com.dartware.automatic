@@ -1,0 +1,39 @@
+<!-- 
+	Automatic (com.dartware.automatic)
+	Copyright © 2000-2007 Dartware, LLC. All rights reserved.
+	
+	5 Apr 2007 - Moved to Basic category
+	13 Mar 2013 - edited description for use in User Guide (via Probe Doc Generator) bobm
+
+-->
+
+<header>
+	type			= 	"built-in"
+	package			= 	"com.dartware"
+	probe_name		=	"automatic"
+	human_name		=	"Automatic"
+	version			= 	"1.7"
+	address_type	= 	"IP,AT,DART"	# Accept IP, AppleTalk, and Dartmouth node
+	equiv_class		= 	"CORE"			# Core packet equivalency
+
+	# Automatic probe type supports discovery! It's also the default in the
+	# Probe type menu.
+	
+	flags			= 	"DISCOVERY, DEFAULT"
+	
+	old_protocol	= 	"7"			# Backward compat. with old numbering scheme.
+	old_script		= 	"0"
+	
+	display_name	=	"Basic/Automatic"
+
+	port_number		=	"161"
+</header>
+
+<description>
+\GB\Automatic\P\
+
+This probe checks whether the device responds to SNMP. If it doesn't, the probe is set to Ping/Echo.
+
+\B\How it works:\P\
+InterMapper sends a SNMP GetNextRequest for the sysName, sysObjectID, and sysServices OIDs (1.3.6.1.2.1.1.5.5, 1.3.6.1.2.1.1.5.2, and 1.3.6.1.2.1.1.5.7, respectively) using the specified SNMP Read-only community string. Upon receiving a valid SNMP response, InterMapper sets the device's probe to SNMP. If not, the Ping/Echo probe is used.
+</description>

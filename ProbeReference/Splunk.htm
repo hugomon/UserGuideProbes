@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.online,Primary.print">
+<head>
+      <link rel="StyleSheet" href="../../../default.css" />
+      <title>Splunk Probes</title>
+</head>
+<body>
+<h1 class="L2">Splunk</h1>
+<ul>
+<li><a href="Splunk.htm#Splunk_Layer_2_CSV_Output">Splunk &gt; Layer 2 CSV Output<MadCap:xref href="Splunk.htm#Splunk_Layer_2_CSV_Output" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+
+</ul>
+<blockquote><p><a href="Probe_Index.htm">To Probe Index<MadCap:xref href="Probe_Index.htm" ></MadCap:xref></a></p></blockquote>
+<a name="Splunk_Layer_2_CSV_Output"></a><h2>Splunk &gt; Layer 2 CSV Output</h2>
+<blockquote>
+<p><b>Switch Layer 2 CSV Output</b></p>
+<p>This probe periodically scans InterMapper's Layer 2 database for information collected from switch devices, and writes it into a CSV file. The InterMapper App for Splunk (<a href="http://www.intermapper.com/products/Splunk-App/">http://www.intermapper.com/products/Splunk-App/</a>) then retrieves this data for use within Splunk.</p>
+<p>If the process fails for any reason, the device is set to <b>Warning</b>.</p>
+<p><b>To use this probe:</b> </p>
+<p>1) Create a device on any map and set the device's address to "localhost". </p>
+<p>2) The default poll interval is 300 seconds (five minutes). Lower this interval if your Layer2 discovery runs more frequently.</p>
+<p><b>Note:</b> </p>
+<p><i>One and only one</i> device using this probe should exist on an InterMapper server. Running multiple instances of this probe uses InterMapper server resources unneccessarily, with no benefit to the InterMapper App for Splunk.</p>
+<p><i>Filename: com.dartware.layer2tocsv.txt</i><br />
+<i>Version: 1.2</i></p>
+<p><a href="Splunk.htm">Back to Top</a></p>
+</blockquote>
+</body>
+</html>
+

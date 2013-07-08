@@ -1,0 +1,51 @@
+<!-- 
+	Basic TCP (Blocked) (com.dartware.tcp.blocked)
+	Copyright © 2004 Dartware, LLC. All rights reserved.
+	18 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+-->
+
+<header>
+	type			= 	"tcp-script"
+	package			= 	"com.dartware"
+	probe_name		=	"tcp.blocked"
+	human_name		=	"Basic TCP (Blocked)"
+	version			= 	"1.5"
+	address_type	= 	"IP"
+	port_number		=	"23"
+	display_name	=	"Servers-Standard/Basic TCP (Blocked)"
+
+</header>
+
+<description>
+
+\GB\Basic TCP (Blocked)\P\
+
+This basic TCP probe tests that a TCP port is \b\not\p\ accepting connections. This probe may be used to test that a firewall is working properly, or that a particular TCP service is never operating on an important machine.
+
+If the specified port accepts the TCP connection, the device state is set to the selected state. Otherwise, the device status is set to \b\OKAY\p\.
+
+\i\Failure Status\p\ - The device status upon successful connection. The default state is \bi\DOWN\p\.
+
+</description>
+
+<parameters>
+
+"Failure Status[DOWN,ALRM,WARN]"	=	"DOWN"
+
+</parameters>
+
+<script>
+
+CONN #120 (connect timeout in secs)
+FAIL @NO_CONN (goto NO_CONN if connect attempt fails)
+SBNE "${Failure Status[DOWN,ALRM,WARN]}" "ALRM" #+2
+DONE ALRM "TCP port ${_REMOTEPORT} accepted a connection that should have been blocked."
+SBNE "${Failure Status[DOWN,ALRM,WARN]}" "WARN" #+2
+DONE WARN "TCP port ${_REMOTEPORT} accepted a connection that should have been blocked."
+DONE DOWN "TCP port ${_REMOTEPORT} accepted a connection that should have been blocked."
+
+@NO_CONN:
+DONE OKAY "TCP port ${_REMOTEPORT} is blocked."
+
+</script>
+

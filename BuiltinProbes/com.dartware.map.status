@@ -1,0 +1,47 @@
+<!-- 
+	Map Status (com.dartware.map.status)
+	Copyright © 2003-2007 Dartware, LLC. All rights reserved.
+	
+	5 Apr 2007 - Moved to Basic category
+	Edited description for User Guide (via Probe Doc Generator) 1 Apr 2013 -bobm
+-->
+
+<header>
+	type			= 	"built-in"
+	package			= 	"com.dartware"
+	probe_name		=	"map.status"
+	human_name		=	"Map Status"
+	version			= 	"1.8"
+	address_type	= 	"IP"
+	port_number		=	"8181"
+
+	display_name	=	"Basic/Map Status"
+
+</header>
+
+<description>
+
+\GB\Map Status\P\
+
+This probe allows InterMapper to monitor the state of a map running on an InterMapper server. InterMapper periodically queries the specified map, and sets the device status to the status of the "worst" item on that map. Double-click the device to view specified map.
+
+The easiest way to use this probe is to drag a map from the Map List onto another editable map. You can also create a device using the DNS Name or IP address of the InterMapper server containing the map, or "localhost" for a local map. Then set the following:
+
+\i\Map Name\p\ - The name of the map on the remote server.
+
+\i\Username\p\ - A user name that has read-permission on the map.
+
+\i\Password\p\ - The password for the specified user.
+
+</description>
+
+<parameters>
+"Map Name"	=	""
+
+"Username"  =   ""
+
+"Password*"  =   ""
+
+"graphID/"  =   ""
+
+</parameters>

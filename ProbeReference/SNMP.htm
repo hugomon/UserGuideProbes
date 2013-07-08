@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.online,Primary.print">
+<head>
+      <link rel="StyleSheet" href="../../../default.css" />
+      <title>SNMP Probes</title>
+</head>
+<body>
+<h1 class="L2">SNMP</h1>
+<ul>
+<li><a href="SNMP.htm#SNMP_Basic_OID">SNMP &gt; Basic OID<MadCap:xref href="SNMP.htm#SNMP_Basic_OID" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_Comparison">SNMP &gt; Comparison<MadCap:xref href="SNMP.htm#SNMP_Comparison" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_High_Threshold">SNMP &gt; High Threshold<MadCap:xref href="SNMP.htm#SNMP_High_Threshold" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_Low_Threshold">SNMP &gt; Low Threshold<MadCap:xref href="SNMP.htm#SNMP_Low_Threshold" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_Range_Threshold">SNMP &gt; Range Threshold<MadCap:xref href="SNMP.htm#SNMP_Range_Threshold" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_Restricted_Interface">SNMP &gt; Restricted Interface<MadCap:xref href="SNMP.htm#SNMP_Restricted_Interface" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_Single_OID_Viewer">SNMP &gt; Single OID Viewer<MadCap:xref href="SNMP.htm#SNMP_Single_OID_Viewer" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_SNMP___High_PPS">SNMP &gt; SNMP   High PPS<MadCap:xref href="SNMP.htm#SNMP_SNMP___High_PPS" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_SNMP___High_Traffic">SNMP &gt; SNMP   High Traffic<MadCap:xref href="SNMP.htm#SNMP_SNMP___High_Traffic" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_SNMP___High_Util">SNMP &gt; SNMP   High Util<MadCap:xref href="SNMP.htm#SNMP_SNMP___High_Util" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_String_Comparison">SNMP &gt; String Comparison<MadCap:xref href="SNMP.htm#SNMP_String_Comparison" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_Table_Viewer">SNMP &gt; Table Viewer<MadCap:xref href="SNMP.htm#SNMP_Table_Viewer" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="SNMP.htm#SNMP_Trap_Viewer">SNMP &gt; Trap Viewer<MadCap:xref href="SNMP.htm#SNMP_Trap_Viewer" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+
+</ul>
+<blockquote><p><a href="Probe_Index.htm">To Probe Index<MadCap:xref href="Probe_Index.htm" ></MadCap:xref></a></p></blockquote>
+<a name="SNMP_Basic_OID"></a><h2>SNMP &gt; Basic OID</h2>
+<blockquote>
+<p><b>SNMP - Basic OID</b></p>
+<p>This probe lets you monitor a single, user-defined MIB variable.</p>
+<p><i>Object Name</i> - optional - The name of the value that you want to monitor. This parameter value is used only for display in the popup window and chart legend.</p>
+<p><i>Object ID</i> - The object identifier (OID) of the value that you want to monitor. To retrieve the value of a MIB variable that is not in a table, the OID must end with ".0" (e.g. "1.3.6.1.2.1.1.1.0").</p>
+<p>This probe retrieves a lot of SNMP information from the device, including the MIB-II system group and the interfaces table. If you just want to monitor a single SNMP variable, use the SNMP/Single OID probe.</p>
+<p><i>Filename: com.dartware.snmp.basic</i><br />
+<i>Version: 0.7</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_Comparison"></a><h2>SNMP &gt; Comparison</h2>
+<blockquote>
+<p><b>Comparison Probe</b></p>
+<p>This probe retrieves a single SNMP MIB variable, compares it to a specified value, and uses the result to set the device's status. It also displays the value in the Status Window.</p>
+<p><i>Variable</i> - the MIB name or OID to retrieve. If you have imported the MIB for this device, enter the symbolic name for this value. Otherwise, enter its OID. </p>
+<p><i>Test</i> - Choose whether to set the status to ALARM if the device is <b>Equal</b> or <b>NotEqual</b> to the <i>Value</i> parameter. </p>
+<p><i>Value</i> - The value to compare against.</p>
+<p><i>Severity</i> - The status to use if the comparison fails. </p>
+<p><i>Legend</i> - A text string used to identify the variable in the status window and any strip charts. If left blank, the variable's name or OID is used.</p>
+<p><i>Units</i> - optional - A text string that is displayed next to the value in the Status Window, intended for use as a unit of measure (packets/sec, degrees, etc.) </p>
+<p><i>Tag</i> - A short text string that identifies a particular class of dataset. Tags are used to correlate different variables from different probes that describe the same type of data, such as CPU% or temperature.</p>
+<p><i>Filename: com.dartware.snmp.oidcomparison.txt</i><br />
+<i>Version: 1.10</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_High_Threshold"></a><h2>SNMP &gt; High Threshold</h2>
+<blockquote>
+<p><b>SNMP High Threshhold</b></p>
+<p>This probe retrieves a single SNMP MIB variable and compares it to the specified thresholds below. If the value goes above any of the specified thresholds, the device changes to the specified state.</p>
+<p><i>Variable</i> - the MIB name or OID to retrieve. If you have imported the MIB for this device, enter the symbolic name for this value. Otherwise, enter its OID. </p>
+<p><i>Critical</i>, <i>Alarm</i>, and <i>Warning</i> - the threshold to be used for comparison for each severity. Thresholds may be positive or negative numbers.</p>
+<p><i>Legend</i> - a text string used to identify the variable in the status window and in strip charts. If left blank, the variable's name or OID is used.</p>
+<p><i>Units</i> - a text string displayed next to the variable's value in the Status Window. Usually used for units of measure (packets/sec, degrees, etc.) </p>
+<p><i>Tag</i> - A short text string that identifies a particular class of dataset. Tags are used to correlate different variables from different probes that describe the same type of data, such as CPU% or temperature.</p>
+<p><i>Filename: com.dartware.snmp.oidhigh.txt</i><br />
+<i>Version: 1.5</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_Low_Threshold"></a><h2>SNMP &gt; Low Threshold</h2>
+<blockquote>
+<p><b>SNMP Low Threshold</b></p>
+<p>This probe retrieves a single SNMP MIB variable and compares it to the specified thresholds below. If the value goes below any of the specified thresholds, the device changes to the specified state.</p>
+<p><i>Variable</i> - the MIB name or OID to retrieve. If you have imported the MIB for this device, enter the symbolic name for this value. Otherwise, enter its OID. </p>
+<p><i>Critical</i>, <i>Alarm</i>, and <i>Warning</i> - the threshold to be used for comparison for each severity. Thresholds may be positive or negative numbers.</p>
+<p><i>Legend</i> - a text string used to identify the variable in the status window and in strip charts. If left blank, the variable's name or OID is used.</p>
+<p><i>Units</i> - a text string displayed next to the variable's value in the Status Window. Usually used for units of measure (packets/sec, degrees, etc.) </p>
+<p><i>Tag</i> - A short text string that identifies a particular class of dataset. Tags are used to correlate different variables from different probes that describe the same type of data, such as CPU% or temperature.</p>
+<p><i>Filename: com.dartware.snmp.oidlow.txt</i><br />
+<i>Version: 1.5</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_Range_Threshold"></a><h2>SNMP &gt; Range Threshold</h2>
+<blockquote>
+<p><b>SNMP Value In Range Probe</b></p>
+<p>This probe retrieves a single SNMP MIB variable and compares it to the thresholds below. If the value goes outside the designated range, the device changes to the specified state.</p>
+<p><i>Variable</i> - the MIB name or OID to retrieve. If you have imported the MIB for this device, enter the symbolic name for this value. Otherwise, enter its OID. </p>
+<p><i>Critical</i>, <i>Alarm</i>, and <i>Warning</i> - the threshold to be used for comparison for each severity. Thresholds may be positive or negative numbers.</p>
+<p><i>Legend</i> - a text string used to identify the variable in the status window and in strip charts. If left blank, the variable's name or OID is used.</p>
+<p><i>Units</i> - a text string displayed next to the variable's value in the Status Window. Usually used for units of measure (packets/sec, degrees, etc.) </p>
+<p><i>Tag</i> - A short text string that identifies a particular class of dataset. Tags are used to correlate different variables from different probes that describe the same type of data, such as CPU% or temperature.</p>
+<p><i>Filename: com.dartware.snmp.oidrange.txt</i><br />
+<i>Version: 1.6</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_Restricted_Interface"></a><h2>SNMP &gt; Restricted Interface</h2>
+<blockquote>
+<p><b>SNMP - Restricted Interface</b></p>
+<p>This probe is identical to the Basic SNMP Traffic probe, except that it restricts the visible interfaces to those that match the specified <i>Interface Description</i>.</p>
+<p><b>Interface Description</b> - specifies the interfaces to display. Any interface with a value of <span class="code">ifDescr</span> that matches this pattern is visible on the map. Non-matching interfaces are hidden. </p>
+<p><i>Filename: com.dartware.snmp.restrictedint.txt</i><br />
+<i>Version: 0.1</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_Single_OID_Viewer"></a><h2>SNMP &gt; Single OID Viewer</h2>
+<blockquote>
+<p><b>Single OID Viewer</b></p>
+<p>This probe retrieves a single SNMP MIB variable and displays it in the device's Status Window.</p>
+<p><i>Variable</i> - the MIB name or OID to retrieve. If you have imported the MIB for this device, enter the symbolic name for this value. Otherwise, enter its OID. </p>
+<p><i>Legend</i> - a text string used to identify the variable in the status window and in strip charts. If left blank, the variable's name or OID is used.</p>
+<p><i>Units</i> - a text string displayed next to the variable's value in the Status Window. Usually used for units of measure (packets/sec, degrees, etc.) </p>
+<p><i>Tag</i> - A short text string that identifies a particular class of dataset. Tags are used to correlate different variables from different probes that describe the same type of data, such as CPU% or temperature.</p>
+<p><i>Filename: com.dartware.snmp.oidsingle.txt</i><br />
+<i>Version: 1.4</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_SNMP___High_PPS"></a><h2>SNMP &gt; SNMP   High PPS</h2>
+<blockquote>
+<p><b>High PPS Probe</b></p>
+<p>This probe monitors the ifInPackets and ifOutPackets statistics of the specified device interface, and sets the state of the device to <b>Alarm</b> or <b>Warning</b> when the packet rate (in packets/second) exceeds specified thresholds. It sets the state to <b>Down</b> if the interface's <i>ifOperStatus</i> is not equal to 1 (Up).</p>
+<p><i>Port Number</i> - the ifIndex of the port to monitor. </p>
+<p><i>Warn Threshold</i> and <i>Alarm Threshold</i> - threshold values in packets-per-second.</p>
+<p><i>Filename: com.dartware.snmp.pps.txt</i><br />
+<i>Version: 0.5</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_SNMP___High_Traffic"></a><h2>SNMP &gt; SNMP   High Traffic</h2>
+<blockquote>
+<p><b>SNMP High Traffic Probe</b></p>
+<p>This probe monitors the ifInOctets and ifOutOctets traffic statistics of a particular interface on the device, and sets the device to <b>Alarm</b> or <b>Warning</b> when the traffic exceeds specified thresholds. It sets the device's state to <b>Down</b> if the interface's ifOperStatus is not equal to 1 (up).</p>
+<p><i>Port Number</i> - The ifIndex of the port to monitor. </p>
+<p><i>Warn Threshold</i> and <i>Alarm Threshold</i> - Thresholds in bytes per second.</p>
+<p><i>Filename: com.dartware.snmp.traffic.txt</i><br />
+<i>Version: 0.3</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_SNMP___High_Util"></a><h2>SNMP &gt; SNMP   High Util</h2>
+<blockquote>
+<p><b>SNMP High Utilization Probe</b></p>
+<p>This probe monitors the <i>utilization</i> of ifInOctets and ifOutOctets traffic statistics of a particular interface on the device, and sets the device to <b>Alarm</b> or <b>Warning</b> when the traffic exceeds specified utilization thresholds. It sets the device's state to <b>Down</b> if the interface's ifOperStatus is not equal to 1 (up)</p>
+<p><i>Port Number</i> - The ifIndex of the port to monitor. </p>
+<p><i>Warn Threshold</i> and <i>Alarm Threshold</i> - Threshold, specified as a percentage of bandwidth utilization.</p>
+<p><i>Filename: com.dartware.snmp.traffic-util.txt</i><br />
+<i>Version: 0.2</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_String_Comparison"></a><h2>SNMP &gt; String Comparison</h2>
+<blockquote>
+<p><b>Comparison Probe</b></p>
+<p>This probe retrieves a single SNMP MIB variable, compares it to a specified value, and sets the device's severity based on the comparison. It also displays the value in the Status Window.</p>
+<p><i>Variable</i> - the MIB name or OID to retrieve. If you have imported the MIB for this device, enter the symbolic name for this value. Otherwise, enter its OID. </p>
+<p><i>Test</i> - choose whether the device is equal to the <i>Value</i> parameter or not. </p>
+<p><i>Value</i> - the value to compare with the MIB variable's value.</p>
+<p><i>Severity</i> - choose severity level to use if the value does not match the specified value.</p>
+<p><i>Legend</i> - a text string used to identify the variable in the status window and in strip charts. If left blank, the variable's name or OID is used.</p>
+<p><i>Units</i> - a text string displayed next to the variable's value in the Status Window. Usually used for units of measure (packets/sec, degrees, etc.) </p>
+<p><i>Tag</i> - A short text string that identifies a particular class of dataset. Tags are used to correlate different variables from different probes that describe the same type of data, such as CPU% or temperature.</p>
+<p><i>Filename: com.dartware.snmp.oidstrcomparison.txt</i><br />
+<i>Version: 1.8</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_Table_Viewer"></a><h2>SNMP &gt; Table Viewer</h2>
+<blockquote>
+<p><b>SNMP Table Viewer Probe </b></p>
+<p>This probe shows the contents of several useful tables from common SNMP MIBs. It retrieves its data by walking the SNMP data values in the tables.</p>
+<ul>
+<li> <b>ifTable</b> - The "Interfaces" table gives information about the physical and logical interfaces of the device. It shows the following columns: <i>ifIndex</i>, <i>ifDescr</i>, <i>ifType</i>, <i>ifSpeed</i>, <i>ifPhysAddress</i>, <i>ifOperStatus</i>, and <i>ifAdminStatus</i>. It is defined in MIB-II (RFC-1213) and updated in the IF-MIB.</li>
+<li> <b>ifXTable</b> - The "Extended Interfaces" table defined in IF-MIB. It adds the <i>ifName</i> and <i>ifAlias</i> fields/columns to those shown in <i>ifTable</i> above.</li>
+<li> <b>Traffic Counters</b> - Shows traffic counters <i>ifInOctets</i> and <i>ifOutOctets</i> from the MIB-II ifTable, and the <i>ifHCInOctets</i> and <i>ifHCOutOctets</i> from the IF-MIB. To determine the traffic rate, refresh the window and compare two separate readings. The difference divided by the time between the refreshes (in seconds) is the number of bytes/second.</li>
+<li> <b>tcpConnTable</b> - Shows information about any present connections: Variables include <i>tcpConnLocalAddress</i>, <i>tcpConnLocalPort</i>, <i>tcpConnRemAddress</i>, and <i>tcpConnRemPort</i>. It is defined in MIB-II.</li>
+<li> <b>udpTable</b> - Shows information about any present UDP listeners: Variables include <i>udpLocalAddress</i>, <i>udpLocalPort</i>. It is defined in MIB-II.</li>
+<li> <b>ipAddrTable</b> - Shows the IP address/mask/broadcast address for each interface. Includes <i>ipAdEntAddr</i>, <i>ipAdEntifIndex</i>, <i>ipAdEntNetMask</i>, <i>ipAdEntBcastAddr</i>,  and <i>ipAdEntReasmMaxSize</i>. It is defined in RFC-1213, and updated in the IP-MIB. </li>
+<li> <b>ipRouteTable</b> - This table (currently deprecated) comes from RFC-1213 (MIB-II). </li>
+<li> <b>ipCidrRouteTable</b> and <b>ipForwardTable</b> - These tables come from the IP-FORWARD-MIB, and show information about CIDR multi-path IP Routes. Note: the ipForwardTable obsoletes the ipRouteTable of MIB-II, and is in turn obsoleted by the ipCidrRouteTable.</li>
+<li> <b>ipNetToMediaTable</b> - The "Net Address-to-Media Address" table (also known as the "ARP Table") shows these fields/columns: <i>ipNetToMediaIfIndex</i>, <i>ipNetToMediaNetAddress</i>, <i>ipNetToMediaPhysAddress</i>, and <i>ipNetToMediaType</i>. It is defined in RFC-1213.</li>
+<li> <b>dot1dTpFdbTable</b> - The "Bridge MIB" (RFC1493) shows the forwarding database for transparent bridges. </li>
+</ul>
+<p>A link to each table appears in the Status Window. Click the link to see the contents of the table on the selected device.</p>
+<p>This probe requires that you first import these MIBs: <a href="http://www.ietf.org/rfc/rfc1213.txt">RFC1213-MIB (MIB-II)</a>, <a href="http://www.ietf.org/rfc/rfc1493.txt">Bridge MIB (rfc1493)</a>, <a href="http://www.ietf.org/rfc/rfc2011.txt">IP-MIB (rfc2011)</a>, <a href="http://www.ietf.org/rfc/rfc2863.txt">IF-MIB (rfc2863)</a>, and <a href="http://www.ietf.org/rfc/rfc2096.txt">IP-FORWARD-MIB (rfc2096).</a> These are all bundled together in a <a href="http://intermapper.com/support/users/probes.html#tableviewer">single zip archive.</a> </p>
+<p><i>Filename: com.dartware.snmp.tableviewer.txt</i><br />
+<i>Version: 1.8</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+<a name="SNMP_Trap_Viewer"></a><h2>SNMP &gt; Trap Viewer</h2>
+<blockquote>
+<p><b>SNMP Trap Viewer Probe</b></p>
+<p>This probe listens for trap packets and displays the contents of a trap in the Status Window. It does not actively poll the device, and takes no action based on the contents of the trap. </p>
+<p>All variables parsed from the trap packet appear in the device's Status Window. You can use this probe as a prototype for making your own trap probes.</p>
+<p><b>How the Trap Viewer Probe Works</b></p>
+<p>When a trap arrives, the probe parses the trap to retireve the values from the trap's header, along with the first ten items in its Varbind List. Each value is assigned to a variable for use by the probe; each is also shown in the Status Window.</p>
+<p>To see how this probe works, you can configure your equipment to send traps to InterMapper, or use the net-snmp <b>snmptrap</b> command. Either way, the Status Window shows the values present in any traps that arrive.</p>
+<p>For more information on the <b>snmptrap</b> command, see the net-snmp documentation for the <a href="http://www.net-snmp.org/tutorial/tutorial-4/commands/snmptrap.html">trap tutorial</a> and the <a href="http://www.net-snmp.org/docs/man/snmpinform.html">snmptrap command</a>. The remainder of this note shows how to send a trap with variables from the Dartware MIB:</p>
+<p>     </p>
+<p><i>SNMPv1 Traps</i></p>
+<p>     </p>
+<p>a) Add a device to a map with the IP address <i>192.168.56.78</i></p>
+<p>b) Set it to use this probe</p>
+<p>c) Issue the snmptrap command below from the command line (it should all be on one line):</p>
+<p>     </p>
+<p>     snmptrap -v 1 -c commString localhost </p>
+<p>          1.3.6.1.4.1.6306 192.168.56.78 6 123 4567890 </p>
+<p>          1.3.6.1.4.1.6306.2.1.1.0 s "05/08 23:26:35"</p>
+<p>          1.3.6.1.4.1.6306.2.1.2.0 s Critical </p>
+<p>          1.3.6.1.4.1.6306.2.1.3.0 s "Big Router" </p>
+<p>          1.3.6.1.4.1.6306.2.1.4.0 s "Critical: High Traffic" </p>
+<p>          1.3.6.1.4.1.6306.2.1.5.0 s "127.0.0.1" </p>
+<p>          1.3.6.1.4.1.6306.2.1.6.0 s "SNMP Traffic Probe" </p>
+<p>          </p>
+<p><i>SNMPv2c Traps</i></p>
+<p>     </p>
+<p>a) Add a device to the map with an IP address of <i>localhost</i></p>
+<p>b) Set it to use this probe</p>
+<p>c) Issue the snmptrap command below from the command line (it should all be on one line)</p>
+<p>     </p>
+<p>     snmptrap -v 2c -c commString localhost </p>
+<p>          4567890 1.3.6.1.4.1.6306 </p>
+<p>          1.3.6.1.4.1.6306 192.168.56.78 6 123 4567890 </p>
+<p>          1.3.6.1.4.1.6306.2.1.1.0 s "05/08 13:26:35"</p>
+<p>          1.3.6.1.4.1.6306.2.1.2.0 s Critical </p>
+<p>          1.3.6.1.4.1.6306.2.1.3.0 s "Big Router" </p>
+<p>          1.3.6.1.4.1.6306.2.1.4.0 s "Critical: High Traffic" </p>
+<p>          1.3.6.1.4.1.6306.2.1.5.0 s "127.0.0.1" </p>
+<p>          1.3.6.1.4.1.6306.2.1.6.0 s "SNMP Traffic Probe" </p>
+<p>          </p>
+<p><b>Note:</b> This probe file contains the lines above in a single-line format suitable for copying and pasting.</p>
+<p><i>Filename: com.dartware.snmp.trapdisplay.txt</i><br />
+<i>Version: 2.2</i></p>
+<p><a href="SNMP.htm">Back to Top</a></p>
+</blockquote>
+</body>
+</html>
+

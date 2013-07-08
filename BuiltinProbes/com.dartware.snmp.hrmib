@@ -1,0 +1,73 @@
+<!--
+	SNMP - Host Resources (com.dartware.snmp.hrmib)
+	Copyright (c) 2003,2008 Dartware, LLC. All rights reserved.
+	
+	3 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+-->
+
+<header>
+	type			= 	"built-in"
+	package			= 	"com.dartware"
+	probe_name		=	"snmp.hrmib"
+	human_name		=	"SNMP - Host Resources"
+	version			= 	"1.12"
+	address_type	= 	"IP,AT"
+	equiv_class		= 	"SNMP"
+	port_number		=	"161"
+	display_name	=	"Servers-Standard/Host Resources"
+</header>
+
+
+<description>
+
+\GB\SNMP - Host Resources\P\
+
+This probe uses SNMP to monitor elements of the Host Resources MIB of the target device.
+
+\i\Processor Load Alarm %\p\ - Specifies the threshold, as a percentage of processor load, to enter ALARM state.
+\i\Processor Load Warning %\p\ - Specifies the threshold, as a percentage of processor load, to enter state.
+
+\i\Disk Usage Alarm %\p\ - Specifies the threshold, as a percentage of disk usage, to enter ALARM state.
+\i\Disk Usage Warning %\p\ - Specifies the threshold, as a percentage of disk usage, to enter WARNING state.
+
+\i\Memory Usage Alarm %\p\ - Specifies the threshold, as a percentage of memory usage, to enter ALARM state.
+\i\Memory Usage Warning %\p\ - Specifies the threshold, as a percentage of memory usage, to enter WARNING state.
+
+\i\One-minute Load Average Alarm\p\ - Specifies the one-minute load average value to enter ALARM state.
+\i\One-minute Load Average Warning\p\ - Specifies the one-minute load average value to enter WARNING state.
+\i\Five-minute Load Average Alarm\p\ - Specifies the five-minute load average value to enter ALARM state.
+\i\Five-minute Load Average Warning\p\ - Specifies the five-minute load average value to enter WARNING state.
+
+\i\Fifteen-minute Load Average Alarm\p\ - Specifies the fifteen-minute load average value to enter ALARM state.
+\i\Fifteen-minute Load Average Warning\p\ - Specifies the fifteen-minute load average value to enter WARNING state.
+
+\i\Ignore storage table indices\p\  After the device is polled, select the storage table entries you want to ignore. The selected entries do not cause alarms or warnings and are not be displayed in the Status window.
+
+</description>
+
+<parameters>
+"Processor Load Alarm %"	=	"95"
+"Processor Load Warning %"  =   "80"
+
+"Disk Usage Alarm %"        =   "90"
+"Disk Usage Warning %"      =   "75"
+
+"Memory Usage Alarm %"      =   "90"
+"Memory Usage Warning %"    =   "75"
+
+"One-minute Load Average Alarm"			=	"12"
+"One-minute Load Average Warning"		=	"9"
+
+"Five-minute Load Average Alarm"		=	"12"
+"Five-minute Load Average Warning"		=	"9"
+
+"Fifteen-minute Load Average Alarm"		=	"12"
+"Fifteen-minute Load Average Warning"	=	"9"
+
+"Ignore storage table indices{&IgnoreStorageTable}"	=	""
+
+</parameters>
+
+<datasets>
+  $_CPUUtilization, "cpupercentavg", "percent", "true", "Average CPU Percent"
+</datasets>

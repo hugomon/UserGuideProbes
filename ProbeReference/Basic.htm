@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.online,Primary.print">
+<head>
+      <link rel="StyleSheet" href="../../../default.css" />
+      <title>Basic Probes</title>
+</head>
+<body>
+<h1 class="L2">Basic</h1>
+<ul>
+<li><a href="Basic.htm#Basic_Automatic">Basic &gt; Automatic<MadCap:xref href="Basic.htm#Basic_Automatic" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="Basic.htm#Basic_Map_Status">Basic &gt; Map Status<MadCap:xref href="Basic.htm#Basic_Map_Status" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="Basic.htm#Basic_Ping_Echo">Basic &gt; Ping/Echo<MadCap:xref href="Basic.htm#Basic_Ping_Echo" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+<li><a href="Basic.htm#Basic_SNMP_Traffic">Basic &gt; SNMP Traffic<MadCap:xref href="Basic.htm#Basic_SNMP_Traffic" target="" title="" alt="" MadCap:conditions="Primary.print" /></a></li>
+
+</ul>
+<blockquote><p><a href="Probe_Index.htm">To Probe Index<MadCap:xref href="Probe_Index.htm" ></MadCap:xref></a></p></blockquote>
+<a name="Basic_Automatic"></a><h2>Basic &gt; Automatic</h2>
+<blockquote>
+<p><b>Automatic</b></p>
+<p>This probe checks whether the device responds to SNMP. If it doesn't, the probe is set to Ping/Echo.</p>
+<p><b>How it works:</b></p>
+<p>InterMapper sends a SNMP GetNextRequest for the sysName, sysObjectID, and sysServices OIDs (1.3.6.1.2.1.1.5.5, 1.3.6.1.2.1.1.5.2, and 1.3.6.1.2.1.1.5.7, respectively) using the specified SNMP Read-only community string. Upon receiving a valid SNMP response, InterMapper sets the device's probe to SNMP. If not, the Ping/Echo probe is used.</p>
+<p><i>Filename: com.dartware.automatic</i><br />
+<i>Version: 1.7</i></p>
+<p><a href="Basic.htm">Back to Top</a></p>
+</blockquote>
+<a name="Basic_Map_Status"></a><h2>Basic &gt; Map Status</h2>
+<blockquote>
+<p><b>Map Status</b></p>
+<p>This probe allows InterMapper to monitor the state of a map running on an InterMapper server. InterMapper periodically queries the specified map, and sets the device status to the status of the "worst" item on that map. Double-click the device to view specified map.</p>
+<p>The easiest way to use this probe is to drag a map from the Map List onto another editable map. You can also create a device using the DNS Name or IP address of the InterMapper server containing the map, or "localhost" for a local map. Then set the following:</p>
+<p><i>Map Name</i> - The name of the map on the remote server.</p>
+<p><i>Username</i> - A user name that has read-permission on the map.</p>
+<p><i>Password</i> - The password for the specified user.</p>
+<p><i>Filename: com.dartware.map.status</i><br />
+<i>Version: 1.8</i></p>
+<p><a href="Basic.htm">Back to Top</a></p>
+</blockquote>
+<a name="Basic_Ping_Echo"></a><h2>Basic &gt; Ping/Echo</h2>
+<blockquote>
+<p><b>Ping/Echo</b></p>
+<p>This probe sends an ICMP echo request packet to the target device to determine if it is active and responding. </p>
+<p><i>Number of Data Bytes</i> - The number of bytes of ICMP data to send. By default, 20 bytes of data is sent. The mimimum value is 16 bytes; the maximum is 2000 bytes.</p>
+<p><i>Data Pattern</i> - The hexadecimal pattern repeated throughout the payload contents.</p>
+<p><b>Tip:</b> To send a 1500-byte IP packet to an IPv4 target, set the number of data bytes to 1472. To send the same IP packet size to an IPv6 target, set the number of data bytes to 1452.</p>
+<p>InterMapper sends the ping packet, then waits for a response. The device's specified Timeout value is used to determined the amount of time the probe waits for a response. If no response is received within the specified time, InterMapper re-sends the echo request, waiting again the device's Timeout. When the probe reaches the device's limit of the number of pings to send (as determined by the device or map's limit), without receiving a response, the device status is set to DOWN.</p>
+<p>By default, the number of echo requests is three, and the default timeout is three seconds. Thus it can take up to nine seconds to set a device status to DOWN.</p>
+<p><i>Filename: com.dartware.ping</i><br />
+<i>Version: 2.0</i></p>
+<p><a href="Basic.htm">Back to Top</a></p>
+</blockquote>
+<a name="Basic_SNMP_Traffic"></a><h2>Basic &gt; SNMP Traffic</h2>
+<blockquote>
+<p><b>SNMP Traffic</b></p>
+<p>This probe retrieves system and traffic information from an SNMP-enabled device. This information comes from the system and interfaces groups of SNMP MIB-II. </p>
+<p>It shows traffic (bytes/second, packets/second, errors/minute) for each interface. Right-click a link to open the interface's Status Window. </p>
+<p>The probe also shows sysLocation, sysContact, and sysUptime from the system group in the device's Status Window.</p>
+<p><b>Note:</b> This is exactly the same probe as the "SNMP MIB-II" probe found in earlier versions of InterMapper. It was renamed to reflect its purpose more accurately. </p>
+<p><i>Filename: com.dartware.snmp</i><br />
+<i>Version: 1.7</i></p>
+<p><a href="Basic.htm">Back to Top</a></p>
+</blockquote>
+</body>
+</html>
+

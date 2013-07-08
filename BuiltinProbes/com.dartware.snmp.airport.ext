@@ -1,0 +1,39 @@
+<!-- 
+	SNMP - Apple AirPort (Extreme) (com.dartware.snmp.airport,ext)
+	Copyright (c) 2003 Dartware, LLC. All rights reserved.
+	Edited description for User Guide (via Probe Doc Generator) 1 Apr 2013 -bobm
+-->
+
+<header>
+	type			= 	"built-in"
+	package			= 	"com.dartware"
+	probe_name		=	"snmp.airport.ext"
+	human_name		=	"SNMP - Apple AirPort (Extreme)"
+	version			= 	"1.5"
+	address_type	= 	"IP,AT"
+	equiv_class		= 	"SNMP"
+	port_number		=	"161"
+
+	display_name	=	"Network Devices/Apple/Apple AirPort (Extreme)"
+
+</header>
+
+
+<description>
+
+\GB\SNMP - Apple AirPort (Extreme)\P\
+
+This probe monitors the custom MIB in an Apple AirPort Extreme Base Station. This probe monitors the number of clients using the base station, and lists each with its signal strength.
+
+The first version of AirPort Extreme was round; subsequent versions are square. There is one important difference between them:
+* The original round version does not return complete information to clients using the community string "public". To retrieve complete information from the original round version, you must set the community string to the AirPort Extreme's password. 
+* Subsequent versions have a settable SNMP community string. To use this probe on these versions, you must supply the SNMP community string as set in the AirPort Extreme.
+
+</description>
+
+<parameters>
+
+-- No parameters.
+
+</parameters>
+

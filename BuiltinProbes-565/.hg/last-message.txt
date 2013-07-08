@@ -1,0 +1,1 @@
+Include hgignore in tracking

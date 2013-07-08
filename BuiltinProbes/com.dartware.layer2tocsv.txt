@@ -1,0 +1,274 @@
+<!--
+  CSV Output for Layer 2 switch detail.
+  Produces CSV of all layer 2 detail accessible via the HTTP API
+  at HTTP://SERVER:PORT/~files/extensions/com.dartware.switches/switchPort.csv
+  	Edited description for User Guide (via Probe Doc Generator) 24 Apr 2013 -bobm
+-->
+
+<header>
+
+   type="cmd-line"
+   package="com.dartware"
+   probe_name="outputCsv"
+   human_name="Layer 2 CSV Output"
+   version="1.2"
+   display_name = "Splunk/Layer 2 CSV Output"
+   poll_interval = "300"
+</header>
+
+<description>
+\GB\Switch Layer 2 CSV Output\p\
+
+This probe periodically scans InterMapper's Layer 2 database for information collected from switch devices, and writes it into a CSV file. The InterMapper App for Splunk (\u4=http://www.intermapper.com/products/Splunk-App/\http://www.intermapper.com/products/Splunk-App/\p0\) then retrieves this data for use within Splunk.
+
+If the process fails for any reason, the device is set to \b\Warning\p\.
+
+\B\To use this probe:\p\ 
+
+1) Create a device on any map and set the device's address to "localhost". 
+
+2) The default poll interval is 300 seconds (five minutes). Lower this interval if your Layer2 discovery runs more frequently.
+
+\b\Note:\p\ 
+\i\One and only one\p\ device using this probe should exist on an InterMapper server. Running multiple instances of this probe uses InterMapper server resources unneccessarily, with no benefit to the InterMapper App for Splunk.
+
+</description>
+
+
+
+
+
+<parameters>
+
+
+</parameters>
+
+
+
+
+
+<command-line>
+
+
+   path=""
+
+
+   cmd="${PYTHON} outputCsv.py"
+
+
+   arg=""
+
+
+</command-line>
+
+
+
+
+
+<command-exit>
+
+
+   warning:${EXIT_CODE}=1
+
+
+   okay:${EXIT_CODE}=0
+
+
+</command-exit>
+
+
+
+
+
+<command-display>
+
+
+</command-display>
+
+
+
+
+
+<tool:outputCsv.py>
+
+
+
+
+
+import sys
+
+
+import os
+
+
+from os.path import dirname, join
+
+
+import sqlite3
+
+
+
+
+
+dbLocation = join(dirname(__file__), '..', '..', 'Extensions','com.dartware.switches','switches.sqlite3')
+
+
+csvLocation = join(dirname(__file__), '..', '..', 'Extensions','com.dartware.switches','switchPort.csv')
+
+
+
+
+
+try:
+
+
+  openDb = open(dbLocation,'r')
+
+
+except IOError as e:
+
+
+  openLog.write(str(format(e)))
+
+
+  result = 0
+
+
+  print "Error reading database"
+
+
+else:
+
+
+  openDb.close()
+
+
+try:
+
+
+  conn = sqlite3.connect(dbLocation)
+
+
+except:
+
+
+  result = 0
+
+
+  print "Error connecting to database"
+
+
+else:
+
+
+  try:
+
+
+    openCsv = open(csvLocation,'wb') # b forces unix newlines
+
+
+  except IOError as e:
+
+
+    openLog.write(str(format(e)))
+
+
+    result = 1
+
+
+    print "Error Opening CSV Output Destination"
+
+
+  else:
+
+
+    c = conn.cursor()
+
+
+    rows = c.execute('SELECT switchport.ifname, devicelocator.ip, devicelocator.mac, devicelocator.switch, devicelocator.first, devicelocator.last FROM device INNER JOIN switchport ON device.ip=switchport.poll_ip INNER JOIN devicelocator ON device.ip=devicelocator.switch WHERE devicelocator.port=switchport.ifindex AND devicelocator.mac!=X\'\'')
+
+
+    openCsv.write("Port,Device IP,Device MAC,Switch,First Detected on Port,Last Detected on Port\n")
+
+
+    i = 0
+
+
+    for row in rows:
+
+
+      port = str(row[0])
+
+
+      unparsedIP = str(row[1]).encode("hex")
+
+
+      unparsedMac = str(row[2]).encode("hex")
+
+
+      unparsedSwitchIP = str(row[3]).encode("hex")
+
+
+      if str(row[4]) == "0":
+
+
+        firstSeen = "No Data Available"
+
+
+      else:
+
+
+        firstSeen = str(row[4])
+
+
+      if str(row[5]) == "0":
+
+
+        lastSeen = "No Data Available"
+
+
+      else:
+
+
+        lastSeen = str(row[5])
+
+
+      if unparsedIP !='':
+
+
+        finalIp  = str(int(unparsedIP[0:2], 16)) + "." +  str(int(unparsedIP[2:4], 16)) + "." + str(int(unparsedIP[4:6], 16)) + "." + str(int(unparsedIP[6:8], 16))
+
+
+        finalMac = unparsedMac[0:2] + ":" + unparsedMac[2:4] + ":" + unparsedMac[4:6] + ":" + unparsedMac[6:8] + ":" + unparsedMac[8:10] + ":" + unparsedMac[10:12]
+
+
+        finalSwitchIp  = str(int(unparsedSwitchIP[0:2], 16)) + "." +  str(int(unparsedSwitchIP[2:4], 16)) + "." + str(int(unparsedSwitchIP[4:6], 16)) + "." + str(int(unparsedSwitchIP[6:8], 16))
+
+
+        i = i + 1
+
+
+        openCsv.write(port + "," + finalIp + "," + finalMac + "," + finalSwitchIp + "," + firstSeen + "," + lastSeen +"\n")
+
+
+    print "Successfully exported detail on %d devices" % i
+
+
+    result = 0
+
+
+    openCsv.close()
+
+
+
+
+
+sys.exit(result)
+
+
+
+
+
+</tool:outputCsv.py>
+
+

@@ -1,0 +1,48 @@
+<!-- 
+	DNS (com.dartware.dns)
+	Copyright © 2000 Dartware, LLC. All rights reserved.
+	28 Mar 2013 - edited description for User Guide (via Probe Doc Generator) bobm
+-->
+
+<header>
+	type			= 	"built-in"
+	package			= 	"com.dartware"
+	probe_name		=	"dns"
+	human_name		=	"DNS -- (A) Address"
+	version			= 	"1.8"
+	address_type	= 	"IP"
+	port_number		=	"53"
+
+	old_protocol	= 	"12"		# Backward compat. with old numbering scheme.
+	old_script		= 	"0"
+	
+	display_name	=	"Servers-Standard/Domain Name (DNS)/DNS: (A) Address"
+
+</header>
+
+
+<description>
+
+\GB\Domain Name Service (DNS): (A) Address\P\
+
+DNS is the protocol used by TCP/IP network clients to translate Internet names into IP addresses, as defined in \U2=http://www.ietf.org/rfc/rfc1034.txt\RFC 1034\p0\ and \u2=http://www.ietf.org/rfc/rfc1035.txt\RFC 1035\p0\. This probe sends a DNS request to look up the IP address for a specified domain name.
+
+\i\Domain Name\p\ - the fully qualified domain name you are attempting to resolve.
+
+\i\IP Address\p\ - optional parameter specifies an IP address the domain name should resolve to. If this parameter is not blank, InterMapper reports the status specified in \i\Failure Status\p\ if one of the returned IP addresses doesn't match this address.
+
+\i\Recursion Desired\p\ - If the target DNS server cannot resolve the given domain name, and this parameter is \b\True\p\, the DNS server may query an authoritative DNS server. To prevent this behavior, use the default setting of \b\False\p\.
+
+
+\i\Failure Status\p\ - the device status InterMapper should report when the IP address in a DNS response doesn't match the specified \i\IP Address\p\ parameter. By default, an IP address mismatch sets the device to Alarm. (Down is reserved for complete lack of response by the DNS server.)
+
+</description>
+
+<parameters>
+
+"Domain Name"						=	"www.example.com"
+"IP Address"						=	""
+"Recursion Desired[True,False]"		=	"False"
+"Failure Status[DOWN,ALRM,WARN]"	=	"ALRM"
+
+</parameters>

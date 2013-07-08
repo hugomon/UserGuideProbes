@@ -1,0 +1,42 @@
+<!-- 
+	SNMP - Cisco (com.dartware.snmp.cisco)
+	Copyright (c) 2013 Dartware, LLC. All rights reserved.
+	3 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+
+-->
+
+<header>
+	type			= 	"custom-snmp"
+	package			= 	"com.dartware"
+	probe_name		=	"snmp.cisco.n5kfex.traffic"
+	human_name		=	"SNMP - Cisco N5000 with FEX Traffic"
+	version			= 	"1.0"
+	address_type	= 	"IP"
+	port_number		=	"161"
+	display_name	=	"Network Devices/Cisco/Cisco - N5000 with FEX Traffic"
+	flags			=	"IFINDEX-BUG"
+</header>
+
+
+<description>
+
+\GB\SNMP - Cisco N5000 with FEX Traffic\P\
+
+This probe provides Basic SNMP Traffic probe functionality for the Nexus 5000 with Fiber Extender (FEX). The standard SNMP Traffic probe does not show the Fiber Extender's interfaces, so this probe incorporates special logic to retrieve that information.
+
+This probe requires InterMapper Server version 5.6.6 or newer, which uses the special logic described above; otherwise, the speeds displayed for high speed interfaces are not shown correctly.
+
+</description>
+
+<snmp-device-variables>
+
+  <!-- There are no SNMP variables beyond what the standard SNMP Traffic probe requests. -->
+
+</snmp-device-variables>
+
+<snmp-device-display>
+
+  <!-- We don't display anything beyond what the standard SNMP Traffic probe displays. -->
+
+</snmp-device-display>
+
