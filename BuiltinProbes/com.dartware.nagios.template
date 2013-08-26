@@ -26,6 +26,10 @@ Note: If you enter \m\${ADDRESS}\g\ it is replaced with the device's IP address;
 This probe expects the plugin to be located in the InterMapper Settings/Tools directory. 
 
 Nagios and the Nagios logo are registered trademarks of Ethan Galstad. For more information, see \U2\http://www.nagios.org\P0\ 
+
+\b\Parameters\p\
+
+\i\Plugin\p\ - enter the Nagios command string. You can use the \m\${ADDRESS}\g\  and \m\${PORT}\g\, as mentioned above.
 </description> 
 
 <parameters> 

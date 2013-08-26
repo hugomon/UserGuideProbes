@@ -39,6 +39,9 @@ Default poll interval is 10 minutes. You should decrease this (Set Info->Set Pol
 
 \B\Note:\p\ You should create only one device that uses this probe on an InterMapper server. Having multiple instances consumes server resources with no benefit.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 

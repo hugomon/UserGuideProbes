@@ -1,8 +1,7 @@
 <!-- 
 	DNS TXT (com.dartware.dns.txt)
 	Copyright © 2006 Dartware, LLC. All rights reserved.
-	28 Mar 2013 - edited description for User Guide (via Probe Doc Generator) bobm
-
+	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
 -->
 
 <header>
@@ -24,14 +23,15 @@
 
 The protocol used by TCP/IP network clients to translate Internet names into Text records, as defined in \U2=http://www.ietf.org/rfc/rfc1034.txt\RFC 1034\p0\ and \u2=http://www.ietf.org/rfc/rfc1035.txt\RFC 1035\p0\. This probe sends a DNS request to look up the text record for a specified domain name.
 
+\b\Parameters\p\
+
 \i\Domain Name\p\ - the fully qualified domain name to be resolved.
 
-\i\Text Substring\p\ - optional - specify a substring of a text record the domain name should resolve to. If this parameter is non-empty, and one of the returned text records doesn't contain the substring provided, a status as specified in \i\Failure Status\p\ is returned.
+\i\Text Substring\p\ - optional - specify a substring of a text record the domain name should resolve to. If this parameter is non-empty, and one of the returned text records doesn't contain the substring provided, the device's condition is set as specified in \i\Failure Status\p\.
 
 \i\Recursion Desired\p\ - If the target DNS server cannot resolve the given domain name, and this parameter is \b\True\p\, the DNS server may query an authoritative DNS server. To prevent this behavior, use the default setting of \b\False\p\.
 
 \i\Failure Status\p\ - specifies the device status returned when the DNS response text record in a DNS response doesn't contain the specified \i\Text Substring\p\. You can choose \b\Down\p\, \b\Alarm\p\ or \b\Warning\p\. By default, mail server mismatches return an \b\Alarm\p\ condition; \b\Down\p\ is reserved for when the DNS server fails to respond at all. 
-
 </description>
 
 <parameters>

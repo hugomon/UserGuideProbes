@@ -1,6 +1,7 @@
 <!-- 
 Command Line WMI Probe to list logged-on users (com.dartware.wmi.logged-on_users) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
+	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
 --> 
 
 <header> 
@@ -20,9 +21,13 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 
 This probe uses WMI to retrieve information about users logged on to the target host.  Specifically, it queries the LogonType and StartTime properties of the Win32_LogonSession class, limiting the selection to those in the comma-separated list of numeric Logon Types you set in the Type parameter.  It queries instances of the Win32_LoggedOnUser class, matches the LogonID and extracts the user's name and domain from the path of the Win32_Account.  The target host must be running Windows XP, Windows Server 2003 or later.
 
-The User parameter may be a local user on the target host, or may take the form of "domain\\user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.
+\b\Parameters\p\
 
-InterMapper invokes the log_users.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.
+\i\User\p\ - may be a local user on the target host, or can take the form \m\domain\\user\g\ for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.
+
+\i\Timeout (sec)\p\ - the number of seconds to wait before assuming the host is not available.
+
+InterMapper invokes the \m\log_users.vbs\g\ companion script, included with this probe.
 
 </description> 
 

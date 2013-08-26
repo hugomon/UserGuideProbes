@@ -33,6 +33,10 @@
 This probe's Status Window shows the sFlow version, address, and address type of the sFlow exporter. It uses the \4u=http://www.sflow.org/SFLOW-MIB5.txt\sFlow MIB version 1.3\p0\, with the Enterprise Number 14706 for sFlow version 5.
 
 It also shows the sFlow Receiver Table as an on-demand table. It lists all devices receiving the sFlow records. (To view this on-demand table, you must import  \4u=http://www.sflow.org/SFLOW-MIB5.txt\the SFLOW-MIB version 1.3\p0\.)
+
+\b\Parameters\p\
+
+\i\sFlow version\p\ - Enter the version of sFlow to use.
 </description>
 
 -- The <header> section determines the probe's unique name, what kind of probe it is,

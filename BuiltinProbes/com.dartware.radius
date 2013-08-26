@@ -29,12 +29,13 @@ The protocol used by remote access servers to authenticate dial-in users, as def
 
 The official port number for RADIUS is 1812. Some RADIUS servers, however, use port number 1645 for historical reasons.
 
+\b\Parameters\p\
+
 \i\Shared Secret\p\ - InterMapper's unique password into the RADIUS server. Since it is used for authentication, the same value must be configured in the RADIUS server as well.
 
 \i\User Name\p\ - The user name to be used for InterMapper's authentication.
 
 \i\Password\p\ - The password for the specified user name. The password is not sent in the clear; it is encrypted using the shared secret.
-
 </description>
 
 <parameters>

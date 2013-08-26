@@ -5,6 +5,7 @@
 	5 Apr 2007 - Moved to Basic category
 	20 Mar 2009 - Merged with Basic Ping probe. -wwf
 	Edited description for User Guide (via Probe Doc Generator) 1 Apr 2013 -bobm
+	20 Aug 2013 - added Parameters section to description, rearranged description - bobm
 -->
 
 <header>
@@ -26,9 +27,6 @@
 
 This probe sends an ICMP echo request packet to the target device to determine if it is active and responding. 
 
-\i\Number of Data Bytes\p\ - The number of bytes of ICMP data to send. By default, 20 bytes of data is sent. The mimimum value is 16 bytes; the maximum is 2000 bytes.
-
-\i\Data Pattern\p\ - The hexadecimal pattern repeated throughout the payload contents.
 
 \b\Tip:\p\ To send a 1500-byte IP packet to an IPv4 target, set the number of data bytes to 1472. To send the same IP packet size to an IPv6 target, set the number of data bytes to 1452.
 
@@ -36,6 +34,11 @@ InterMapper sends the ping packet, then waits for a response. The device's speci
 
 By default, the number of echo requests is three, and the default timeout is three seconds. Thus it can take up to nine seconds to set a device status to DOWN.
 
+\b\Parameters\p\
+
+\i\Number of Data Bytes\p\ - The number of bytes of ICMP data to send. By default, 20 bytes of data is sent. The mimimum value is 16 bytes; the maximum is 2000 bytes.
+
+\i\Data Pattern\p\ - The hexadecimal pattern repeated throughout the payload contents.
 </description>
 
 

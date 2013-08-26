@@ -1,7 +1,7 @@
 <!-- 
 	FileMaker Pro Database Server (com.dartware.tcp.filemaker)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
-	28 May 2013 - Edited description for User Guide (via Probe Doc Generator)
+	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -21,6 +21,9 @@
 
 This probe attempts to connect to a Filemaker Pro database server. By default, the port is 5003. If successful, device status is set to \b\Okay\p\. 
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

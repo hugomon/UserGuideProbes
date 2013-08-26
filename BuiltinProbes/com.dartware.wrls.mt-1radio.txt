@@ -12,7 +12,7 @@
 	Modified 5-12 January by jkj 
 	Modified 10 February by jkj (prepared for release)
 	Last modified 18 May 2005 by ics.
-	6 May 2013 - Edited description for User Guide (via Probe Doc Generator), fixed bullet issue
+	6 May 2013 - Edited description for User Guide (via Probe Doc Generator), fixed bullet issue - bobm
 -->
 
 <header>
@@ -38,6 +38,11 @@ This probe will raise an alarm in the following situations:
 - High Use -- for CPU, Disk, or Memory loads exceeds 90% (default setting of parameter).
 
 This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+
+\b\Parameters\p\
+
+\i\High Use Threshold\p\ - Percentage of use to trigger alarm
+\i\Wireless Interface\p\ - OID of the wireless uplink interface
 </description>
 
 <parameters>

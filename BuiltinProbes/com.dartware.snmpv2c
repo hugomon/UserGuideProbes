@@ -1,7 +1,7 @@
 <!-- 
 	SNMPv2c (com.dartware.snmpv2c)
 	Copyright © 2001 Dartware, LLC. All rights reserved.
-	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -29,4 +29,8 @@ This is a legacy probe, provided for compatibility with InterMapper Traditional 
 The SNMP v2c probe retrieves MIB-II information from the device. This includes \i\sysLocation\p\, \i\sysContact\p\, and \i\sysUptime\p\ from the system group, and traffic (bytes/second, packets/second, errors/minute) for each interface.
 
 It uses the 64-bit counters for interface traffic statistics. This provides accurate information (without rollover) on very high speed links.
+
+\b\Parameters\p\
+
+None.
 </description>

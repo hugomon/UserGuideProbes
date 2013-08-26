@@ -39,6 +39,9 @@ vendor, model, software version, firmware version, output source, battery status
 \b++\C. Alarms\p--\
 (1 of 1) If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <snmp-device-variables>

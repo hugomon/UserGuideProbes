@@ -38,6 +38,8 @@
 
 This probe retrieves a single SNMP MIB variable, compares it to a specified value, and sets the device's severity based on the comparison. It also displays the value in the Status Window.
 
+\b\Parameters\p\
+
 \i\Variable\p\ - the MIB name or OID to retrieve. If you have imported the MIB for this device, enter the symbolic name for this value. Otherwise, enter its OID. 
 
 \i\Test\p\ - choose whether the device is equal to the \i\Value\p\ parameter or not. 

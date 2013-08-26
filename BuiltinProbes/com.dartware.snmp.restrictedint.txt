@@ -5,7 +5,7 @@
 
 
 	Original version 17 January 2008 by wwf.
-	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -31,7 +31,9 @@
 
 This probe is identical to the Basic SNMP Traffic probe, except that it restricts the visible interfaces to those that match the specified \i\Interface Description\p\.
 
-\b\Interface Description\p\ - specifies the interfaces to display. Any interface with a value of \m\ifDescr\g\ that matches this pattern is visible on the map. Non-matching interfaces are hidden. 
+\b\Parameters\p\
+
+\i\Interface Description\p\ - specifies the interfaces to display. Any interface with a value of \m\ifDescr\g\ that matches this pattern is visible on the map. Non-matching interfaces are hidden. 
 
 </description>
 

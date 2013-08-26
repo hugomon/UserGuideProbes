@@ -6,6 +6,7 @@
 	Copyright (c) 2005, Dartware, LLC. 
 
 	Original version May 2005 by rk
+	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
 -->
 
 <header>
@@ -25,6 +26,11 @@
 
 This probe monitors 802.11 counters from a wireless device that supports the IEEE802dot11-MIB.
 
+\b\Parameters\p\
+
+\i\Interface index\p\ - enter an interface for the wireless device.
+
+\i\Tx Failed frames/sec\p\, \i\Tx Retry frames/sec\p\, \i\Rx FCS err fragments/sec\p\, and \i\ACK failures/sec\p\ - enter thresholds for \b\Warning\p\ and \b\Alarmp\p\.
 </description>
 
 <parameters>

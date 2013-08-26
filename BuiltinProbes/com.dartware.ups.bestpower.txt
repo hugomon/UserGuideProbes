@@ -15,6 +15,7 @@
     Updated for "display_name" change (IM 4.4) - 31 August 2005 by jkj.
     Added autorecord section for IM 5.0 - 05 May 2008 by cls.
     Added parseable units for Reports - 4 Mar 2011 by jpd.
+	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -45,7 +46,8 @@ vendor, model, firmware version, VA Rating, time on battery, time remaining, (\i
 (1 of 2) Warning: If UPS loses AC power.
 (2 of 2) Alarm: If minutes of battery life remaining is less than specified threshold.
 
-\b++\D. Parameters\p--\
+\b\Parameters\p\
+
 (1 of 1) \i\BatteryRemainingAlarm\p\: Threshold for alarm state (see above).
 
 </description>

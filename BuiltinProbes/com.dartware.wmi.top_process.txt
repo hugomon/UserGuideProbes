@@ -1,6 +1,7 @@
 <!-- 
 Command Line WMI Probe to monitor busy processes (com.dartware.wmi.top_process) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
+	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
 --> 
 
 <header> 
@@ -18,11 +19,17 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 <description> 
 \GB\WMI Top Processes\p\ 
 
-This probe uses WMI to retrieve information about CPU utilization and processes running on the target host.  Specifically, it queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfOS_Processor class and compares it against the Warning and Critical parameters you set.  It queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfProc_Process class and lists up to five processes using the most CPU time.  Because there is a time lapse between collecting the CPU data and the process data, the reported values will not add up exactly.  The target host must be running Windows XP, Windows Server 2003 or later.
+This probe uses WMI to retrieve information about CPU utilization and processes running on the target host.  Specifically, it queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfOS_Processor class and compares it against the specified thresholds. It queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfProc_Process class and lists up to five processes using the most CPU time.  Because there is a time lapse between collecting the CPU data and the process data, the reported values do not add up exactly. The target host must be running Windows XP, Windows Server 2003 or later.
 
-The User parameter may be a local user on the target host, or may take the form of "domain\\user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.
+\b\Parameters\p\
 
-InterMapper invokes the top_cpu.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device and the performance data returned by the script to create a nice display of chartable data.
+\i\Warning\p\ and \i\Critical\p\ - set a value in percent to use as the threshold to set the device to this condition.
+
+\i\User\p\ - may be a local user on the target host, or can take the form \m\domain\\user\g\ for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.
+
+\i\Timeout (sec)\p\ - the number of seconds to wait before assuming the host is not available.
+
+InterMapper invokes the \m\top_cpu.vbs\g\ companion script, included with the probe. The probe uses script's the exit value to set the condition of the device. It also uses the performance data returned by the script to create a nice display of chartable data.
 
 </description> 
 

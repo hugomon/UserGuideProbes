@@ -1,7 +1,7 @@
 <!-- 
 	Gopher (com.dartware.tcp.gopher)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
-	28 May 2013 - Edited description for User Guide (via Probe Doc Generator)
+	28 May 2013 - Edited description for User Guide (via Probe Doc Generator)- bobm
 -->
 
 <header>
@@ -26,6 +26,8 @@
 The document search and retrieval protocol described in \U2=http://www.ietf.org/rfc/rfc1436.txt\RFC 1436\P0\.  The default TCP port number for Gopher connections is port 70.
 
 This script connects to a Gopher server and sends the specified \i\Selector string\p\.  By default, the \i\Selector string\p\ is empty; the Gopher server returns top level information as a sequence of lines.  This script simply checks that data is returned by the gopher server; it does not validate the data's contents.
+
+\b\Parameters\p\
 
 \i\Selector string\p\ - the string sent to the Gopher server.  By default, this string is empty.
 

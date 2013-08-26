@@ -1,7 +1,7 @@
 <!-- 
 	HTTP (com.dartware.tcp.http)
 	Copyright © 2000-2003 Dartware, LLC. All rights reserved.
-	28 May 2013 - Edited description for User Guide (via Probe Doc Generator)
+	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -28,6 +28,8 @@ The protocol used to transfer web pages on the World Wide Web, defined in \U2=ht
 
 This TCP probe lets you download a specific web page and scan it for a specific string of HTML.
 
+\b\Parameters\p\
+
 \i\Host Name\p\ - the domain name of the web server (e.g. "www.intermapper.com"). This can be derived from the host name part of the URL that you want to test. You must enter a valid "Host Name" to test web servers which implement virtual hosts. Only add an IP address or domain name; do not add "http://".
 
 \i\URL Path\p\ - - the full path of the desired file on the web server (e.g. "/index.html"). The first character must be a '/'.
@@ -37,7 +39,6 @@ This TCP probe lets you download a specific web page and scan it for a specific 
 \i\User ID\p\ - the user name typed into the web browser's password dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.
 
 \i\Password\p\ - the password for the web browser's dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.
-
 </description>
 
 <parameters>

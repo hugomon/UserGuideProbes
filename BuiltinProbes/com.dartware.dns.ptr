@@ -24,6 +24,8 @@
 
 The protocol used by TCP/IP network clients to translate IP addresses into Internet names, as defined in \U2=http://www.ietf.org/rfc/rfc1034.txt\RFC 1034\p0\ and \u2=http://www.ietf.org/rfc/rfc1035.txt\RFC 1035\p0\. This probe sends a DNS request to look up the domain name for a specified IP address. Both PTR and CNAME records are accepted in the response. 
 
+\b\Parameters\p\
+
 \i\IP Address\p\ - the fully qualified IP address to be resolved.
 
 \i\Domain Name\p\ - optional - specify a domain name the IP address should resolve to. If this parameter is non-empty, and one of the returned domain names doesn't match the one provided, a status as specified in \i\Failure Status\p\ is returned.

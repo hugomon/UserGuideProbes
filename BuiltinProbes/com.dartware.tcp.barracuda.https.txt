@@ -24,6 +24,8 @@ This TCP probe queries a \U2=http://www.barracudanetworks.com/\Barracuda Spam Fi
 
 The BASIC->Status page of the Administrators interface is retrieved via HTTPS.
 
+\b\Parameters\p\
+
 \i\User\p\ - Firewall administrator name.
 
 \i\Password\p\ - Firewall administrator password.

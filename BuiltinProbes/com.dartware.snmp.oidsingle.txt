@@ -35,6 +35,8 @@
 
 This probe retrieves a single SNMP MIB variable and displays it in the device's Status Window.
 
+\b\Parameters\p\
+
 \i\Variable\p\ - the MIB name or OID to retrieve. If you have imported the MIB for this device, enter the symbolic name for this value. Otherwise, enter its OID. 
 
 \i\Legend\p\ - a text string used to identify the variable in the status window and in strip charts. If left blank, the variable's name or OID is used.
@@ -42,7 +44,6 @@ This probe retrieves a single SNMP MIB variable and displays it in the device's 
 \i\Units\p\ - a text string displayed next to the variable's value in the Status Window. Usually used for units of measure (packets/sec, degrees, etc.) 
 
 \i\Tag\p\ - A short text string that identifies a particular class of dataset. Tags are used to correlate different variables from different probes that describe the same type of data, such as CPU% or temperature.
-
 </description>
 
 -- Parameters are user-settable values that the probe uses for its comparisons.

@@ -1,7 +1,7 @@
 <!-- 
 	Citrix/Metaframe Server Check (com.dartware.tcp.citrix.txt)
 	Copyright © 2006 Dartware, LLC. All rights reserved.
-	13 May 2013 - Edited description for User Guide (via Probe Doc Generator)
+	13 May 2013 - Edited description for User Guide (via Probe Doc Generator) bobm
 -->
 
 <header>
@@ -25,6 +25,10 @@ This probe sets the device to \b\Alarm\p\ if:
 - a disconnect is received unexpectedly. 
 - doesn't receive a response within 30 seconds after connecting
 - the response doesn't contain the string "ICA"
+
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

@@ -40,7 +40,7 @@ The probe also provides thresholds that set the device into \b\Alarm\p\ or \b\Wa
 
 In this example, the device goes into \b\Alarm\p\ or \b\Warning\p\ state if it has been rebooted recently (controlled by the \i\RebootAlarm\p\ and \i\RebootWarn\p\ parameters - two and three minutes, by default) or if there aren't as many interfaces in the ifTable as specified (in the \i\ExpectedInterfaces\p\ parameter.)
 
-The parameters are:
+\b\Parameters\p\
 
 \i\RebootAlarm\p\ - set the device to \b\Alarm\p\ if the sysUptime is less than the specified value in minutes.
 

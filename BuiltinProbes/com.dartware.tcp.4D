@@ -1,7 +1,7 @@
 <!-- 
 	4D Database Server (com.dartware.tcp.4D)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
-	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -21,6 +21,11 @@
 
 This probe attempts to connect to a 4D server listening on port 19813. If the response contains the \i\database name\p\, the probe exits with OKAY status; if not, the result is WARN. If no response arrives within \i\timeout\p\, the probe exits with a WARN status. 
 
+\b\Parameters\p\
+
+\i\database name\p\ - The name of the database to query.
+
+\i\timeout\p\ - Number of seconds to wait for response.
 </description>
 
 <parameters>

@@ -7,6 +7,7 @@
     23 Jan 2010 Added many new variables -spr
 	26 May 2010 Stabilized variable mappings, cleaned up warnings -spr
 	27 Sep 2010 Added packet processing statistics, removed alarm -spr
+	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm 
 -->
 
 <header>
@@ -25,7 +26,7 @@
 
 \GB\InterMapper Engine Status\P\
 
-This probe monitors the status of the InterMapper polling engine. With the default setting, this probe displays the results of 500 loops through the polling engine. To measure activity at a finer-grain, decrease the value of the loops parameter. Setting the "loops" parameter to the value 1 will update the statistics on every pass through the main run loop.
+This probe monitors the status of the InterMapper polling engine. With the default setting, this probe displays the results of 500 loops through the polling engine. To measure activity at a finer-grain, decrease the value of the \i\Loops\p\ parameter. A value of '1' updates the statistics on every pass through the main run loop.
 
 The "Main Loop" frequency is the number of times that InterMapper performs the main loop each second. The theoretical maximum loop frequency is 66.667 loops per second, based on the current yield value of 15 msec. If it falls below 10 or even 5 loops per second, InterMapper may report false outages.
 
@@ -34,6 +35,10 @@ This probe also reports polling rate as a percentage of the maximum loops per se
 On Unix systems, this probe reports Context Switches Per Loop (CSPL). This is another measure of the overhead of InterMapper's processing as it runs on your system. Fewer context switches per loop is better (ideal = 0), since context switches carry overhead. A server with thousands of devices and hundreds of mays may well have a CSPL greater than 2 during normal operation. (This value is not available on Windows systems, and is alway set to -1.)
 
 InterMapper tracks the number of bytes sent out the main UDP polling socket. Bytes/Loop is the average bytes sent per loop, averaged over the last batch of N loops. Bytes Peak is the maximum number of bytes sent in a *single* polling loop.  (In the current implementation, the peak bytes is checked on every loop, but only resets to 0 when you change the # loops parameter; ie peak bytes is not the peak bytes of the last batch of N loops.)
+
+\b\Parameters\p\
+
+\i\Loops\p\ - the number of loops to perform before updating statistics.
 </description>
 
 <parameters>

@@ -1,7 +1,7 @@
 <!-- 
 	HTTP (Post) (com.dartware.tcp.http.cgi.post)
 	Copyright © 2000-2011 Dartware, LLC. All rights reserved.
-	28 May 2013 - Edited description for User Guide (via Probe Doc Generator)
+	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -28,6 +28,8 @@
 
   This TCP probe lets you post form results to a specific web CGI.
 
+\b\Parameters\p\
+
   \i\Host Name\p\ - the domain name of the web server (e.g. "www.intermapper.com"). This can be derived from the host name part of the URL that you want to test.
 
   \i\URL Path\p\ - the full path to the desired CGI on the web server (e.g. "/index.cgi"). The first character must be a '/'.
@@ -35,7 +37,6 @@
   \i\Form Data\p\ - the encoded data sent in the body of the POST message.
 
   \i\String to verify\p\ - a string expected to find in HTTP server's response. For example, if you post form data that is designed to generate an error, you might search for "sorry" or "could not be processed" to verify that the CGI is properly rejecting the data. If this string is not found, the device will go into alarm.
-
 </description>
 
 <parameters>

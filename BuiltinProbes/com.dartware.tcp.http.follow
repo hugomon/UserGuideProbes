@@ -1,6 +1,7 @@
 <!-- 
 	HTTP (com.dartware.tcp.http)
 	Copyright © 2000-2011 Dartware, LLC. All rights reserved.
+	20 Aug 2013 Edited description for User Guide (via Probe Doc Generator) -bobm
 -->
 
 <header>
@@ -24,18 +25,19 @@ The protocol used to transfer web pages on the World Wide Web, defined in \U2=ht
 
 This TCP probe lets you download a specific web page and scan it for a specific string of HTML. This probe will follow a limitd number of page redirects to the same HTTP server.
 
-\i\Host Name\p\ is the domain name of the web server (e.g. "www.intermapper.com"). This can be derived from the host name part of the URL that you want to test. You must enter a valid "Host Name" to test web servers which implement virtual hosts. Only add an IP address or domain name; do not add "http://".
+\b\Parameters\p\
 
-\i\URL Path\p\ is the full path of the desired file on the web server (e.g. "/index.html"). The first character must be a '/'.
+\i\Host Name\p\ - the domain name of the web server (Example: "www.intermapper.com"). This can be derived from the host name part of the URL that you want to test. You must enter a valid \i\Host Name\p\ to test a web server that implements a virtual host. Add only an IP address or domain name; do not add "http://".
 
-\i\String to verify\p\ is a string to verify in the data returned by the HTTP server.  For example, if you are retrieving a web page, you might search for "<HTML" or "<P>" to verify that the data is HTML. If this string is not found, the device will go into alarm.
+\i\URL Path\p\ - the full path of the desired file on the web server (Example: "/index.html"). The first character must be a '/'.
 
-\i\User ID\p\ is the user name typed into the web browser's password dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.
+\i\String to verify\p\ - a string to verify in the server's response. For example, if you are retrieving a web page, you could search for "<HTML" or "<P>" to verify that the data is HTML. If the string is not found, the device goes into \b\Alarm\p\.
 
-\i\Password\p\ is the password for the web browser's dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.
+\i\User ID\p\ - the user name typed into the web browser's password dialog. Leave this blank unless you want to test a web page that requires authentication.
+
+\i\Password\p\ - the password for the web browser's dialog. Leave this blank unless you want to test a web page that requires authentication.
 
 \i\Redirect Limit\p\ is the maximum number of redirects to follow.
-
 </description>
 
 <parameters>

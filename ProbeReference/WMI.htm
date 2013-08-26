@@ -31,199 +31,241 @@
 <blockquote><p><a href="Probe_Index.htm">To Probe Index<MadCap:xref href="Probe_Index.htm" ></MadCap:xref></a></p></blockquote>
 <a name="WMI_WMI_CPU_Utilization"></a><h2>WMI &gt; WMI CPU Utilization</h2>
 <blockquote>
-<p><b>WMI CPU Utilization</b> </p>
-<p>This probe uses WMI to retrieve the percentage of time that a processor is executing a non-idle thread on the target host.  Specifically, it queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfOS_Processor class and compares it against the Warning and Critical parameters you set.  Each processor is compared against the Single Warning and Critical parameters, and the total CPU utilization is compared with the Total Warning and Critical criteria.  Any of these values can be left blank if that check is not desired.</p>
+<h3>WMI CPU Utilization</h3>
+<p>This probe uses WMI to retrieve the percentage of time that a processor uses to execute a non-idle thread on the target host.  Specifically, it queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfOS_Processor class and compares it against the Warning and Critical parameters you set.  </p>
 <p>The target host must be running Windows XP, Windows Server 2003 or later.</p>
-<p>The User parameter be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the cpu_util.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device and the performance data returned by the script to create a nice display of chartable data.</p>
+<p><b>Parameters</b></p>
+<p><i>Single Warning</i>, <i>Single Critical</i>, <i>Total Warning</i>, and <i>Total Critical</i> - the device's condition is set by comparing each processor against the specified Single percentages, and the total CPU utilization against the specified Total percentages. You can leave any of these values blank.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">cpu_util.vbs</span> companion script, included with the probe. It uses the script's exit value to set the condition of the device. It uses the performance data returned by the script to create a nice display of chartable data.</p>
 <p><i>Filename: com.dartware.wmi.cpu_utilization.txt</i><br />
 <i>Version: 1.10</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Disk_Available"></a><h2>WMI &gt; WMI Disk Available</h2>
 <blockquote>
-<p><b>WMI Disk Available</b> </p>
-<p>This probe uses WMI to retrieve the disk space available on a drive on the target host.  Specifically, it queries the Size and FreeSpace properties of the Win32_LogicalDisk class, computes percentage free space, and compares it against the Warning and Critical parameters you set.  The target host must be running Windows 2000 or later.</p>
-<p>The Drive parameter may be set to "All" to enumerate all Local hard drives on the host.  It may also be set to a list of comma-separated drive names (including the colon), which will be listed whether or not they are local hard drives.  Zero-sized drives (i.e. an empty cd-rom) will not be listed.  The first drive failing the warning or critical criteria will be the one cited in the reason.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the disk_avail.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device and the performance data returned by the script to create a nice display of chartable data.</p>
+<h3>WMI Disk Available</h3>
+<p>This probe uses WMI to determine the disk space available on the specified drive(s) on the target host.  Specifically, it queries the Size and FreeSpace properties of the Win32_LogicalDisk class, computes percentage free space, and compares it against the specified values.  The target host must be running Windows 2000 or later.</p>
+<p><b>Parameters</b></p>
+<p><i>Drive</i> - May be set to "All" to check disk space on all of the host machine's local hard drives. Enter a list of comma-separated drive names (including the colon). These drives will be listed regardless of whether they are local hard drives. Zero-sized drives, such as an empty cd-rom, are not listed. The first drive with space that is less than the specified values is cited in the reason.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p>InterMapper invokes the <span class="code">disk_avail.vbs</span> companion script included with the probe. It uses the script's exit value to set the condition of the device. It uses the performance data returned by the script to create a nice display of chartable data.</p>
 <p><i>Filename: com.dartware.wmi.disk_available.txt</i><br />
 <i>Version: 1.9</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Disk_Fragmentation_Analysis"></a><h2>WMI &gt; WMI Disk Fragmentation Analysis</h2>
 <blockquote>
-<p><b>WMI Disk Fragmentation Analysis</b> </p>
-<p>This probe uses WMI to analyze disk fragmentation on a drive on the target host.  Specifically, it calls the DefragAnalysis method of the Win32_Volume class and reports pertinent statistics from the anaylsis.  If the drive needs tobe defragmented, warning status is set for the device.  The target host must be running Windows Vista, Windows Server 2003 or later.</p>
-<p>The Drive parameter is the drive letter assigned to the local disk to be anaylyzed, including the colon but without backslashes.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the defrag_analysis.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device and the performance data returned by the script to create a nice display of chartable data.</p>
+<h3>WMI Disk Fragmentation Analysis</h3>
+<p>This probe uses WMI to analyze disk fragmentation on a drive on the target host.  Specifically, it calls the DefragAnalysis method of the Win32_Volume class and reports pertinent statistics from the anaylsis.  If the drive needs to be defragmented, the device is set to <b>Warning</b>.  The target host must be running Windows Vista, Windows Server 2003 or later.</p>
+<p><b>Parameters</b></p>
+<p><i>Drive</i> - the drive letter assigned to the local disk to be analyzed, including the colon but without backslashes.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">defrag_analysis.vbs</span> companion script, included with the probe. It uses the script's exit value to set the condition of the device. It uses the performance data returned by the script to create a nice display of chartable data.</p>
 <p><i>Filename: com.dartware.wmi.defrag_analysis.txt</i><br />
 <i>Version: 1.9</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Event_Log"></a><h2>WMI &gt; WMI Event Log</h2>
 <blockquote>
-<p><b>WMI Event Log</b> </p>
+<h3>WMI Event Log</h3>
 <p>This probe uses WMI to retrieve entries from the Event Logs on the target host.  Specifically, it queries the Win32_NTLogEvent class, limiting the search with the parameters you set.  If matching events are found, a critical status is returned.  The target host must be running Windows 2000 or later.</p>
-<p>The Log File parameter contains a comma-separated list of the logs which are to be searched.  At least one Log File is required.</p>
-<p>The Event Codes parameter is a comma-separated list of event codes for which to search.  Leave it blank to select all codes.</p>
-<p>The Event Types paramaeter is a comma-seaprated list of either event type names or the corresponding numerical values.  Names and values can be intermixed.  This limits the selection to events of these types.</p>
-<p>The Hours, Minutes and Seconds parameters combine to define how far back in the event log to search.  These parameters are subtracted from the current time and used to select events based on when they were written to the log.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the event_log.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.</p>
+<p><b>Parameters</b></p>
+<p><i>Log File</i> - contains a comma-separated list of the logs to be searched.  At least one Log File is required.</p>
+<p><i>Event Codes</i> - a comma-separated list of event codes to search. To select all codes, leave this parameter blank.</p>
+<p><i>Event Types</i> - a comma-separated list; can include event type names or corresponding numerical values.  Names and values can be intermixed. Limits the selection to events of the specified types.</p>
+<p><i>Hours</i>, <i>Minutes</i>, and <i>Seconds</i> - combine to define how far back in the event log to search. The specified values are subtracted from the current time and used to select events, based on when they were written to the log.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">event_log.vbs</span> companion script included with this probe.</p>
 <p><i>Filename: com.dartware.wmi.event_log.txt</i><br />
 <i>Version: 1.11</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_File_Check"></a><h2>WMI &gt; WMI File Check</h2>
 <blockquote>
-<p><b>WMI File Check</b> </p>
+<h3>WMI File Check</h3>
 <p>This probe uses WMI to retrieve information about files on the target host.  Specifically, it queries the CIM_DataFile class, limiting the search with the parameters you set.  The target host must be running Windows 2000 or later.</p>
-<p>The Path parameter specifies the location of the files you wish to check.  It should include the drive and be enclosed in double-quotes if it contains spaces.  </p>
-<p>The File parameter contains the filename and extension of the file you wish to check.  The path will be prepended to it during the final query.  If it is blank, all files in the folder specified by the Path that meet the Size or time criteria will be listed.  File may also be set to a list of comma-separated filenames which will each be prepended by the Path and used as query criteria.  </p>
-<p>Wildcards (* ?) may be used in the filename.  If wildcards are used, be sure to specify the Path parameter or the query might take an inordinate amount of time.  At least one of the File or Path parameters must be set.</p>
-<p>The Size parameter defines the minimum filesize criteria in bytes.  Any files larger than this value will be listed.  The Hours, Minutes and Seconds parameters combine to define how recently the file had to be changed to be listed.  These parameters are subtracted from the current time and used to select files based on their LastModified value.  At least one of these parametrs must be set.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the file_chk.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It lists the files which meet your criteria and uses the exit value to set the condition of the device.</p>
+<p><b>Parameters</b></p>
+<p><i>Path</i> - the location of the files to be checked. Include the drive, and enclose the path in double-quotes if it contains spaces.</p>
+<p><i>File</i> - the filename and extension of the file you wish to check. The path is prepended to filename during the final query. To check all files that met the specified Size or time criteria, leave this parameter blank. You may also use a list of comma-separated filenames.  </p>
+<p>Wildcards (* ?) may be used in the filename. When using wildcards, be sure to specify the Path parameter. Otherwise, the query could take an inordinate amount of time. At least one of <i>File</i> or <i>Path</i> must be set.</p>
+<p><i>Size</i> - the minimum filesize in bytes. Any file larger than this value is listed. </p>
+<p><i>Hours</i>, <i>Minutes</i> and <i>Seconds</i> - specify how recently the file was changed in order to be listed, based on the file's LastModified value. At least one of these parameters must be set.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">file_chk.vbs</span> companion script, included with the probe. It lists the files which meet the specified criteria, and uses the exit value to set the condition of the device.</p>
 <p><i>Filename: com.dartware.wmi.file_check.txt</i><br />
 <i>Version: 1.9</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Folder_Check"></a><h2>WMI &gt; WMI Folder Check</h2>
 <blockquote>
-<p><b>WMI Folder Check</b> </p>
-<p>This probe uses WMI to retrieve information about a folder on the target host.  Specifically, it queries the Win32_Directory and CIM_DataFile classes to walk the directory tree and accumulate file and folder counts and the total of file sizes.  It also notes the most recently modified file in the tree.  The target host must be running Windows 2000 or later.</p>
-<p>The Path parameter specifies the folder at the top of the tree which you wish to check.  It should include the drive and be enclosed in double-quotes if it contains spaces.</p>
-<p>Warning and Critical thresholds may be set for the number of folders, the number of files, and the total of the file sizes.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the folder_chk.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It compares the number of files, folders, and the total size against your criteria to set the condition of the device.</p>
+<h3>WMI Folder Check</h3>
+<p>This probe uses WMI to retrieve information about a folder on the target host.  Specifically, it queries the Win32_Directory and CIM_DataFile classes to walk the directory tree, accumulating file and folder counts and the total of file sizes. It also notes the most recently modified file in the tree. The target host must be running Windows 2000 or later.</p>
+<p><b>Parameters</b></p>
+<p><i>Path</i> - specifies the folder at the top of the tree you want to check. It should include the drive, and should be enclosed in double-quotes if it contains spaces.</p>
+<p><i>Warning</i> and <i>Critical</i> - set thresholds for the number of folders, the number of files, and the total of the file sizes.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">folder_chk.vbs</span> companion script, included with the probe. The script compares the number of files, folders, and the total size against your criteria to set the condition of the device.</p>
 <p><i>Filename: com.dartware.wmi.folder_check.txt</i><br />
 <i>Version: 1.11</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Free_Memory"></a><h2>WMI &gt; WMI Free Memory</h2>
 <blockquote>
-<p><b>WMI Free Memory</b> </p>
-<p>This probe uses WMI to retrieve the amount of physical memory available to processes running on the target host, in megabytes.  Specifically, it queries the TotalPhysicalMemory property of the Win32_ComputerSystem class.  It also queries the FreePhysicalMemory property of the Win32_OperatingSystem class and compares it against the Warning and Critical parameters you set.  The target host must be running Windows 2000 or later.</p>
-<p>The User parameter be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the free_mem.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device and the performance data returned by the script to create a nice display of chartable data.</p>
+<h3>WMI Free Memory</h3>
+<p>This probe uses WMI to retrieve the amount of physical memory available to processes running on the target host, in megabytes. Specifically, it queries the TotalPhysicalMemory property of the Win32_ComputerSystem class.  It also queries the FreePhysicalMemory property of the Win32_OperatingSystem class and compares it against specified thresholds.  The target host must be running Windows 2000 or later.</p>
+<p><b>Parameters</b></p>
+<p><i>Warning</i> and <i>Critical</i> - specify thresholds in megabytes for which the device condition is set to the specified state.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">free_mem.vbs</span> companion script, included with the probe. The script uses the exit value to set the condition of the device. It uses the performance data returned by the script to create a nice display of chartable data.</p>
 <p><i>Filename: com.dartware.wmi.free_memory.txt</i><br />
 <i>Version: 1.8</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Installed_Software"></a><h2>WMI &gt; WMI Installed Software</h2>
 <blockquote>
-<p><b>WMI Installed Software</b> </p>
+<h3>WMI Installed Software</h3>
 <p>This probe uses WMI to retrieve information about software installed on the target host.  Specifically, it queries the Win32_Product class for information about products installed using Windows Installer.  It also queries Win32_OperatingSystem and displays the operating system name, version and service pack level.</p>
 <p>The target host must be running Windows XP, Windows Server 2003 or later.  On Windows Server 2003, the Win32_Product class isn't always installed by default.  You can install the "WMI Windows Installer Provider" component under "Management and Monitoring Tools" in "Add/Remove Windows Components".</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the installed_sofware.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.</p>
+<p><b>Parameters</b></p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">installed_sofware.vbs</span> companion script included with this probe.</p>
 <p><i>Filename: com.dartware.wmi.installed_software.txt</i><br />
 <i>Version: 1.5</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Logged_on_Users"></a><h2>WMI &gt; WMI Logged on Users</h2>
 <blockquote>
-<p><b>WMI Logged-on Users</b> </p>
+<h3>WMI Logged-on Users</h3>
 <p>This probe uses WMI to retrieve information about users logged on to the target host.  Specifically, it queries the LogonType and StartTime properties of the Win32_LogonSession class, limiting the selection to those in the comma-separated list of numeric Logon Types you set in the Type parameter.  It queries instances of the Win32_LoggedOnUser class, matches the LogonID and extracts the user's name and domain from the path of the Win32_Account.  The target host must be running Windows XP, Windows Server 2003 or later.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the log_users.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.</p>
+<p><b>Parameters</b></p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">log_users.vbs</span> companion script, included with this probe.</p>
 <p><i>Filename: com.dartware.wmi.logged-on_users.txt</i><br />
 <i>Version: 1.11</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_MSExchange_2007_Hub_Transport_Server"></a><h2>WMI &gt; WMI MSExchange 2007 Hub Transport Server</h2>
 <blockquote>
-<p><b>WMI MSExchange 2007 Hub Transport Server</b> </p>
+<h3>WMI MSExchange 2007 Hub Transport Server</h3>
 <p>This probe uses WMI to retrieve performance information about the delivery queues on a MS Exchange 2007 Hub Transport Server.  Specifically, it queries the Win32_PerfFormattedData_MSExchangeTransportQueues_MSExchangeTransportQueues class to collect a variety of queue statistics and then compares them to the criteria you set.  The default criteria for warning and critical conditions are taken from the Microsoft TechNet article <a href="http://technet.microsoft.com/en-us/library/bb201704.aspx">Monitoring Hub Transport Servers</a>.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the ex07_transport.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device.</p>
+<p><b>Parameters</b></p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">ex07_transport.vbs</span> companion script included with this probe. It uses the exit value to set the condition of the device.</p>
 <p><i>Filename: com.dartware.wmi.ex07_transport_server.txt</i><br />
 <i>Version: 1.4</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_MSExchange_2007_Mailbox_Server"></a><h2>WMI &gt; WMI MSExchange 2007 Mailbox Server</h2>
 <blockquote>
-<p><b>WMI MSExchange 2007 Mailbox Server</b> </p>
+<h3>WMI MSExchange 2007 Mailbox Server</h3>
 <p>This probe uses WMI to retrieve performance information about the delivery queues on a MS Exchange 2007 Mailbox Server.  Specifically, it queries the Win32_PerfFormattedData_MSExchangeIS_MSExchangeIS, Win32_PerfFormattedData_MSExchangeIS_MSExchangeISMailbox, Win32_PerfFormattedData_MSExchangeIS_MSExchangeISPublic, Win32_PerfFormattedData_MSExchangeSearchIndices_MSExchangeSearchIndices classes to collect a variety of statistics and then compares them to the criteria you set.  The default criteria for warning and critical conditions are taken from the Microsoft TechNet article <a href="http://technet.microsoft.com/en-us/library/bb201689.aspx">Monitoring Mailbox Servers</a>.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the ex07_mailbox.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device.</p>
+<p><b>Parameters</b></p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">ex07_mailbox.vbs</span> companion script included with this probe. It uses the script's exit value to set the condition of the device.</p>
 <p><i>Filename: com.dartware.wmi.ex07_mailbox_server.txt</i><br />
 <i>Version: 1.4</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Network_Utilization"></a><h2>WMI &gt; WMI Network Utilization</h2>
 <blockquote>
-<p><b>WMI Network Utilization</b> </p>
+<h3>WMI Network Utilization</h3>
 <p>This probe uses WMI to retrieve the network utilization on an interface on the target host.  Specifically, it queries the BytesTotalPersec, CurrentBandwidth, OutputQueueLength and PacketsReceivedErrors properties of the Win32_PerfFormattedData_Tcpip_NetworkInterface class.  It compares OutputQueueLength against the Warning and Critical parameters you set.  The target host must be running Windows XP, Windows Server 2003 or later.</p>
-<p>The interface may be selected by IP Address, MAC Address, or Index.  You may use colons, hyphens or no separators when specifiying a MAC address.  The interface name is queried from the Win32_NetworkAdapterConfiguration class and used to query data from the Win32_PerfFormattedData_Tcpip_NetworkInterface class.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the net_util.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device and the performance data returned by the script to create a nice display of chartable data.</p>
+<p><b>Parameters</b></p>
+<p>The interface may be selected by <i>IP Address</i>, <i>MAC Address</i>, or <i>Index</i>. When specifiying a MAC address, use colons, hyphens or no separators.  The interface name is queried from the Win32_NetworkAdapterConfiguration class and used to query data from the Win32_PerfFormattedData_Tcpip_NetworkInterface class.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">net_util.vbs</span> companion script, included with the probe. It uses the script's exit value to set the condition of the device. It uses the performance data returned by the script to create a nice display of chartable data.</p>
 <p><i>Filename: com.dartware.wmi.net_utilization.txt</i><br />
 <i>Version: 1.10</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Process_Monitor"></a><h2>WMI &gt; WMI Process Monitor</h2>
 <blockquote>
-<p><b>WMI Process Monitor</b> </p>
-<p>This probe uses WMI to retrieve information about processes running on the target host.  Specifically, it queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfProc_Process class and compares it against the Warning and Critical parameters you set.  Any of the specified processes that are not found are listed and the status is set to Critical.  The target host must be running Windows XP, Windows Server 2003 or later.</p>
-<p>The Process parameter is set to a comma-separated list of process names to check.  Extensions are not included in the process names.  Names containing spaces or other special characters should be enclosed in quotes.  If multiple processes match the name, they will all be listed.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the proc_mon.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device and the performance data returned by the script to create a nice display of chartable data.</p>
+<h3>WMI Process Monitor</h3>
+<p>This probe uses WMI to retrieve information about processes running on the target host. Specifically, it queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfProc_Process class and compares it against the specified parameters. Any of the specified processes not found are listed, and the status is set to Critical.  The target host must be running Windows XP, Windows Server 2003 or later.</p>
+<p><b>Parameters</b></p>
+<p><i>Process</i> - a comma-separated list of process names to check. Extensions are not included in the process names. Names containing spaces or other special characters should be enclosed in quotes. If more than one process matches the name, all matching processes are listed.</p>
+<p><i>Warning</i> and <i>Critical</i> - specify thresholds (in percent) for which the device condition is set to the specified state.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">proc_mon.vbs</span> companion script, included with the probe. It uses the script's exit value to set the condition of the device. It also uses the performance data returned by the script to create a nice display of chartable data.</p>
 <p><i>Filename: com.dartware.wmi.process_monitor.txt</i><br />
 <i>Version: 1.11</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Service_Monitor"></a><h2>WMI &gt; WMI Service Monitor</h2>
 <blockquote>
-<p><b>WMI Service Monitor</b> </p>
-<p>This probe uses WMI to retrieve the state of services running on the target hostby querying the Win32_Service class.  Any of the specified services that are not found are listed and the status is set to Critical.  The target host must be running Windows 2000 or later.</p>
-<p>The Service parameter is set to a comma-separated list of service names you wish to check.  Service names should not be confused with the service's Display Name, which is what is shown in the Services tool.  Check the Properties for the service to see the actual service name.  Names containing spaces or other special characters should be enclosed in quotes.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the serv_mon.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device.</p>
+<h3>WMI Service Monitor</h3>
+<p>This probe uses WMI to retrieve the state of services running on the target host by querying the Win32_Service class.  Any specified services not found are listed, and the status is set to Critical.  The target host must be running Windows 2000 or later.</p>
+<p><b>Parameters</b></p>
+<p><i>Service</i> - a comma-separated list of service names to be checked.</p>
+<p><b>Note:</b> Service names should not be confused with the service's Display Name, shown in the Services tool. Check the Properties for the service to find the actual service name.  Names containing spaces or other special characters should be enclosed in quotes.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">serv_mon.vbs</span> companion script, included with the probe. The script's exit value is used to set the condition of the device.</p>
 <p><i>Filename: com.dartware.wmi.service_monitor.txt</i><br />
 <i>Version: 1.12</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_SQL_Server_2008_Service_Monitor"></a><h2>WMI &gt; WMI SQL Server 2008 Service Monitor</h2>
 <blockquote>
-<p><b>WMI SQL Server 2008 Service Monitor</b> </p>
-<p>This probe uses WMI to retrieve the state of Microsoft SQL Server 2008 services running on the target hostby querying the Win32_Service class.  Use the checkboxes to select the services which you want this probe to monitor.  The states of the selected services are listed, and if any are not running, the status of the device is set to Critical.  The target host must be running Windows 2000 or later.</p>
-<p>The Instance parameter specifies the SQL Server instance you wish to monitor on the target host.  If you wish to monitor the default instace you should leave this blank.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the sql2k8_serv_mon.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device.</p>
+<h3>WMI SQL Server 2008 Service Monitor</h3>
+<p>This probe uses WMI to retrieve the state of Microsoft SQL Server 2008 services running on the target host by querying the Win32_Service class. The states of the selected services are listed, and if any are not running, the status of the device is set to Critical. The target host must be running Windows 2000 or later.</p>
+<p><b>Parameters</b></p>
+<p><i>Services</i> - select or clear checkboxes to select the services which you want to monitor.</p>
+<p><i>Instance</i> - the SQL Server instance you wish to monitor on the target host. To monitor the default instance, leave this parameter blank.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">sql2k8_serv_mon.vbs</span> companion script, included with this probe. It uses the script's exit value to set the condition of the device.</p>
 <p><i>Filename: com.dartware.wmi.sql2k8_service_monitor.txt</i><br />
 <i>Version: 1.4</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_System_Accessibility"></a><h2>WMI &gt; WMI System Accessibility</h2>
 <blockquote>
-<p><b>WMI System Accessibility</b> </p>
-<p>This probe uses WMI to test accessibilty of a target device from the monitored host.  Specifically, it uses the Win32_PingStatus class to test the connectivity and returns a response time which is chartable.  If the target cannot be pinged, the status is set to critical and a discontiunity is inserted in the chart data.  The target host must be running Windows XP, Windows Server 2003 or later.</p>
+<h3>WMI System Accessibility</h3>
+<p>This probe uses WMI to test accessibilty of a target device from the monitored host. Specifically, it uses the Win32_PingStatus class to test the connectivity and returns a chartable response time. If the target cannot be pinged, the status is set to critical and a discontinuity is inserted in the chart data.  The target host must be running Windows XP, Windows Server 2003 or later.</p>
 <p>Additional information about the monitored host is queried from the Win32_NetworkAdapterConfiguration and Win32_NTDomain classes and displayed in the status window.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the sys_access.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device and the performance data returned by the script to create a nice display of chartable data.</p>
+<p><b>Parameters</b></p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">sys_access.vbs</span> companion script, included with the probe. It uses the script's exit value to set the condition of the device. It also uses the performance data returned by the script to create a nice display of chartable data.</p>
 <p><i>Filename: com.dartware.wmi.system_accessibility.txt</i><br />
 <i>Version: 1.9</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_System_Information"></a><h2>WMI &gt; WMI System Information</h2>
 <blockquote>
-<p><b>WMI System Information</b> </p>
+<h3>WMI System Information</h3>
 <p>This probe uses WMI to collect a variety of information about the monitored host including hardware and operating system details.  The target host must be running Windows 2000 or later.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the system_info.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.</p>
+<p><b>Parameters</b></p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">system_info.vbs</span> companion script, included with the probe.</p>
 <p><i>Filename: com.dartware.wmi.system_infomation.txt</i><br />
 <i>Version: 1.8</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>
 </blockquote>
 <a name="WMI_WMI_Top_Processes"></a><h2>WMI &gt; WMI Top Processes</h2>
 <blockquote>
-<p><b>WMI Top Processes</b> </p>
-<p>This probe uses WMI to retrieve information about CPU utilization and processes running on the target host.  Specifically, it queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfOS_Processor class and compares it against the Warning and Critical parameters you set.  It queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfProc_Process class and lists up to five processes using the most CPU time.  Because there is a time lapse between collecting the CPU data and the process data, the reported values will not add up exactly.  The target host must be running Windows XP, Windows Server 2003 or later.</p>
-<p>The User parameter may be a local user on the target host, or may take the form of "domain&#92;user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.</p>
-<p>InterMapper invokes the top_cpu.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device and the performance data returned by the script to create a nice display of chartable data.</p>
+<h3>WMI Top Processes</h3>
+<p>This probe uses WMI to retrieve information about CPU utilization and processes running on the target host.  Specifically, it queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfOS_Processor class and compares it against the specified thresholds. It queries the PercentProcessorTime property of the Win32_PerfFormattedData_PerfProc_Process class and lists up to five processes using the most CPU time.  Because there is a time lapse between collecting the CPU data and the process data, the reported values do not add up exactly. The target host must be running Windows XP, Windows Server 2003 or later.</p>
+<p><b>Parameters</b></p>
+<p><i>Warning</i> and <i>Critical</i> - set a value in percent to use as the threshold to set the device to this condition.</p>
+<p><i>User</i> - may be a local user on the target host, or can take the form <span class="code">domain&#92;user</span> for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.</p>
+<p><i>Timeout (sec)</i> - the number of seconds to wait before assuming the host is not available.</p>
+<p>InterMapper invokes the <span class="code">top_cpu.vbs</span> companion script, included with the probe. The probe uses script's the exit value to set the condition of the device. It also uses the performance data returned by the script to create a nice display of chartable data.</p>
 <p><i>Filename: com.dartware.wmi.top_process.txt</i><br />
 <i>Version: 1.10</i></p>
 <p><a href="WMI.htm">Back to Top</a></p>

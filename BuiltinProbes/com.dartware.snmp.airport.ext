@@ -29,6 +29,9 @@ The first version of AirPort Extreme was round; subsequent versions are square. 
 * The original round version does not return complete information to clients using the community string "public". To retrieve complete information from the original round version, you must set the community string to the AirPort Extreme's password. 
 * Subsequent versions have a settable SNMP community string. To use this probe on these versions, you must supply the SNMP community string as set in the AirPort Extreme.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

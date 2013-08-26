@@ -29,6 +29,9 @@ This TCP probe connects to the AppleShareIP port and issues a "Get Server Info" 
 
 This probe sends a request; it does not actually create an AppleShare session.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

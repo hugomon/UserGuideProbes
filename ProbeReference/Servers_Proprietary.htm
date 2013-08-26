@@ -45,15 +45,18 @@
 <blockquote><p><a href="Probe_Index.htm">To Probe Index<MadCap:xref href="Probe_Index.htm" ></MadCap:xref></a></p></blockquote>
 <a name="Servers_Proprietary_4D_Server"></a><h2>Servers Proprietary &gt; 4D Server</h2>
 <blockquote>
-<p><b>4D Server Probe</b></p>
+<h3>4D Server</h3>
 <p>This probe attempts to connect to a 4D server listening on port 19813. If the response contains the <i>database name</i>, the probe exits with OKAY status; if not, the result is WARN. If no response arrives within <i>timeout</i>, the probe exits with a WARN status. </p>
+<p><b>Parameters</b></p>
+<p><i>database name</i> - The name of the database to query.</p>
+<p><i>timeout</i> - Number of seconds to wait for response.</p>
 <p><i>Filename: com.dartware.tcp.4D</i><br />
 <i>Version: 1.5</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_Apache_"></a><h2>Servers Proprietary &gt; Apache &gt; </h2>
 <blockquote>
-<p><b>Apache Server-Status (HTTP)</b></p>
+<h3></h3>
 <p>This probes monitors an Apache Web Server with the Apache Status module enabled (mod_status). The Apache Status module allows a server administrator to find out how well an Apache server is performing. This probe reads output of provided by the Status module that presents the current server statistics, using the <i>?auto</i> parameter.</p>
 <p>To enable status reports for this probe, add this code to the httpd.conf file on the target server:</p>
 <p><span class="code">  &lt;Location /server-status&gt;</span></p>
@@ -64,23 +67,30 @@
 <p>  &lt;/Location&gt;</p>
 <p>  </p>
 <p>This probe supports the Apache ExtendedStatus directive, if enabled.</p>
+<p><b>Parameters</b></p>
+<p> <i>Host Name</i> - Name of the host server</p>
+<p><i>URL Path</i> - Path to the server status page </p>
+<p><i>User ID</i> - Server administrator username</p>
+<p>Password - Administrator password</p>
 <p><i>Filename: com.dartware.tcp.apache.txt</i><br />
 <i>Version: 1.0</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_Apple_AppleShareIP"></a><h2>Servers Proprietary &gt; Apple &gt; AppleShareIP</h2>
 <blockquote>
-<p><b>AppleShareIP</b></p>
+<h3>AppleShareIP</h3>
 <p>The file-sharing protocol used by Apple computers over TCP/IP.  The default TCP port number for AppleShareIP connections is port 548.</p>
 <p>This TCP probe connects to the AppleShareIP port and issues a "Get Server Info" request. If the the probe does not receive the expected response, the device's status is set to <b>Down</b>.</p>
 <p>This probe sends a request; it does not actually create an AppleShare session.</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.tcp.appleshareip</i><br />
 <i>Version: 1.5</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_Apple_OS_X_Server_AFP"></a><h2>Servers Proprietary &gt; Apple &gt; OS X Server &gt; AFP</h2>
 <blockquote>
-<p><b>OS X Server AFP Probe</b></p>
+<h3>AFP</h3>
 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its Apple File Sharing using the Server Admin port and protocol.</p>
 <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
 <p><i>User</i> is the name of a user with admin privileges on the specified server.</p>
@@ -92,7 +102,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_OS_X_Server_FTP"></a><h2>Servers Proprietary &gt; Apple &gt; OS X Server &gt; FTP</h2>
 <blockquote>
-<p><b>OS X Server FTP Probe</b></p>
+<h3>FTP</h3>
 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its FTP Server using the Server Admin port and protocol.</p>
 <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
 <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
@@ -104,7 +114,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_OS_X_Server_Info"></a><h2>Servers Proprietary &gt; Apple &gt; OS X Server &gt; Info</h2>
 <blockquote>
-<p><b>OS X Server Information</b></p>
+<h3>Info</h3>
 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details using the Server Admin port and protocol.</p>
 <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
 <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
@@ -116,7 +126,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_OS_X_Server_NAT"></a><h2>Servers Proprietary &gt; Apple &gt; OS X Server &gt; NAT</h2>
 <blockquote>
-<p><b>OS X Server NAT Probe</b></p>
+<h3>NAT</h3>
 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its NAT service using the Server Admin port and protocol.</p>
 <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
 <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
@@ -128,7 +138,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_OS_X_Server_Print"></a><h2>Servers Proprietary &gt; Apple &gt; OS X Server &gt; Print</h2>
 <blockquote>
-<p><b>OS X Server Print Probe</b></p>
+<h3>Print</h3>
 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its Print Server using the Server Admin port and protocol.</p>
 <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
 <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
@@ -140,7 +150,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_OS_X_Server_QTSS"></a><h2>Servers Proprietary &gt; Apple &gt; OS X Server &gt; QTSS</h2>
 <blockquote>
-<p><b>OS X Server QTSS Probe</b></p>
+<h3>QTSS</h3>
 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its QuickTime Streaming Server using the Server Admin port and protocol.</p>
 <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
 <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
@@ -152,7 +162,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_OS_X_Server_Web"></a><h2>Servers Proprietary &gt; Apple &gt; OS X Server &gt; Web</h2>
 <blockquote>
-<p><b>OS X Server Web Probe</b></p>
+<h3>Web</h3>
 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its Web Server using the Server Admin port and protocol.</p>
 <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
 <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
@@ -164,15 +174,17 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_RTMP"></a><h2>Servers Proprietary &gt; Apple &gt; RTMP</h2>
 <blockquote>
-<p><b>RTMP</b></p>
+<h3>RTMP</h3>
 <p>This probe sends an AppleTalk RTMP RDR Request query of type 3, and waits for a RTMP response.</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.rtmp</i><br />
 <i>Version: 1.5</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_Apple_Xserve_Xserve_G4"></a><h2>Servers Proprietary &gt; Apple &gt; Xserve &gt; Xserve G4</h2>
 <blockquote>
-<p><b>Xserve G4 Probe</b></p>
+<h3>Xserve G4</h3>
 <p>This TCP probe queries an Xserve G4 for various details using the Server Monitor port and protocol.</p>
 <p><b>This probe will monitor Xserve G4s running Mac OS X 10.3.9 and earlier.  For Xserves running 10.4 or later, please choose the Xserve Tiger probe.</b></p>
 <p>A request for status information is made via an HTTPS post to the Server Monitor port. The server responds with XML data that is then parsed by the probe.</p>
@@ -194,7 +206,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_Xserve_Xserve_G5"></a><h2>Servers Proprietary &gt; Apple &gt; Xserve &gt; Xserve G5</h2>
 <blockquote>
-<p><b>Xserve G5 Probe</b></p>
+<h3>Xserve G5</h3>
 <p>This TCP probe queries an <a href="http://www.apple.com/xserve/">Xserve G5</a> for various details using the Server Monitor port and protocol.</p>
 <p>A request for status information is made via an HTTPS post to the Server Monitor port. The server responds with XML data that is then parsed by the probe.</p>
 <p><i>User</i> is the name of any user on the specified server.</p>
@@ -214,7 +226,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_Xserve_Xserve_RAID"></a><h2>Servers Proprietary &gt; Apple &gt; Xserve &gt; Xserve RAID</h2>
 <blockquote>
-<p><b>Xserve RAID Probe</b></p>
+<h3>Xserve RAID</h3>
 <p>This TCP probe queries an <a href="http://www.apple.com/xserve/raid/">Xserve RAID</a> for various details using the RAID Admin port and protocol.</p>
 <p>Status information is requested from the Xserve RAID via a series of HTTP POSTs. The server responds with XML data that is then parsed by the probe.</p>
 <p><i>Password</i> is the monitoring password used for RAID Admin.</p>
@@ -224,7 +236,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Apple_Xserve_Xserve_Tiger__PPC_"></a><h2>Servers Proprietary &gt; Apple &gt; Xserve &gt; Xserve Tiger (PPC)</h2>
 <blockquote>
-<p><b>Xserve Tiger Probe</b></p>
+<h3>Xserve Tiger (PPC)</h3>
 <p>This probe queries an <a href="http://www.apple.com/xserve/">Xserve</a> running Mac OS X 10.4 using the Server Monitor port and protocol.  Because of this, the probe requires an administrators name and password in order to access the information.  Due to significant hardware differences, there are separate probes for G4 Xserves, G5 Xserves, and Intel Xserves.</p>
 <p>Apple has pre-configured several thresholds for various properties, such as temperatures, blower speeds, and power supply values.  The Server Monitor protocol specifies when any of these thresholds are exceeded and the error message and status will be reflected by this probe.</p>
 <p>A request for status information is made via an HTTPS POST to the Server Monitor port. The server responds with XML data that is then parsed by the probe.</p>
@@ -245,9 +257,10 @@
 </blockquote>
 <a name="Servers_Proprietary_Barracuda_Barracuda_HTTP"></a><h2>Servers Proprietary &gt; Barracuda &gt; Barracuda HTTP</h2>
 <blockquote>
-<p><b>Barracuda Spam Firewall (HTTP)</b></p>
+<h3>Barracuda HTTP</h3>
 <p>This TCP probe queries a <a href="http://www.barracudanetworks.com/">Barracuda Spam Firewall</a> for various performance statistics.</p>
 <p>The BASIC-&gt;Status page of the Administrators interface is retrieved via HTTP.</p>
+<p><b>Parameters</b></p>
 <p><i>User</i> - Firewall administrator name.</p>
 <p><i>Password</i> - Firewall administrator password.</p>
 <p><i>Port</i> - Firewall's Web Interface HTTP Port as set on the BASIC-&gt;Administration page.</p>
@@ -312,9 +325,10 @@
 </blockquote>
 <a name="Servers_Proprietary_Barracuda_Barracuda_HTTPS"></a><h2>Servers Proprietary &gt; Barracuda &gt; Barracuda HTTPS</h2>
 <blockquote>
-<p><b>Barracuda Spam Firewall (HTTPS)</b></p>
+<h3>Barracuda HTTPS</h3>
 <p>This TCP probe queries a <a href="http://www.barracudanetworks.com/">Barracuda Spam Firewall</a> for various performance statistics.</p>
 <p>The BASIC-&gt;Status page of the Administrators interface is retrieved via HTTPS.</p>
+<p><b>Parameters</b></p>
 <p><i>User</i> - Firewall administrator name.</p>
 <p><i>Password</i> - Firewall administrator password.</p>
 <p><i>Port</i> - Firewall's Web Interface HTTP Port as set on the BASIC-&gt;Administration page.</p>
@@ -379,8 +393,9 @@
 </blockquote>
 <a name="Servers_Proprietary_Big_Brother_Probe"></a><h2>Servers Proprietary &gt; Big Brother Probe</h2>
 <blockquote>
-<p><b>Big Brother Probe</b></p>
+<h3>Big Brother Probe</h3>
 <p>This probe lets you use InterMapper as a Big Brother "BBDISPLAY" to collect information sent by Big Brother clients.</p>
+<p><b>Parameters</b></p>
 <p><i>Purple Time</i> - sets the number of minutes to wait without a report before indicating a problem. In an actual Big Brother server, this is thirty minutes; Big Brother shows a device as purple if it goes this long without a report from the device. This probe shows it as DOWN.</p>
 <p><i>Filename: com.dartware.bigbrother</i><br />
 <i>Version: 1.6</i></p>
@@ -388,17 +403,19 @@
 </blockquote>
 <a name="Servers_Proprietary_BlitzWatch"></a><h2>Servers Proprietary &gt; BlitzWatch</h2>
 <blockquote>
-<p><b>BlitzWatch</b></p>
+<h3>BlitzWatch</h3>
 <p>This probe monitors the performance of a <u>BlitzMail</u> server. </p>
 <p>BlitzMail is a TCP/IP-based client-server electronic mail system developed at Dartmouth College. In the BlitzMail system, all mail and mail preferences are stored on one or more BlitzMail servers, giving a user access to email from anywhere. </p>
 <p>This probe provides a simple view into the current state of a single BlitzMail server, showing simultaneous user count, CPU utilization, and disk transfer statistics.</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.blitzwatch</i><br />
 <i>Version: 1.5</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_Citrix_Server"></a><h2>Servers Proprietary &gt; Citrix Server</h2>
 <blockquote>
-<p><b>Citrix Server</b></p>
+<h3>Citrix Server</h3>
 <p>This probe connects to a Citrix server, using default port 1494. It checks for the presence of the string "ICA" in the response, which indicates that the Citrix server is running.</p>
 <p>This probe sets the device to <b>Alarm</b> if:</p>
 <ul>
@@ -406,36 +423,41 @@
 <li> doesn't receive a response within 30 seconds after connecting</li>
 <li> the response doesn't contain the string "ICA"</li>
 </ul>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.tcp.citrix.txt</i><br />
 <i>Version: 1.1</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_Dartware_DataCenter_IMAuth"></a><h2>Servers Proprietary &gt; Dartware &gt; DataCenter &gt; IMAuth</h2>
 <blockquote>
-<p><b>InterMapper Authentication Server (IMAuth)</b></p>
-<p>This TCP probe queries an <a href="http://www.intermapper.com/">InterMapper DataCenter</a> server to verify that IMAuth is configured and running on that server. This will only work when run against InterMapper DataCenter 5.1 or later.</p>
-<p><i>User</i> is the DataCenter admin user's name.</p>
-<p><i>Password</i> is the DataCenter admin user's password.</p>
-<p><i>Port</i> is the port the DataCenter server listens on.</p>
+<h3>IMAuth</h3>
+<p>This TCP probe queries an <a href="http://www.intermapper.com/">InterMapper DataCenter</a> server to verify that IMAuth is configured and running on that server. This only works with InterMapper DataCenter 5.1 or later.</p>
+<p><b>Parameters</b></p>
+<p><i>User</i> - the DataCenter admin user's name.</p>
+<p><i>Password</i> - the DataCenter admin user's password.</p>
+<p><i>Port</i> - the port the DataCenter server listens on.</p>
 <p><i>Filename: com.dartware.tcp.imauth</i><br />
 <i>Version: 0.3</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_Dartware_DataCenter_IMDatabase"></a><h2>Servers Proprietary &gt; Dartware &gt; DataCenter &gt; IMDatabase</h2>
 <blockquote>
-<p><b>InterMapper Database (IMDatabase)</b></p>
+<h3>IMDatabase</h3>
 <p>This TCP probe queries an <a href="http://www.intermapper.com/">InterMapper DataCenter</a> server to verify that IMDatabase is configured and running on that server. This will only work when run against InterMapper DataCenter 5.1 or later.</p>
-<p><i>User</i> is the DataCenter admin user's name.</p>
-<p><i>Password</i> is the DataCenter admin user's password.</p>
-<p><i>Port</i> is the port the DataCenter server listens on.</p>
+<p><b>Parameters</b></p>
+<p><i>User</i> - the DataCenter admin user's name.</p>
+<p><i>Password</i> - the DataCenter admin user's password.</p>
+<p><i>Port</i> - the port the DataCenter server listens on.</p>
 <p><i>Filename: com.dartware.tcp.imdatabase</i><br />
 <i>Version: 0.3</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_DND_Protocol"></a><h2>Servers Proprietary &gt; DND Protocol</h2>
 <blockquote>
-<p><b>DND Protocol</b></p>
+<h3>DND Protocol</h3>
 <p>The protocol used to lookup directory entries and validation information in a DND server. The <u>DND</u> is a centralized authentication/directory service developed at Dartmouth College. The default TCP port number for DND connections is port 902.</p>
+<p><b>Parameters</b></p>
 <p><i>Name</i> - the name to look up in the DND.</p>
 <p><i>Filename: com.dartware.tcp.dnd</i><br />
 <i>Version: 1.6</i></p>
@@ -443,33 +465,40 @@
 </blockquote>
 <a name="Servers_Proprietary_FileMaker_Pro"></a><h2>Servers Proprietary &gt; FileMaker Pro</h2>
 <blockquote>
-<p><b>FileMaker Pro Server Probe</b></p>
+<h3>FileMaker Pro</h3>
 <p>This probe attempts to connect to a Filemaker Pro database server. By default, the port is 5003. If successful, device status is set to <b>Okay</b>. </p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.tcp.filemaker</i><br />
 <i>Version: 1.6</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_FirstClass_Server"></a><h2>Servers Proprietary &gt; FirstClass Server</h2>
 <blockquote>
-<p><b>FirstClass Email Server</b></p>
-<p>This probe connects to a FirstClass mail server. It sends two carriage returns, and expects to receive a banner; the default contains "FirstClass System". By default, it listens on port 510.</p>
+<h3>FirstClass Server</h3>
+<p>This probe connects to a FirstClass mail server. It sends two carriage returns, and expects to receive the specified banner; the default contains "FirstClass System". By default, it listens on port 510.</p>
+<p><b>Parameters</b></p>
+<p><i>Banner</i> - Expected text string.</p>
+<p><i>Port</i> - Port to send on.</p>
 <p><i>Filename: com.dartware.tcp.firstclass</i><br />
 <i>Version: 1.6</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_KeyServer"></a><h2>Servers Proprietary &gt; KeyServer</h2>
 <blockquote>
-<p><b>KeyServer Status</b></p>
-<p>This probe tests the operation of <u>Sassafras Software</u>'s KeyServer via TCP/IP.  <u>KeyServer</u> is a software license management tool for Windows, Macintosh and thin-client based computers.</p>
-<p>This probe sends a proprietary status request to the KeyServer -- a full description is available from <u>Sassafras Software</u>. By default, the server accepts UDP requests on port 19283.</p>
+<h3>KeyServer</h3>
+<p>This probe tests the operation of Sassafras Software's KeyServer via TCP/IP.  <a href="http://www.sassafras.com/licensing.html">KeyServer</a> is a software license management tool for Windows, Macintosh and thin-client based computers.</p>
+<p>The probe sends a proprietary status request to the KeyServer -- a full description is available from <a href="http://www.sassafras.com">Sassafras Software</a>. By default, the server accepts UDP requests on port 19283.</p>
 <p><i>KeyServer is a registered trademark of Sassafras Software</i>.</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.keyserver</i><br />
-<i>Version: 1.5</i></p>
+<i>Version: 1.6</i></p>
 <p><a href="Servers_Proprietary.htm">Back to Top</a></p>
 </blockquote>
 <a name="Servers_Proprietary_Lotus_Notes"></a><h2>Servers Proprietary &gt; Lotus Notes</h2>
 <blockquote>
-<p><b>Lotus Notes Probe</b></p>
+<h3>Lotus Notes</h3>
 <p>Lotus Notes uses Port 1352 for its Remote Procedure Call and Notes Replication. </p>
 <p>This probe simply establishes a connection to the indicated port, which presumably is a Lotus Notes server. If the connection is successful, the device's status is set to OK; otherwise, its status is DOWN.</p>
 <p><i>Filename: com.dartware.tcp.lotusnotes</i><br />
@@ -478,7 +507,7 @@
 </blockquote>
 <a name="Servers_Proprietary_MeetingMaker"></a><h2>Servers Proprietary &gt; MeetingMaker</h2>
 <blockquote>
-<p><b>MeetingMaker Probe</b></p>
+<h3>MeetingMaker</h3>
 <p>The MeetingMaker server listens on port 649. This probe attempts to connect and exits with OKAY status if it succeeds.</p>
 <p><i>Filename: com.dartware.tcp.meetingmaker</i><br />
 <i>Version: 1.4</i></p>
@@ -486,9 +515,10 @@
 </blockquote>
 <a name="Servers_Proprietary_Microsoft_DHCP_Lease_Check"></a><h2>Servers Proprietary &gt; Microsoft &gt; DHCP Lease Check</h2>
 <blockquote>
-<p><b>SNMP - Microsoft DHCP Lease Check</b></p>
+<h3>DHCP Lease Check</h3>
 <p>This probe monitors the count of free DHCP leases on a Microsoft DHCP server. If the count goes below the specified thresholds, the device enters ALARM or WARNING state.</p>
 <p>The check is specific to a scope.</p>
+<p><b>Parameters</b></p>
 <p><i>Scope</i> - The DHCP scope to check (e.g., "192.168.1.0").</p>
 <p><i>Free Lease Warning</i> - The number of remaining leases at which the device enters WARNING state.</p>
 <p><i>Free Lease Alarm</i> - The number of free leases remaining at which the device enters ALARM state.</p>
@@ -500,8 +530,9 @@
 </blockquote>
 <a name="Servers_Proprietary_Microsoft_NT_Services"></a><h2>Servers Proprietary &gt; Microsoft &gt; NT Services</h2>
 <blockquote>
-<p><b>NT Services</b></p>
+<h3>NT Services</h3>
 <p>This probe monitors the state of one or more services on a Windows-based machine, Windows NT 4.0 and newer. InterMapper uses the Service Control Manager (SCM) to retrieve the information about the specified services. This probe works only if the InterMapper server is running on a Windows computer.</p>
+<p><b>Parameters</b></p>
 <p><i>Services to Monitor</i> - The list of services to be monitored. In the status window, services with green icons are currently running; those with red icons are stopped.</p>
 <p>InterMapper monitors services whose boxes are checked. For a single machine, choose from all the services on the machine. For multiple machines, choose from those services common to all of the machines.</p>
 <p><i>Username</i> - The name of an administrative user on the machine being probed. InterMapper uses this username to log into the target machine to query the Service Control Manager.</p>
@@ -514,8 +545,9 @@
 </blockquote>
 <a name="Servers_Proprietary_Microsoft_SQL_Server_Query"></a><h2>Servers Proprietary &gt; Microsoft &gt; SQL Server Query</h2>
 <blockquote>
-<p><b>SQL Server Query</b> </p>
+<h3>SQL Server Query</h3>
 <p>This probe establishes an ADO (ActiveX Data Object) connection to a Microsoft SQL Server running on the target host.  It issues the specified query and displays the returned fields.  If no records are returned, the device status is set to <i>Critical</i>.</p>
+<p><b>Parameters</b></p>
 <p><i>Query</i> - contains the SQL query to send. It should be enclosed in double-quotes. Using the "TOP" keyword in your query improve the response to the query. You may want to specify specific columns in your query and include a "WHERE" or an "ORDER BY" clause.</p>
 <p><i>Rows</i> and <i>Columns</i> - let you limit the output of your query. Enter the number of "Columns" and the number of "Rows" records of the query you want to view.</p>
 <p><i>Instance</i> - specifies the SQL Server instance on the target host the query is sent to. If you wish to query the default server instance, leave this field blank.</p>
@@ -529,7 +561,7 @@
 </blockquote>
 <a name="Servers_Proprietary_Nagios_NRPE"></a><h2>Servers Proprietary &gt; Nagios NRPE</h2>
 <blockquote>
-<p><b>Nagios NRPE over SSL/TLS</b></p>
+<h3>Nagios NRPE</h3>
 <p>The NRPE ("Nagios Remote Plugin Executor") protocol defines a way to execute Nagios plugins on remote machines. After you install a Nagios NRPE daemon and and one or more Nagios plugins on a remote machine, InterMapper uses the following procedure to retrieve the status of that machine.</p>
 <ul>
 <li> Establish an encrypted SSL/TLS connection to the remote NRPE daemon</li>

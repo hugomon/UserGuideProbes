@@ -36,4 +36,8 @@ This probe checks whether the device responds to SNMP. If it doesn't, the probe 
 
 \B\How it works:\P\
 InterMapper sends a SNMP GetNextRequest for the sysName, sysObjectID, and sysServices OIDs (1.3.6.1.2.1.1.5.5, 1.3.6.1.2.1.1.5.2, and 1.3.6.1.2.1.1.5.7, respectively) using the specified SNMP Read-only community string. Upon receiving a valid SNMP response, InterMapper sets the device's probe to SNMP. If not, the Ping/Echo probe is used.
+
+\b\Parameters\p\
+
+None.
 </description>

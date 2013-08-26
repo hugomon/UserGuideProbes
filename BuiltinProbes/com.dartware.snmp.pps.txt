@@ -33,6 +33,8 @@
 
 This probe monitors the ifInPackets and ifOutPackets statistics of the specified device interface, and sets the state of the device to \b\Alarm\p\ or \b\Warning\p\ when the packet rate (in packets/second) exceeds specified thresholds. It sets the state to \b\Down\p\ if the interface's \i\ifOperStatus\p\ is not equal to 1 (Up).
 
+\b\Parameters\p\
+
 \i\Port Number\p\ - the ifIndex of the port to monitor. 
 
 \i\Warn Threshold\p\ and \i\Alarm Threshold\p\ - threshold values in packets-per-second.

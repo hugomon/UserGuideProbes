@@ -1,7 +1,7 @@
 <!-- 
 	Basic TCP (com.dartware.tcp.basic)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
-	18 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	18 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -25,6 +25,9 @@
 
 This basic TCP probe tests whether a TCP port accepts connections. If the specified port fails to accept the TCP connection within sixty seconds, the device state is set to \b\Down\p\.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

@@ -1,7 +1,7 @@
 <!-- 
 	Basic TCP (Blocked) (com.dartware.tcp.blocked)
 	Copyright © 2004 Dartware, LLC. All rights reserved.
-	18 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	18 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -23,6 +23,8 @@
 This basic TCP probe tests that a TCP port is \b\not\p\ accepting connections. This probe may be used to test that a firewall is working properly, or that a particular TCP service is never operating on an important machine.
 
 If the specified port accepts the TCP connection, the device state is set to the selected state. Otherwise, the device status is set to \b\OKAY\p\.
+
+\b\Parameters\p\
 
 \i\Failure Status\p\ - The device status upon successful connection. The default state is \bi\DOWN\p\.
 

@@ -32,21 +32,24 @@
 <blockquote><p><a href="Probe_Index.htm">To Probe Index<MadCap:xref href="Probe_Index.htm" ></MadCap:xref></a></p></blockquote>
 <a name="Network_Devices_Apple_Apple_AirPort__Extreme_"></a><h2>Network Devices &gt; Apple &gt; Apple AirPort (Extreme)</h2>
 <blockquote>
-<p><b>SNMP - Apple AirPort (Extreme)</b></p>
+<h3>Apple AirPort (Extreme)</h3>
 <p>This probe monitors the custom MIB in an Apple AirPort Extreme Base Station. This probe monitors the number of clients using the base station, and lists each with its signal strength.</p>
 <p>The first version of AirPort Extreme was round; subsequent versions are square. There is one important difference between them:</p>
 <ul>
 <li> The original round version does not return complete information to clients using the community string "public". To retrieve complete information from the original round version, you must set the community string to the AirPort Extreme's password. </li>
 <li> Subsequent versions have a settable SNMP community string. To use this probe on these versions, you must supply the SNMP community string as set in the AirPort Extreme.</li>
 </ul>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.snmp.airport.ext</i><br />
 <i>Version: 1.5</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_Apple_Apple_AirPort__Graphite_"></a><h2>Network Devices &gt; Apple &gt; Apple AirPort (Graphite)</h2>
 <blockquote>
-<p><b>SNMP - Apple AirPort (Graphite)</b></p>
+<h3>Apple AirPort (Graphite)</h3>
 <p>This probe monitors the custom MIB in an Apple AirPort Base Station (v1 = Graphite) using SNMPv1. This probe monitors the number of clients using the base station and lists each one with its signal strength.</p>
+<p><b>Parameters</b></p>
 <p><i>Read/Write Community</i> - Use the AirPort Base Stations's password.</p>
 <p>An SNMP set-request is sent, instructing the AirPort Base Station to discover its clients periodically and test the signal strength of each.</p>
 <p><i>Filename: com.dartware.snmp.airport</i><br />
@@ -55,8 +58,9 @@
 </blockquote>
 <a name="Network_Devices_Cisco_Cisco___IP_SLA_Jitter"></a><h2>Network Devices &gt; Cisco &gt; Cisco   IP SLA Jitter</h2>
 <blockquote>
-<p><b>SNMP - Cisco IP SLA Jitter Probe</b></p>
+<h3>Cisco - IP SLA Jitter</h3>
 <p>This probe extracts jitter test data from a Cisco IP SLA agent that is running on a Cisco router or switch. Typically these jitter tests are used to measure jitter, latency, and packet loss for VoIP and video conferencing applications.</p>
+<p><b>Parameters</b></p>
 <p><i>SNMP Index</i> - The value used when configuring the IP SLA agent in the Cisco switch or router using the "ip sla monitor" command (see example below). This value identifies the jitter test, and is the SNMP index used by Intermapper to probe the device. To probe for different instances of jitter tests on a single Cisco switch or router, create separate devices on your Intermapper map, each using a different SNMP Index. </p>
 <p><i>Latency Alarm Threshold</i> - The ALARM threshold for latency in milliseconds. If Average Latency value exceeds this threshold, the device enters ALARM state.</p>
 <p><i>Latency Warning Threshold</i> The WARNING threshold for latency in milliseconds. If the Average Latency value exceeds this threshold, the device enters WARNING state.</p>
@@ -84,17 +88,20 @@
 </blockquote>
 <a name="Network_Devices_Cisco_Cisco___N5000_with_FEX_Traffic"></a><h2>Network Devices &gt; Cisco &gt; Cisco   N5000 with FEX Traffic</h2>
 <blockquote>
-<p><b>SNMP - Cisco N5000 with FEX Traffic</b></p>
+<h3>Cisco - N5000 with FEX Traffic</h3>
 <p>This probe provides Basic SNMP Traffic probe functionality for the Nexus 5000 with Fiber Extender (FEX). The standard SNMP Traffic probe does not show the Fiber Extender's interfaces, so this probe incorporates special logic to retrieve that information.</p>
 <p>This probe requires InterMapper Server version 5.6.6 or newer, which uses the special logic described above; otherwise, the speeds displayed for high speed interfaces are not shown correctly.</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.snmp.cisco.n5kfex.traffic.txt</i><br />
 <i>Version: 1.0</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_Cisco_Cisco___Old_CPU_MIB"></a><h2>Network Devices &gt; Cisco &gt; Cisco   Old CPU MIB</h2>
 <blockquote>
-<p><b>SNMP - Cisco - OLD CPU MIB</b></p>
+<h3>Cisco - Old CPU MIB</h3>
 <p>This probe monitors the CPU and Memory utilization of a Cisco router.</p>
+<p><b>Parameters</b></p>
 <p><i>CPU Busy - Alarm</i> - The ALARM threshold for CPU utilization in Per Cent. If the average CPU usage over a 1 minute interval exceeds this threshold, the device enters ALARM state.</p>
 <p><i>CPU Busy - Warning</i> - The WARNING threshold for CPU utilization in Per Cent. If the average CPU usage over a 1 minute interval exceeds this threshold, the device enters WARNING state.</p>
 <p><i>Low Memory - Alarm</i> - The ALARM threshold for the amount of free memory remaining (in bytes). If free memory drops below this threshold, the device enters ALARM state.</p>
@@ -105,8 +112,9 @@
 </blockquote>
 <a name="Network_Devices_Cisco_Cisco___Process_and_Memory_Pool"></a><h2>Network Devices &gt; Cisco &gt; Cisco   Process and Memory Pool</h2>
 <blockquote>
-<p><b>SNMP - Cisco - Process and Memory Pool</b></p>
+<h3>Cisco - Process and Memory Pool</h3>
 <p>This probe monitors the CPU and Memory utilization in a Cisco router. It uses variables from CISCO-MEMORY-POOL-MIB and CISCO-PROCESS-MIB.</p>
+<p><b>Parameters</b></p>
 <p><i>CPU Busy - Alarm</i> - The ALARM threshold for CPU utilization in Per Cent. If the average CPU usage over a 1 minute interval exceeds this threshold, the device enters ALARM state.</p>
 <p><i>CPU Busy - Warning</i> - The WARNING threshold for CPU utilization in Per Cent. If the average CPU usage over a 1 minute interval exceeds this threshold, the device enters WARNING state.</p>
 <p><i>Low Memory - Alarm</i> - The ALARM threshold for the amount of free memory remaining (in bytes). If the free memory drops below this threshold, the device enters ALARM state.</p>
@@ -117,9 +125,10 @@
 </blockquote>
 <a name="Network_Devices_Cisco_Cisco_Aironet"></a><h2>Network Devices &gt; Cisco &gt; Cisco Aironet</h2>
 <blockquote>
-<p><b>SNMP - Cisco Aironet</b></p>
+<h3>Cisco Aironet</h3>
 <p>This probe uses SNMPv1 to monitor the custom MIB in a Cisco Aironet Wireless Access Point. It monitors the number of clients using the base station and lists each client with its signal strength.</p>
 <p>The alarm and warning thresholds must be greater than zero, or they are ignored.</p>
+<p><b>Parameters</b></p>
 <p><i>Number of Active Stations alarm</i> - Set the threshold at which the device goes into ALARM state.</p>
 <p><i>Number of Active Stations warning</i> - Set the threshold at which the device goes into WARNING state.</p>
 <p><i>Filename: com.dartware.snmp.aironet</i><br />
@@ -128,25 +137,29 @@
 </blockquote>
 <a name="Network_Devices_Juniper_Netscreen_VPN"></a><h2>Network Devices &gt; Juniper &gt; Netscreen VPN</h2>
 <blockquote>
-<p><b>SNMP - Netscreen VPN</b></p>
+<h3>Netscreen VPN</h3>
 <p>This probe monitors the status of VPN Tunnels in a Netscreen Firewall. It uses the <span class="code">nsVpnMonTable</span> to monitor the Netscreen's active tunnels. Each active tunnel is  treated and mapped as a separate interface.</p>
 <p>Some statistics may be available only if the monitoring status for the tunnel as reported by <span class="code">nsVpnMonMonState</span> is on.</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.snmp.netscreen.txt</i><br />
 <i>Version: 1.1</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_Karlnet_Wireless"></a><h2>Network Devices &gt; Karlnet Wireless</h2>
 <blockquote>
-<p><b>SNMP - Karlnet Wireless</b></p>
+<h3>Karlnet Wireless</h3>
 <p>This probe monitors the custom MIB in a Karlnet Wiress Base Station using SNMPv1. It monitors the number of clients using the base station and lists each, along with its signal strength.</p>
 <p>This probe sends SNMP set-requests to the Karlnet Base Station, causing it to discover and test the signal strength of each client. For the set-requests to work, enter the read/write community string for the base station.</p>
+<p><b>Parameters</b></p>
+<p><i>Read/Write Community</i> - SNMP Read/Write community string.</p>
 <p><i>Filename: com.dartware.snmp.karlnet</i><br />
 <i>Version: 1.5</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_UPS_APC_UPS___AP961x"></a><h2>Network Devices &gt; UPS &gt; APC UPS   AP961x</h2>
 <blockquote>
-<p><i>For APC UPS devices that have the AP961x Network Management Card.</i></p>
+<h3>APC UPS - AP961x</h3>
 <p><b>A. Probed MIB(s)</b></p>
 <p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 <p>(1 of 2) <b>APC UPS MIB</b> [... enterprises.apc.products.hardware.ups / ... 1.3.6.1.4.1.318.1.1.1]</p>
@@ -160,13 +173,15 @@
 <p>(3 of 3) If the UPS' internal temperature/humidity threshold is exceeded (must also be enabled).</p>
 <p><b>D. Warnings</b></p>
 <p>(1 of 1) If unit goes onto "Smart Trim" or "Smart Boost"</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.ups.apc-ap961x.txt</i><br />
 <i>Version: 3.4</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_UPS_APC_UPS"></a><h2>Network Devices &gt; UPS &gt; APC UPS</h2>
 <blockquote>
-<p><i>For APC UPS devices.</i></p>
+<h3>APC UPS</h3>
 <p><b>A. Probed MIB(s)</b></p>
 <p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 <p>(1 of 1) <b>APC UPS MIB</b> [... enterprises.apc.products.hardware.ups / ... 1.3.6.1.4.1.318.1.1.1]</p>
@@ -179,7 +194,7 @@
 <p><b>D. Warnings</b></p>
 <p>(1 of 2) If unit goes onto "Smart Trim" or "Smart Boost"</p>
 <p>(2 of 2) If the battery temperature exceeds user-specified thresholds (see "Parameters" below).</p>
-<p><b>E. Parameters</b></p>
+<p><b>Parameters</b></p>
 <p>(1 of 5) <i>Units of Temperature (C / F)</i>: Determines how the following thresholds are interpreted.</p>
 <p>(2 of 5) <i>Alarm Threshold - Low Temp</i>: Threshold for alarm state (see above).</p>
 <p>(3 of 5) <i>Warning Threshold - Low Temp</i>: Threshold for alarm state (see above).</p>
@@ -191,7 +206,7 @@
 </blockquote>
 <a name="Network_Devices_UPS_BestPower_UPS"></a><h2>Network Devices &gt; UPS &gt; BestPower UPS</h2>
 <blockquote>
-<p><i>For BestPower UPS devices.</i></p>
+<h3>BestPower UPS</h3>
 <p><b>A. Probed MIB(s)</b></p>
 <p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 <p>(1 of 1) <b>BestPower MIB </b> [... enterprises.bestPower.bestLink / ... 1.2947.1]</p>
@@ -200,7 +215,7 @@
 <p><b>C. Alarms &amp; Warnings</b></p>
 <p>(1 of 2) Warning: If UPS loses AC power.</p>
 <p>(2 of 2) Alarm: If minutes of battery life remaining is less than specified threshold.</p>
-<p><b>D. Parameters</b></p>
+<p><b>Parameters</b></p>
 <p>(1 of 1) <i>BatteryRemainingAlarm</i>: Threshold for alarm state (see above).</p>
 <p><i>Filename: com.dartware.ups.bestpower.txt</i><br />
 <i>Version: 2.10</i></p>
@@ -208,7 +223,7 @@
 </blockquote>
 <a name="Network_Devices_UPS_Exide_UPS"></a><h2>Network Devices &gt; UPS &gt; Exide UPS</h2>
 <blockquote>
-<p><i>For Exide UPS devices.</i></p>
+<h3>Exide UPS</h3>
 <p><b>A. Probed MIB(s)</b></p>
 <p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 <p>(1 of 2) <b>UPS MIB (RFC 1628)</b> [... mib-2.upsMIB / ... 1.33]</p>
@@ -217,13 +232,15 @@
 <p>vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current, (<i>three input lines:</i> Hz, volts, amps, kWatts), (<i>three output lines:</i> Hz, volts, amps, kWatts, output load percent)</p>
 <p><b>C. Alarms</b></p>
 <p>(1 of 1) If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: shef.ac.uk.ups.exide.txt</i><br />
 <i>Version: 2.11</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_UPS_Liebert_UPS___OpenComms"></a><h2>Network Devices &gt; UPS &gt; Liebert UPS   OpenComms</h2>
 <blockquote>
-<p><i>For Liebert UPS devices that have the OpenComms Network Management Card.</i></p>
+<h3>Liebert UPS - OpenComms</h3>
 <p><b>A. Probed MIB(s)</b></p>
 <p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 <p>(1 of 2) <b>UPS MIB (RFC 1628)</b> [... mib-2.upsMIB / ... 1.33]</p>
@@ -232,13 +249,15 @@
 <p>vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current, (<i>three input lines:</i> Hz, volts, amps, kWatts), (<i>three output lines:</i> Hz, volts, amps, kWatts, output load percent); (<i>temperatures:</i> battery, ambient)</p>
 <p><b>C. Alarms</b></p>
 <p>(1 of 1) If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.ups.liebert-opencomms.txt</i><br />
 <i>Version: 2.12</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_UPS_Liebert_UPS___Series_300"></a><h2>Network Devices &gt; UPS &gt; Liebert UPS   Series 300</h2>
 <blockquote>
-<p><i>For Liebert Series 300 UPS devices.</i></p>
+<h3>Liebert UPS - Series 300</h3>
 <p><b>A. Probed MIB(s)</b></p>
 <p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 <p>(1 of 1) <b>LIEBERT-SERIES-300-UPS-MIB</b> [... enterprises.emerson.liebertCorp.liebertUps.luExtensions.luCore / ... 1.476.1.1.1.1] and [... luExtensions.luUPStationS / ... 1.2]</p>
@@ -252,7 +271,7 @@
 </blockquote>
 <a name="Network_Devices_UPS_Liebert_UPS"></a><h2>Network Devices &gt; UPS &gt; Liebert UPS</h2>
 <blockquote>
-<p><i>For Liebert UPS devices.</i></p>
+<h3>Liebert UPS</h3>
 <p><i>NOTE: This probe is meant to aid Dartware's development of probes for the Liebert product line.</i></p>
 <p>1) Check other probes to see if one exists for your Liebert UPS device.</p>
 <p>2) If not, select this probe.</p>
@@ -264,13 +283,15 @@
 <p>(1 of 1) <b>Liebert UPS MIB</b> [... enterprises.emerson.liebertCorp.liebertUps / ... 1.476.1.1]</p>
 <p><b>B. Displayed Values</b></p>
 <p>MIB, vendor, model, &amp; software version</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.ups.liebert-ups.txt</i><br />
 <i>Version: 2.6</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_UPS_Standard_UPS__RFC1628_"></a><h2>Network Devices &gt; UPS &gt; Standard UPS (RFC1628)</h2>
 <blockquote>
-<p><i>For standard UPS devices.</i></p>
+<h3>Standard UPS (RFC1628)</h3>
 <p><b>A. Probed MIB(s)</b></p>
 <p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 <p>(1 of 1) <b>UPS MIB (RFC 1628)</b> [... mib-2.upsMIB / ... 1.33]</p>
@@ -279,15 +300,15 @@
 <p><b>C. Alarms</b></p>
 <p>(1 of 1) Alarm: If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).</p>
 <p>(2 of 2) Alarm: If the battery temp exceeds a user-defined threshold.</p>
-<p><b>D. Parameters</b></p>
-<p>(1 of 1) <i>UserHighBatteryTemperatureAlarm</i>: Threshold for alarm state (see above). This alarm is disabled when the threshold is set to "0" (default).</p>
+<p><b>Parameters</b></p>
+<p><i>UserHighBatteryTemperatureAlarm</i> - Threshold for alarm state (see above). This alarm is disabled when the threshold is set to "0" (default).</p>
 <p><i>Filename: com.dartware.ups.standard.txt</i><br />
 <i>Version: 3.4</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_UPS_TrippLite_UPS"></a><h2>Network Devices &gt; UPS &gt; TrippLite UPS</h2>
 <blockquote>
-<p><i>For TrippLite UPS devices with an EnviroSense Unit.</i></p>
+<h3>TrippLite UPS</h3>
 <p><b>A. Probed MIB(s)</b></p>
 <p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 <p>(1 of 2) <b>UPS MIB (RFC 1628)</b> [... mib-2.upsMIB / ... 1.33]</p>
@@ -296,14 +317,17 @@
 <p>vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current, (<i>three input lines:</i> Hz, volts, amps, kWatts), (<i>three output lines:</i> Hz, volts, amps, kWatts, output load percent); ambient temperature, ambient humidity</p>
 <p><b>C. Alarms</b></p>
 <p>(1 of 1) If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.ups.tripplite.txt</i><br />
 <i>Version: 2.11</i></p>
 <p><a href="Network_Devices.htm">Back to Top</a></p>
 </blockquote>
 <a name="Network_Devices_UPS_Victron_UPS"></a><h2>Network Devices &gt; UPS &gt; Victron UPS</h2>
 <blockquote>
-<p><b>Victron UPS</b></p>
+<h3>Victron UPS</h3>
 <p>This probe monitors important values in the Victron UPS.</p>
+<p><b>Parameters</b></p>
 <p><i>UPS Battery Status - Alarm</i> - ALARM threshold for Battery Status.</p>
 <ul>
 <li> If the value is 2, the UPS working normally.</li>

@@ -24,12 +24,13 @@
 
 This probe lets you monitor a single, user-defined MIB variable.
 
+\b\Parameters\p\
+
 \i\Object Name\p\ - optional - The name of the value that you want to monitor. This parameter value is used only for display in the popup window and chart legend.
 
 \i\Object ID\p\ - The object identifier (OID) of the value that you want to monitor. To retrieve the value of a MIB variable that is not in a table, the OID must end with ".0" (e.g. "1.3.6.1.2.1.1.1.0").
 
 This probe retrieves a lot of SNMP information from the device, including the MIB-II system group and the interfaces table. If you just want to monitor a single SNMP variable, use the SNMP/Single OID probe.
-
 </description>
 
 <parameters>

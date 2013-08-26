@@ -16,6 +16,7 @@
 		[2.6 ] add autorecord section for use with InterMapper 5.0 - 5 May 2008
 		[2.8 ] fixed to work correctly with corrected defined function, etc. 04 June 2009 - csw 
 		[3.1 ] Added parseable units for Reports - 4 Mar 2011 by jpd
+	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
  
 <header>
@@ -52,6 +53,9 @@ Enviromental Monitor: probe name, number of probes, current temperature & humidi
 \b++\D. Warnings\p--\
 (1 of 1) If unit goes onto "Smart Trim" or "Smart Boost"
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <snmp-device-variables>

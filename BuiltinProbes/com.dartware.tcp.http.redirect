@@ -1,6 +1,7 @@
 <!-- 
 	HTTP (Redirect) (com.dartware.tcp.http.redirect)
 	Copyright © 2000-2011 Dartware, LLC. All rights reserved.
+	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
 -->
 
 <header>
@@ -27,6 +28,8 @@ The protocol used to transfer web pages on the World Wide Web, defined in \U2=ht
 
 This TCP probe lets you test that a web server is redirecting certain URL's to a specific URL.
 
+\b\Parameters\p\
+
 \i\Host Name\p\ is the domain name of the web server (e.g. "www.intermapper.com"). This can be derived from the host name part of the URL that you want to test. 
 
 \i\URL Path\p\ is the full path of the desired file on the web server (e.g. "/index.html"). The first character must be a '/'.
@@ -36,7 +39,6 @@ This TCP probe lets you test that a web server is redirecting certain URL's to a
 \i\User ID\p\ is the user name typed into the web browser's password dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.
 
 \i\Password\p\ is the password for the web browser's dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.
-
 </description>
 
 <parameters>

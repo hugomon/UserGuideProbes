@@ -9,7 +9,7 @@
 	V1.0 15.05.2010 uli he. for system.de
 	recalc of bytes per seconds to until in % of bandwidth
 	Cloned from de.system.snmp-traffic-high - 18May2010 -reb
-	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
 
 -->
 
@@ -35,6 +35,8 @@
 \GB\SNMP High Utilization Probe\P\
 
 This probe monitors the \i\utilization\p\ of ifInOctets and ifOutOctets traffic statistics of a particular interface on the device, and sets the device to \b\Alarm\p\ or \b\Warning\p\ when the traffic exceeds specified utilization thresholds. It sets the device's state to \b\Down\p\ if the interface's ifOperStatus is not equal to 1 (up)
+
+\b\Parameters\p\
 
 \i\Port Number\p\ - The ifIndex of the port to monitor. 
 

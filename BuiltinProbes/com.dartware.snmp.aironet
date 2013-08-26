@@ -27,6 +27,8 @@ This probe uses SNMPv1 to monitor the custom MIB in a Cisco Aironet Wireless Acc
 
 The alarm and warning thresholds must be greater than zero, or they are ignored.
 
+\b\Parameters\p\
+
 \i\Number of Active Stations alarm\p\ - Set the threshold at which the device goes into ALARM state.
 
 \i\Number of Active Stations warning\p\ - Set the threshold at which the device goes into WARNING state.

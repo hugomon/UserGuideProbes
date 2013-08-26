@@ -17,43 +17,51 @@
 <blockquote><p><a href="Probe_Index.htm">To Probe Index<MadCap:xref href="Probe_Index.htm" ></MadCap:xref></a></p></blockquote>
 <a name="Experimental_Flow_Exporter_Status"></a><h2>Experimental &gt; Flow Exporter Status</h2>
 <blockquote>
-<p><b>Flow Exporter Status</b></p>
+<h3>Flow Exporter Status</h3>
 <p>This probe monitors a Flow Exporter and reports statistics about Flow activity. It does this by retrieving information from the InterMapper Flows server.</p>
 <p>The normal state of the device is UP/OKAY. There are two error conditions:</p>
 <ul>
 <li> If the monitored device does not appear to be a Flow Exporter (it is not listed by InterMapper Flows), the status of the device is set to CRITICAL.  </li>
 <li> If the InterMapper Flows server has received no flow records during a poll interval, the status of the device is set to DOWN.</li>
 </ul>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.flow.exporter.txt</i><br />
 <i>Version: 1.2</i></p>
 <p><a href="Experimental.htm">Back to Top</a></p>
 </blockquote>
 <a name="Experimental_InterMapper"></a><h2>Experimental &gt; InterMapper</h2>
 <blockquote>
-<p><b>InterMapper Engine Status</b></p>
-<p>This probe monitors the status of the InterMapper polling engine. With the default setting, this probe displays the results of 500 loops through the polling engine. To measure activity at a finer-grain, decrease the value of the loops parameter. Setting the "loops" parameter to the value 1 will update the statistics on every pass through the main run loop.</p>
+<h3>InterMapper</h3>
+<p>This probe monitors the status of the InterMapper polling engine. With the default setting, this probe displays the results of 500 loops through the polling engine. To measure activity at a finer-grain, decrease the value of the <i>Loops</i> parameter. A value of '1' updates the statistics on every pass through the main run loop.</p>
 <p>The "Main Loop" frequency is the number of times that InterMapper performs the main loop each second. The theoretical maximum loop frequency is 66.667 loops per second, based on the current yield value of 15 msec. If it falls below 10 or even 5 loops per second, InterMapper may report false outages.</p>
 <p>This probe also reports polling rate as a percentage of the maximum loops per second. This is a measure of how much additional processing occurs per loop. This percentage will never be 100%. It should, however, level out and remain steady over time.</p>
 <p>On Unix systems, this probe reports Context Switches Per Loop (CSPL). This is another measure of the overhead of InterMapper's processing as it runs on your system. Fewer context switches per loop is better (ideal = 0), since context switches carry overhead. A server with thousands of devices and hundreds of mays may well have a CSPL greater than 2 during normal operation. (This value is not available on Windows systems, and is alway set to -1.)</p>
 <p>InterMapper tracks the number of bytes sent out the main UDP polling socket. Bytes/Loop is the average bytes sent per loop, averaged over the last batch of N loops. Bytes Peak is the maximum number of bytes sent in a *single* polling loop.  (In the current implementation, the peak bytes is checked on every loop, but only resets to 0 when you change the # loops parameter; ie peak bytes is not the peak bytes of the last batch of N loops.)</p>
+<p><b>Parameters</b></p>
+<p><i>Loops</i> - the number of loops to perform before updating statistics.</p>
 <p><i>Filename: com.dartware.tcp.intermapper.txt</i><br />
 <i>Version: 0.8</i></p>
 <p><a href="Experimental.htm">Back to Top</a></p>
 </blockquote>
 <a name="Experimental_sFlow_v1_2"></a><h2>Experimental &gt; sFlow v1.2</h2>
 <blockquote>
-<p><b>sFlow v1.2 Probe</b></p>
+<h3>sFlow v1.2</h3>
 <p>This probe's Status Window shows the sFlow version, address, and address type of the sFlow exporter. It uses the <a href="http://www.sflow.org/SFLOW-MIB.txt">sFlow MIB version 1.2</a>, with the Enterprise Number 4300 to retrieve statistics for sFlow versions 2 and 4.</p>
 <p>It also shows the sFlowTable, as an on-demand table. It lists all devices receiving the sFlow records. (To view this on-demand table, you must import  <a href="http://www.sflow.org/SFLOW-MIB.txt">the SFLOW-MIB version 1.2</a>.)</p>
+<p><b>Parameters</b></p>
+<p><i>Version_HiWarn</i> - sFlow version expected. If the exporter version does not match this version, the device is set to a <b>Warning</b> state.</p>
 <p><i>Filename: com.dartware.sflowv1.2.txt</i><br />
 <i>Version: 1.2</i></p>
 <p><a href="Experimental.htm">Back to Top</a></p>
 </blockquote>
 <a name="Experimental_sFlow_Vers__1_3"></a><h2>Experimental &gt; sFlow Vers. 1.3</h2>
 <blockquote>
-<p><b>sFlow Vers. 1.3</b></p>
+<h3>sFlow Vers. 1.3</h3>
 <p>This probe's Status Window shows the sFlow version, address, and address type of the sFlow exporter. It uses the <a href="http://www.sflow.org/SFLOW-MIB5.txt">sFlow MIB version 1.3</a>, with the Enterprise Number 14706 for sFlow version 5.</p>
 <p>It also shows the sFlow Receiver Table as an on-demand table. It lists all devices receiving the sFlow records. (To view this on-demand table, you must import  <a href="http://www.sflow.org/SFLOW-MIB5.txt">the SFLOW-MIB version 1.3</a>.)</p>
+<p><b>Parameters</b></p>
+<p><i>sFlow version</i> - Enter the version of sFlow to use.</p>
 <p><i>Filename: com.dartware.sflow.v1.3.txt</i><br />
 <i>Version: 1.3</i></p>
 <p><a href="Experimental.htm">Back to Top</a></p>

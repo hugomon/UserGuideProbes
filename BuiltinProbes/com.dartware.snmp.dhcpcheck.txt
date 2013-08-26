@@ -24,6 +24,8 @@
 This probe monitors the count of free DHCP leases on a Microsoft DHCP server. If the count goes below the specified thresholds, the device enters ALARM or WARNING state.
 The check is specific to a scope.
 
+\b\Parameters\p\
+
 \i\Scope\p\ - The DHCP scope to check (e.g., "192.168.1.0").
 
 \i\Free Lease Warning\p\ - The number of remaining leases at which the device enters WARNING state.
@@ -33,7 +35,6 @@ The check is specific to a scope.
 \i\Free Lease Critical\p\ - The number of free leases remaining at which the device enters CRITICAL state.
 
 \i\View the DHCP scope table\p\ - Click to view a list of available scopes, along with information about in-use lease, free lease, and pending offers.
-
 </description>
 
 <parameters>

@@ -24,6 +24,8 @@
 
 This probe monitors the state of one or more services on a Windows-based machine, Windows NT 4.0 and newer. InterMapper uses the Service Control Manager (SCM) to retrieve the information about the specified services. This probe works only if the InterMapper server is running on a Windows computer.
 
+\b\Parameters\p\
+
 \i\Services to Monitor\p\ - The list of services to be monitored. In the status window, services with green icons are currently running; those with red icons are stopped.
 
 InterMapper monitors services whose boxes are checked. For a single machine, choose from all the services on the machine. For multiple machines, choose from those services common to all of the machines.
@@ -35,7 +37,6 @@ InterMapper monitors services whose boxes are checked. For a single machine, cho
 If \i\Username\p\ and \i\Password\p\ are left blank, the user credentials under which InterMapper is running will be used.
 
 \b\Note:\p\ In order for this probe to operate, InterMapper must be running as an administrative user, or you must supply an adminsitrator username and password for in the NT Services panel in Server Settings. This allows InterMapper to elevate its privileges temporarily.
-
 </description>
 
 <parameters>

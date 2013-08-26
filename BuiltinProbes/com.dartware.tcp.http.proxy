@@ -1,6 +1,7 @@
 <!-- 
 	HTTP (Proxy) (com.dartware.tcp.http.proxy)
 	Copyright © 2000-2003 Dartware, LLC. All rights reserved.
+	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
 -->
 
 <header>
@@ -27,6 +28,8 @@
 The protocol used to transfer web pages on the World Wide Web, defined in \U2=http://www.ietf.org/rfc/rfc2068.txt\RFC 2068\P0\ and \U2=http://www.ietf.org/rfc/rfc1945.txt\RFC 1945\P0\. The default TCP port number for HTTP connections is port 80.
 
 This TCP probe lets you test that a web server can be accessed using a remote proxy server as an intermediary. For example, this probe can check if your web server is accessible from some remote location on the Internet (e.g. www.proxymate.com).
+
+\b\Parameters\p\
 
 \i\URL\p\ is the full URL to the desired page on the web server,including the "http://" scheme (e.g. "http://www.intermapper.com")
 

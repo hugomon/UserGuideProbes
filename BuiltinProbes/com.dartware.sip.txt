@@ -25,6 +25,8 @@ The protocol used to set up voice communications for Voice-over-IP (VOIP), as de
 
 By default, this probe sends an OPTIONS command to the target device. However, some VOIP systems do not answer un-authenticated OPTIONS requests. For these devices, change the command to REGISTER.
 
+\b\Parameters\p\
+
 \i\URI\p\ - The SIP uniform resource identifier in the request.
 
 \i\Command\p\ - The SIP command to send in the request.

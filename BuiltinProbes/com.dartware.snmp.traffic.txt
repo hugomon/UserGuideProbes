@@ -5,7 +5,7 @@
 	Converted to IMML 26Sep2003 -reb
 	Added ifOperStatus flag; added display_name; bumped version. 28 Nov 2005 -reb
 	Moved to SNMP folder; bumped version. 23 Nov 2009 -cls
-	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -30,6 +30,8 @@
 \GB\SNMP High Traffic Probe\P\
 
 This probe monitors the ifInOctets and ifOutOctets traffic statistics of a particular interface on the device, and sets the device to \b\Alarm\p\ or \b\Warning\p\ when the traffic exceeds specified thresholds. It sets the device's state to \b\Down\p\ if the interface's ifOperStatus is not equal to 1 (up).
+
+\b\Parameters\p\
 
 \i\Port Number\p\ - The ifIndex of the port to monitor. 
 

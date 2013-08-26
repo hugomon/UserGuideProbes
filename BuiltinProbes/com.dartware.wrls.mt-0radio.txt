@@ -11,7 +11,7 @@
 	Modified 3 December by jkj (made generic -- devices running Mikrotik software)
 	Modified 10 February by jkj (prepared for release)
 	Last modified 18 May 2005 by ics.
-	6 May 2013 - Edited description for User Guide (via Probe Doc Generator), fixed bullet issue
+	6 May 2013 - Edited description for User Guide (via Probe Doc Generator), fixed bullet issue - bobm
 -->
 
 <header>
@@ -35,6 +35,10 @@ This probe will raise an alarm in the following situations:
 - High Use -- CPU Load, Disk use, or Memory use exceeds 90%.
 
 This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+
+\b\Parameters\p\
+
+\i\High Use Threshold\p\ - Percentage of use to trigger alarm
 </description>
 
 <!-- OIDs for "interesting variables" stored in Table format

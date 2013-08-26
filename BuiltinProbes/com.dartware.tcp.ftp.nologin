@@ -30,6 +30,9 @@ This TCP script connects to the FTP server's control port (21). It then issues a
 
 \b\Note:\p\ Use this script if you are going to be probing the FTP server frequently. Unlike the FTP (login) probe, this probe does generate numerous entries in your FTP logs.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

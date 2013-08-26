@@ -1,7 +1,7 @@
 <!-- 
 	SNMP - TCP Check (com.dartware.snmp.tcpcheck)
 	Copyright (c) 2000-2001 Dartware, LLC. All rights reserved.
-	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -23,8 +23,9 @@ This probe generates an alarm if the count of TCP connections exceeds a specifie
 
 It retrieves the device's \i\tcpCurrEstab\p\ variable and compares it. If the number of established TCP connections exceeds the value specified in \i\Allowed TCP Connections\p\, the device is set to \b\Alarm\p\ state.
 
-\i\Allowed TCP Connections\p\ - The maximum number of TCP connections allowed.
+\b\Parameters\p\
 
+\i\Allowed TCP Connections\p\ - The maximum number of TCP connections allowed.
 </description>
 
 <parameters>

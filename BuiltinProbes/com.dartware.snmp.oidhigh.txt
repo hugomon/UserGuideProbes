@@ -12,6 +12,7 @@
 	 
 	You can read the Developer Guide to learn more about InterMapper Probes. It's at:
 		http://intermapper.com/go.php?to=intermapper.devguide
+	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -35,6 +36,8 @@
 \GB\SNMP High Threshhold\P\
 
 This probe retrieves a single SNMP MIB variable and compares it to the specified thresholds below. If the value goes above any of the specified thresholds, the device changes to the specified state.
+
+\b\Parameters\p\
 
 \i\Variable\p\ - the MIB name or OID to retrieve. If you have imported the MIB for this device, enter the symbolic name for this value. Otherwise, enter its OID. 
 

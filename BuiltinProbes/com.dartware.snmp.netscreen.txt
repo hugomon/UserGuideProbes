@@ -24,6 +24,9 @@ This probe monitors the status of VPN Tunnels in a Netscreen Firewall. It uses t
 
 Some statistics may be available only if the monitoring status for the tunnel as reported by \m\nsVpnMonMonState\g\ is on.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

@@ -12,7 +12,7 @@
    11 Mar 2009 - Original Version - automatically generated. 
     7 Apr 2009 - Updated -reb
     2 Sep 2010 - Changed sFlowCollectorAddress to IPADDRESS
-    1 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+    20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator), added Parameters section to description -bobm
    
     
    ----------------------------------------------------------------------------------- 
@@ -35,6 +35,10 @@
 This probe's Status Window shows the sFlow version, address, and address type of the sFlow exporter. It uses the \4u=http://www.sflow.org/SFLOW-MIB.txt\sFlow MIB version 1.2\p0\, with the Enterprise Number 4300 to retrieve statistics for sFlow versions 2 and 4.
 
 It also shows the sFlowTable, as an on-demand table. It lists all devices receiving the sFlow records. (To view this on-demand table, you must import  \4u=http://www.sflow.org/SFLOW-MIB.txt\the SFLOW-MIB version 1.2\p0\.)
+
+\b\Parameters\p\
+
+\i\Version_HiWarn\p\ - sFlow version expected. If the exporter version does not match this version, the device is set to a \b\Warning\p\ state.
 </description>
 
 -- The <header> section determines the probe's unique name, what kind of probe it is,

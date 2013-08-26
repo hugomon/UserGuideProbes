@@ -14,6 +14,7 @@
 		[v2.6 ] add autorecord section for use with InterMapper 5.0 - 5 May 2008
 		[v2.8 ] Fixed warning "Bad variable: $batTimeOn" - 2 Mar 2009 by spr.
 		[v3.1 ] Added parseable units for Reports - 4 Mar 2011 by jpd
+	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -45,7 +46,8 @@ UPS: model, firmware, status, (\i\battery\p\: capacity, time remaining, temperat
 (1 of 2) If unit goes onto "Smart Trim" or "Smart Boost"
 (2 of 2) If the battery temperature exceeds user-specified thresholds (see "Parameters" below).
 
-\b++\E. Parameters\p--\
+\b\Parameters\p\
+
 (1 of 5) \i\Units of Temperature (C / F)\p\: Determines how the following thresholds are interpreted.
 (2 of 5) \i\Alarm Threshold - Low Temp\p\: Threshold for alarm state (see above).
 (3 of 5) \i\Warning Threshold - Low Temp\p\: Threshold for alarm state (see above).

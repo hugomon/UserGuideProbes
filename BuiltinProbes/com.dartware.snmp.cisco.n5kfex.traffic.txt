@@ -26,6 +26,9 @@ This probe provides Basic SNMP Traffic probe functionality for the Nexus 5000 wi
 
 This probe requires InterMapper Server version 5.6.6 or newer, which uses the special logic described above; otherwise, the speeds displayed for high speed interfaces are not shown correctly.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <snmp-device-variables>

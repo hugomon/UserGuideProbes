@@ -1,7 +1,7 @@
 <!-- 
 	DND Protocol (com.dartware.tcp.dnd)
 	Copyright © 2001 Dartware, LLC. All rights reserved.
-	28 May 2013 - Edited description for User Guide (via Probe Doc Generator)
+	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -20,6 +20,8 @@
 \GB\DND Protocol\P\
 
 The protocol used to lookup directory entries and validation information in a DND server. The \u2\DND\p0\ is a centralized authentication/directory service developed at Dartmouth College. The default TCP port number for DND connections is port 902.
+
+\b\Parameters\p\
 
 \i\Name\p\ - the name to look up in the DND.
 

@@ -1,7 +1,7 @@
 <!-- 
 	Apache Server Status (com.dartware.tcp.apache.txt)
 	Copyright (c) 2009 Dartware, LLC. All rights reserved.
-	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 
 -->
 
@@ -35,6 +35,12 @@ To enable status reports for this probe, add this code to the httpd.conf file on
 \g\  
 This probe supports the Apache ExtendedStatus directive, if enabled.
 
+\b\Parameters\p\
+
+ \i\Host Name\p\ - Name of the host server
+\i\URL Path\p\ - Path to the server status page 
+\i\User ID\p\ - Server administrator username
+\p\Password\p\ - Administrator password
 </description>
 
 <parameters>

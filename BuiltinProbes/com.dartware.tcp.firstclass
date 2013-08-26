@@ -1,7 +1,7 @@
 <!-- 
 	FirstClass mail server (com.dartware.tcp.firstclass)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
-	
+	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -19,8 +19,13 @@
 
 \GB\FirstClass Email Server\P\
 
-This probe connects to a FirstClass mail server. It sends two carriage returns, and expects to receive a banner; the default contains "FirstClass System". By default, it listens on port 510.
+This probe connects to a FirstClass mail server. It sends two carriage returns, and expects to receive the specified banner; the default contains "FirstClass System". By default, it listens on port 510.
 
+\b\Parameters\p\
+
+\i\Banner\p\ - Expected text string.
+
+\i\Port\p\ - Port to send on.
 </description>
 
 <parameters>

@@ -29,6 +29,8 @@
 
 This probe extracts jitter test data from a Cisco IP SLA agent that is running on a Cisco router or switch. Typically these jitter tests are used to measure jitter, latency, and packet loss for VoIP and video conferencing applications.
 
+\b\Parameters\p\
+
 \i\SNMP Index\p\ - The value used when configuring the IP SLA agent in the Cisco switch or router using the "ip sla monitor" command (see example below). This value identifies the jitter test, and is the SNMP index used by Intermapper to probe the device. To probe for different instances of jitter tests on a single Cisco switch or router, create separate devices on your Intermapper map, each using a different SNMP Index. 
 
 \i\Latency Alarm Threshold\p\ - The ALARM threshold for latency in milliseconds. If Average Latency value exceeds this threshold, the device enters ALARM state.

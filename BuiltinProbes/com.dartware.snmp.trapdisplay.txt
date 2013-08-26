@@ -12,7 +12,7 @@
     29 May 2007 Changed probe name to "Trap Display", updated description -reb
      1 Jun 2007 Changed probe name to "Trap Viewer"; tweaked description;
      			left canonical name alone -reb
-    16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+    16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
      
 -->
 
@@ -74,7 +74,14 @@ c) Issue the snmptrap command below from the command line (it should all be on o
           1.3.6.1.4.1.6306.2.1.5.0 s "127.0.0.1" 
           1.3.6.1.4.1.6306.2.1.6.0 s "SNMP Traffic Probe" 
           
-\b\Note:\p\ This probe file contains the lines above in a single-line format suitable for copying and pasting.
+\b\Notes:\p\ 
+* This probe file contains the lines above in a single-line format suitable for copying and pasting.
+* The parameters in this probe are unused, but could be used to set thresholds for various alarms.
+
+\b\Parameters\p\
+
+\i\MinValue\p\ - Unused
+\i\MaxVAlue\p\ - Unused
 
 </description>
 
@@ -88,8 +95,6 @@ snmptrap -v 2c -c commString localhost 4567890 1.3.6.1.4.1.6306  1.3.6.1.4.1.630
      
 -->
 
--- The parameters in this probe are unused, but could be used to 
--- set thresholds for various alarms.
 
 <parameters>
 	"MinValue"	=	"10"

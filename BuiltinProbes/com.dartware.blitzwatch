@@ -31,6 +31,9 @@ BlitzMail is a TCP/IP-based client-server electronic mail system developed at Da
 
 This probe provides a simple view into the current state of a single BlitzMail server, showing simultaneous user count, CPU utilization, and disk transfer statistics.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

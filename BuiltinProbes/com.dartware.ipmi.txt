@@ -22,6 +22,8 @@
 
 This probe implements version 2.0 of the Intelligent Platform Management Interface (IPMI) over a LAN. It sends UDP-based RMCP+ packets to a Baseboard Management Controller (BMC) located within a server or workstation. The BMC is hardware which permits network-based management of the computer even when it is turned off, i.e. "lights-out management".
 
+\b\Parameters\p\
+
 \i\User\p\ - required - An administrator-level user name to the BMC.
 
 \i\Password\p\ - required - The password for the specified user.
@@ -31,7 +33,6 @@ This probe implements version 2.0 of the Intelligent Platform Management Interfa
 * For Dell Servers, the Apple XServe 2009, and any other product set the "Dialect" parameter to "Other".
 
 This probe supports one-key, non-anonymous logins only. Internally, it uses RAKP-HMAC-SHA1 and AES-CBS-128 for authentication and confidentiality, respectively. The firewall configuration of the BMC must permit UDP packets from InterMapper.
-
 </description>
 
 <parameters>

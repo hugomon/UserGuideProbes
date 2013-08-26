@@ -28,6 +28,8 @@
 
 This probe monitors important values in the Victron UPS.
 
+\b\Parameters\p\
+
 \i\UPS Battery Status - Alarm\p\ - ALARM threshold for Battery Status.
 - If the value is 2, the UPS working normally.
 - If the value is 1, the UPS is on bypass, the device enters Alarm state.

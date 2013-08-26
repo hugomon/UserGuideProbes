@@ -8,6 +8,7 @@
     Revisions: (Probe Version reflects version of UPS Probe Bundle)
     Created - 4 August 2005 by jkj.
     Updated for "display_name" change (IM 4.4) - 31 August 2005 by jkj.
+	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
  
 <header>
@@ -36,6 +37,10 @@
 
 \b++\B. Displayed Values\p--\
 MIB, vendor, model, & software version
+
+\b\Parameters\p\
+
+None.
 </description>
 
 <snmp-device-variables>

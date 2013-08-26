@@ -1,7 +1,7 @@
 <!-- 
 	Custom TCP (com.dartware.tcp.custom)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
-	28 May 2013 - Edited description for User Guide (via Probe Doc Generator)
+	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
 -->
 
 <header>
@@ -25,6 +25,8 @@
 \GB\Custom TCP Probe\P\
 
 This probe sends the specified string over a TCP connection, and sets the status of the device based on the response. Six parameters control the operation of this probe:
+
+\b\Parameters\p\
 
 \i\String to send\p\ - The initial string sent to the device via TCP. This could be a command which indicates what to test, or a combination of a command and a password. The string is sent on its own line, terminated by a CR-LF.
 

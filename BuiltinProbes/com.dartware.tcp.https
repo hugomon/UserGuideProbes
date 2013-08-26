@@ -1,6 +1,7 @@
 <!-- 
 	HTTPS (com.dartware.tcp.https)
 	Copyright © 2001-2003 Dartware, LLC. All rights reserved.
+	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
 -->
 
 <header>
@@ -21,7 +22,9 @@
 
 The protocol used for secure transfer of web pages on the World Wide Web. The default TCP port number for HTTP connections is port 443.
 
-This probe lets you establish a secure connection to a web server, download a specific web page, and scan it for a specific string of HTML.
+This probe establishes a secure connection to a web server, downloads a specific web page, and scans it for a specific string of HTML.
+
+\b\Parameters\p\
 
 \i\Host Name\p\ is the domain name of the web server (e.g. "www.dartware.org"). This can be derived from the host name part of the URL that you want to test. You must enter a valid "Host Name" to test web servers which implement virtual hosts.
 
@@ -30,7 +33,6 @@ This probe lets you establish a secure connection to a web server, download a sp
 \i\String to verify\p\ is a string to verify in the data returned by the HTTP server.  For example, if you are retrieving a web page, you might search for "<HTML" or "<P>" to verify that the data is HTML. If this string is not found, the device will go into alarm.
 
 \i3\Note: The implementation of this probe uses OpenSSL on MacOSX.\p0\
-
 </description>
 
 <parameters>

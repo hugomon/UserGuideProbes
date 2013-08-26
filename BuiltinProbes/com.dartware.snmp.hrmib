@@ -24,6 +24,8 @@
 
 This probe uses SNMP to monitor elements of the Host Resources MIB of the target device.
 
+\b\Parameters\p\
+
 \i\Processor Load Alarm %\p\ - Specifies the threshold, as a percentage of processor load, to enter ALARM state.
 \i\Processor Load Warning %\p\ - Specifies the threshold, as a percentage of processor load, to enter state.
 
@@ -42,7 +44,6 @@ This probe uses SNMP to monitor elements of the Host Resources MIB of the target
 \i\Fifteen-minute Load Average Warning\p\ - Specifies the fifteen-minute load average value to enter WARNING state.
 
 \i\Ignore storage table indices\p\  After the device is polled, select the storage table entries you want to ignore. The selected entries do not cause alarms or warnings and are not be displayed in the Status window.
-
 </description>
 
 <parameters>

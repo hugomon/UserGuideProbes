@@ -21,10 +21,11 @@
 <blockquote><p><a href="Probe_Index.htm">To Probe Index<MadCap:xref href="Probe_Index.htm" ></MadCap:xref></a></p></blockquote>
 <a name="Miscellaneous_Demo_Probe"></a><h2>Miscellaneous &gt; Demo Probe</h2>
 <blockquote>
-<p><b>Demo Probe</b></p>
+<h3>Demo Probe</h3>
 <p>Use this probe to build a demo map. The probe generates random data for the traffic on all its links, giving you something to look at. All data are chartable, and can be used to demonstrate strip charts or data collection.</p>
 <p>The probe also toggles the device state between UP/OK and Down when you reprobe the device manually. This makes it easy to see what happens when a device goes down, especially for manual dependencies.</p>
 <p>For simple maps, the parameters can be set to zero. To create complicated, heavily-interconnected demonstration maps, try setting the <i>Link Count</i> and <i>Loop %</i> parameters to 10 and 50, respectively. </p>
+<p><b>Parameters</b></p>
 <p><i>Link Count</i> - sets the number of interfaces to create when adding the device to the map. </p>
 <p><i>Loop %</i> - sets the percentage of links that should connect themselves to subnets already present on the map. </p>
 <p><i>Filename: com.dartware.demo</i><br />
@@ -33,9 +34,10 @@
 </blockquote>
 <a name="Miscellaneous_Legacy_Basic_OID__v2c_"></a><h2>Miscellaneous &gt; Legacy &gt; Basic OID (v2c)</h2>
 <blockquote>
-<p><b>SNMP - Basic OID (v2c)</b></p>
+<h3>Basic OID (v2c)</h3>
 <p>This is a legacy probe, provided for compatibility with InterMapper Traditional and older versions of InterMapper (&lt; 4.4). Use the Basic OID probe, setting the SNMP version to SNMP v2.</p>
 <p>This probe lets you monitor a single, user-defined MIB variable. It uses SNMPv2c.</p>
+<p><b>Parameters</b></p>
 <p><i>Object Name</i> - optional - The name of the value that you want to monitor. It appears in the Status window and in a chart legend.</p>
 <p><i>Object ID</i> - The object identifier (OID) of the value that you want to monitor. To retrieve the value of a MIB variable that is not in a table, the OID must end with ".0" (e.g. "1.3.6.1.2.1.1.1.0").</p>
 <p><i>Filename: com.dartware.snmpv2c.basic</i><br />
@@ -44,9 +46,10 @@
 </blockquote>
 <a name="Miscellaneous_Legacy_Cisco__v2c_"></a><h2>Miscellaneous &gt; Legacy &gt; Cisco (v2c)</h2>
 <blockquote>
-<p><b>SNMP - Cisco (v2c)</b></p>
+<h3>Cisco (v2c)</h3>
 <p>This is a legacy probe, provided for compatibility with InterMapper Traditional and older versions of InterMapper (&lt; 4.4). Use the Cisco - Process and Memory Pool probe instead and set the probe's SNMP version to SNMP v2 in the Probe Info window.</p>
 <p>This probe monitors the CPU and Memory utilization of a Cisco router using SNMPv2c.</p>
+<p><b>Parameters</b></p>
 <p><i>CPU Busy - Alarm</i> - specifies the <b>Alarm</b> threshold for CPU utilization as a percentage. If the average CPU usage over a 1 minute interval exceeds this threshold, the device is set to <i>Alarm</i> state.</p>
 <p><i>CPU Busy - Warning</i> - specifies the <b>Warning</b> threshold for CPU utilization. If the average CPU usage over a 1 minute interval exceeds this threshold, the device is set to <i>Warning</i> state.</p>
 <p><i>Low Memory - Alarm</i> - specifies the <b>Alarm</b> threshold for the amount of free memory remaining (in bytes). If the free memory drops below this threshold, the device is set to <i>Alarm</i> state.</p>
@@ -57,43 +60,49 @@
 </blockquote>
 <a name="Miscellaneous_Legacy_SNMP_v2c"></a><h2>Miscellaneous &gt; Legacy &gt; SNMP v2c</h2>
 <blockquote>
-<p><b>SNMP v2c</b></p>
+<h3>SNMP v2c</h3>
 <p>This is a legacy probe, provided for compatibility with InterMapper Traditional and older versions of InterMapper (&lt; 4.4). Use the SNMP MIB-II probe, setting the SNMP version to SNMP v2.</p>
 <p>The SNMP v2c probe retrieves MIB-II information from the device. This includes <i>sysLocation</i>, <i>sysContact</i>, and <i>sysUptime</i> from the system group, and traffic (bytes/second, packets/second, errors/minute) for each interface.</p>
 <p>It uses the 64-bit counters for interface traffic statistics. This provides accurate information (without rollover) on very high speed links.</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.snmpv2c</i><br />
 <i>Version: 1.6</i></p>
 <p><a href="Miscellaneous.htm">Back to Top</a></p>
 </blockquote>
 <a name="Miscellaneous_Nagios_Nagios_Plugin"></a><h2>Miscellaneous &gt; Nagios &gt; Nagios Plugin</h2>
 <blockquote>
-<p><b>Nagios Plugin</b> </p>
+<h3>Nagios Plugin</h3>
 <p>This probe lets you specify a Nagios plugin. InterMapper invokes the plugin and uses the exit value to set the condition of the device. It uses the performance data returned by the plugin to create a nice display of chartable data. </p>
 <p><i>Plugin</i> - Should contain the same command line (including arguments) you would use to test the plugin manually. </p>
 <p>Note: If you enter <span class="code">${ADDRESS}</span> it is replaced with the device's IP address; <span class="code">${PORT}</span> is replaced by the port specified for the probe. </p>
 <p>This probe expects the plugin to be located in the InterMapper Settings/Tools directory. </p>
 <p>Nagios and the Nagios logo are registered trademarks of Ethan Galstad. For more information, see <a href="http://www.nagios.org">http://www.nagios.org</a> </p>
+<p><b>Parameters</b></p>
+<p><i>Plugin</i> - enter the Nagios command string. You can use the <span class="code">${ADDRESS}</span>  and <span class="code">${PORT}</span>, as mentioned above.</p>
 <p><i>Filename: com.dartware.nagios.template</i><br />
 <i>Version: 1.7</i></p>
 <p><a href="Miscellaneous.htm">Back to Top</a></p>
 </blockquote>
 <a name="Miscellaneous_Non_Polling"></a><h2>Miscellaneous &gt; Non Polling</h2>
 <blockquote>
-<p><b>Non-Polling Probe</b></p>
+<h3>Non-Polling</h3>
 <p>This probe does not cause any action to occur. It can be used as a placeholder for a device; it does not count against the InterMapper device count.</p>
+<p><b>Parameters</b></p>
+<p>None.</p>
 <p><i>Filename: com.dartware.nonpolling</i><br />
 <i>Version: 1.5</i></p>
 <p><a href="Miscellaneous.htm">Back to Top</a></p>
 </blockquote>
 <a name="Miscellaneous_Prototype_SNMP_Probe"></a><h2>Miscellaneous &gt; Prototype SNMP Probe</h2>
 <blockquote>
-<p><b>Prototype SNMP Probe</b></p>
+<h3>Prototype SNMP Probe</h3>
 <p>This probe demonstrates an InterMapper SNMP probe. Many of these features are described in <i>Creating Your Own Probes</i>, in the <a href="http://www.intermapper.com/docs/developer/index.html">Developer Guide</a>. If you have questions about this probe, <a href="mailto:support@intermapper.com">please contact us.</a></p>
 <p>This probe probably isn't useful for production work, but provides examples of techniques available in custom SNMP probes.</p>
 <p>The probe demonstrates how to retrieve SNMP values from a device by specifying their OIDs and how to display those values in the device's Status Window. </p>
 <p>The probe also provides thresholds that set the device into <b>Alarm</b> or <b>Warning</b> state. </p>
 <p>In this example, the device goes into <b>Alarm</b> or <b>Warning</b> state if it has been rebooted recently (controlled by the <i>RebootAlarm</i> and <i>RebootWarn</i> parameters - two and three minutes, by default) or if there aren't as many interfaces in the ifTable as specified (in the <i>ExpectedInterfaces</i> parameter.)</p>
-<p>The parameters are:</p>
+<p><b>Parameters</b></p>
 <p><i>RebootAlarm</i> - set the device to <b>Alarm</b> if the sysUptime is less than the specified value in minutes.</p>
 <p><i>RebootWarn</i> - set the device to <b>Warning</b> if the sysUptime is less than the specified value in minutes.</p>
 <p><i>ExpectedInterfaces</i> - set the device to <b>Warning</b> if the the ifNumber is greater than or equal to this value.</p>
@@ -109,9 +118,10 @@
 </blockquote>
 <a name="Miscellaneous_TCP_Check"></a><h2>Miscellaneous &gt; TCP Check</h2>
 <blockquote>
-<p><b>SNMP - TCP Check</b></p>
+<h3>TCP Check</h3>
 <p>This probe generates an alarm if the count of TCP connections exceeds a specified number. It can be used to detect people telnetting into a box that shouldn't have connections, such as a router that might be attacked from outside your network).</p>
 <p>It retrieves the device's <i>tcpCurrEstab</i> variable and compares it. If the number of established TCP connections exceeds the value specified in <i>Allowed TCP Connections</i>, the device is set to <b>Alarm</b> state.</p>
+<p><b>Parameters</b></p>
 <p><i>Allowed TCP Connections</i> - The maximum number of TCP connections allowed.</p>
 <p><i>Filename: com.dartware.snmp.tcpcheck</i><br />
 <i>Version: 1.5</i></p>

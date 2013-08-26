@@ -28,12 +28,13 @@ The standard protocol for transferring files on TCP/IP internets, as defined in 
 
 This TCP probe connects to the FTP server's control port (21). It then logs in using the specified User ID and Password and issues a NOOP command. If the connection is successful, the probe issues the QUIT command and sets the status to \b\Okay\p\.
 
+\b\Parameters\p\
+
 \i\User ID\p\ - the account name used to login to the FTP server.
 
 \i\Password\p\ - the account password used to verify the User ID's identity.
 
 \b\Note:\p\  If the probe queries the FTP server often, and at regular intervals, the FTP server's log files contain a succession of "Login" and "Logout" log lines.
-
 </description>
 
 <parameters>

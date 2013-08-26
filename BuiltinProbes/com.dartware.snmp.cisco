@@ -23,6 +23,8 @@
 
 This probe monitors the CPU and Memory utilization of a Cisco router.
 
+\b\Parameters\p\
+
 \i\CPU Busy - Alarm\p\ - The ALARM threshold for CPU utilization in Per Cent. If the average CPU usage over a 1 minute interval exceeds this threshold, the device enters ALARM state.
 
 \i\CPU Busy - Warning\p\ - The WARNING threshold for CPU utilization in Per Cent. If the average CPU usage over a 1 minute interval exceeds this threshold, the device enters WARNING state.

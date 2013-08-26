@@ -1,6 +1,7 @@
 <!-- 
 	HTTPS (Post) (com.dartware.tcp.https.cgi.post)
 	Copyright © 2001-2011 Dartware, LLC. All rights reserved.
+	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
 -->
 
 <header>
@@ -18,22 +19,23 @@
 
 <description>
 
-  \GB\Hypertext Transfer Protocol over SSL/TLS (HTTPS) - Post Form Results\P\
+\GB\Hypertext Transfer Protocol over SSL/TLS (HTTPS) - Post Form Results\P\
 
-  The protocol used for secure transfer of web pages on the World Wide Web. The default TCP port number for HTTPS connections is port 443.
+The protocol used for secure transfer of web pages on the World Wide Web. The default TCP port number for HTTPS connections is port 443.
 
-  This TCP probe lets you post form results to a specific web CGI over a secure connection.
+This TCP probe lets you post form results to a specific web CGI over a secure connection.
 
-  \i\Host Name\p\ is the domain name of the web server (e.g. "www.intermapper.com"). This can be derived from the host name part of the URL that you want to test.
+\b\Parameters\p\
 
-  \i\URL Path\p\ is the full path to the desired CGI on the web server (e.g. "/index.cgi"). The first character must be a '/'.
+\i\Host Name\p\ - the domain name of the web server (Example: "www.intermapper.com"). This can be derived from the host name part of the URL that you want to test. You must enter a valid \i\Host Name\p\ to test a web server that implements a virtual host. Add only an IP address or domain name; do not add "http://".
 
-  \i\Form Data\p\ is the encoded data sent in the body of the POST message.
+\i\URL Path\p\ - the full path of the desired file on the web server (Example: "/index.html"). The first character must be a '/'.
 
-  \i\String to verify\p\ is a string to verify in the data returned by the HTTP server.  For example, if you post form data that is designed to generate an error response, you might search for "sorry" or "could not be processed" to verify that the CGI is properly rejecting the data. If this string is not found, the device will go into alarm.
+\i\Form Data\p\ - the encoded data sent in the body of the POST message.
 
-  \i3\Note: The implementation of this probe uses OpenSSL on MacOSX.\p0\
+\i\String to verify\p\ - a string to verify in the server's response. For example, if you post form data that is designed to generate an error response, you might search for "sorry" or "could not be processed" to verify that the CGI is properly rejecting the data. If the string is not found, the device goes into \b\Alarm\p\.
 
+\b\Note:\p\ The implementation of this probe uses OpenSSL on MacOSX.
 </description>
 
 <parameters>

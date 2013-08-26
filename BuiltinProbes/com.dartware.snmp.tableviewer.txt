@@ -11,7 +11,7 @@
 	24 Nov 2009  Changed ifTable and ifXTable ifAdminStatus to STRING 
 					so it will be displayed nicely. -reb
 	30 Sep 2010  Added Traffic Counter on-demand Table -reb
-	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 
 -->
 
@@ -56,6 +56,10 @@ This probe shows the contents of several useful tables from common SNMP MIBs. It
 A link to each table appears in the Status Window. Click the link to see the contents of the table on the selected device.
 
 This probe requires that you first import these MIBs: \u4=http://www.ietf.org/rfc/rfc1213.txt\RFC1213-MIB (MIB-II)\p0\, \u4=http://www.ietf.org/rfc/rfc1493.txt\Bridge MIB (rfc1493)\p0\, \u4=http://www.ietf.org/rfc/rfc2011.txt\IP-MIB (rfc2011)\p0\, \u4=http://www.ietf.org/rfc/rfc2863.txt\IF-MIB (rfc2863)\p0\, and \u4=http://www.ietf.org/rfc/rfc2096.txt\IP-FORWARD-MIB (rfc2096).\p0\ These are all bundled together in a \u4=http://intermapper.com/support/users/probes.html#tableviewer\single zip archive.\p0\ 
+
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

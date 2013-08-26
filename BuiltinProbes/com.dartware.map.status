@@ -27,6 +27,8 @@ This probe allows InterMapper to monitor the state of a map running on an InterM
 
 The easiest way to use this probe is to drag a map from the Map List onto another editable map. You can also create a device using the DNS Name or IP address of the InterMapper server containing the map, or "localhost" for a local map. Then set the following:
 
+\b\Parameters\p\
+
 \i\Map Name\p\ - The name of the map on the remote server.
 
 \i\Username\p\ - A user name that has read-permission on the map.

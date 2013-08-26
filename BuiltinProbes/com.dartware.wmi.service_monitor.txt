@@ -1,6 +1,7 @@
 <!-- 
 Command Line WMI Probe to monitor services (com.dartware.wmi.service_monitor) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
+	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
 --> 
 
 <header> 
@@ -18,13 +19,19 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 <description> 
 \GB\WMI Service Monitor\p\ 
 
-This probe uses WMI to retrieve the state of services running on the target hostby querying the Win32_Service class.  Any of the specified services that are not found are listed and the status is set to Critical.  The target host must be running Windows 2000 or later.
+This probe uses WMI to retrieve the state of services running on the target host by querying the Win32_Service class.  Any specified services not found are listed, and the status is set to Critical.  The target host must be running Windows 2000 or later.
 
-The Service parameter is set to a comma-separated list of service names you wish to check.  Service names should not be confused with the service's Display Name, which is what is shown in the Services tool.  Check the Properties for the service to see the actual service name.  Names containing spaces or other special characters should be enclosed in quotes.
+\b\Parameters\p\
 
-The User parameter may be a local user on the target host, or may take the form of "domain\\user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.
+\i\Service\p\ - a comma-separated list of service names to be checked.
 
-InterMapper invokes the serv_mon.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It uses the exit value to set the condition of the device.
+\b\Note:\p\ Service names should not be confused with the service's Display Name, shown in the Services tool. Check the Properties for the service to find the actual service name.  Names containing spaces or other special characters should be enclosed in quotes.
+
+\i\User\p\ - may be a local user on the target host, or can take the form \m\domain\\user\g\ for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.
+
+\i\Timeout (sec)\p\ - the number of seconds to wait before assuming the host is not available.
+
+InterMapper invokes the \m\serv_mon.vbs\g\ companion script, included with the probe. The script's exit value is used to set the condition of the device.
 
 </description> 
 

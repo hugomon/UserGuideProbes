@@ -22,6 +22,8 @@
 
 This probe lets you use InterMapper as a Big Brother "BBDISPLAY" to collect information sent by Big Brother clients.
 
+\b\Parameters\p\
+
 \i\Purple Time\p\ - sets the number of minutes to wait without a report before indicating a problem. In an actual Big Brother server, this is thirty minutes; Big Brother shows a device as purple if it goes this long without a report from the device. This probe shows it as DOWN.
 </description>
 

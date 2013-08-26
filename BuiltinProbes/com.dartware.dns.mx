@@ -24,6 +24,8 @@
 
 The protocol used by TCP/IP network clients to translate Internet names into Mail servers, as defined in \U2=http://www.ietf.org/rfc/rfc1034.txt\RFC 1034\p0\ and \u2=http://www.ietf.org/rfc/rfc1035.txt\RFC 1035\p0\. This probe sends a DNS request to look up the mail server for a specified domain name.
 
+\b\Parameters\p\
+
 \i\Domain Name\p\ - the fully qualified domain name to be resolved.
 
 \i\Mail Server\p\ - optional - specify a mail server the domain name should resolve to. If this parameter is non-empty, and one of the returned mail servers doesn't match the one provided, a status as specified in \i\Failure Status\p\ is returned.

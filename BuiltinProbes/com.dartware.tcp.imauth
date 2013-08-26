@@ -1,3 +1,6 @@
+<!--
+	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm 
+-->
 <HEADER>
 	type			=	"tcp-script"
 	package			=	"com.dartware"
@@ -14,14 +17,15 @@
 
 \GB\InterMapper Authentication Server (IMAuth)\P0\
 
-This TCP probe queries an \U2=http://www.intermapper.com/\InterMapper DataCenter\P0\ server to verify that IMAuth is configured and running on that server. This will only work when run against InterMapper DataCenter 5.1 or later.
+This TCP probe queries an \U2=http://www.intermapper.com/\InterMapper DataCenter\P0\ server to verify that IMAuth is configured and running on that server. This only works with InterMapper DataCenter 5.1 or later.
 
-\i\User\p\ is the DataCenter admin user's name.
+\b\Parameters\p\
 
-\i\Password\p\ is the DataCenter admin user's password.
+\i\User\p\ - the DataCenter admin user's name.
 
-\i\Port\p\ is the port the DataCenter server listens on.
+\i\Password\p\ - the DataCenter admin user's password.
 
+\i\Port\p\ - the port the DataCenter server listens on.
 </DESCRIPTION>
 
 <PARAMETERS>

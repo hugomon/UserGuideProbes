@@ -1,6 +1,7 @@
 <!-- 
 Command Line WMI Probe to check for file changes (com.dartware.wmi.file_check) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
+	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
 --> 
 
 <header> 
@@ -20,17 +21,23 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 
 This probe uses WMI to retrieve information about files on the target host.  Specifically, it queries the CIM_DataFile class, limiting the search with the parameters you set.  The target host must be running Windows 2000 or later.
 
-The Path parameter specifies the location of the files you wish to check.  It should include the drive and be enclosed in double-quotes if it contains spaces.  
+\b\Parameters\p\
 
-The File parameter contains the filename and extension of the file you wish to check.  The path will be prepended to it during the final query.  If it is blank, all files in the folder specified by the Path that meet the Size or time criteria will be listed.  File may also be set to a list of comma-separated filenames which will each be prepended by the Path and used as query criteria.  
+\i\Path\p\ - the location of the files to be checked. Include the drive, and enclose the path in double-quotes if it contains spaces.
 
-Wildcards (* ?) may be used in the filename.  If wildcards are used, be sure to specify the Path parameter or the query might take an inordinate amount of time.  At least one of the File or Path parameters must be set.
+\i\File\p\ - the filename and extension of the file you wish to check. The path is prepended to filename during the final query. To check all files that met the specified Size or time criteria, leave this parameter blank. You may also use a list of comma-separated filenames.  
 
-The Size parameter defines the minimum filesize criteria in bytes.  Any files larger than this value will be listed.  The Hours, Minutes and Seconds parameters combine to define how recently the file had to be changed to be listed.  These parameters are subtracted from the current time and used to select files based on their LastModified value.  At least one of these parametrs must be set.
+Wildcards (* ?) may be used in the filename. When using wildcards, be sure to specify the Path parameter. Otherwise, the query could take an inordinate amount of time. At least one of \i\File\p\ or \i\Path\p\ must be set.
 
-The User parameter may be a local user on the target host, or may take the form of "domain\\user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.
+\i\Size\p\ - the minimum filesize in bytes. Any file larger than this value is listed. 
 
-InterMapper invokes the file_chk.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It lists the files which meet your criteria and uses the exit value to set the condition of the device.
+\i\Hours\p\, \i\Minutes\p\ and \i\Seconds\p\ - specify how recently the file was changed in order to be listed, based on the file's LastModified value. At least one of these parameters must be set.
+
+\i\User\p\ - may be a local user on the target host, or can take the form \m\domain\\user\g\ for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.
+
+\i\Timeout (sec)\p\ - the number of seconds to wait before assuming the host is not available.
+
+InterMapper invokes the \m\file_chk.vbs\g\ companion script, included with the probe. It lists the files which meet the specified criteria, and uses the exit value to set the condition of the device.
 
 </description> 
 

@@ -1,6 +1,7 @@
 <!-- 
 Command Line WMI Probe to collect system information (com.dartware.wmi.system_information) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
+	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
 --> 
 
 <header> 
@@ -20,9 +21,13 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 
 This probe uses WMI to collect a variety of information about the monitored host including hardware and operating system details.  The target host must be running Windows 2000 or later.
 
-The User parameter may be a local user on the target host, or may take the form of "domain\\user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.
+\b\Parameters\p\
 
-InterMapper invokes the system_info.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.
+\i\User\p\ - may be a local user on the target host, or can take the form \m\domain\\user\g\ for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.
+
+\i\Timeout (sec)\p\ - the number of seconds to wait before assuming the host is not available.
+
+InterMapper invokes the \m\system_info.vbs\g\ companion script, included with the probe.
 
 </description> 
 

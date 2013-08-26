@@ -24,4 +24,7 @@
 
 This probe does not cause any action to occur. It can be used as a placeholder for a device; it does not count against the InterMapper device count.
 
+\b\Parameters\p\
+
+None.
 </description>

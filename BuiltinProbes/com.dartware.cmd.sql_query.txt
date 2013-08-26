@@ -21,6 +21,8 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 
 This probe establishes an ADO (ActiveX Data Object) connection to a Microsoft SQL Server running on the target host.  It issues the specified query and displays the returned fields.  If no records are returned, the device status is set to \i\Critical\p\.
 
+\b\Parameters\p\
+
 \i\Query\p\ - contains the SQL query to send. It should be enclosed in double-quotes. Using the "TOP" keyword in your query improve the response to the query. You may want to specify specific columns in your query and include a "WHERE" or an "ORDER BY" clause.
 
 \i\Rows\p\ and \i\Columns\p\ - let you limit the output of your query. Enter the number of "Columns" and the number of "Rows" records of the query you want to view.

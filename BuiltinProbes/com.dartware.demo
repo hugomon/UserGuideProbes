@@ -29,6 +29,8 @@ The probe also toggles the device state between UP/OK and Down when you reprobe 
 
 For simple maps, the parameters can be set to zero. To create complicated, heavily-interconnected demonstration maps, try setting the \i\Link Count\p\ and \i\Loop %\p\ parameters to 10 and 50, respectively. 
 
+\b\Parameters\p\
+
 \i\Link Count\p\ - sets the number of interfaces to create when adding the device to the map. 
 
 \i\Loop %\p\ - sets the percentage of links that should connect themselves to subnets already present on the map. 

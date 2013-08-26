@@ -29,4 +29,8 @@ The normal state of the device is UP/OKAY. There are two error conditions:
 * If the monitored device does not appear to be a Flow Exporter (it is not listed by InterMapper Flows), the status of the device is set to CRITICAL.  
 
 * If the InterMapper Flows server has received no flow records during a poll interval, the status of the device is set to DOWN.
+
+\b\Parameters\p\
+
+None.
 </description>

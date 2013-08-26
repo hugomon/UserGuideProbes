@@ -1,6 +1,7 @@
 <!-- 
 Command Line WMI Probe to inventory installed software (com.dartware.wmi.installed_software.txt) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
+	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
 --> 
 
 <header> 
@@ -22,9 +23,13 @@ This probe uses WMI to retrieve information about software installed on the targ
 
 The target host must be running Windows XP, Windows Server 2003 or later.  On Windows Server 2003, the Win32_Product class isn't always installed by default.  You can install the "WMI Windows Installer Provider" component under "Management and Monitoring Tools" in "Add/Remove Windows Components".
 
-The User parameter may be a local user on the target host, or may take the form of "domain\\user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.
+\b\Parameters\p\
 
-InterMapper invokes the installed_sofware.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.
+\i\User\p\ - may be a local user on the target host, or can take the form \m\domain\\user\g\ for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.
+
+\i\Timeout (sec)\p\ - the number of seconds to wait before assuming the host is not available.
+
+InterMapper invokes the \m\installed_sofware.vbs\g\ companion script included with this probe.
 
 </description> 
 

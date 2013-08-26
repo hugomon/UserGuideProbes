@@ -236,6 +236,21 @@ def getTopCat(category):
     filename = filename.replace("-","_")
     return parts[0]
 
+def getBottomCat(category):
+    #replace slashes temporarily with pipes
+    noslash = category.replace('\/','|')        
+    parts = noslash.split("/")
+    parts = noslash.split("/")
+    for i in range(len(parts)):
+            parts[i] = parts[i].replace('|','/')
+    #put slashes back, replace spaces and hyphens with underscores
+    filename  = parts[0].replace(" ","_")
+    filename = filename.replace("-","_")
+    lastpart = len(parts)-1
+    thispart = parts[lastpart]
+    thispart = thispart.replace("&","&amp;")
+    return thispart
+
 def getBaseFileName(category):
     #Categories are used as filenames - condition them
     topcat = getTopCat(category)
@@ -279,12 +294,13 @@ def ProcessProbeFile(probepath, infile, outfile):
     myfile.write("%s|%s|%02d|%s" % (category, filename, 0, "<li>"+prepLink(category)+"</li>"+lf))
     myfile.write("%s|%s|%02d|%s" % (category, filename, 1, '<a name="'+prepTarget(category)+'"></a>'+'<h2>'+prepTitle(category)+'</h2>'+lf))
     myfile.write("%s|%s|%02d|%s" % (category, filename, 2, "<blockquote>"+lf))
-    for i in range(len(definitions)):
-        myfile.write("%s|%s|%02d|%s" % (category, filename, i+3, definitions[i]))
-    myfile.write("%s|%s|%02d|%s" % (category, filename, i+4, pTag+"<i>Filename: "+filename+"</i><br />"+lf))
-    myfile.write("%s|%s|%02d|%s" % (category, filename, i+5, "<i>Version: "+version+"</i>"+closepTag+lf))    
-    myfile.write("%s|%s|%02d|%s" % (category, filename, i+6, pTag+'<a href="'+getBaseFileName(category)+'">Back to Top</a>'+closepTag+lf))    
-    myfile.write("%s|%s|%02d|%s" % (category, filename, i+7, "</blockquote>"+lf))    
+    myfile.write("%s|%s|%02d|%s" % (category, filename, 3, "<h3>"+getBottomCat(category)+"</h3>"+lf))
+    for i in range(1,len(definitions)):
+        myfile.write("%s|%s|%02d|%s" % (category, filename, i+4, definitions[i]))
+    myfile.write("%s|%s|%02d|%s" % (category, filename, i+5, pTag+"<i>Filename: "+filename+"</i><br />"+lf))
+    myfile.write("%s|%s|%02d|%s" % (category, filename, i+6, "<i>Version: "+version+"</i>"+closepTag+lf))    
+    myfile.write("%s|%s|%02d|%s" % (category, filename, i+7, pTag+'<a href="'+getBaseFileName(category)+'">Back to Top</a>'+closepTag+lf))    
+    myfile.write("%s|%s|%02d|%s" % (category, filename, i+8, "</blockquote>"+lf))    
     myfile.close()
 
 # Main Routine

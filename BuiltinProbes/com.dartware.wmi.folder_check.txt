@@ -1,6 +1,7 @@
 <!-- 
 Command Line WMI Probe to check for folder changes (com.dartware.wmi.folder_check) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
+	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
 --> 
 
 <header> 
@@ -18,15 +19,19 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 <description> 
 \GB\WMI Folder Check\p\ 
 
-This probe uses WMI to retrieve information about a folder on the target host.  Specifically, it queries the Win32_Directory and CIM_DataFile classes to walk the directory tree and accumulate file and folder counts and the total of file sizes.  It also notes the most recently modified file in the tree.  The target host must be running Windows 2000 or later.
+This probe uses WMI to retrieve information about a folder on the target host.  Specifically, it queries the Win32_Directory and CIM_DataFile classes to walk the directory tree, accumulating file and folder counts and the total of file sizes. It also notes the most recently modified file in the tree. The target host must be running Windows 2000 or later.
 
-The Path parameter specifies the folder at the top of the tree which you wish to check.  It should include the drive and be enclosed in double-quotes if it contains spaces.
+\b\Parameters\p\
 
-Warning and Critical thresholds may be set for the number of folders, the number of files, and the total of the file sizes.
+\i\Path\p\ - specifies the folder at the top of the tree you want to check. It should include the drive, and should be enclosed in double-quotes if it contains spaces.
 
-The User parameter may be a local user on the target host, or may take the form of "domain\\user" for a domain login.  Leave it blank if authentication is not required, such as when the target is the localhost.
+\i\Warning\p\ and \i\Critical\p\ - set thresholds for the number of folders, the number of files, and the total of the file sizes.
 
-InterMapper invokes the folder_chk.vbs companion script which was placed in the Tools folder of the InterMapper Settings folder when this probe was loaded.  It compares the number of files, folders, and the total size against your criteria to set the condition of the device.
+\i\User\p\ - may be a local user on the target host, or can take the form \m\domain\\user\g\ for a domain login. If authentication is not required (such as when the target is localhost,) leave this parameter blank.
+
+\i\Timeout (sec)\p\ - the number of seconds to wait before assuming the host is not available.
+
+InterMapper invokes the \m\folder_chk.vbs\g\ companion script, included with the probe. The script compares the number of files, folders, and the total size against your criteria to set the condition of the device.
 
 </description> 
 

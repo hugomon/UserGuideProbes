@@ -25,10 +25,11 @@
 
 This probe monitors the custom MIB in an Apple AirPort Base Station (v1 = Graphite) using SNMPv1. This probe monitors the number of clients using the base station and lists each one with its signal strength.
 
+\b\Parameters\p\
+
 \i\Read/Write Community\p\ - Use the AirPort Base Stations's password.
 
 An SNMP set-request is sent, instructing the AirPort Base Station to discover its clients periodically and test the signal strength of each.
-
 </description>
 
 <parameters>

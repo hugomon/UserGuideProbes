@@ -37,5 +37,9 @@ It shows traffic (bytes/second, packets/second, errors/minute) for each interfac
 
 The probe also shows sysLocation, sysContact, and sysUptime from the system group in the device's Status Window.
 
-\b\Note:\p\ This is exactly the same probe as the "SNMP MIB-II" probe found in earlier versions of InterMapper. It was renamed to reflect its purpose more accurately. 
+\b\Note:\p\ This is exactly the same probe as the "SNMP MIB-II" probe found in earlier versions of InterMapper. It was renamed to reflect its purpose more accurately.
+
+\b\Parameters\p\
+
+None.
 </description>

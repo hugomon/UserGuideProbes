@@ -1,7 +1,7 @@
 <!-- 
 	CVS Server Probe (com.dartware.tcp.cvs)
 	Copyright © 2001 Dartware, LLC. All rights reserved.
-	28 May 2013 - Edited description for User Guide (via Probe Doc Generator)
+	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -31,6 +31,13 @@ END AUTH REQUEST<lf>\p\
 If the response is "I LOVE YOU", then the authentication succeeded.
 If the response is "I HATE YOU", then either the authentication failed or the path to CVSROOT is incorrect.
 
+\b\Parameters\p\
+
+\i\CVSROOT_path\p\ - Path to the CVS server
+
+\i\Username\p\ - Username for the CVS server
+
+\i\Password\p\ - User's password
 </description>
 
 <parameters>

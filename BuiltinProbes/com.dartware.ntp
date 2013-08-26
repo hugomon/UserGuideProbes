@@ -28,6 +28,9 @@ The protocol used to synchronize time between computers, defined in \u2=http://w
 
 This probe sends a client-mode current-time request to the NTP server. By default, NTP requests are sent to UDP port 123.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

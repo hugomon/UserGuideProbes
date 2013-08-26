@@ -24,6 +24,8 @@
 
 This probe monitors the CPU and Memory utilization in a Cisco router. It uses variables from CISCO-MEMORY-POOL-MIB and CISCO-PROCESS-MIB.
 
+\b\Parameters\p\
+
 \i\CPU Busy - Alarm\p\ - The ALARM threshold for CPU utilization in Per Cent. If the average CPU usage over a 1 minute interval exceeds this threshold, the device enters ALARM state.
 
 \i\CPU Busy - Warning\p\ - The WARNING threshold for CPU utilization in Per Cent. If the average CPU usage over a 1 minute interval exceeds this threshold, the device enters WARNING state.

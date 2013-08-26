@@ -12,6 +12,7 @@
     Commented out first use of ouFreq variable in favor of Exide version. (IM 4.6.1) - 04 August 2007 by cls.
     Added autorecord section for IM 5.0. - 05 May 2008 by cls.
     Added parseable units for Reports - 4 Mar 2011 by jpd.
+	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
 -->
 
 <header>
@@ -38,6 +39,9 @@ vendor, model, software version, firmware version, output source, battery status
 \b++\C. Alarms\p--\
 (1 of 1) If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <snmp-device-variables>

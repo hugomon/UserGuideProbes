@@ -11,7 +11,7 @@
 	Modified 3 December by jkj (made specific to the RouterBoard).
 	Modified 5 January by jkj (to displays temps in Celsius AND Fahrenheit)
 	Last modified 18 May 2005 by ics.
-	6 May 2013 - Edited description for User Guide (via Probe Doc Generator), fixed bullet issue
+	6 May 2013 - Edited description for User Guide (via Probe Doc Generator), fixed bullet issue - bobm
 -->
 
 <header>
@@ -37,6 +37,14 @@ This probe will raise an alarm in the following situations:
 - Unsafe Voltages -- Safe deviation of -/+ 5% for 12V & 5V, +/- 3% for 3.3V and Core Voltage (either 1.8V or 2.0V). 
 
 This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+
+\b\Parameters\p\
+
+\i\High Use Threshold\p\ - Percentage of use to trigger alarm
+
+\i\High and Low Temperature thresholds\p\ - Enter temperature values (C) to trigger alarms, or keep the default values.
+
+\i\High & Low voltage thresholds\p\ - enter voltage values to trigger alarms, or keep the default values. 
 </description>
 
 <parameters>

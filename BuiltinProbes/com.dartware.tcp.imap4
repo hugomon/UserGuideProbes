@@ -1,6 +1,7 @@
 <!-- 
 	IMAP4 (com.dartware.tcp.imap4)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
+	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm 
 -->
 
 <header>
@@ -26,6 +27,9 @@ The protocol used for accessing and manipulating email messages on a server, as 
 
 This TCP script connects to the IMAP4 server and issues a CAPABILITY command, a NOOP command, and finally terminates with a LOGOUT command.  The script checks the server's response to the CAPABILITY command to verify that the server supports IMAP4 or IMAP4rev1.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

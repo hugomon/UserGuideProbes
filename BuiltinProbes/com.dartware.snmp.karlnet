@@ -25,6 +25,9 @@ This probe monitors the custom MIB in a Karlnet Wiress Base Station using SNMPv1
 
 This probe sends SNMP set-requests to the Karlnet Base Station, causing it to discover and test the signal strength of each client. For the set-requests to work, enter the read/write community string for the base station.
 
+\b\Parameters\p\
+
+\i\Read/Write Community\p\ - SNMP Read/Write community string.
 </description>
 
 <parameters>
