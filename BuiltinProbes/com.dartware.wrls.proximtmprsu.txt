@@ -7,6 +7,8 @@
 
 	Original version March 2005 by rk
 	Requires InterMapper 4.3a5 or later.
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -26,9 +28,23 @@
 
 This probe monitors \u2=http://www.proxim.com\Proxim\p0\ Tsunami MP.11 Subscriber Unit (SU/RSU). This probe can be used to monitor all MP.11 models, including 2411, 2454-R, 5054, and 5054-R.
 
-Some of the alarms/warnings of this probe will not function unless the Proxim device is set to send traps to the InterMapper server. To get the full functionality of this probe, you will need to set your proxim device to send traps to the InterMapper server.
+\b\Note:\p\ Some of the alarms/warnings of this probe will not function unless the Proxim device is set to send traps to the InterMapper server.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later.
+\b\Parameters\p\
+
+\i\Signal dBm too low alarm\p\, \i\Signal dBm low warning\p\, 
+\i\Noise dBm too high alarm\p\, \i\Noise dBm high warning\p\, 
+\i\Send retries pct high warning\p\, \i\Send retries pct too high alarm\p\, 
+\i\Send failures pct high warning\p\, \i\Send failures pct too high alarm\p\, 
+\i\Receive retries pct high warning\p\, \i\Receive retries pct too high alarm\p\, 
+\i\Receive failures pct high warning\p\, \i\Receive failures pct too high alarm\p\, 
+\i\FCS errors/sec high warning\p\, \i\FCS errors/sec too high alarm\p\, 
+\i\Failures/sec high warning\p\, \i\Failures/sec too high alarm\p\, 
+\i\Retries/sec high warning\p\, \i\Retries/sec too high alarm\p\
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+ 
+\i\Show wireless if settings\p\ - select to show interface settings. 
+
 </description>
 
 <parameters>

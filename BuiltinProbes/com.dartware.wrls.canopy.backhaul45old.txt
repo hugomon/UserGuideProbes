@@ -7,6 +7,8 @@
 	Based on com.dartware.wrls.orthogon.gemini
 	Latest revision 22 March 2005, ics.
         10/7/05 rk: updaded description, added chartable upper/lower bounds for rx power, tx power and vector err
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -14,7 +16,7 @@
 	package				= 	"com.dartware"
 	probe_name			=	"wrls.canopy.backhaul45old"
 	human_name			=	"Wireless - Canopy Backhaul (45 Mbps/FW 5830)"
-	"version"			=	"1.6"
+	"version"			=	"1.7"
 	"address_type"		=	"IP"
 	"port_number"		=	"161"
 	"equiv_class"		= 	"WRLS"
@@ -28,7 +30,16 @@ This probe monitors a Canopy 45Mbps Backhaul radio with firmware 5830 or older, 
 
 It monitors and displays a variety of information, including mode and association, range, active channels, transmit and receive modulation and speed mode, current and maximum transmit power, receive power, vector error, link loss, and signal-to-noise ratio. It will go into alarm and warning states based on user-specified levels for the modulation/speed mode, received power, vector error, link loss, and signal-to-noise ratio.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.4 or later.
+\b\Parameters\p\
+
+\i\Tx Modulation Mode Alarm\p\, \i\Tx Modulation Mode Warning\p\, 
+\i\Rx Modulation Mode Alarm\p\, \i\Rx Modulation Mode Warning\p\, 
+\i\Rx Power too low alarm\p\, \i\Rx Power low warning\p\, 
+\i\Vector Error too high alarm\p\, \i\Vector Error high warning\p\, 
+\i\Link Loss too high alarm\p\, \i\Link Loss high warning\p\, 
+\i\SNR too low alarm\p\, \i\SNR low warning\p\ 
+- select or enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
 </description>
 
 <parameters>

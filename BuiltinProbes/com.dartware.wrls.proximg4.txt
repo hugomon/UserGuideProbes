@@ -6,6 +6,8 @@
 
 	Original version 16 Nov 2004 -reb
 	Added alarms and fixed display July 2005 - ruthk
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -14,7 +16,7 @@
 	probe_name		=	"wrls.proximg4"
 	human_name		=	"Wireless - Proxim Tsunami GX"
 	"display_name"	=	"Wireless/Proxim/Tsunami GX"
-	"version"		=	"0.3"
+	"version"		=	"0.4"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -26,9 +28,17 @@
 
 This probe monitors a Proxim Tsunami GX (GX 32 and GX 90). 
 
-This probe will raise alarm in InterMapper when the external input status 1 or 2 are in alarm. It also monitors the device's RFU status, IDU and RFU temperatures, RFU status, IDU fan status, IDU synthesizer status, RFU power status, RFU summary/minor relay status, AIS injection status, link status, and the number of errors/sec.
+This probe sets the device to \b\Alarm\p\ if the status of either of the device's external inputs is in alarm. It also monitors the device's RFU status, IDU and RFU temperatures, RFU cable status, IDU fan status, IDU synthesizer status, RFU power status, RFU summary/minor relay status, AIS injection status, link status, and the number of errors/sec.
 
-The temperature warning and alarm threshold will only be used if the use custom temperature threshold checkbox is selected.
+The temperature warning and alarm threshold are used only if the \i\Use custom temperature threshold\p\ checkbox is selected.
+
+\b\Parameters\p\
+
+\i\Use custom temperature threshold\p\ - check this to set your own temperature thresholds.
+
+\i\Temperature warning\p\, \i\Temperature alarm\p\, 
+\i\Errors/sec warning\p\, \i\Errors/sec alarm\p\, \i\Severe errors/sec alarm\p\ 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
 
 </description>
 

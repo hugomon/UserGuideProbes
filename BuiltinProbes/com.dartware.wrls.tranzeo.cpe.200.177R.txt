@@ -28,7 +28,16 @@
 
 This probe is meant to monitor a \u2=http://www.tranzeo.com\Tranzeo\p0\ TR-CPE.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later.
+\b\Parameters\p\
+
+\i\User\p\ - the device's administrative user name.
+
+\i\Password\p\ - the administrator's password.
+
+\i\Quality Warning\p\, \i\Quality Alarm\p\, 
+\i\Signal Warning\p\, \i\Signal Alarm\p\
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\ for Quality and Signal Strength.
+
 </description>
 
 <parameters>

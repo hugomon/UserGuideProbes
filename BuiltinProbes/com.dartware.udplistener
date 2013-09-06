@@ -1,13 +1,15 @@
 <!-- 
 	Multicast Listener (com.dartware.udplistener)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 2 Sept 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 <header>
 	type			= 	"built-in"
 	package			= 	"com.dartware"
 	probe_name		=	"udplistener"
 	human_name		=	"Multicast Listener"
-	version			= 	"2.0"
+	version			= 	"2.1"
 	address_type	= 	"IP"
 	port_number		=	"8006"
 	
@@ -17,12 +19,13 @@
 </header>
 <description>
 \GB\Multicast Listener Probe\P\
-This probe lets you listen for UDP packets directed to a specific UDP port. If you specify a multicast IP address, InterMapper will listen for packets directed to that multicast address.  This probe will change the device status to the DOWN if a packet isn't received within specified number of seconds (the default is 10 seconds).
-The Multicast Listener probe can be used to verify that a multicast source is broadcasting, for example, a live QuickTime broadcaster.
-This probe does not inject any traffic into the network; it is passive only.
-\i\Multicast IP Address\p\ is the optional multicast IP address to listen on.
-\i\Seconds to wait\p\ is the maximum number of seconds to wait between packets.  If a packet is not received within the specified number of seconds, the device's status is set to DOWN. The "Seconds to wait" timer is reset every time a packet is received.
-\i\Verify Source Address\p\ lets you specify whether the probe should only count packets from the IP address of the targeted device.
+
+This probe listens for UDP packets directed to a specific UDP port. If you specify a multicast IP address, InterMapper listens for packets directed to that multicast address. If a packet isn't received within the specified number of seconds, the device status is set \b\DOWN\p\. The default is 10 seconds.
+Use this probe to verify that a multicast source is broadcasting, for example, a live QuickTime broadcaster.
+The probe does not inject any traffic into the network; it is passive only.
+\i\Multicast IP Address\p\ - the optional multicast IP address to listen on.
+\i\Seconds to wait\p\ - the maximum number of seconds to wait between packets.  If a packet is not received within the specified number of seconds, the device's status is set to DOWN. The timer is reset each time a packet is received.
+\i\Verify Source Address\p\ - specify whether the probe should count packets only from the IP address of the targeted device.
 </description>
 <parameters>
 "Multicast IP Address"				=	""

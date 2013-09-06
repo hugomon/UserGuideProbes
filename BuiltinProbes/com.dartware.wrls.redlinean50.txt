@@ -13,6 +13,8 @@
       	"RF Status", and "Signal-to-Noise Ratio" (SNR).  "RF Signal Strength" was modified to utilize
       	values of "-48" for "Low Warning" and "-83" for "Too Low Alarm". 
       	Added threshold for UBR as well
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -21,7 +23,7 @@
 	"probe_name"	=	"wrls.redlinean50"
 	"human_name"	=	"Wireless - Redline AN50"
 	"display_name" 	=	"Wireless/Redline/AN50"
-	"version"		=	"1.2"
+	"version"		=	"1.3"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -32,17 +34,16 @@
 
 This probe is meant to probe a \u2=http://www.redlinecommunications.com\Redline\p0\ AN50 point-to-point radio, acting as either a master or slave. It retrieves and displays a number of critical statistics for the radio, and gives alarms if it goes out of user-specified thresholds.  The probe retrieves:
 
-\b\Average RF Rx signal strength\p\ and compares it to the Rx Signal alarm and warning thresholds specified below.
+\b\Average RF Rx signal strength\p\, \b\Average RF SNR\p\, \b\Signaling Burst Rate\p\, \b\Operating frequency\p\, \b\Radio Link Status\p\ and compares them to the thresholds below.
 
-\b\Average RF SNR\p\ and compares it to the signal to noise ratio alarm and warning thresholds specified below.
+\b\Parameters\p\
 
-\b\Signaling Burst Rate\p\ The device goes into alarm when the Uncoded Burst Rate is less than the specified code. (Codes are 0=6Mb/s,1=9Mb/s,2=12Mb/s,3=18Mb/s,4=24Mb/s,5=36Mb/s,6=48Mb/s,7=54Mbs)
-
-\b\Operating frequency\p\ The device goes into alarm if it's different from the value specified below.
-
-\b\Radio Link Status\p\ The device goes into alarm if it's not connected.
-
-This probe is part of the InterMapper Wireless Add-on pack, and requires InterMapper 4.2.4 or later.
+\i\Avg. Rx Signal strength too low alarm\p\, \i\Avg. Rx Signal strength low warning\p\, 
+\i\Avg. SNR too low alarm\p\, \i\Avg. SNR low warning\p\, 
+\i\Expected Uncoded Burst Rate\p\, \i\Expected Operating Frequency\p\, 
+\i\Active Links too high alarm\p\, \i\Active Links high warning\p\, 
+\i\Active Links too low alarm\p\, \i\Active Links low warning\p\ 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
 
 </description>
 

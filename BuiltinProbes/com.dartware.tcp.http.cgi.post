@@ -2,6 +2,7 @@
 	HTTP (Post) (com.dartware.tcp.http.cgi.post)
 	Copyright © 2000-2011 Dartware, LLC. All rights reserved.
 	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.http.cgi.post"
 	human_name		=	"HTTP (Post)"
-	version			= 	"2.7"
+	version			= 	"2.8"
 	address_type	= 	"IP"
 	port_number		=	"80"
 	

@@ -8,6 +8,7 @@
 	26 May 2010 Stabilized variable mappings, cleaned up warnings -spr
 	27 Sep 2010 Added packet processing statistics, removed alarm -spr
 	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm 
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +16,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.intermapper"
 	human_name		=	"InterMapper Engine Status"
-	version			= 	"0.8"
+	version			= 	"0.9"
 	address_type	= 	"IP"
 	port_number		=	"8181"
 	display_name	=	"Experimental/InterMapper"

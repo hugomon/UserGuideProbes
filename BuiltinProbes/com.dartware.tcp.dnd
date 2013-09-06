@@ -2,6 +2,7 @@
 	DND Protocol (com.dartware.tcp.dnd)
 	Copyright © 2001 Dartware, LLC. All rights reserved.
 	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.dnd"
 	human_name		=	"DND Protocol"
-	version			= 	"1.6"
+	version			= 	"1.7"
 	address_type	= 	"IP"
 	port_number		=	"902"
 	display_name	=	"Servers-Proprietary/DND Protocol"

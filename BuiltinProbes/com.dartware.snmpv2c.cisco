@@ -3,6 +3,7 @@
 	Copyright (c) 2002 Dartware, LLC. All rights reserved.
 	Thanks to S. Erde and W. Schley for initial implementation.
 	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -10,7 +11,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmpv2c.cisco"
 	human_name		=	"SNMP - Cisco (v2c)"
-	version			= 	"1.10"
+	version			= 	"1.11"
 	address_type	= 	"IP,AT"
 	port_number		=	"161"
 	

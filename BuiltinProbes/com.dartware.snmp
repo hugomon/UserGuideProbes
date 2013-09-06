@@ -6,6 +6,7 @@
 	 8 May 2007 - Changed name to "SNMP Traffic" probe; updated description
 	13 Jun 2007 - Changed category (back to) Basic
 	Edited description for User Guide (via Probe Doc Generator) 1 Apr 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -13,7 +14,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp"
 	human_name		=	"SNMP Traffic"
-	version			= 	"1.7"
+	version			= 	"1.8"
 	address_type	= 	"IP,AT"		# Can use both IP and AppleTalk
 	equiv_class		= 	"CORE"		# Core packet equivalency
 

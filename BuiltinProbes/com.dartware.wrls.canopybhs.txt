@@ -7,6 +7,8 @@
 
 	Original version 24 November 2003 by reb,
 	Latest revision 9 July 2004 by ics.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +17,7 @@
 	"probe_name"	=	"wrls.canopybhs"
 	"human_name"	=	"Wireless - Canopy Backhaul (Slave)"
 	"display_name" 	=	"Wireless/Canopy/Canopy Backhaul (Slave)"
-	"version"		=	"1.3"
+	"version"		=	"1.4"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"flags"			= 	"SNMPv2c"
@@ -30,7 +32,14 @@ This probe monitors a Canopy wireless backhaul slave unit. It retrieves and disp
 
 The default poll interval for this probe is 5 minutes. The default poll interval is an automatic safeguard; polling more frequently has been shown to adversely affect the device.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+\b\Parameters\p\
+
+\i\RSSI too low alarm\p\, \i\RSSI low warning\p\, 
+\i\Jitter too high alarm\p\, \i\Jitter high warning\p\, 
+\i\Round Trip too long alarm\p\, \i\Round Trip long warning\p\, 
+\i\Power Level too low alarm\p\, \i\Power Level low warning\p\
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
 </description>
 
 <parameters>

@@ -8,6 +8,7 @@
 	Added $ifOperStatusStr as STRING so it appears as a string - 3May2008 -reb
 	Moved to SNMP folder; bumped version. 23 Nov 2009 -cls
 	15 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +16,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.pps"
 	human_name		=	"SNMP - High PPS"
-	version			= 	"0.5"
+	version			= 	"0.6"
 	address_type	= 	"IP,AT"
 	port_number		=	"161"
 	flags			=   "NOLINKS"

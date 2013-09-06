@@ -10,6 +10,7 @@
     Added autorecord section for IM 5.0 - 05 May 2008 by cls.
     Added parseable units for Reports - 4 Mar 2011 by jpd.
     7 May 2013 - Edited description for User Guide (via Probe Doc Generator), fixed line breaks, consolidated parameter descriptions, and added output voltage parameter
+    2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -17,7 +18,7 @@
     package       =  "de.medianet.freinet"
     probe_name    =  "ups.victron"
     human_name    =  "Victron UPS"
-    version       =  "2.9"
+    version       =  "3.0"
     address_type  =  "IP,AT"
     port_number   =  "161"
     display_name  =  "Network Devices/UPS/Victron UPS"

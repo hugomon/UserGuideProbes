@@ -2,7 +2,7 @@
 	SNMP - Cisco (com.dartware.snmp.cisco)
 	Copyright (c) 2013 Dartware, LLC. All rights reserved.
 	3 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
-
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -10,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.cisco.n5kfex.traffic"
 	human_name		=	"SNMP - Cisco N5000 with FEX Traffic"
-	version			= 	"1.0"
+	version			= 	"1.1"
 	address_type	= 	"IP"
 	port_number		=	"161"
 	display_name	=	"Network Devices/Cisco/Cisco - N5000 with FEX Traffic"

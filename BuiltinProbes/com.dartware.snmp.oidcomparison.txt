@@ -10,6 +10,7 @@
 	23 Sep 2011	Cast OID to chartable. -cls
 	 4 Sep 2012 Modified datasets section to interpolate parameters for Tag, Units, and Legend. -jpd
 	 4 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+   2 Sept 2013 bobm - Updated version number 
   
 
 	You can read the Developer Guide to learn more about InterMapper Probes. It's at:
@@ -21,7 +22,7 @@
 	"package"		=	"com.dartware"
 	"probe_name"	=	"snmp.oidcomparison"
 	"human_name"	=	"SNMP - Comparison"
-	"version"		=	"1.10"
+	"version"		=	"1.11"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"display_name"	=	"SNMP/Comparison"

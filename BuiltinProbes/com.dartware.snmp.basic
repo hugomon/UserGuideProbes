@@ -4,6 +4,7 @@
 	
 	11 May 2007  Moved to Miscellaneous/Legacy category, then moved back to SNMP -reb
 	3 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -11,7 +12,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.basic"
 	human_name		=	"SNMP - Basic OID"
-	version			= 	"0.7"
+	version			= 	"0.8"
 	address_type	= 	"IP,AT"
 	port_number		=	"161"
 	display_name	=	"SNMP/Basic OID"

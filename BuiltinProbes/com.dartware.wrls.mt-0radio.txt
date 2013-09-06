@@ -12,6 +12,7 @@
 	Modified 10 February by jkj (prepared for release)
 	Last modified 18 May 2005 by ics.
 	6 May 2013 - Edited description for User Guide (via Probe Doc Generator), fixed bullet issue - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -20,7 +21,7 @@
 	"probe_name"		=	"wrls.mt-0radio"
 	"human_name"		=	"Wireless - MikroTik (Software Only)"
 	"display_name" 		=	"Wireless/MikroTik/MT Software Only"
-	"version"			=	"1.4"
+	"version"			=	"1.5"
 	"address_type"		=	"IP,AT"
 	"port_number"		=	"161"
 	"equiv_class"		= 	"WRLS"
@@ -38,7 +39,8 @@ This probe is part of the InterMapper Wireless Probe Bundle, and requires InterM
 
 \b\Parameters\p\
 
-\i\High Use Threshold\p\ - Percentage of use to trigger alarm
+\i\High Use Threshold\p\ - Percentage of use to trigger alarm.
+
 </description>
 
 <!-- OIDs for "interesting variables" stored in Table format

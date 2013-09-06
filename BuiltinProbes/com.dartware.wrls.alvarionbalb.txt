@@ -7,6 +7,8 @@
 
 	Original version 5 April 2004 ics,
 	Latest revision 8 June 2004 by ics.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +17,7 @@
 	"probe_name"	=	"wrls.alvarionbalb"
 	"human_name"	=	"Wireless - Alvarion BreezeACCESS LB"
 	"display_name" 	=	"Wireless/Alvarion/BreezeACCESS LB"
-	"version"		=	"0.15"
+	"version"		=	"0.16"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -26,7 +28,12 @@
 
 This probe is meant to probe an \u2=http://www.alvarion.com\Alvarion\p0\ BreezeACCESS LB radio, acting as either AP or an SU. It retrieves and displays a number traffic and radio related variables. It will go into alarm or warning states based on user-defined parameters.
 
-This probe is part of the InterMapper Wireless Add-on pack, and requires InterMapper 4.2 or later.
+\b\Parameters\p\
+
+\i\Expected Operating Frequency\p\ - Enter a frequency.
+
+\i\SNR too low alarm\p\, \i\SNR low warning\p\ - enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
 </description>
 
 <parameters>

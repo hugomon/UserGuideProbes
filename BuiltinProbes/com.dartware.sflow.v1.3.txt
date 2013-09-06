@@ -12,6 +12,7 @@
    17 Mar 2009 - Original Version - automatically generated. 
     2 Sep 2010 - Changed sFlowRcvrAddress type to be IPADDRESS
     1 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+    2 Sept 2013 bobm - Updated version number 
     
    ----------------------------------------------------------------------------------- 
     
@@ -49,7 +50,7 @@ It also shows the sFlow Receiver Table as an on-demand table. It lists all devic
    "probe_name"    =  "sflowvers.1.3"
    "human_name"    =  "sFlow Vers. 1.3"
    "display_name"  =  "Experimental/sFlow Vers. 1.3"
-   "version"       =  "1.3"
+   "version"       =  "1.4"
    "address_type"  =  "IP,AT"
    "port_number"   =  "161"
 

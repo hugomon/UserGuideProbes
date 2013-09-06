@@ -1,6 +1,8 @@
 <!-- 
 	Lotus Notes (com.dartware.tcp.lotusnotes)
 	Copyright © 2003 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -20,7 +22,11 @@
 
 Lotus Notes uses Port 1352 for its Remote Procedure Call and Notes Replication. 
 
-This probe simply establishes a connection to the indicated port, which presumably is a Lotus Notes server. If the connection is successful, the device's status is set to OK; otherwise, its status is DOWN.
+This probe attempts to establish a connection to port 1532, assumed to be a Lotus Notes server. If the connection is successful, the device's status is set to \bi\Okay\p\; otherwise, it is set to  \bi\Down\p\.
+
+\b\Parameters\p\
+
+None.
 
 </description>
 

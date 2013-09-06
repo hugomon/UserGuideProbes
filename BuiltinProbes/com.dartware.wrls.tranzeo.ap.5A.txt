@@ -8,6 +8,9 @@
 	Original version 23 Feb 2005 tex.
 
 	This probe is known to monitor Board OS: 6.3.6A (0410) / Board Software: 1.20 (Build 19)
+
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 
@@ -16,7 +19,7 @@
 	"package"		= 	"com.dartware"
 	"probe_name"	=	"wrls.tranzeo.ap.5a"
 	"human_name"	=	"Wireless - Tranzeo AP-5A"
-	"version"		= 	"1.3"
+	"version"		= 	"1.4"
 	"address_type"	= 	"IP"
 	"port_number"	=	"80"
 	"equiv_class"	= 	"WRLS"
@@ -30,7 +33,12 @@
 
 This probe is meant to monitor a \u2=http://www.tranzeo.com\Tranzeo\p0\ TR-AP.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later.
+\b\Parameters\p\
+
+\i\User\p\ - the device's administrative user name.
+
+\i\Password\p\ - the administrator's password.
+
 </description>
 
 <parameters>

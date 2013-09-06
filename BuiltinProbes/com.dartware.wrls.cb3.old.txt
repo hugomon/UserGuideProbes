@@ -6,6 +6,8 @@
 
 	Probe created by Tex, 16 May 2005.
 	Last modified 17 May 2005, by ics.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -14,7 +16,7 @@
 	probe_name		=	"wrls.cb3.old"
 	human_name		=	"Wireless - CB3"
 	display_name	=	"Wireless/CB3/CB3 Bridge"
-	version			= 	"1.1"
+	version			= 	"1.2"
 	address_type	= 	"IP"
 	port_number		=	"80"
 	equiv_class		= 	"WRLS"
@@ -26,15 +28,15 @@
 
 This TCP probe queries a CB3 wireless bridge via a HTTP GET request.
 
-\i\User\p\ is the username to use when logging in.
+\b\Parameters\p\
 
-\i\Password\p\ is the password for the User specified above.
+\i\User\p\ - the username to use when logging in.
 
-\i\Port\p\ is the CB3's web interface HTTP port.
+\i\Password\p\ - the password for the User specified above.
 
-\i\Quality Warning\p\ is the value (as a percentage) that the communications quality must fall below for the device to go into the WARN state.
+\i\Port\p\ - the CB3's web interface HTTP port.
 
-\i\Quality Alarm\p\ is the value (as a percentage) that the communications quality must fall below for the device to go into the ALARM state.
+\i\Quality Warning\p\, \i\Quality Alarm\p\ - enter thresholds (in percent) for \b\Warning\p\ and \b\Alarm\p\.
 
 </description>
 

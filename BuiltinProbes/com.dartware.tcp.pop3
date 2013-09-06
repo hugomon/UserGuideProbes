@@ -1,6 +1,8 @@
 <!-- 
 	POP3 (com.dartware.tcp.pop3)
 	Copyright © 2000-2003 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 2 Sept 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.pop3"
 	human_name		=	"POP3"
-	version			= 	"2.6"
+	version			= 	"2.7"
 	address_type	= 	"IP"
 	port_number		=	"110"
 
@@ -24,13 +26,13 @@
 
 The protocol used to access email messages from a central maildrop server, as defined in \U2=http://www.ietf.org/rfc/rfc1939.txt\RFC 1939\P0\.  The default TCP port number for POP3 connections is port 110.
 
-If the "User Name" parameter is left empty, this probe verifies that the server send "+OK" as its initial greeting, then immediately sends the QUIT command.
+\b\Parameters\p\
 
-If a "User Name" parameter is specified, this probe will attempt login to the POP3 server using the specified password. If the probe fails to authenticate, the device will be marked in "warning".
+\i\User Name\p\ - if left empty, the probe verifies that the server sends "+OK" as its initial greeting, then immediately sends the QUIT command. If specified, the probe attempts to use the specified \i\Password\p\ to login to the POP3 server. If the login fails , the device is set to \b\Warning\p\.
 
-By default, this probe will use the APOP command to authenticate the user if the the APOP command is supported by the server. To authenticate via USER and PASS commands for a particular user, set the "Use APOP if supported" parameter to False.
+\i\Use APOP if supported\p\ - By default, the probe uses the APOP command to authenticate the user if the server supports it. To authenticate via USER and PASS commands for a particular user, set this parameter to \bi\False\p\.
 
-* The "Use APOP if supported" option has no effect if APOP is not supported by the server.
+\b\Note:\p\ If APOP is not supported by the server, the \i\Use APOP if supported\p\ option has no effect.
 
 </description>
 

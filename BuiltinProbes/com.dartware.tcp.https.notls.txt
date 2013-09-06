@@ -2,6 +2,7 @@
 	HTTPS (com.dartware.tcp.https.notls)
 	Copyright © 2010 Dartware, LLC. All rights reserved.
 	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.https.notls"
 	human_name		=	"HTTPS (SSLv3)"
-	version			= 	"1.3"
+	version			= 	"1.4"
 	address_type	= 	"IP"
 	port_number		=	"443"
 	display_name	=	"Servers-Standard/HTTP & HTTPS/HTTPS (SSLv3)"

@@ -8,6 +8,8 @@
 	This is a split from the trango 900 probe, this probe is basically the same probe, 
 	but the oids starts from 5454.1.32 instead of 5454.1.30
 
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -16,7 +18,7 @@
 	"probe_name"	=	"wrls.trango2400"
 	"human_name"	=	"Wireless - Trango M2400S (AP)"
 	"display_name" 	=	"Wireless/Trango/Trango M2400S (AP)"
-	"version"		=	"1.0"
+	"version"		=	"1.1"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -27,7 +29,14 @@
 
 This probe monitors a \u2=http://www.trangobroadband.com\Trango\p0\ M2400S access point (AP). It retrieves and displays a number of traffic, physical, and radio status variables. It can go into alarm or warning based on user-defined parameters for transmit power, expected antenna mode, and expected channel. (This probe calculates counters without using sysUpTime, which isn't available. MIB-2 traffic and interface information is also unavailable.)
 
-This probe is part of the InterMapper Wireless Add-on pack, and requires InterMapper 4.2.1 or later.
+\b\Parameters\p\
+
+\i\Tx power too low alarm\p\, \i\Tx power low warning\p\ - enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
+\i\Expected Channel\p\ - enter the expected channel number.
+
+\i\Expected Antenna\p\ - choose an antenna mode.
+
 </description>
 
 <parameters>

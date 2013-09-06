@@ -4,6 +4,7 @@
 	
 	5 Apr 2007 - Moved to Basic category
 	Edited description for User Guide (via Probe Doc Generator) 1 Apr 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -11,7 +12,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"map.status"
 	human_name		=	"Map Status"
-	version			= 	"1.8"
+	version			= 	"1.9"
 	address_type	= 	"IP"
 	port_number		=	"8181"
 

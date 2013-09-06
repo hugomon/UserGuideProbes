@@ -2,6 +2,7 @@
 	HTTP (Proxy) (com.dartware.tcp.http.proxy)
 	Copyright © 2000-2003 Dartware, LLC. All rights reserved.
 	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.http.proxy"
 	human_name		=	"HTTP (Proxy)"
-	version			= 	"2.7"
+	version			= 	"2.8"
 	address_type	= 	"IP"
 	port_number		=	"80"
 	

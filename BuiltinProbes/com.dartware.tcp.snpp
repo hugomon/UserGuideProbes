@@ -1,6 +1,8 @@
 <!-- 
 	Simple Network Paging Protocol - SNPP (com.dartware.tcp.snpp)
 	Copyright (c) 2001 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.snpp"
 	human_name		=	"SNPP"
-	version			= 	"1.5"
+	version			= 	"1.6"
 	address_type	= 	"IP"
 	port_number		=	"444"
 	display_name	=	"Servers-Standard/SNPP"
@@ -21,11 +23,15 @@
 
 This protocol transfers pager information across the Internet, as defined in \u2=http://www.ietf.org/rfc/rfc1861.txt\RFC 1861\p0\.  The default TCP port number for SMTP connections is port 444.
 
-This SNPP probe verifies that a specified SNPP server is working by connecting to it, then issuing a PAGE <pagerid> command. If it gets back a valid response, code, the probe issues a QUIT command and exits, marking the device in the OK state.
+This SNPP probe verifies that an SNPP server is working by connecting to it and issuing a PAGE <pagerid> command. If it receives a valid response code, the probe issues a QUIT command and exits, setting device status to \b\OK\p\.
 
-If an "Invalid Pager ID" response comes back, the probe issues a QUIT command and exits, marking the device in the Alarm state.
+If an "Invalid Pager ID" response is received, the probe issues a QUIT command and exits, setting device status to \b\Alarm\p\.
 
-If no connection was made, or if unexpected responses come back, the device is marked as being down.
+If no connection was made, or if an unexpected response is received, device status is set to \b\Down\p\.
+
+\b\Parameters\p\
+
+\i\PagerID\p\ - your Pager ID on the specified SNPP server.
 </description>
 
 <parameters>

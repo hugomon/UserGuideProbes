@@ -15,6 +15,8 @@ Note
 As of software ver 10.4, build1, we have the following situation:
   - the ip addrs for the loopback and the ethernet (esmc0) interfaces are swapped (this is fixed using interface_numbered/interface_visible directives)
   - the net masks in the ip addr table are reversed (this will cause a discontiguous subnet mask warning) 
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -23,7 +25,7 @@ As of software ver 10.4, build1, we have the following situation:
 	"probe_name"	=	"wrls.waveridereum"
 	"human_name"	=	"Wireless - WaveRider EUM"
 	"display_name" 	=	"Wireless/WaveRider/EUM"
-	"version"		=	"1.1"
+	"version"		=	"1.2"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -41,7 +43,15 @@ As of software ver 10.4, build1, we have the following situation:
 
 This probe monitors a WaveRider EUM (subscriber unit). It retrieves and displays a number of variables for basic, traffic, and wireless information. It will go into alarm and warning states based on user-defined parameters for radio frequency, percentage of payloads not needing a retry, percentage of payloads discarded, RSSI value, signal strength rating, and high traffic incoming on the wireless interface. It will also go into an alarm based on the global status indicator.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper X.X or later. (Minor error present in this demonstration version. Full functionality expected with IM 4.3.)
+\b\Parameters\p\
+
+\i\RSSI too low alarm\p\, \i\RSSI low warning\p\, 
+\i\Signal rating too high alarm\p\, \i\Signal rating high warning\p\, 
+\i\SNR too low alarm\p\, \i\SNR low warning\p\, 
+\i\No Retry percentage too low alarm\p\, \i\No Retry percentage low warning\p\, 
+\i\Tx Discard percentage too high alarm\p\, \i\Tx Discard percentage high warning\p\, 
+\i\High Traffic Bytes alarm\p\, \i\High Traffic Bytes warning\p\
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
 </description>
 
 <parameters>

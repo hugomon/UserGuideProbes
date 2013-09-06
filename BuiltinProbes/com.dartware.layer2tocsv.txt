@@ -3,6 +3,7 @@
   Produces CSV of all layer 2 detail accessible via the HTTP API
   at HTTP://SERVER:PORT/~files/extensions/com.dartware.switches/switchPort.csv
   Edited description for User Guide (via Probe Doc Generator) 2 Aug 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 
@@ -17,7 +18,7 @@
 
    human_name="Layer2 CSV Output"
 
-   version="1.4"
+   version="1.5"
 
    display_name = "Splunk/Layer 2 Output"
 

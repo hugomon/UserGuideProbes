@@ -2,6 +2,7 @@
 	HTTP (Redirect) (com.dartware.tcp.http.redirect)
 	Copyright © 2000-2011 Dartware, LLC. All rights reserved.
 	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.http.redirect"
 	human_name		=	"HTTP (Redirect)"
-	version			= 	"1.13"
+	version			= 	"1.14"
 	address_type	= 	"IP"
 	port_number		=	"80"
 	

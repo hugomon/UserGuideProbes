@@ -15,7 +15,8 @@
     Updated for "display_name" change (IM 4.4) - 31 August 2005 by jkj.
     Added autorecord section for IM 5.0 - 05 May 2008 by cls.
     Added parseable units for Reports - 4 Mar 2011 by jpd.
-	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+	  20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+    2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -23,7 +24,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.bestpower"
     "human_name"    =  "BestPower UPS"
-    "version"       =  "2.10"
+    "version"       =  "2.11"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/BestPower UPS"

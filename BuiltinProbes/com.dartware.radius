@@ -2,6 +2,7 @@
 	RADIUS (com.dartware.radius)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
 	Edited description for User Guide (via Probe Doc Generator) 1 Apr 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"radius"
 	human_name		=	"RADIUS"
-	version			= 	"1.8"
+	version			= 	"1.9"
 	address_type	= 	"IP"
 	port_number		= 	"1812"
 	

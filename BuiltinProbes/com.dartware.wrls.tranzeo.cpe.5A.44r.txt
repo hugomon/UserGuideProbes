@@ -6,6 +6,8 @@
 	Wireless Add-on package and should not be be distributed or used without license.
 
 	Original version 23 Feb 2005 tex.
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 
@@ -14,7 +16,7 @@
 	"package"		= 	"com.dartware"
 	"probe_name"	=	"wrls.tranzeo.cpe.5a.44r"
 	"human_name"	=	"Wireless - Tranzeo CPE-5A (44R)"
-	"version"		= 	"1.4"
+	"version"		= 	"1.5"
 	"address_type"	= 	"IP"
 	"port_number"	=	"80"
 	"equiv_class"	= 	"WRLS"
@@ -28,7 +30,14 @@
 
 This probe is meant to monitor a \u2=http://www.tranzeo.com\Tranzeo\p0\ TR-CPE.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later.
+\b\Parameters\p\
+
+\i\User\p\ - the device's administrative user name.
+
+\i\Password\p\ - the administrator's password.
+
+\i\Warning Threshold\p\, \i\Alarm Threshold\p\ - enter thresholds for signal strength
+
 </description>
 
 <parameters>

@@ -2,6 +2,7 @@
 	IRC (com.dartware.tcp.irc)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
 	22 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm 
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.irc"
 	human_name		=	"IRC"
-	version			= 	"1.6"
+	version			= 	"1.7"
 	address_type	= 	"IP"
 	port_number		=	"6667"
 	

@@ -2,6 +2,7 @@
 	CVS Server Probe (com.dartware.tcp.cvs)
 	Copyright © 2001 Dartware, LLC. All rights reserved.
 	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.cvs"
 	human_name		=	"CVS Server"
-	version			= 	"1.6"
+	version			= 	"1.7"
 	address_type	= 	"IP"
 	port_number		=	"2401"
 	display_name	=	"Servers-Standard/CVS Server"
@@ -26,7 +27,7 @@ This probe tests a CVS server by connecting to the specified port and authentica
 CVSROOT_Path<lf>
 Username<lf>
 Scrambled_password<lf>
-END AUTH REQUEST<lf>\p\
+END AUTH REQUEST<lf>\g\
 
 If the response is "I LOVE YOU", then the authentication succeeded.
 If the response is "I HATE YOU", then either the authentication failed or the path to CVSROOT is incorrect.

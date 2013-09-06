@@ -9,6 +9,7 @@
     Created from com.dartware.ups.liebert.txt - 3 August 2005 by jkj.
     Updated for "display_name" change (IM 4.4) - 31 August 2005 by jkj.
     Removed upsbundle link in description to circumvent a probe doc generator issue 8 Feb 2013 bobm
+    2 Sept 2013 bobm - Updated version number 
 -->
  
 <header>
@@ -16,7 +17,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.liebert-series300"
     "human_name"    =  "Liebert UPS - Series 300"
-    "version"       =  "2.6"
+    "version"       =  "2.7"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Liebert UPS - Series 300"
@@ -38,6 +39,9 @@ vendor, model, software version, firmware version, output load (%), battery volt
 \b++\C. Alarms\p--\
 (1 of 1) If the device is reporting any alarms. (The MIB includes a comprehensive list of alarms).
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <snmp-device-variables>

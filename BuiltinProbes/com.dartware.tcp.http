@@ -2,6 +2,7 @@
 	HTTP (com.dartware.tcp.http)
 	Copyright © 2000-2003 Dartware, LLC. All rights reserved.
 	28 May 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.http"
 	human_name		=	"HTTP"
-	version			= 	"2.11"
+	version			= 	"2.12"
 	address_type	= 	"IP"
 	port_number		=	"80"
 	

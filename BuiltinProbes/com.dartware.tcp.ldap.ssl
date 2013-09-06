@@ -1,6 +1,8 @@
 <!-- 
 	LDAP-SSL (com.dartware.tcp.ldap.ssl)
 	Copyright © 2002-2004 Dartware, LLC. All rights reserved.
+	6 Sept 2013 - edited description for User Guide (via Probe Doc Generator) bobm 
+  6 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.ldap.ssl"
 	human_name		=	"LDAP-SSL"
-	version			= 	"1.9"
+	version			= 	"1.10"
 	address_type	= 	"IP"
 	port_number		=	"636"
 	display_name	=	"Servers-Standard/LDAP/LDAP-SSL"
@@ -26,6 +28,18 @@ This probe connects to the LDAP server and binds using the designated \i\Bind Na
 Once logged in, the probe sends a SearchRequest for \i\Field to Match\p\ searching for an equality match of \i\Name to Lookup\p\, and counts the number of LDAP records returned.
 
 If the \i\Search Base\p\ field is specified, this value is used as the base of the search. Otherwise, the \i\Bind Name\p\ is used for the Base DN.
+
+\b\Parameters\p\
+
+ \i\Bind Name\p\ and \i\Bind Password\p\ - used to connect to the LDAP server.
+
+\i\Name to Lookup\p\ - string to use in the SearchRequest.
+
+\i\Search Base\p\ - optional base for the search.
+
+\i\Field to Match[cn,sn,uid]\p\ - enter one of the listed fields to check for a match.
+
+\i\Minimum No. of Results\p\ - enter an expected minimum number of records returned.
 
 </description>
 

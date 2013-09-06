@@ -2,6 +2,7 @@
 	FTP (Login) (com.dartware.tcp.ftp.login)
 	Copyright � 2000 Dartware, LLC. All rights reserved.
 	28 May 2013 - Edited description for User Guide (via Probe Doc Generator)
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.ftp.login"
 	human_name		=	"FTP (Login)"
-	version			= 	"1.8"
+	version			= 	"1.9"
 	address_type	= 	"IP"
 	port_number		=	"21"
 	

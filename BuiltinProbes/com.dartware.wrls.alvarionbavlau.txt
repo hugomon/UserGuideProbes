@@ -7,6 +7,8 @@
 
 	Original version 27 February 2004 ics,
 	Latest revision 7 March 2005 by ics.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +17,7 @@
 	"probe_name"		=	"wrls.alvarionbavlau"
 	"human_name"		=	"Wireless - Alvarion BreezeACCESS VL (AU)"
 	"display_name" 		=	"Wireless/Alvarion/BreezeACCESS VL (AU)"
-	"version"			=	"1.6"
+	"version"			=	"1.7"
 	"address_type"		=	"IP,AT"
 	"port_number"		=	"161"
 	"equiv_class"		= 	"WRLS"
@@ -26,7 +28,12 @@
 
 This probe monitors an \u2=http://www.alvarion.com\Alvarion\p0\ BreezeACCESS VL access unit (AU). It retrieves and displays the radio band, operating frequency, and number of clients. It will go into an alarm or warning based on user defined parameters for high and low numbers of clients (SUs), and when the operating frequency doesn't match the configured frequency. Traffic information is available for the ethernet and radio interfaces. (To show the ethernet interface, we recommend using the "Display unnumbered interfaces" behavior.)
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+\b\Parameters\p\
+
+\i\Current SU Count too high alarm\p\, \i\Current SU Count high warning\p\, 
+\i\Current SU Count too low alarm\p\, \i\Current SU Count low warning\p\ 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
 </description>
 
 <parameters>

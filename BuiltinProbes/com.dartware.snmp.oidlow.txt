@@ -13,6 +13,7 @@
 	You can read the Developer Guide to learn more about InterMapper Probes. It's at:
 		http://intermapper.com/go.php?to=intermapper.devguide
 	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -20,7 +21,7 @@
 	"package"		=	"com.dartware"
 	"probe_name"	=	"snmp.oidlow"
 	"human_name"	=	"SNMP - Low Threshold"
-	"version"		=	"1.5"
+	"version"		=	"1.6"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"display_name"	=	"SNMP/Low Threshold"

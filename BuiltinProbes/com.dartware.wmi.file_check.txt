@@ -2,6 +2,7 @@
 Command Line WMI Probe to check for file changes (com.dartware.wmi.file_check) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
 	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
+  2 Sept 2013 bobm - Updated version number 
 --> 
 
 <header> 
@@ -9,7 +10,7 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 	package			=	"com.dartware" 
 	probe_name		=	"wmi.file_check" 
 	human_name		=	"WMI File Check" 
-	version			=	"1.9" 
+	version			=	"1.10" 
 	address_type	=	"IP"
 	display_name	=	"WMI/WMI File Check"
 	visible_in 		=	"Windows"

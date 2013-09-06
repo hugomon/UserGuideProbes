@@ -12,7 +12,8 @@
     Commented out first use of ouFreq variable in favor of Exide version. (IM 4.6.1) - 04 August 2007 by cls.
     Added autorecord section for IM 5.0. - 05 May 2008 by cls.
     Added parseable units for Reports - 4 Mar 2011 by jpd.
-	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+	  20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+    2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -20,7 +21,7 @@
     "package"       =  "shef.ac.uk"
     "probe_name"    =  "ups.exide"
     "human_name"    =  "Exide UPS"
-    "version"       =  "2.11"
+    "version"       =  "2.12"
     "address_type"  =  "IP"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Exide UPS"

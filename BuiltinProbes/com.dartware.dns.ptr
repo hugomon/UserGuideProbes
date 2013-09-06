@@ -2,7 +2,7 @@
 	DNS PTR (com.dartware.dns.ptr)
 	Copyright © 2006 Dartware, LLC. All rights reserved.
 	28 Mar 2013 - edited description for User Guide (via Probe Doc Generator) bobm
-
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -10,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"dns.ptr"
 	human_name		=	"DNS -- (PTR) Reverse Lookup"
-	version			= 	"1.1"
+	version			= 	"1.2"
 	address_type	= 	"IP"
 	port_number		=	"53"
 	display_name	=	"Servers-Standard/Domain Name (DNS)/DNS: (PTR) Reverse Lookup"

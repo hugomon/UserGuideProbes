@@ -12,6 +12,7 @@
 	Modified 5 January by jkj (to displays temps in Celsius AND Fahrenheit)
 	Last modified 18 May 2005 by ics.
 	6 May 2013 - Edited description for User Guide (via Probe Doc Generator), fixed bullet issue - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -20,7 +21,7 @@
 	"probe_name"	=	"wrls.mt-routerboard"
 	"human_name"	=	"Wireless - MikroTik Routerboard"
 	"display_name"  =	"Wireless/MikroTik/MT Routerboard"
-	"version"		=	"1.5"
+	"version"		=	"1.6"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"

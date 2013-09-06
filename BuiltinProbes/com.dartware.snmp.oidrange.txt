@@ -14,6 +14,7 @@
 	You can read the Developer Guide to learn more about InterMapper Probes. It's at:
 		http://intermapper.com/go.php?to=intermapper.devguide
 	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -21,7 +22,7 @@
 	"package"		=	"com.dartware"
 	"probe_name"	=	"snmp.oidrange"
 	"human_name"	=	"SNMP - Range Threshold"
-	"version"		=	"1.6"
+	"version"		=	"1.7"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"display_name"	=	"SNMP/Range Threshold"

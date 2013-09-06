@@ -4,6 +4,7 @@
 	
 	23 Sep 2010  Created version 0.1. -cls
 	3 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -11,7 +12,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.dhcpcheck"
 	human_name		=	"SNMP - Microsoft DHCP Lease Check"
-	version			= 	"0.3"
+	version			= 	"0.4"
 	address_type	= 	"IP,AT"
 	port_number		=	"161"
 	display_name	=	"Servers-Proprietary/Microsoft/DHCP Lease Check"

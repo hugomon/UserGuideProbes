@@ -3,6 +3,7 @@
 	Copyright © 2001-2008 Dartware, LLC. All rights reserved.
 	Tweaked default parameters to be 0; updated description 30May2008 -reb
 	13 Mar 2013 - edited description for use in User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -10,7 +11,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"demo"
 	human_name		=	"Demo Probe"
-	version			= 	"1.6"
+	version			= 	"1.7"
 	address_type	= 	"IP,AT"
 	equiv_class		= 	"DEMO"
 	port_number		= 	"23"

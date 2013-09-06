@@ -6,6 +6,7 @@
 	20 Mar 2009 - Merged with Basic Ping probe. -wwf
 	Edited description for User Guide (via Probe Doc Generator) 1 Apr 2013 -bobm
 	20 Aug 2013 - added Parameters section to description, rearranged description - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -13,7 +14,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"ping"
 	human_name		=	"Ping/Echo"
-	version			= 	"2.0"
+	version			= 	"2.1"
 	address_type	= 	"IP,AT"		# Both IP and AppleTalk
 	equiv_class		= 	"CORE"		# Core packet equivalency
 	

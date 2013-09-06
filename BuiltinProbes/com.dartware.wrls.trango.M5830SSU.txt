@@ -12,6 +12,8 @@
 	   16 Nov 2005 Added workaround for a bug that reports the rf_rx/rf_tx rate as erroneously large. -Tex
           Oct 2005 Mat <mat@datamoco.com> indicates that he wants -78dBm as warning and -80dBm as alarm thresholds.
                    He'd also like thresholds on traffic -reb
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -20,7 +22,7 @@
 	"probe_name"	=	"wrls.trango.M5830SSU"
 	"human_name"	=	"Wireless - Trango M5830S SU"
 	"display_name"  =	"Wireless/Trango/Trango M5830S (SU)"
-	"version"	= 	"1.1"
+	"version"	= 	"1.2"
 	"address_type"	= 	"IP"
 	"port_number"	=	"23"
 	"equiv_class"	= 	"WRLS"
@@ -34,7 +36,11 @@ This probe monitors a \u2=http://www.trangobroadband.com/\Trango M5830S SU\p0\ S
 
 You must enter the \i\password\p\ for the subscriber unit to retrieve the information.
 
-\i\Note:\p\ Occasionally, these Subscriber Units report extremely high data rates. These rates - in the range of millions of kbps - are seen both by this probe and in the Web interface. To keep the strip charts accurate, we recommend you turn off the Auto-adjust feature for the chart. 
+\b\Note:\p\ Occasionally, this Subscriber Unit reports extremely high data rates. These rates - in the range of millions of kbps - are seen both by this probe and in the Web interface. To keep the strip charts accurate, we recommend you turn off the Auto-adjust feature for the chart. 
+
+\b\Parameters\p\
+
+\i\Password\p\ - the password for the Subscriber Unit.
 
 </description>
 

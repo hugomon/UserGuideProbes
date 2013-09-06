@@ -7,6 +7,8 @@
 
 	Original version 23 May 2005 tex.
 	Updated description 14 Sep 2005 -reb
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 
@@ -15,7 +17,7 @@
 	"package"		= 	"com.dartware"
 	"probe_name"	=	"wrls.tranzeo.cpe.200"
 	"human_name"	=	"Wireless - Tranzeo CPE-200"
-	"version"		= 	"1.6"
+	"version"		= 	"1.7"
 	"address_type"	= 	"IP"
 	"port_number"	=	"80"
 	"equiv_class"	= 	"WRLS"
@@ -29,7 +31,14 @@
 
 This probe monitors a \u2=http://www.tranzeo.com\Tranzeo\p0\ TR-CPE 200. It has thresholds for alarms and warnings if the signal level gets too low.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later.
+\b\Parameters\p\
+
+\i\User\p\ - the device's administrative user name.
+
+\i\Password\p\ - the administrator's password.
+
+\i\Warning Threshold\p\, \i\Alarm Threshold\p\ - enter thresholds for signal strength
+
 </description>
 
 <parameters>

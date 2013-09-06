@@ -5,6 +5,8 @@
 	Added this to wireless bundle, so that people could monitor their wireless
 		gear without using up their "wired" license.
 	Original version modified from the built-in HTTP probe 14 Sep 2005 -reb
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -12,7 +14,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"wrls.http"
 	human_name		=	"Wireless - HTTP"
-	version			= 	"1.4" 
+	version			= 	"1.5" 
 	address_type	= 	"IP"
 	port_number		=	"80"
 	equiv_class		= 	"WRLS"
@@ -27,13 +29,15 @@
 
 This probe tests an HTTP server by downloading a specific web page and scanning it for a specific string of HTML.
 
-\i\URL Path\p\ is the full path of the desired file on the web server (e.g. "/index.html"). The first character must be a '/'.
+\b\Parameters\p\
 
-\i\String to verify\p\ is a string to verify in the data returned by the HTTP server.  For example, if you are retrieving a web page, you might search for "<HTML>" or "<P>" to verify that the data is HTML, or look for a unique string that's only present when the correct page is returned.
+\i\URL Path\p\ - the full path of the desired file on the web server (e.g. "/index.html"). The first character must be a '/'.
 
-\i\User ID\p\ is the user name typed into the web browser's password dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.
+\i\String to verify\p\ - a string to verify in the server's response. For example, if you are retrieving a web page, you might search for "<HTML>" or "<P>" to verify that the data is HTML, or look for a unique string that is present only in the specified page.
 
-\i\Password\p\ is the password for the web browser's dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.
+\i\User ID\p\ - the user name you would type into the web browser's authentication dialog. It this blank by default. Set this parameter to test a web page that requires authentication.
+
+\i\Password\p\ - the password you would type into the web browser's authentication dialog. It this blank by default. Set this parameter to test a web page that requires authentication.
 
 </description>
 

@@ -2,14 +2,15 @@
 	Wireless - Trango P5830S (remote) (com.dartware.wrls.trango24)
 	Probe for InterMapper (http://www.intermapper.com)
 
-	Copyright (c) 2004, Dartware, LLC. 	This probe is part of Dartware's InterMapper
-	Wireless Add-on package and should not be be distributed or used without license.
+	Copyright (c) 2004, Dartware, LLC. 
 
 	Original version 22 January 2004 ics,
 	Updates:
            9 July 2004 by ics
            9/9/05  rk fixed no snmp response problem for firmware 1.11 (date 9/30/04). Added more info and alarms.
            10/7/05 rk added upper/lower bound for in chartables for unii/ism tx power, temperature, and rssi values
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -18,7 +19,7 @@
 	"probe_name"		=	"wrls.trangoP5830SRU"
 	"human_name"		=	"Wireless - Trango P5830S (remote)"
 	"display_name" 		=	"Wireless/Trango/Trango P5830S (remote)"
-	"version"			=	"1.6"
+	"version"			=	"1.7"
 	"address_type"		=	"IP"
 	"port_number"		=	"161"
 	"equiv_class"		= 	"WRLS"
@@ -36,7 +37,15 @@ This probe monitors a \u2=http://www.trangobroadband.com\Trango\p0\ P5830S remot
 
 It retrieves and displays a number of traffic, physical, and radio status variables. It can go into alarm or warning based on user-defined parameters for transmit power, incoming traffic on the radio interface, and temperature. (This probe calculates counters without using sysUpTime, which isn't available.)
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later. In InterMapper 4.4, please make sure that you use SNMPv1 to query the device.
+\b\Parameters\p\
+
+\i\Tx power too low alarm\p\, \i\Tx power low warning\p\, 
+\i\RSSI too low alarm\p\, \i\RSSI low warning\p\, 
+\i\Too Hot alarm\p\, \i\Hot warning\p\, 
+\i\Too Cold alarm\p\, \i\Cold warning\p\, 
+\i\RF High Traffic Bytes alarm\p\, \i\RF High Traffic Bytes warning\p\, 
+\i\Eth High Traffic Bytes alarm\p\, \i\Eth High Traffic Bytes warning\p\ 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
 
 </description>
 

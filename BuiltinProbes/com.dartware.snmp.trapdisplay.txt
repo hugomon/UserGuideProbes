@@ -13,7 +13,7 @@
      1 Jun 2007 Changed probe name to "Trap Viewer"; tweaked description;
      			left canonical name alone -reb
     16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
-     
+    2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -21,7 +21,7 @@
 	"package"		=	"com.dartware"
 	"probe_name"	=	"snmp.trapdisplay"
 	"human_name"	=	"Trap Viewer"
-	"version"		=	"2.2"
+	"version"		=	"2.3"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"display_name"	=	"SNMP/Trap Viewer"

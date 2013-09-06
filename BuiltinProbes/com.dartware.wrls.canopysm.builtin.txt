@@ -10,6 +10,8 @@
 
 	Converted into built-in probes that will also pull info from its AP - Jan 21 2005 by RK.
 	Requires InterMapper 4.3 or later.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -18,7 +20,7 @@
 	"probe_name"	=	"wrls.canopysm"
 	"human_name"	=	"Wireless - Canopy (SM)"
 	"display_name"	=	"Wireless/Canopy/Canopy (SM)"
-	"version"		=	"1.5"
+	"version"		=	"1.6"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"flags"			= 	"SNMPv2c"
@@ -40,7 +42,18 @@ To disable any of the thresholds, set their values to 0.
 
 The default poll interval for this probe is 5 minutes. The default poll interval is an automatic safeguard; polling more frequently has been shown to adversely affect the device.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later.
+\b\Parameters\p\
+
+\i\RSSI too low alarm\p\, \i\RSSI low warning\p\, 
+\i\Jitter too high alarm\p\, \i\Jitter high warning\p\, 
+\i\Jitter (2x) too high alarm\p\, \i\Jitter (2x) high warning\p\, 
+\i\Round Trip too long alarm\p\, \i\Round Trip long warning\p\, 
+\i\Power Level too low alarm\p\, \i\Power Level low warning\p\, 
+\i\Session count alarm\p\, \i\Session count warning\p\, 
+\i\Reg count alarm\p\, \i\Reg count warning\p\, 
+\i\Re-reg count alarm\p\, \i\Re-reg count warning\p\
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
 </description>
 
 <parameters>

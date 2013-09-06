@@ -12,7 +12,8 @@
     Added autorecord section for IM 5.0 - 05 May 2008 by cls.
     Added experimental on-demand upsAlarmTable - 07 June 2010 by cls.
     Added parseable units for Reports - 4 Mar 2011 by jpd.
-	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+	  20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+    2 Sept 2013 bobm - Updated version number 
 -->
  
 <header>
@@ -20,7 +21,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.liebert-opencomms"
     "human_name"    =  "Liebert UPS - OpenComms"
-    "version"       =  "2.12"
+    "version"       =  "2.13"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Liebert UPS - OpenComms"

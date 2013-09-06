@@ -8,7 +8,8 @@
     Revisions: (Probe Version reflects version of UPS Probe Bundle)
     Created - 4 August 2005 by jkj.
     Updated for "display_name" change (IM 4.4) - 31 August 2005 by jkj.
-	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+	  20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
  
 <header>
@@ -16,7 +17,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.liebert-ups"
     "human_name"    =  "Liebert UPS"
-    "version"       =  "2.6"
+    "version"       =  "2.7"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Liebert UPS"

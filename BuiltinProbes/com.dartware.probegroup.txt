@@ -1,5 +1,6 @@
 <!--
 	Edited description for User Guide (via Probe Doc Generator) 1 Apr 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +9,7 @@
 	probe_name		= "probegroup"
 	human_name		= "Probe Group"
 	display_name	= "Probe Groups/Probe Group"
-	version			= "0.3"
+	version			= "0.4"
 </header>
 
 <description>

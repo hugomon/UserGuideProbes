@@ -1,6 +1,8 @@
 <!-- 
 	LPR (com.dartware.tcp.lpr)
 	Copyright © 2001 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.lpr"
 	human_name		=	"LPR"
-	version			= 	"1.7"
+	version			= 	"1.8"
 	address_type	= 	"IP"
 	port_number		=	"515"
 	display_name	=	"Servers-Standard/LPR"
@@ -20,6 +22,10 @@
 \GB\Line Printer Daemon Protocol\P\
 
 The print server protocol used to print over a TCP/IP network, as defined in \U2=http://www.ietf.org/rfc/rfc1179.txt\RFC 1179\P0\. The default TCP port number for LPR connections is port 515.
+
+\b\Parameters\p\
+
+\i\Queue Name\p\ - the name of the print queue you want to monitor.
 
 </description>
 

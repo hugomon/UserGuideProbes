@@ -13,6 +13,7 @@
     Added autorecord for IM 5.0 - 05 May 2008 by cls.
     Added parseable units for Reports - 4 Mar 2011 by jpd.
     Removed upsbundle link in description to circumvent a probe doc generator issue 8 Feb 2013 bobm
+    Updated version number 2 Sept 2013 bobm
 -->
  
 <header>
@@ -20,7 +21,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.tripplite"
     "human_name"    =  "TrippLite UPS"
-    "version"       =  "2.11"
+    "version"       =  "2.12"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/TrippLite UPS"

@@ -1,6 +1,8 @@
 <!-- 
 	RTSP (com.dartware.tcp.rtsp)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.rtsp"
 	human_name		=	"RTSP"
-	version			= 	"2.1"
+	version			= 	"2.2"
 	address_type	= 	"IP"
 	port_number		=	"554"
 	
@@ -26,7 +28,18 @@ The protocol used to control real-time streams, defined in \U2=http://www.ietf.o
 
 This TCP probe lets you check that the server is up and responding.
 
-The specifics of the commands that the probe must send to the server vary somewhat depending upon the version of RFC2326 that the server implements. If the server you're monitoring implements RFC2326bis-02 or later, then set \B\RFC2326bis-02 or later\P\ to "Yes". If you're not sure, leave it set to "No". If the device goes into warning with the reason set to "[RTSP] Unexpected response to PLAY command. (RTSP/1.0 460 Only Aggregate Option Allowed)", then set it to "Yes".
+The specifics of the commands that the probe must send to the server vary somewhat depending upon the version of RFC2326 that the server implements:
+* If the server you're monitoring implements RFC2326bis-02 or later, then set \B\RFC2326bis-02 or later\P\ to "Yes". 
+* *If you're not sure, leave it set to "No". 
+* *If the device goes into \bi\Warning\p\ with the reason set to "[RTSP] Unexpected response to PLAY command. (RTSP/1.0 460 Only Aggregate Option Allowed)", then set it to "Yes".
+
+\b\Parameters\p\
+
+\i\Movie Name\p\ - the name of the file you want to stream.
+
+\i\Seconds to play\p\ - the number of seconds you want to stream the specified file.
+
+\i\RFC2326bis-02 or later\p\ - indicate whether the RFC2326 version is RFC2326bis-02 or newer.
 
 </description>
 

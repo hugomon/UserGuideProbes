@@ -1,6 +1,8 @@
 <!-- 
 	Inscape Client (com.dartware.wrls.inscape.ab54.client)
 	Copyright (c) 2007 Dartware, LLC. All rights reserved.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"wrls.inscape.ab54.client"
 	human_name		=	"AirEther AB54 Series AP (Client Mode)"
-	version			= 	"1.0"
+	version			= 	"1.1"
 	address_type		= 	"IP"
 	port_number		=	"80"
 	equiv_class		= 	"WRLS"
@@ -22,21 +24,23 @@
 
 This probe monitors \U2=http://www.inscapedata.com//\Inscape Data\P0\'s AB54, AB54E, and AB54E Pro Multifunctional AP in Client Mode.
 
-\i\User\p\ is the name of the administrator.
+\b\Parameters\p\
 
-\i\Password\p\ is the password for the administrator.
+\i\User\p\ - the name of the administrator.
 
-\i\Signal Strength Warning\p\ is the warning threshold for low signal strength %.
+\i\Password\p\ - the password for the administrator.
 
-\i\Signal Strength Alarm\p\ is the alarm threshold for low signal strength %.
+\i\Signal Strength Warning\p\ - the warning threshold for low signal strength %.
 
-\i\Link Quality Warning\p\ is the warning threshold for low link quality %.
+\i\Signal Strength Alarm\p\ - the alarm threshold for low signal strength %.
 
-\i\Link Quality Alarm\p\ is the alarm threshold for low link quality %.
+\i\Link Quality Warning\p\ - the warning threshold for low link quality %.
 
-\i\Expected BSSID\p\ is the expected BSSID.  This value will be ignored if blank.
+\i\Link Quality Alarm\p\ - the alarm threshold for low link quality %.
 
-\i\Port\p\ is the Web interface's HTTP port.
+\i\Expected BSSID\p\ - the expected BSSID.  This value will be ignored if blank.
+
+\i\Port\p\ - the Web interface's HTTP port.
 
 </description>
 

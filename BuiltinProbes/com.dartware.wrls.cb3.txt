@@ -5,6 +5,8 @@
 	Wireless Add-on package and should not be be distributed or used without license.
 
 	Probe by Tex. Last modified 4 May 2005, by ics.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -13,7 +15,7 @@
 	probe_name		=	"wrls.cb3"
 	human_name		=	"Wireless - CB3 Deluxe"
 	display_name	=	"Wireless/CB3/CB3 Deluxe Bridge"
-	version			= 	"1.4"
+	version			= 	"1.5"
 	address_type	= 	"IP"
 	port_number		=	"80"
 	equiv_class		= 	"WRLS"
@@ -25,15 +27,17 @@
 
 This TCP probe queries a CB3 Deluxe wireless bridge via a HTTP GET request.
 
-\i\User\p\ is the username to use when logging in.
+\b\Parameters\p\
 
-\i\Password\p\ is the password for the User specified above.
+\i\User\p\ - the username to use when logging in.
 
-\i\Port\p\ is the CB3's web interface HTTP port.
+\i\Password\p\ - the password for the User specified above.
 
-\i\Quality Warning\p\ is the value (as a percentage) that the communications quality must fall below for the device to go into the WARN state.
+\i\Port\p\ - the CB3's web interface HTTP port.
 
-\i\Quality Alarm\p\ is the value (as a percentage) that the communications quality must fall below for the device to go into the ALARM state.
+\i\Quality Warning\p\ - the value (as a percentage) that the communications quality must fall below for the device to go into the WARN state.
+
+\i\Quality Alarm\p\ - the value (as a percentage) that the communications quality must fall below for the device to go into the ALARM state.
 
 </description>
 

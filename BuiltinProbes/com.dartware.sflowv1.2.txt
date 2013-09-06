@@ -13,6 +13,7 @@
     7 Apr 2009 - Updated -reb
     2 Sep 2010 - Changed sFlowCollectorAddress to IPADDRESS
     20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator), added Parameters section to description -bobm
+    2 Sept 2013 bobm - Updated version number 
    
     
    ----------------------------------------------------------------------------------- 
@@ -51,7 +52,7 @@ It also shows the sFlowTable, as an on-demand table. It lists all devices receiv
    "probe_name"    =  "sflowv1.2"
    "human_name"    =  "sFlow v1.2"
    "display_name"  =  "Experimental/sFlow v1.2"
-   "version"       =  "1.2"
+   "version"       =  "1.3"
    "address_type"  =  "IP,AT"
    "port_number"   =  "161"
 

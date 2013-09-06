@@ -2,6 +2,7 @@
 	Citrix/Metaframe Server Check (com.dartware.tcp.citrix.txt)
 	Copyright © 2006 Dartware, LLC. All rights reserved.
 	13 May 2013 - Edited description for User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.citrix"
 	human_name		=	"Citrix Server"
-	version			= 	"1.1"
+	version			= 	"1.2"
 	address_type	= 	"IP"
 	port_number		=	"1494"
 	display_name	=	"Servers-Proprietary/Citrix Server"
@@ -22,9 +23,9 @@
 This probe connects to a Citrix server, using default port 1494. It checks for the presence of the string "ICA" in the response, which indicates that the Citrix server is running.
 
 This probe sets the device to \b\Alarm\p\ if:
-- a disconnect is received unexpectedly. 
-- doesn't receive a response within 30 seconds after connecting
-- the response doesn't contain the string "ICA"
+* a disconnect is received unexpectedly. 
+* doesn't receive a response within 30 seconds after connecting
+* the response doesn't contain the string "ICA"
 
 \b\Parameters\p\
 

@@ -8,6 +8,8 @@
 	Original version 3 May 2006 tex.
 	Based on com.dartware.wrls.tranzeo.cpe.5a.44r probe.
 	11 May 2006 Changed name of probe to be Tranzeo Sixth Generation CPE
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 
@@ -16,7 +18,7 @@
 	"package"		= 	"com.dartware"
 	"probe_name"	=	"wrls.tranzeo.gen6cpe"
 	"human_name"	=	"Wireless - Tranzeo Sixth Generation CPE"
-	"version"		= 	"1.1"
+	"version"		= 	"1.2"
 	"address_type"	= 	"IP"
 	"port_number"	=	"80"
 	"equiv_class"	= 	"WRLS"
@@ -32,7 +34,14 @@ This probe monitors the sixth generation Customer Premise Equipment (CPE) from \
 
 The probe monitors the received signal strength and compares it to the warning and alarm thresholds below. 
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later. Tranzeo is a trademark of Tranzeo Wireless Technologies, Inc.  
+\b\Parameters\p\
+
+\i\User\p\ - the device's administrative user name.
+
+\i\Password\p\ - the administrator's password.
+
+\i\Warning Threshold\p\, \i\Alarm Threshold\p\ - enter thresholds for signal strength
+
 </description>
 
 <parameters>

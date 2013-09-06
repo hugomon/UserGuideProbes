@@ -10,7 +10,8 @@
 		9 July 2004 by ics.
 		9/13/05 rk fixed wrong variable names in alarms/warnings, added RSSI, added UNII power, added MIB/firmware version info
 		10/7/05 rk added upper/lower bound for in chartables for unii/ism tx power, temperature, and rssi values
-	
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -19,7 +20,7 @@
 	"probe_name"	=	"wrls.trango22"
 	"human_name"	=	"Wireless - Trango P5830S (master)"
 	"display_name" 	=	"Wireless/Trango/Trango P5830S (master)"
-	"version"		=	"1.4"
+	"version"		=	"1.5"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -36,7 +37,16 @@ This probe monitors a \u2=http://www.trangobroadband.com\Trango\p0\ P5830S maste
 
 It retrieves and displays a number of traffic, physical, and radio status variables. It can go into alarm or warning based on user-defined parameters for transmit power, expected active channel number, and temperature. (This probe calculates counters without using sysUpTime, which isn't available.)
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+\i\Tx power too low alarm\p\, \i\Tx power low warning\p\, 
+\i\RSSI too low alarm\p\, \i\RSSI low warning\p\, 
+\i\Too Hot alarm\p\, \i\Hot warning\p\, 
+\i\Too Cold alarm\p\, \i\Cold warning\p\, 
+\i\RF High Traffic Bytes alarm\p\, \i\RF High Traffic Bytes warning\p\, 
+\i\Eth High Traffic Bytes alarm\p\, \i\Eth High Traffic Bytes warning\p\ 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
+\i\Expected Channel\p\ - enter expected channel number. 
+
 </description>
 
 <parameters>

@@ -2,6 +2,7 @@
 	SNMP - Apple AirPort (Graphite) (com.dartware.snmp.airport)
 	Copyright (c) 2002-2003 Dartware, LLC. All rights reserved.
 	Edited description for User Guide (via Probe Doc Generator) 1 Apr 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.airport"
 	human_name		=	"SNMP - Apple AirPort (Graphite)"
-	version			= 	"1.7"
+	version			= 	"1.8"
 	address_type	= 	"IP,AT"
 	equiv_class		= 	"SNMP"
 	port_number		=	"161"

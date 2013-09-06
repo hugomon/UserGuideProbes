@@ -2,6 +2,7 @@
 	HTTPS (com.dartware.tcp.https)
 	Copyright © 2001-2003 Dartware, LLC. All rights reserved.
 	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.https"
 	human_name		=	"HTTPS"
-	version			= 	"2.7"
+	version			= 	"2.8"
 	address_type	= 	"IP"
 	port_number		=	"443"
 	display_name	=	"Servers-Standard/HTTP & HTTPS/HTTPS"
@@ -32,7 +33,8 @@ This probe establishes a secure connection to a web server, downloads a specific
 
 \i\String to verify\p\ is a string to verify in the data returned by the HTTP server.  For example, if you are retrieving a web page, you might search for "<HTML" or "<P>" to verify that the data is HTML. If this string is not found, the device will go into alarm.
 
-\i3\Note: The implementation of this probe uses OpenSSL on MacOSX.\p0\
+\b\Note:\p\ The implementation of this probe uses OpenSSL on MacOSX.
+
 </description>
 
 <parameters>

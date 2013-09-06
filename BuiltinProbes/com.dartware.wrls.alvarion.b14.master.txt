@@ -7,6 +7,8 @@
 
 	Based on "Wireless - Alvarion BreezeACCESS VL (AU)"
 	Latest revision 13 July 2005 by ics.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +17,7 @@
 	"probe_name"	=	"wrls.alvarion.b14.master"
 	"human_name"	=	"Wireless - Alvarion B-14 & B-28 (BU)"
 	"display_name" 	=	"Wireless/Alvarion/Alvarion B-14 & B-28 (BU)"
-	"version"		=	"0.4"
+	"version"		=	"0.5"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -26,7 +28,9 @@
 
 This probe monitors an \u2=http://www.alvarion.com\Alvarion\p0\ B-14 or B-28 base unit (BU). It retrieves and displays the radio band, operating frequency, and slave association. It will go into an alarm when no slave is associated, and when the operating frequency doesn't match the configured frequency. Traffic information is available for the ethernet and radio interfaces. (To show the ethernet interface, we recommend using the "Display unnumbered interfaces" behavior.)
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

@@ -19,6 +19,10 @@ Notes (ics'):
 Had some trouble with Software Version and Serial Number.
 Using a get request fixed Serial Number.
 Asking for the Software Version first fixed that.
+
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
+
 -->
 
 <header>
@@ -27,7 +31,7 @@ Asking for the Software Version first fixed that.
 	"probe_name"		=	"wrls.waveriderccu"
 	"human_name"		=	"Wireless - WaveRider CCU"
 	"display_name" 		=	"Wireless/WaveRider/CCU"
-	"version"			=	"1.0"
+	"version"			=	"1.1"
 	"address_type"		=	"IP,AT"
 	"port_number"		=	"161"
 	"equiv_class"		= 	"WRLS"
@@ -45,7 +49,18 @@ Asking for the Software Version first fixed that.
 
 This probe monitors a WaveRider CCU (access point). It retrieves and displays a number of variables for basic, traffic, and wireless information. It will go into alarm and warning states based on user-defined parameters for radio frequency, percentage of payloads not needing a retry, percentage of payloads sent as broadcast, percentage of payloads discarded, percentage of payloads "Rx PER", percentage of payloads with HCRC errors, "Rx No-Match" errors, and high traffic incoming on the wireless interface. It will also go into an alarm based on the global status indicator.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+\b\Parameters\p\
+
+\i\Expected Frequency\p\ - the expected frequencey 
+\i\No Retry percentage too low alarm\p\, \i\No Retry percentage low warning\p\, 
+\i\Broadcast percentage too high alarm\p\, \i\Broadcast percentage high warning\p\, 
+\i\Discard percentage too high alarm\p\, \i\Discard percentage high warning\p\, 
+\i\Rx PER percentage too high alarm\p\, \i\Rx PER percentage high warning\p\, 
+\i\HCRC percentage too high alarm\p\, \i\HCRC percentage high warning\p\, 
+\i\Rx No-Match too high alarm\p\, \i\Rx No-Match high warning\p\, 
+\i\High Traffic Bytes alarm\p\, \i\High Traffic Bytes warning\p\ 
+- enter \b\Warning\p\ and \b\Alarm\p\ thresholds.
+
 </description>
 
 <parameters>

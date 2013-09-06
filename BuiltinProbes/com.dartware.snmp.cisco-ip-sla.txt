@@ -8,6 +8,7 @@
   For support, please contact Dartware at support@intermapper.com.
 
   3 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +16,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.cisco-ip-sla"
 	human_name		=	"SNMP - Cisco IP SLA Jitter Probe"
-	version			= 	"2.3"
+	version			= 	"2.4"
 	address_type	= 	"IP"
 	port_number		=	"161"
 	flags			=	"SNMPv2c,NOLINKS"

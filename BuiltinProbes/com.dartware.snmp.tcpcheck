@@ -2,6 +2,7 @@
 	SNMP - TCP Check (com.dartware.snmp.tcpcheck)
 	Copyright (c) 2000-2001 Dartware, LLC. All rights reserved.
 	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.tcpcheck"
 	human_name		=	"SNMP - TCP Check"
-	version			= 	"1.5"
+	version			= 	"1.6"
 	address_type	= 	"IP,AT"
 	port_number		=	"161"
 	display_name	=	"Miscellaneous/TCP Check"

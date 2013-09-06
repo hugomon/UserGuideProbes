@@ -1,6 +1,8 @@
 <!-- 
 	SMTP-TLS (com.dartware.tcp.smtp.tls)
 	Copyright © 2002 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 2 Sept 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.smtp.tls"
 	human_name		=	"SMTP-TLS"
-	version			= 	"1.8"
+	version			= 	"1.9"
 	address_type	= 	"IP"
 	port_number		=	"25"
 	display_name	=	"Servers-Standard/Mail/SMTP-TLS"
@@ -21,9 +23,11 @@
 
 The standard protocol used to transfer electronic mail on the Internet, as defined in \U2=http://www.ietf.org/rfc/rfc0821.txt\RFC 821\P0\. This probe tests a secure connection to the SMTP server. The default TCP port number for secure SMTP connections is port 25.
 
-This probe tries to verify that a specified email address exists on the SMTP server, using the VRFY command.  It connects to the SMTP server, introduces itself using the HELO command, then issues a VRFY command for the specified email address.  When it has received a response, the script sends the QUIT command before closing its connection to the server.
+This probe tries to verify that a specified email address exists on the SMTP server, using the VRFY command. It connects to the SMTP server, introduces itself using the HELO command, then issues a VRFY command for the specified email address.  When it receives a response, the script sends the QUIT command and closes its connection to the server.
 
-\i\Email Address\p\ is the name or email address that we are attempting to verify.
+\b\Parameters\p\
+
+\i\Email Address\p\ - the name or email address to verify.
 
 </description>
 

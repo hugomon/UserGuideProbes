@@ -178,9 +178,12 @@ def prepLink(category):
     linkstr = linkstr.replace(")","_") 
     linkstr = linkstr.replace("&","_")       #replace ampersands with underscores in link URLs
     linkstr = linkstr.replace("-","_")       #replace hyphens with underscores in link URLs
+    #linkstr = filename+"#"+prepTarget(targetstr)
     linkstr = filename+"#"+prepTarget(targetstr)
+    bookmark = "#"+prepTarget(targetstr)
 
-    link = '<a href="'+linkstr+'">'+title+'<MadCap:xref href="'+linkstr+'" target="" title="" alt="" MadCap:conditions="Primary.print" /></a>'
+    #link = '<a href="'+linkstr+'">'+title+'</a>'+'<MadCap:xref href="'+linkstr+'" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref>'
+    link = '<a href="'+linkstr+'">'+title+'</a>'
     return link
 
     

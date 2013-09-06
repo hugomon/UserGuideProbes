@@ -4,7 +4,7 @@
 	
 	5 Apr 2007 - Moved to Basic category
 	13 Mar 2013 - edited description for use in User Guide (via Probe Doc Generator) bobm
-
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -12,7 +12,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"automatic"
 	human_name		=	"Automatic"
-	version			= 	"1.7"
+	version			= 	"1.8"
 	address_type	= 	"IP,AT,DART"	# Accept IP, AppleTalk, and Dartmouth node
 	equiv_class		= 	"CORE"			# Core packet equivalency
 

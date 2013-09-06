@@ -1,6 +1,8 @@
 <!-- 
 	NNTP (com.dartware.tcp.nntp)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.nntp"
 	human_name		=	"NNTP"
-	version			= 	"1.6"
+	version			= 	"1.7"
 	address_type	= 	"IP"
 	port_number		=	"119"
 
@@ -24,9 +26,11 @@
 
 The protocol used to read network news on TCP/IP Internets, as defined in \U2=http://www.ietf.org/rfc/rfc0977.txt\RFC 977\P0\.  The default TCP port number for NNTP connections is port 119.
 
-This script connects to the news server and uses the GROUP command to ask for information about a specific newsgroup name.  The script then issues the QUIT command to tell the server it is closing the connection.
+This script connects to a news server and uses the GROUP command to request information about a specific newsgroup name. The script then issues the QUIT command to tell the server it is closing the connection.
 
-\i\Newsgroup\p\ is the name of the newsgroup that you want to verify.
+\b\Parameters\p\
+
+\i\Newsgroup\p\ - the name of the newsgroup to verify.
 
 </description>
 

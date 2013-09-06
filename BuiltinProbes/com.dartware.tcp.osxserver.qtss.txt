@@ -1,6 +1,8 @@
 <!-- 
 	OS X Server - QTSS (com.dartware.tcp.osxserver.qtss)
 	Copyright © 2002 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 2 Sept 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.osxserver.qtss"
 	human_name		=	"OS X Server - QTSS"
-	version			= 	"1.6"
+	version			= 	"1.7"
 	address_type		= 	"IP"
 	port_number		=	"311"
 	display_name		=	"Servers-Proprietary/Apple/OS X Server/QTSS"
@@ -20,14 +22,15 @@
 
 This TCP probe queries a \U2=http://www.apple.com/server/macosx/\Mac OS X Server\P0\ installation for various details about its QuickTime Streaming Server using the Server Admin port and protocol.
 
-A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.
+Sends a request for status information via an HTTPS post to the Server Admin port and parses an XML response.
 
-\i\User\p\ is the name of any user on the specified server.  An admin user is not required.
+\b\Parameters\p\
 
-\i\Password\p\ is the password for the user specified in \i\User\p\.
+\i\User\p\ - the name of any user on the specified server.  An admin user is not required.
 
+\i\Password\p\ - the user's password.
 
-\i3\Note: The implementation of this probe uses OpenSSL on MacOS X.\p0\
+\b\Note:\p\ The implementation of this probe uses OpenSSL on MacOS X.
 
 </description>
 

@@ -7,6 +7,8 @@
 
 	Original version 22 January 2004 ics,
 	Latest revision 9 July 2004 by ics.
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +17,7 @@
 	"probe_name"		=	"wrls.trango20"
 	"human_name"		=	"Wireless - Trango M5830S"
 	"display_name"  	=	"Wireless/Trango/Trango M5830S"
-	"version"			=	"1.3"
+	"version"			=	"1.4"
 	"address_type"		=	"IP,AT"
 	"port_number"		=	"161"
 	"equiv_class"		= 	"WRLS"
@@ -28,7 +30,17 @@ This probe monitors a \u2=http://www.trangobroadband.com\Trango\p0\ M5830S acces
 
 It retrieves and displays a number of traffic, physical, and radio status variables. It can go into alarm or warning based on user-defined parameters for transmit power, number of subscriber unit clients, channel number, incoming traffic on the radio interface, and temperature. (This probe calculates counters without using sysUpTime, which isn't available.)
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+\b\Parameters\p\
+
+\i\Tx power too low alarm\p\, \i\Tx power low warning\p\, 
+\i\Too many client alarm\p\, \i\Many client warning\p\, 
+\i\Too Hot alarm\p\, \i\Hot warning\p\, 
+\i\Too Cold alarm\p\, \i\Cold warning\p\, 
+\i\High Traffic Bytes alarm\p\, \i\High Traffic Bytes warning\p\, 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
+\i\Expected Channel\p\ enter the expected channel number. 
+
 </description>
 
 <parameters>

@@ -1,6 +1,8 @@
 <!-- 
 	Xserve (com.dartware.tcp.xserve.details)
 	Copyright © 2002-2007 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.xserve.deails"
 	human_name		=	"Xserve G4"
-	version			= 	"1.9"
+	version			= 	"1.10"
 	address_type		= 	"IP"
 	port_number		=	"311"
 	display_name		=	"Servers-Proprietary/Apple/Xserve/Xserve G4"
@@ -19,33 +21,36 @@
 \GB\Xserve G4 Probe\P\
 
 This TCP probe queries an Xserve G4 for various details using the Server Monitor port and protocol.
-\B\This probe will monitor Xserve G4s running Mac OS X 10.3.9 and earlier.  For Xserves running 10.4 or later, please choose the Xserve Tiger probe.\P\
 
-A request for status information is made via an HTTPS post to the Server Monitor port. The server responds with XML data that is then parsed by the probe.
+\B\Note:\p\ It is compatible Xserve G4s running Mac OS X 10.3.9 and earlier.  For Xserves running 10.4 or later, please choose the Xserve Tiger probe.
 
-\i\User\p\ is the name of any user on the specified server.
+Sends a request for status information via an HTTPS post to the Server Monitor port and parses an XML response.
 
-\i\Password\p\ is the password for the user specified in \i\User\p\.
+\b\Parameters\p\
 
-\i\OS Version\p\ specifies the version of Mac OS X Server that is running on the Xserve.
+\i\User\p\ - the name of any user on the specified server.
 
-The remaining options allow you to display or ignore the corresponding data. These options correspond to the tabs in the Server Monitor application on Mac OS X Server.
+\i\Password\p\ - the password for the specified user.
 
-\i\Info\p\ is general information about the server, such as amount of RAM and OS name and version.
+\i\OS Version\p\ - the version of Mac OS X Server running on the Xserve.
 
-\i\Drives\p\ is information about the various drives installed on the server. This information includes the manufacturer, model, and capacity of each drive.
+The remaining options let you display or ignore data in the response. These options correspond to tabs in the Server Monitor application on Mac OS X Server.
 
-\i\Power\p\ is information pertaining to the power supply.
+\i\Info\p\ - general information about the server, such as amount of RAM, and OS name, and version.
 
-\i\Network\p\ information includes the hardware address, IP address, traffic information, and type of each interface.
+\i\Drives\p\ - information about the drives installed on the server. Includes the manufacturer, model, and capacity of each drive.
 
-\i\Temperature\p\ is the ambient temperature of the server.
+\i\Power\p\ - information about the power supply.
 
-\i\Blowers\p\ is information on the speed of the server's cooling fans.
+\i\Network\p\ - Includes the hardware address, IP address, traffic information, and type of each interface.
 
-\i\Security\p\ monitors the state of the security lock and the enclosure.
+\i\Temperature\p\ - the ambient temperature of the server.
 
-\i3\Note: The implementation of this probe uses OpenSSL on MacOSX.\p0\
+\i\Blowers\p\ - information on the speed of the server's cooling fans.
+
+\i\Security\p\ - the state of the security lock and the enclosure.
+
+\b\Note:\p\ The implementation of this probe uses OpenSSL on MacOSX.
 
 </description>
 

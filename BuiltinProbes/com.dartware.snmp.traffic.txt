@@ -6,6 +6,7 @@
 	Added ifOperStatus flag; added display_name; bumped version. 28 Nov 2005 -reb
 	Moved to SNMP folder; bumped version. 23 Nov 2009 -cls
 	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -13,7 +14,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.traffic"
 	human_name		=	"SNMP - High Traffic"
-	version			= 	"0.3"
+	version			= 	"0.4"
 	address_type	= 	"IP,AT"
 	port_number		=	"161"
 	flags			=   "NOLINKS"

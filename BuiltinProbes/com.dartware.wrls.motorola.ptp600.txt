@@ -10,7 +10,8 @@
 		Replaced mention of "Gemini" with the correct "Spectra"
 		Deleted params and thresholds that had been commented out. -reb
 	 5 Apr 2007 - Cloned Orthogon Spectra probe to create this one for Motorola PTP600
-	
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -19,7 +20,7 @@
 	probe_name			=	"wrls.motorola.ptp600"
 	human_name			=	"Wireless - Motorola PTP600"
 	display_name		=	"Wireless/Motorola/PTP 600 Series Bridge"
-	"version"			=	"0.7"
+	"version"			=	"0.8"
 	"address_type"		=	"IP,AT"
 	"port_number"		=	"161"
 	"equiv_class"		= 	"WRLS"
@@ -36,7 +37,14 @@ This probe monitors a Motorola PTP600 point-to-point (P2P) Wireless Ethernet Bri
 
 It monitors and displays a variety of information, including mode and association, range, active channels, transmit and receive modulation mode, current and maximum transmit power, receive power, vector error, link loss, and signal-to-noise ratio. It will go into alarm and warning states based on user-specified levels for the modulation/speed mode, received power, vector error, link loss, and signal-to-noise ratio.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.4 or later.
+\b\Parameters\p\
+
+\i\Tx Modulation Mode Alarm\p\, \i\Tx Modulation Mode Warning\p\, 
+\i\Rx Modulation Mode Alarm\p\, \i\Rx Modulation Mode Warning\p\, 
+\i\Rx Power too low alarm\p\, \i\Rx Power low warning\p\, 
+\i\Vector Error too high alarm\p\, \i\Vector Error high warning\p\, 
+\i\Link Loss too high alarm\p\, \i\Link Loss high warning\p\ 
+- select modes and enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
 </description>
 
 <parameters>

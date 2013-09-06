@@ -1,7 +1,8 @@
 <!-- 
-	HTTP (com.dartware.tcp.http)
+	HTTP (com.dartware.tcp.https.follow)
 	Copyright © 2000-2012 Dartware, LLC. All rights reserved.
 	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.https.follow"
 	human_name		=	"HTTPS (Follow Redirects)"
-	version			= 	"1.1"
+	version			= 	"1.2"
 	address_type	= 	"IP"
 	port_number		=	"443"
 	

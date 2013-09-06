@@ -1,12 +1,13 @@
 <!--
 	20 Aug 2013 - edited description for User Guide (via Probe Doc Generator) bobm 
+  2 Sept 2013 bobm - Updated version number 
 -->
 <HEADER>
 	type			=	"tcp-script"
 	package			=	"com.dartware"
 	probe_name		=	"tcp.imdatabase"
 	human_name		=	"IMDatabase"
-	version			=	"0.3"
+	version			=	"0.4"
 	address_type	=	"IP"
 	port_number		=	"8182"
 	display_name	=	"Servers-Proprietary/Dartware/DataCenter/IMDatabase"

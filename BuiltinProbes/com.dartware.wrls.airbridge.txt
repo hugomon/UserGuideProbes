@@ -10,8 +10,8 @@
 
 	Supports all airBridge models: Indoor, Outdoor, Total.
 	Tested against: Firmware version  0.01.11
-
-        
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -20,7 +20,7 @@
 	"probe_name"		=	"wrls.airbridge"
 	"human_name"		=	"Wireless - smartBridges airBridge"
 	"display_name" 		=	"Wireless/smartBridges/airBridge"
-	"version"			=	"1.4"
+	"version"			=	"1.5"
 	"address_type"		=	"IP"
 	"port_number"		=	"161"
 	"equiv_class"		= 	"WRLS"
@@ -37,9 +37,15 @@ pdutype="get-request"
 
 This probe monitors a \u2=http://www.smartbridges.com\smartBridges\p0\ airBridge device. It retrieves and displays a number of traffic (bytes received/transmitted) and physical variables (name, MAC address). 
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later. 
+\b\Note:\p\ Install InterMapper on a machine where you don't plan to run smartBridges simpleMonitor. To run both InterMapper and smartBridges' simpleMonitor on the same machine, disable trap processing in InterMapper.
 
-Please install InterMapper on a machine where you don't plan to run smartBridges simpleMonitor. To be able to run both InterMapper and smartBridges' simpleMonitor on the same machine, you will need to disable trap processing in InterMapper.
+\b\Parameters\p\
+
+\i\RSSI % low warning\p\, \i\RSSI % too low alarm\p\, 
+\i\Too many failed packets/sec\p\, \i\Too many retry packets/sec\p\ 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
+\i\Link to Device Management Tool\p\ - the URL for the device's web manager.
 
 </description>
 

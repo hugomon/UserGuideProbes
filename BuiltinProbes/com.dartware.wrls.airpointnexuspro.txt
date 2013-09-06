@@ -9,6 +9,8 @@
 	Renamed from airpointnexus Sep 2006 cls
 
 	Tested against: sb3212 airPoint Nexus
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -17,7 +19,7 @@
 	"probe_name"	=	"wrls.airpointnexuspro"
 	"human_name"	=	"Wireless - smartBridges airPoint Nexus PRO total"
 	"display_name" 	=	"Wireless/smartBridges/airPoint Nexus PRO total"
-	"version"		=	"0.4"
+	"version"		=	"0.5"
 	"address_type"	=	"IP"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -31,10 +33,20 @@ interface_visible		=	("$ifDescr" =~ "eth0" or "$ifDescr" =~ "eth1" or "$ifDescr"
 <description>
 \GB\smartBridges airPoint Nexus PRO total probe\P\
 
-This probe monitors a \u2=http://www.smartbridges.com\smartBridges\p0\ airPoint Nexus PRO total device. It retrieves and displays general device information, remote device information, 
-wireless statistics information and bridge information (when the device is operating as a bridge).
+This probe monitors a \u2=http://www.smartbridges.com\smartBridges\p0\ airPoint Nexus PRO total device. It retrieves and displays general device information, remote device information, wireless statistics information and bridge information (when the device is operating as a bridge).
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.4 or later. 
+\b\Parameters\p\
+
+\i\Many clients warning\p\, \i\Too many clients alarm\p\, 
+\i\Many WDS clients warning\p\, \i\Too many WDS clients alarm\p\, 
+\i\RSSI (dBm) low warning\p\, \i\RSSI (dBm) too low alarm\p\, 
+\i\Tx retries (%) high warning\p\, \i\Tx retries (%) too high alarm\p\, 
+\i\Tx failed (%) high warning\p\, \i\Tx failed (%) too high alarm\p\, 
+\i\Frame errors (%) high warning\p\, \i\Frame errors (%) too high alarm\p\, 
+\i\ACK failures/min high warning\p\, \i\ACK failures/min too high alarm\p\, 
+\i\Aborted frames/min high warning\p\, \i\Aborted frames/min too high alarm\p\, 
+\i\RTS errors (%) high warning\p\, \i\RTS errors (%) too high alarm\p\ 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
 
 </description>
 

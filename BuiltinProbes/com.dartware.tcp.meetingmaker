@@ -1,6 +1,8 @@
 <!-- 
 	MeetingMaker (com.dartware.tcp.meetingmaker)
 	Copyright © 2002 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.meetingmaker"
 	human_name		=	"MeetingMaker"
-	version			= 	"1.4"
+	version			= 	"1.5"
 	address_type	= 	"IP"
 	port_number		=	"649"
 	display_name	=	"Servers-Proprietary/MeetingMaker"
@@ -18,8 +20,11 @@
 
 \GB\MeetingMaker Probe\P\
 
-The MeetingMaker server listens on port 649. This probe attempts to connect and exits with OKAY status if it succeeds.
+The MeetingMaker server listens on port 649. This probe attempts to connect and exits with \bi\OKAY\p\ status if successful.
 
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

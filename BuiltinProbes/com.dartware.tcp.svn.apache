@@ -1,6 +1,8 @@
 <!-- 
 	Subversion Apache module probe (com.dartware.tcp.svn.apache)
 	Copyright © 2006 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +11,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.svn.apache"
 	human_name		=	"SVN (apache)"
-	version			= 	"1.0"
+	version			= 	"1.1"
 	address_type	= 	"IP"
 	port_number		=	"80"
 
@@ -26,13 +28,15 @@
 
 This probe tests a Subversion server running as an Apache module. The subversion module lets Apache function as a WebDAV/DeltaV server. Since the server responds normally to HTTP GET requests, testing whether it is up is the same as performing an HTTP GET request and checking to ensure the location was found.
 
-\i\Host Name\p\ is the domain name of the subversion server (e.g. "svn.collab.net"). Only add an IP address or domain name; do not add "http://".
+\b\Parameters\p\
 
-\i\URL Path\p\ is the path to the repository. The first and last characters must be a '/'.
+\i\Host Name\p\ - the domain name of the subversion server (e.g. "svn.collab.net"). Include only the IP address or domain name; do not include "http://".
 
-\i\User ID\p\ is the user name used by the subversion server for authentication, if required.
+\i\URL Path\p\ - the path to the repository. The first and last characters must be a '/'.
 
-\i\Password\p\ is the password used by the subversion server for authentication, if required.
+\i\User ID\p\ - the user name used for authentication by the subversion server, if required.
+
+\i\Password\p\ - the password used for authentication by the subversion server, if required.
 
 Subversion is a version control system intended as a replacement for CVS. The software is released under an Apache/BSD style open-source license. The project can be found at \U2=http://subversion.tigris.org\http://subversion.tigris.org\P0\.
 

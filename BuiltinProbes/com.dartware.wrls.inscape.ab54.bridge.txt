@@ -8,7 +8,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"wrls.inscape.ab54.bridge"
 	human_name		=	"AirEther AB54 Series AP (Bridge Mode)"
-	version			= 	"1.0"
+	version			= 	"1.1"
 	address_type		= 	"IP"
 	port_number		=	"80"
 	equiv_class		= 	"WRLS"
@@ -22,11 +22,15 @@
 
 This probe monitors \U2=http://www.inscapedata.com//\Inscape Data\P0\'s AB54, AB54E, AB54E Pro Multifunctional AP in Point to Point or Point to Multipoint Bridge Mode.
 
+\b\Parameters\p\
+
 \i\User\p\ is the name of the administrator.
 
 \i\Password\p\ is the password for the administrator.
 
 \i\Port\p\ is the Web interface's HTTP port.
+
+\i\RSSI Warning <\p\, \i\RSSI Alarm <\p\ - enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
 
 </description>
 

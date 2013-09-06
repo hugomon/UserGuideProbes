@@ -1,6 +1,8 @@
 <!-- 
 	Telnet (com.dartware.tcp.telnet)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -22,21 +24,23 @@
 
 The protocol used for terminal-to-terminal communication and distributed computation as described in \u2=http://www.ietf.org/rfc/rfc0854.txt\RFC 854\p0\. The default TCP port number for Telnet connections is port 23.
 
-This probe lets you Telnet to a device, login with a name and password, and optionally enter a command. This probe is specifically designed to reject any Telnet options proffered by the Telnet server; the TCP connection always remains in the base "network virtual terminal" state. This probe lets you enter data at up to three prompts.
+This probe lets you Telnet to a device, login with a name and password, and optionally enter a command. The probe is specifically designed to reject any Telnet options proffered by the Telnet server; the TCP connection always remains in the base "network virtual terminal" state. You can enter data at up to three prompts.
 
-\i\Intro String to Match\p\ is a string to match in the welcome banner sent by the Telnet server when you first connect. Leave this parameter blank if you want to match anything in the welcome banner.
+\b\Parameters\p\
 
-\i\First Prompt\p\ is the string to match in the first prompt. (e.g. "Login:")
+\i\Intro String to Match\p\ - a string to match in the welcome banner sent by the Telnet server when you first connect. Leave this parameter blank to match anything in the welcome banner.
 
-\i\Reply #1\p\ is your reply to the first prompt. (i.e. your response to the "Login:" prompt)
+\i\First Prompt\p\ - the string to match in the first prompt. (example: "Login:")
 
-\i\Second Prompt\p\ is the string to match in the second prompt. (e.g. "Password:") If this parameter is empty, the probe ignores the prompt string and it does not send its reply.
+\i\Reply #1\p\ - your reply to the first prompt. (example: your response to the "Login:" prompt)
 
-\i\Reply #2\p\ is your reply to the second prompt. (i.e. your response to the "Password:" prompt.)
+\i\Second Prompt\p\ - the string to match in the second prompt. (example: "Password:") If this parameter is empty, the probe ignores the prompt string and it does not send a reply.
 
-\i\Third Prompt\p\ is the string to match in the third prompt. If this parameter is empty, the probe ignores the prompt string and its reply.
+\i\Reply #2\p\ - your reply to the second prompt, such as your response to the "Password:" prompt.
 
-\i\Reply #3\p\ is your reply to the third prompt.
+\i\Third Prompt\p\ - the string to match in the third prompt. If this parameter is empty, the probe ignores the prompt string and its reply.
+
+\i\Reply #3\p\ - your reply to the third prompt.
 
 </description>
 

@@ -2,6 +2,7 @@
 	DNS NS (com.dartware.dns.ns)
 	Copyright © 2006 Dartware, LLC. All rights reserved.
 	28 Mar 2013 - edited description for User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"dns.ns"
 	human_name		=	"DNS -- (NS) Name Server"
-	version			= 	"1.1"
+	version			= 	"1.2"
 	address_type	= 	"IP"
 	port_number		=	"53"
 	display_name	=	"Servers-Standard/Domain Name (DNS)/DNS: (NS) Name Server"

@@ -2,6 +2,7 @@
 Command Line WMI Probe to query SQL Server (com.dartware.wmi.sql_query) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
 13 Mar 2013 - edited description for use in User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 --> 
 
 <header> 
@@ -9,7 +10,7 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 	package			=	"com.dartware" 
 	probe_name		=	"cmd.sql_query" 
 	human_name		=	"SQL Server Query" 
-	version			=	"1.3" 
+	version			=	"1.4" 
 	address_type	=	"IP"
 	display_name	=	"Servers-Proprietary/Microsoft/SQL Server Query"
 	visible_in 		=	"Windows"

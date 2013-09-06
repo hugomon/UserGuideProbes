@@ -10,6 +10,7 @@
 	 4 Sep 2012 Change autorecord to datasets section. -jpd
 	15 Apr 2013 - Edited description for User Guide (via Probe Doc Generator), 
                 Changed the order of parameters to match the description -bobm
+  2 Sept 2013 bobm - Updated version number 
 
 	You can read the Developer Guide to learn more about InterMapper Probes. It's at:
 		http://intermapper.com/go.php?to=intermapper.devguide
@@ -20,7 +21,7 @@
 	"package"		=	"com.dartware"
 	"probe_name"	=	"snmp.oidstrcomparison"
 	"human_name"	=	"SNMP - String Comparison"
-	"version"		=	"1.8"
+	"version"		=	"1.9"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"display_name"	=	"SNMP/String Comparison"

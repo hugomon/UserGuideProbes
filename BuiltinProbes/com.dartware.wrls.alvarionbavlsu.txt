@@ -7,6 +7,8 @@
 
 	Original version 27 February 2004 ics,
 	Latest revision 7 March 2004 by ics.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +17,7 @@
 	"probe_name"	=	"wrls.alvarionbavlsu"
 	"human_name"	=	"Wireless - Alvarion BreezeACCESS VL (SU)"
 	"display_name" 	=	"Wireless/Alvarion/BreezeACCESS VL (SU)"
-	"version"		=	"1.6"
+	"version"		=	"1.7"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -26,7 +28,14 @@
 
 This probe monitors an \u2=http://www.alvarion.com\Alvarion\p0\ BreezeACCESS VL subscriber unit (SU). It retrieves and displays the radio band, operating frequency, average received signal to noise ratio, and the MAC address of the associated access unit (AU). It will go into alarm or warning states based on user-defined parameters for a low signal to noise ratio or high traffic on a specified interface.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+\b\Parameters\p\
+
+\i\Avg Receive SNR too low alarm\p\, \i\Avg Receive SNR low warning\p\, 
+\i\High Traffic Bytes alarm\p\, \i\High Traffic Bytes warning\p\ 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
+\i\High Traffic Interface Number\p\ - enter the number of the interface for which you want to monitor traffic.
+
 </description>
 
 <parameters>

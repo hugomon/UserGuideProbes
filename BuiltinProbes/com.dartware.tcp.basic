@@ -2,6 +2,7 @@
 	Basic TCP (com.dartware.tcp.basic)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
 	18 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.basic"
 	human_name		=	"Basic TCP"
-	version			= 	"1.5"
+	version			= 	"1.6"
 	address_type	= 	"IP"
 	port_number		=	"23"
 	

@@ -10,6 +10,7 @@
 	recalc of bytes per seconds to until in % of bandwidth
 	Cloned from de.system.snmp-traffic-high - 18May2010 -reb
 	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+  2 Sept 2013 bobm - Updated version number 
 
 -->
 
@@ -18,7 +19,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.traffic-util"
 	human_name		=	"SNMP - High Util"
-	version			= 	"0.2"
+	version			= 	"0.3"
 	address_type	= 	"IP,AT"
 	port_number		=	"161"
 	flags			=   "NOLINKS"

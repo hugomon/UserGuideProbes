@@ -2,6 +2,7 @@
 	SNMPv2c - Basic OID (com.dartware.snmpv2c.basic)
 	Copyright © 2001 Dartware, LLC. All rights reserved.
 	16 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmpv2c.basic"
 	human_name		=	"SNMP - Basic OID (v2c)"
-	version			= 	"1.5"
+	version			= 	"1.6"
 	address_type	= 	"IP,AT"
 	port_number		=	"161"
 	display_name	=	"Miscellaneous/Legacy/Basic OID (v2c)"

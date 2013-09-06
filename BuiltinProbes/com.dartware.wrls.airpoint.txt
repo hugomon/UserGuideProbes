@@ -12,6 +12,8 @@
 
 	Tested against: firmware version 1.4.k.5
 	Should also supports other access points based on the same Atmel AT76C510 chip.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -20,7 +22,7 @@
 	probe_name		=	"wrls.airptpro"
 	human_name		=	"Wireless - smartBridges airPoint"
 	display_name	=	"Wireless/smartBridges/airPoint"
-	version			= 	"1.4"
+	version			= 	"1.5"
 	address_type	= 	"IP,AT"
 	equiv_class		= 	"WRLS"
 	port_number		=	"161"
@@ -48,9 +50,15 @@ It retrieves and displays a number of traffic (bytes received/transmitted) and p
 
 This probe may not return complete information to SNMPv1 clients using the community string "public". To fully utilize this probe, you must set the community string to the one with the correct permissions.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later.
+\b\Note:\p\ Install InterMapper on a machine where you don't plan to run smartBridges simpleMonitor. To run both InterMapper and smartBridges' simpleMonitor on the same machine, disable trap processing in InterMapper.
 
-Please install InterMapper on a machine where you don't plan to run smartBridges simpleMonitor. To be able to run both InterMapper and smartBridges' simpleMonitor on the same machine, you will need to disable trap processing in InterMapper.
+\b\Parameters\p\
+
+\i\Number of clients warning\p\, \i\Maximum number of clients\p\, 
+\i\Too many failed packets/sec\p\, \i\Too many retry packets/sec\p\
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
+\i\Link to Device Management Tool\p\ - enter the URL to the web manager for this device. 
 
 </description>
 

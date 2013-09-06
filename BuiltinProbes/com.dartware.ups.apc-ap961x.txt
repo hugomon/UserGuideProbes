@@ -17,6 +17,7 @@
 		[2.8 ] fixed to work correctly with corrected defined function, etc. 04 June 2009 - csw 
 		[3.1 ] Added parseable units for Reports - 4 Mar 2011 by jpd
 	20 Aug 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
  
 <header>
@@ -24,7 +25,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.apc-ap961x"
     "human_name"    =  "APC UPS - AP961x"
-    "version"       =  "3.4"
+    "version"       =  "3.5"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/APC UPS - AP961x"

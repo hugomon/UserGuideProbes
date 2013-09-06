@@ -3,6 +3,7 @@
 	Copyright (c) 2001 Dartware, LLC. All rights reserved.
 	Thanks to S. Erde and W. Schley for initial implementation.
 	3 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -10,7 +11,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.cisco"
 	human_name		=	"SNMP - Cisco - Old CPU MIB"
-	version			= 	"1.8"
+	version			= 	"1.9"
 	address_type	= 	"IP,AT"
 	port_number		=	"161"
 	display_name	=	"Network Devices/Cisco/Cisco - Old CPU MIB"

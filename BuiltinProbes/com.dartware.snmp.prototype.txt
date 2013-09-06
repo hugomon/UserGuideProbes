@@ -7,6 +7,7 @@
 	Updated 29 July 2005 -
 	Updated 28 Oct 2005 - include display_name so it displays properly in InterMapper 4.4 -reb
 	15 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -14,7 +15,7 @@
 	"package"		=	"com.dartware"
 	"probe_name"	=	"snmp.prototype"
 	"human_name"	=	"Prototype SNMP probe"
-	"version"		=	"1.2"
+	"version"		=	"1.4"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	display_name	=	"Miscellaneous/Prototype SNMP Probe"
@@ -40,14 +41,6 @@ The probe also provides thresholds that set the device into \b\Alarm\p\ or \b\Wa
 
 In this example, the device goes into \b\Alarm\p\ or \b\Warning\p\ state if it has been rebooted recently (controlled by the \i\RebootAlarm\p\ and \i\RebootWarn\p\ parameters - two and three minutes, by default) or if there aren't as many interfaces in the ifTable as specified (in the \i\ExpectedInterfaces\p\ parameter.)
 
-\b\Parameters\p\
-
-\i\RebootAlarm\p\ - set the device to \b\Alarm\p\ if the sysUptime is less than the specified value in minutes.
-
-\i\RebootWarn\p\ - set the device to \b\Warning\p\ if the sysUptime is less than the specified value in minutes.
-
-\i\ExpectedInterfaces\p\ - set the device to \b\Warning\p\ if the the ifNumber is greater than or equal to this value.
-
 This probe also demonstrates:
 
 * \b\CALCULATION variables\p\ - converts from centi-seconds (hundredths of a second) to seconds.
@@ -57,10 +50,15 @@ This probe also demonstrates:
 * \b\Marking up text\p\ - in the \m\<description>\g\ and \m\<snmp-device-display>\g\ sections, using IMML (InterMapper Markup Language) to get bold, italic, colored text, etc. 
 
 * IMML also allows you to create a link to a URL, using the \\U2=http://xxxx\\ notation shown in the \m\<snmp-device-display>\g\ section.
-</description>
 
--- Parameters are user-settable values that the probe uses for its comparisons.
--- Specify the default values here. The customer can change them and they will be retained for each device.
+\b\Parameters\p\
+
+\i\RebootAlarm\p\ - set the device to \b\Alarm\p\ if the sysUptime is less than the specified value in minutes.
+
+\i\RebootWarn\p\ - set the device to \b\Warning\p\ if the sysUptime is less than the specified value in minutes.
+
+\i\ExpectedInterfaces\p\ - set the device to \b\Warning\p\ if the \m\ifNumber\g\ is greater than or equal to this value.
+</description>
 
 <parameters>
 	"RebootAlarm"		=	"2" 	-- 2 min = 120 seconds = 12,000 centi-seconds

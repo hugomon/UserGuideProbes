@@ -3,6 +3,8 @@
 	Copyright © 2000-2008 Dartware, LLC. All rights reserved.
 	
 	 3 Mar 2008 - Fixed return status for 550 error code
+  Edited description for User Guide (via Probe Doc Generator) 2 Sept 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -26,9 +28,11 @@
 
 The standard protocol used to transfer electronic mail on the Internet, as defined in \U2=http://www.ietf.org/rfc/rfc0821.txt\RFC 821\P0\.  The default TCP port number for SMTP connections is port 25.
 
-This probe tries to verify that a specified email address exists on the SMTP server, using the VRFY command.  It connects to the SMTP server, introduces itself using the HELO command, then issues a VRFY command for the specified email address.  When it has received a response, the script sends the QUIT command before closing its connection to the server.
+This probe tries to verify that a specified email address exists on the SMTP server, using the VRFY command. It connects to the SMTP server, introduces itself using the HELO command, then issues a VRFY command for the specified email address.  When it receives a response, the script sends the QUIT command and closes its connection to the server.
 
-\i\Email Address\p\ is the name or email address that we are attempting to verify.
+\b\Parameters\p\
+
+\i\Email Address\p\ - the name or email address to verify.
 
 </description>
 

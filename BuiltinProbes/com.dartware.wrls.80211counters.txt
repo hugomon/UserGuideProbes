@@ -7,6 +7,7 @@
 
 	Original version May 2005 by rk
 	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -15,7 +16,7 @@
 	"probe_name"		=	"wrls.80211counters"
 	"human_name"		=	"Wireless - IEEE 802.11"
 	"display_name"  	=	"Wireless/Basic/IEEE 802.11"
-	"version"		=	"0.1"
+	"version"		=	"0.2"
 	"address_type"		=	"IP"
 	"port_number"		=	"161"
 	"equiv_class"		= 	"WRLS"
@@ -30,7 +31,7 @@ This probe monitors 802.11 counters from a wireless device that supports the IEE
 
 \i\Interface index\p\ - enter an interface for the wireless device.
 
-\i\Tx Failed frames/sec\p\, \i\Tx Retry frames/sec\p\, \i\Rx FCS err fragments/sec\p\, and \i\ACK failures/sec\p\ - enter thresholds for \b\Warning\p\ and \b\Alarmp\p\.
+\i\Tx Failed frames/sec\p\, \i\Tx Retry frames/sec\p\, \i\Rx FCS err fragments/sec\p\, and \i\ACK failures/sec\p\ - enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
 </description>
 
 <parameters>

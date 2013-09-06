@@ -1,6 +1,8 @@
 <!-- 
 	Inscape AB54 AP (com.dartware.wrls.inscape.ab54.ap)
 	Copyright (c) 2007 Dartware, LLC. All rights reserved.
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -8,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"wrls.inscape.ab54.ap"
 	human_name		=	"AirEther AB54 Series AP (AP Mode)"
-	version			= 	"1.0"
+	version			= 	"1.1"
 	address_type		= 	"IP"
 	port_number		=	"80"
 	equiv_class		= 	"WRLS"
@@ -22,12 +24,19 @@
 
 This probe monitors \U2=http://www.inscapedata.com//\Inscape Data\P0\'s AB54, AB54E, AB54E Pro Multifunctional AP in Access Point Mode.
 
-\i\User\p\ is the name of the administrator.
+\b\Parameters\p\
 
-\i\Password\p\ is the password for the administrator.
+\i\User\p\ - the name of the administrator.
 
-\i\Port\p\ is the Web interface's HTTP port.
+\i\Password\p\ - the password for the administrator.
 
+\i\Port\p\ - the Web interface's HTTP port.
+
+\i\RSSI Warning <\p\, \i\RSSI Alarm <\p\, 
+\i\Too Many Stations Warning >\p\, \i\Too Many Stations Alarm >\p\, 
+\i\Too Few Stations Warning <\p\, \i\Too Few Stations Alarm <\p\
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+ 
 </description>
 
 <parameters>

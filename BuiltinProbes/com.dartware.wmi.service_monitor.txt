@@ -2,6 +2,7 @@
 Command Line WMI Probe to monitor services (com.dartware.wmi.service_monitor) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
 	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
+  2 Sept 2013 bobm - Updated version number 
 --> 
 
 <header> 
@@ -9,7 +10,7 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 	package			=	"com.dartware" 
 	probe_name		=	"wmi.service_monitor" 
 	human_name		=	"WMI Service Monitor" 
-	version			=	"1.12" 
+	version			=	"1.13" 
 	address_type	=	"IP"
 	display_name	=	"WMI/WMI Service Monitor"
 	visible_in 		=	"Windows"

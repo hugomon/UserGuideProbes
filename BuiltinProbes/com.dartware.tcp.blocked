@@ -2,6 +2,7 @@
 	Basic TCP (Blocked) (com.dartware.tcp.blocked)
 	Copyright © 2004 Dartware, LLC. All rights reserved.
 	18 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) - bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.blocked"
 	human_name		=	"Basic TCP (Blocked)"
-	version			= 	"1.5"
+	version			= 	"1.6"
 	address_type	= 	"IP"
 	port_number		=	"23"
 	display_name	=	"Servers-Standard/Basic TCP (Blocked)"

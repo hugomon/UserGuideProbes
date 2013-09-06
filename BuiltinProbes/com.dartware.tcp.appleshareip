@@ -2,6 +2,7 @@
 	AppleShareIP (com.dartware.tcp.appleshareip)
 	Copyright © 2000 Dartware, LLC. All rights reserved.
 	17 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.appleshareip"
 	human_name		=	"AppleShareIP"
-	version			= 	"1.5"
+	version			= 	"1.6"
 	address_type	= 	"IP"
 	port_number		= 	"548"
 	

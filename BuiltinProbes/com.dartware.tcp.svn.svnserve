@@ -1,6 +1,8 @@
 <!-- 
 	Subversion standalone svnserve probe (com.dartware.tcp.svn.svnserve)
 	Copyright © 2006 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +11,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.svn.svnserve"
 	human_name		=	"SVN (svnserve)"
-	version			= 	"1.0"
+	version			= 	"1.1"
 	address_type	= 	"IP"
 	port_number		=	"3690"
 	display_name	=	"Servers-Standard/Subversion/SVN (Svnserve)"
@@ -20,13 +22,15 @@
 
 \GB\Subversion Standalone Server (svnserve)\P\
 
-This probe tests a stand-alone svnserve Subversion server. It connects to the svnserve using its default port 3690. The server returns a response to indicate it is running. If a repository location is specified, the probe then tries to connect to that repository. If a username is specified, the probe will try to authenticate using CRAM-MD5, otherwise it will connect anonymously.
+This probe tests a stand-alone svnserve Subversion server. It connects to the svnserve using its default port 3690. The server returns a response to indicate it is running. If a repository location is specified, the probe then tries to connect to that repository. If a username is specified, the probe tries to authenticate using CRAM-MD5, otherwise it connects anonymously.
 
-\i\Repository\p\ is the subversion repository path (e.g. "svn/experimental").  It should not begin with a '/'.
+\b\Parameters\p\
 
-\i\User ID\p\ is the user name used by the subversion server for authentication, if required.
+\i\Repository\p\ - the subversion repository path (e.g. "svn/experimental").  It should not begin with a '/'.
 
-\i\Password\p\ is the password used by the subversion server for authentication, if required.
+\i\User ID\p\ - the user name used for authentication by the subversion server, if required.
+
+\i\Password\p\ - the password used for authentication by the subversion server, if required.
 
 Subversion is a version control system intended as a replacement for CVS. The software is released under an Apache/BSD style open-source license. The project can be found at \U2=http://subversion.tigris.org\http://subversion.tigris.org\P0\.
 

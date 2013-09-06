@@ -9,6 +9,8 @@
 	Latest revision 31 January 2005 by ics.
 	Changed comment to indicate user-thresholds are max & min 
 		acceptable values 23 Aug 2007 -reb
+	4 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  4 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -17,7 +19,7 @@
 	"probe_name"	=	"wrls.canopyap"
 	"human_name"	=	"Wireless - Canopy (AP)"
 	"display_name" 	=	"Wireless/Canopy/Canopy (AP)"
-	"version"		=	"1.8"
+	"version"		=	"1.9"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"flags"			= 	"SNMPv2c"
@@ -33,7 +35,12 @@ This probe monitors a Canopy wireless access point (AP), including basic informa
 
 The default poll interval for this probe is 5 minutes. The default poll interval is an automatic safeguard; polling more frequently has been shown to adversely affect the device.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.2.1 or later.
+\b\Parameters\p\
+
+\i\Too many clients alarm\p\, \i\Many clients warning\p\, 
+\i\Too few clients alarm\p\, \i\Few clients warning\p\ 
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
 </description>
 
 <parameters>

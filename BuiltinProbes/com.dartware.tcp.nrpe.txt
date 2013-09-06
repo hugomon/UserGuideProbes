@@ -1,6 +1,8 @@
 <!-- 
 	NRPE (com.dartware.tcp.nrpe)
 	Copyright © 2009 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 2 Sept 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -32,7 +34,9 @@ The NRPE daemon uses a configuration file (\i\nrpe.cfg\p\) that has command defi
 
 When the NRPE daemon receives a request to run the "check_swap" plugin, it issues the command above.
 
-The \i\Nagios Plugin\p\ paramenter tells which plugin to execute. It must match one of the command definitions in the nrpe.cfg file, e.g., the text within square brackets [ ... ]. To test the connection from InterMapper to the NRPE daemon, set \i\Nagios Plugin\p\ to the value "_NRPE_CHECK".
+\b\Parameters\p\
+
+\i\Nagios Plugin\p\ - tells which plugin to execute. It must match one of the command definitions in the nrpe.cfg file (the text within square brackets [ ... ]). To test the connection from InterMapper to the NRPE daemon, set \i\Nagios Plugin\p\ to the value "_NRPE_CHECK".
 
 For information about installing an NRPE daemon, see the \u2=http://nagios.sourceforge.net/docs/nrpe/NRPE.pdf\NRPE Documentation\p0\ (at http://nagios.sourceforge.net/docs/nrpe/NRPE.pdf), especially the section on Remote Host Configuration. Nagios and the Nagios logo are registered trademarks of Ethan Galstad. For more information, see \u2\http://www.nagios.org.\p0\ 
 </description>

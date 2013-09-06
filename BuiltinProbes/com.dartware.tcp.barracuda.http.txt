@@ -2,6 +2,7 @@
 	Barracuda HTTP (com.dartware.tcp.barracuda.http)
 	Copyright � 2005-2007 Dartware, LLC. All rights reserved.
 	17 Apr 2013 - Edited description for User Guide (via Probe Doc Generator)
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.barracuda.http"
 	human_name		=	"Barracuda HTTP"
-	version			= 	"2.6"
+	version			= 	"2.7"
 	address_type		= 	"IP"
 	port_number		=	"8000"
 	display_name		=	"Servers-Proprietary/Barracuda/Barracuda HTTP"

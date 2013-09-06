@@ -3,6 +3,7 @@
 	Copyright (c) 2003,2008 Dartware, LLC. All rights reserved.
 	
 	3 Apr 2013 - Edited description for User Guide (via Probe Doc Generator) -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -10,7 +11,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"snmp.hrmib"
 	human_name		=	"SNMP - Host Resources"
-	version			= 	"1.12"
+	version			= 	"1.13"
 	address_type	= 	"IP,AT"
 	equiv_class		= 	"SNMP"
 	port_number		=	"161"

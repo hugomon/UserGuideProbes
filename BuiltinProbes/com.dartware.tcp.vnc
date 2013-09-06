@@ -5,6 +5,8 @@
 	TEX: (1.7) Fixed a typo (LINE -> _LINE) and added support for other versions of the RFB protocol.
 	TEX: (1.7) Added output of version (see http://www.realvnc.com/docs/rfbproto.pdf
 					or http://www.csd.uwo.ca/staff/magi/doc/vnc/rfbproto.pdf).
+  Edited description for User Guide (via Probe Doc Generator) 3 Sept 2013 -bobm
+  3 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -12,7 +14,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"tcp.vnc"
 	human_name		=	"VNC Server"
-	version			= 	"1.7"
+	version			= 	"1.8"
 	address_type		= 	"IP"
 	port_number		=	"5900"
 	display_name		=	"Servers-Standard/VNC Server"
@@ -26,6 +28,10 @@
 Attempt to connect to a VNC Server. VNC uses RFB (Remote Frame Buffer) protocol for communication between clients and server.  The probe waits to receive a "RFB ###.###" string. If it arrives, the VNC server is assumed to be up and the probe simply disconnects.
 
 The Virtual Network Computer (VNC) protocol was originally designed at AT&T Labs in Cambridge. There are many implementations: the developers now support it from the RealVNC site at \U2\http://www.realvnc.com/\P0\.
+
+\b\Parameters\p\
+
+None.
 </description>
 
 <parameters>

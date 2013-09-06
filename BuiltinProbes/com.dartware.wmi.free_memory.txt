@@ -2,6 +2,7 @@
 Command Line WMI Probe to check available memory (com.dartware.wmi.free_memory) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
 	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
+  2 Sept 2013 bobm - Updated version number 
 --> 
 
 <header> 
@@ -9,7 +10,7 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 	package			=	"com.dartware" 
 	probe_name		=	"wmi.free_memory" 
 	human_name		=	"WMI Free Memory" 
-	version			=	"1.8" 
+	version			=	"1.9" 
 	address_type	=	"IP"
 	display_name	=	"WMI/WMI Free Memory"
 	visible_in 		=	"Windows"

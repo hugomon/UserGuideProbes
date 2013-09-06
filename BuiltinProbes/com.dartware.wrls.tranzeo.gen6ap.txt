@@ -31,6 +31,13 @@
 This probe monitors the sixth generation Access Point (AP) from \u2=http://www.tranzeo.com\Tranzeo.\p0\ This series includes AP for the following models: 5A, 5Aplus, 6600, 6500, 6000, 4900, CPQ, CPQplus.
 
 This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later. Tranzeo is a trademark of Tranzeo Wireless Technologies, Inc.  
+
+\b\Parameters\p\
+
+\i\User\p\ - the device's administrative user name.
+
+\i\Password\p\ - the administrator's password.
+
 </description>
 
 <parameters>

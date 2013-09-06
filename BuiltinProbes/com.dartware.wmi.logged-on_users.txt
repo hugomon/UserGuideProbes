@@ -2,6 +2,7 @@
 Command Line WMI Probe to list logged-on users (com.dartware.wmi.logged-on_users) 
 Copyright (c) 2010 Dartware, LLC. All rights reserved. 
 	19 Aug 2013 - Edited description for User Guide (via Probe Doc Generator)
+  2 Sept 2013 bobm - Updated version number 
 --> 
 
 <header> 
@@ -9,7 +10,7 @@ Copyright (c) 2010 Dartware, LLC. All rights reserved.
 	package			=	"com.dartware" 
 	probe_name		=	"wmi.logged-on_users" 
 	human_name		=	"WMI Logged-on Users" 
-	version			=	"1.11" 
+	version			=	"1.12" 
 	address_type	=	"IP"
 	display_name	=	"WMI/WMI Logged-on Users"
 	visible_in		=	"Windows"	

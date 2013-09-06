@@ -2,6 +2,7 @@
 	DHCPv4 (com.dartware.dhcp)
 	Copyright © 2000-2008 Dartware, LLC. All rights reserved.
 	28 Mar 2013 - edited description for User Guide (via Probe Doc Generator) bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -9,7 +10,7 @@
 	package			= 	"com.dartware"
 	probe_name		=	"dhcp"
 	human_name		=	"DHCPv4/BOOTP"
-	version			= 	"2.0"
+	version			= 	"2.1"
 	address_type	= 	"IP"
 	port_number		=	"67"
 	
@@ -29,6 +30,8 @@ DHCP is the protocol used by IP clients to obtain an IPv4 address and other para
 \b\Note:\p\ On Mac OS X, this probe will only work if no DHCP, Bootp, or PPP interfaces are enabled.
 
 The  probe sends DHCP-INFORM requests to test the DHCP mechanism for an IP subnet.
+
+\b\Parameters\p\
 
 \i\BOOTP Relay Address\p\ - the IP address to which all DHCP requests are addressed. Normal BOOTP/DHCP requests are broadcast to the local subnet (255.255.255.255), where they are picked up by the BOOTP agent in a router and relayed to the BOOTP/DHCP server. If this parameter is left blank, InterMapper sends the DHCP requests directly to the device's IP address.
 

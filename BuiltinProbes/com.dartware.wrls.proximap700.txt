@@ -9,6 +9,8 @@
 
 	Original version March 2005 by rk
 	Requires InterMapper 4.3a5 or later.
+	5 Sept 2013 - Edited description for User Guide (via Probe Doc Generator)
+  5 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -17,7 +19,7 @@
 	"probe_name"	=	"wrls.proximap700"
 	"human_name"	=	"Wireless - Proxim AP-700"
 	"display_name" 	=	"Wireless/Proxim/Proxim AP-700"
-	"version"		=	"1.3"
+	"version"		=	"1.4"
 	"address_type"	=	"IP,AT"
 	"port_number"	=	"161"
 	"equiv_class"	= 	"WRLS"
@@ -28,11 +30,24 @@
 
 This probe monitors \u2=http://www.proxim.com\Proxim\p0\ AP-700 access points.
 
-The probe will display the device's general settings, wireless interface RF parameters, security information, and wireless clients. To show the wireless client list, the device's station statistics monitoring has to be enabled
+The probe displays the device's general settings, wireless interface RF parameters, security information, and wireless clients. To show the wireless client list, set \i\Show station statistics\p\ to \bi\true\p\.
 
-Some of the alarms/warnings of this probe will not function unless the Proxim device is set to send traps to the InterMapper server. To get the full functionality of this probe, you will need to set your proxim device to send traps to the InterMapper server.
+\b\Note:\p\ Some of the alarms/warnings of this probe will not function unless the Proxim device is set to send traps to the InterMapper server.
 
-This probe is part of the InterMapper Wireless Probe Bundle, and requires InterMapper 4.3 or later.
+\b\Parameters\p\
+
+\i\Many clients warning\p\, \i\Too many clients alarm\p\, 
+\i\FCS errors/sec high warning\p\, \i\FCS errors/sec too high alarm\p\, 
+\i\Failures/sec high warning\p\, \i\Failures/sec too high alarm\p\, 
+\i\Retries/sec high warning\p\, \i\Retries/sec too high alarm\p\,
+- enter thresholds for \b\Warning\p\ and \b\Alarm\p\.
+
+\i\Show wireless if settings\p\ - choose whether to show wireless interface settings. 
+
+\i\Show security settings\p\ - choose whether to show security settings. 
+
+\i\Show station statistics\p\ - choose whether to show statistics.
+
 </description>
 
 <parameters>

@@ -1,6 +1,8 @@
 <!-- 
 	Xserve RAID (com.dartware.tcp.xserve.raid)
 	Copyright (c) 2007 Dartware, LLC. All rights reserved.
+  Edited description for User Guide (via Probe Doc Generator) 2 Sept 2013 -bobm
+  2 Sept 2013 bobm - Updated version number 
 -->
 
 <header>
@@ -20,9 +22,11 @@
 
 This TCP probe queries an \U2=http://www.apple.com/xserve/raid/\Xserve RAID\P0\ for various details using the RAID Admin port and protocol.
 
-Status information is requested from the Xserve RAID via a series of HTTP POSTs. The server responds with XML data that is then parsed by the probe.
+Sends a request to an Xserve Raid via an HTTPS post via a series of HTTP POSTs and parses an XML responses.
 
-\i\Password\p\ is the monitoring password used for RAID Admin.
+\b\Parameters\p\
+
+\i\Password\p\ - the RAID administrator's monitoring password.
 
 </description>
 
