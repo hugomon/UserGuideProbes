@@ -178,12 +178,12 @@ def prepLink(category):
     linkstr = linkstr.replace(")","_") 
     linkstr = linkstr.replace("&","_")       #replace ampersands with underscores in link URLs
     linkstr = linkstr.replace("-","_")       #replace hyphens with underscores in link URLs
-    #linkstr = filename+"#"+prepTarget(targetstr)
     linkstr = filename+"#"+prepTarget(targetstr)
+    #linkstr = filename+"#"+prepTarget(targetstr)
     bookmark = "#"+prepTarget(targetstr)
 
-    #link = '<a href="'+linkstr+'">'+title+'</a>'+'<MadCap:xref href="'+linkstr+'" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref>'
-    link = '<a href="'+linkstr+'">'+title+'</a>'
+    link = '<a href="'+linkstr+'">'+title+'<MadCap:xref href="'+linkstr+'" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a>'
+    #link = '<a href="'+linkstr+'">'+title+'</a>'
     return link
 
     
@@ -295,7 +295,7 @@ def ProcessProbeFile(probepath, infile, outfile):
     #   category|filename|n| </blockquote>
     myfile = open(outfile, 'a')
     myfile.write("%s|%s|%02d|%s" % (category, filename, 0, "<li>"+prepLink(category)+"</li>"+lf))
-    myfile.write("%s|%s|%02d|%s" % (category, filename, 1, '<a name="'+prepTarget(category)+'"></a>'+'<h2>'+prepTitle(category)+'</h2>'+lf))
+    myfile.write("%s|%s|%02d|%s" % (category, filename, 1, '<h2>'+prepTitle(category)+'<a name="'+prepTarget(category)+'"></a>'+'</h2>'+lf))
     myfile.write("%s|%s|%02d|%s" % (category, filename, 2, "<blockquote>"+lf))
     myfile.write("%s|%s|%02d|%s" % (category, filename, 3, "<h3>"+getBottomCat(category)+"</h3>"+lf))
     for i in range(1,len(definitions)):
