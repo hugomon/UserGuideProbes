@@ -33,27 +33,29 @@
 \g0i++\For APC UPS devices.\p--\
 \b++\A. Probed MIB(s)\p--\
 \i\This probe works best with devices which have implemented the listed MIB(s).\p\
-(1 of 1) \b\APC UPS MIB\p\ [... enterprises.apc.products.hardware.ups / ... 1.3.6.1.4.1.318.1.1.1]
+\b\APC UPS MIB\p\ [... enterprises.apc.products.hardware.ups / ... 1.3.6.1.4.1.318.1.1.1]
 
 \b++\B. Displayed Values\p--\
-UPS: model, firmware, status, (\i\battery\p\: capacity, time remaining, temperature, replacement status), (\i\output\p\: load percent, volts, amps, frequency), (\i\input\p\: volts, voltage range over last minute, frequency, last input failure).
+UPS: model, firmware, status, (\i\battery\p\: capacity, time remaining, temperature, replacement status), 
+\i\output\p\: load percent, volts, amps, frequency, 
+\i\input\p\: volts, voltage range over last minute, frequency, last input failure
 
 \b++\C. Alarms\p--\
-(1 of 3) If unit goes onto battery or goes off-line.
-(2 of 3) If battery needs replacement.
-(3 of 3) If the battery temperature exceeds user-specified thresholds (see "Parameters" below).
+* If unit goes onto battery or goes off-line.
+* If battery needs replacement.
+* If the battery temperature exceeds user-specified thresholds (see "Parameters" below).
 
 \b++\D. Warnings\p--\
-(1 of 2) If unit goes onto "Smart Trim" or "Smart Boost"
-(2 of 2) If the battery temperature exceeds user-specified thresholds (see "Parameters" below).
+* If unit goes onto "Smart Trim" or "Smart Boost"
+* If the battery temperature exceeds user-specified thresholds (see "Parameters" below).
 
 \b\Parameters\p\
 
-(1 of 5) \i\Units of Temperature (C / F)\p\: Determines how the following thresholds are interpreted.
-(2 of 5) \i\Alarm Threshold - Low Temp\p\: Threshold for alarm state (see above).
-(3 of 5) \i\Warning Threshold - Low Temp\p\: Threshold for alarm state (see above).
-(4 of 5) \i\Warning Threshold - High Temp\p\: Threshold for warning state (see above).
-(5 of 5) \i\Alarm Threshold - High Temp\p\: Threshold for warning state (see above).
+\i\Units of Temperature (C / F)\p\: Determines how the following thresholds are interpreted.
+\i\Alarm Threshold - Low Temp\p\: Threshold for alarm state (see above).
+\i\Warning Threshold - Low Temp\p\: Threshold for alarm state (see above).
+\i\Warning Threshold - High Temp\p\: Threshold for warning state (see above).
+\i\Alarm Threshold - High Temp\p\: Threshold for warning state (see above).
 
 </description>
 

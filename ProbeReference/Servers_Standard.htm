@@ -67,8 +67,8 @@
 <p>If the specified port accepts the TCP connection, the device state is set to the selected state. Otherwise, the device status is set to <b>OKAY</b>.</p>
 <p><b>Parameters</b></p>
 <p><i>Failure Status</i> - The device status upon successful connection. The default state is <b><i>DOWN</i></b>.</p>
-<p><i>Filename: com.dartware.tcp.blocked</i><br />
-<i>Version: 1.6</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.blocked</span><br />
+Version:  <span class="code">1.6</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Basic TCP<a name="Servers_Standard_Basic_TCP"></a></h2>
@@ -77,8 +77,8 @@
 <p>This basic TCP probe tests whether a TCP port accepts connections. If the specified port fails to accept the TCP connection within sixty seconds, the device state is set to <b>Down</b>.</p>
 <p><b>Parameters</b></p>
 <p>None.</p>
-<p><i>Filename: com.dartware.tcp.basic</i><br />
-<i>Version: 1.6</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.basic</span><br />
+Version:  <span class="code">1.6</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Custom TCP<a name="Servers_Standard_Custom_TCP"></a></h2>
@@ -94,8 +94,8 @@
 <p><i>CRIT Response</i> - The substring to match the device's <b>Critical</b> response.</p>
 <p><i>DOWN Response</i> - The substring to match the device's <b>Down</b> response.</p>
 <p>If InterMapper cannot connect to the specified TCP port, the device's status is set to <b>Down</b>.</p>
-<p><i>Filename: com.dartware.tcp.custom</i><br />
-<i>Version: 1.10</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.custom</span><br />
+Version:  <span class="code">1.10</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; CVS Server<a name="Servers_Standard_CVS_Server"></a></h2>
@@ -113,8 +113,8 @@
 <p><i>CVSROOT_path</i> - Path to the CVS server</p>
 <p><i>Username</i> - Username for the CVS server</p>
 <p><i>Password</i> - User's password</p>
-<p><i>Filename: com.dartware.tcp.cvs</i><br />
-<i>Version: 1.7</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.cvs</span><br />
+Version:  <span class="code">1.7</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; DHCPv4/BOOTP<a name="Servers_Standard_DHCPv4_BOOTP"></a></h2>
@@ -131,8 +131,8 @@
 <p><i>DHCP Message Type</i> - the type of DHCP message to send. Typically, you should use DHCP-INFORM, since this type will not cause the DHCP server to allocate an IP address. A DHCP server may respond to a DHCP-DISCOVER request by leasing an IP address which will never be used.</p>
 <p><i>Hardware Address</i> - an optional parameter that specifies the MAC address of the network interface used to send the DHCP request.</p>
 <p><i>Request Seconds</i> - an optional parameter that specifies the number of seconds to claim we have been sending DHCP requests. Certain DHCP servers (such as the one supplied with OS X 10.5 with the default settings) do not respond until the client claims to have been trying for at least 10 seconds.</p>
-<p><i>Filename: com.dartware.dhcp</i><br />
-<i>Version: 2.1</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.dhcp</span><br />
+Version:  <span class="code">2.1</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Domain Name (DNS) &gt; DNS: (A) Address<a name="Servers_Standard_Domain_Name__DNS__DNS:__A__Address"></a></h2>
@@ -144,8 +144,8 @@
 <p><i>IP Address</i> - optional parameter specifies an IP address the domain name should resolve to. If this parameter is not blank, InterMapper reports the status specified in <i>Failure Status</i> if one of the returned IP addresses doesn't match this address.</p>
 <p><i>Recursion Desired</i> - If the target DNS server cannot resolve the given domain name, and this parameter is <b>True</b>, the DNS server may query an authoritative DNS server. To prevent this behavior, use the default setting of <b>False</b>.</p>
 <p><i>Failure Status</i> - the device status InterMapper should report when the IP address in a DNS response doesn't match the specified <i>IP Address</i> parameter. By default, an IP address mismatch sets the device to Alarm. (Down is reserved for complete lack of response by the DNS server.)</p>
-<p><i>Filename: com.dartware.dns</i><br />
-<i>Version: 1.9</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.dns</span><br />
+Version:  <span class="code">1.9</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Domain Name (DNS) &gt; DNS: (MX) Mail Server<a name="Servers_Standard_Domain_Name__DNS__DNS:__MX__Mail_Server"></a></h2>
@@ -157,8 +157,8 @@
 <p><i>Mail Server</i> - optional - specify a mail server the domain name should resolve to. If this parameter is non-empty, and one of the returned mail servers doesn't match the one provided, a status as specified in <i>Failure Status</i> is returned.</p>
 <p><i>Recursion Desired</i> - If the target DNS server cannot resolve the given domain name, and this parameter is <b>True</b>, the DNS server may query an authoritative DNS server. To prevent this behavior, use the default setting of <b>False</b>.</p>
 <p><i>Failure Status</i> - specifies the device status returned when the DNS response returns a mail server that doesn't match the specified <i>Mail Server</i>. You can choose <b>Down</b>, <b>Alarm</b> or <b>Warning</b>. By default, mail server mismatches return an <b>Alarm</b> condition; <b>Down</b> is reserved for when the DNS server fails to respond at all.</p>
-<p><i>Filename: com.dartware.dns.mx</i><br />
-<i>Version: 1.2</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.dns.mx</span><br />
+Version:  <span class="code">1.2</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Domain Name (DNS) &gt; DNS: (NS) Name Server<a name="Servers_Standard_Domain_Name__DNS__DNS:__NS__Name_Server"></a></h2>
@@ -170,8 +170,8 @@
 <p><i>Name Server</i> - optional - specify the name server the domain name should resolve to. If this parameter is non-empty, and one of the returned name servers doesn't match the one provided, a status as specified in <i>Failure Status</i> is returned. </p>
 <p><i>Recursion Desired</i> - If the target DNS server cannot resolve the given domain name, and this parameter is <b>True</b>, the DNS server may query an authoritative DNS server. To prevent this behavior, use the default setting of <b>False</b>.</p>
 <p><i>Failure Status</i> - specifies the device status returned when the DNS response returns a name server that doesn't match the specified <i>Name Server</i>. You can choose <b>Down</b>, <b>Alarm</b> or <b>Warning</b>. By default, name server mismatches return an <b>Alarm</b> condition; <b>Down</b> is reserved for when the DNS server fails to respond at all.</p>
-<p><i>Filename: com.dartware.dns.ns</i><br />
-<i>Version: 1.2</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.dns.ns</span><br />
+Version:  <span class="code">1.2</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Domain Name (DNS) &gt; DNS: (PTR) Reverse Lookup<a name="Servers_Standard_Domain_Name__DNS__DNS:__PTR__Reverse_Lookup"></a></h2>
@@ -183,8 +183,8 @@
 <p><i>Domain Name</i> - optional - specify a domain name the IP address should resolve to. If this parameter is non-empty, and one of the returned domain names doesn't match the one provided, a status as specified in <i>Failure Status</i> is returned.</p>
 <p><i>Recursion Desired</i> - If the target DNS server cannot resolve the given domain name, and this parameter is <b>True</b>, the DNS server may query an authoritative DNS server. To prevent this behavior, use the default setting of <b>False</b>.</p>
 <p><i>Failure Status</i> - specifies the device status returned when the DNS response returns a domain name that doesn't match the specified <i>Domain Name</i>. You can choose <b>Down</b>, <b>Alarm</b> or <b>Warning</b>. By default, mail server mismatches return an <b>Alarm</b> condition; <b>Down</b> is reserved for when the DNS server fails to respond at all.</p>
-<p><i>Filename: com.dartware.dns.ptr</i><br />
-<i>Version: 1.2</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.dns.ptr</span><br />
+Version:  <span class="code">1.2</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Domain Name (DNS) &gt; DNS: (TXT) Text Record<a name="Servers_Standard_Domain_Name__DNS__DNS:__TXT__Text_Record"></a></h2>
@@ -196,8 +196,8 @@
 <p><i>Text Substring</i> - optional - specify a substring of a text record the domain name should resolve to. If this parameter is non-empty, and one of the returned text records doesn't contain the substring provided, the device's condition is set as specified in <i>Failure Status</i>.</p>
 <p><i>Recursion Desired</i> - If the target DNS server cannot resolve the given domain name, and this parameter is <b>True</b>, the DNS server may query an authoritative DNS server. To prevent this behavior, use the default setting of <b>False</b>.</p>
 <p><i>Failure Status</i> - specifies the device status returned when the DNS response text record in a DNS response doesn't contain the specified <i>Text Substring</i>. You can choose <b>Down</b>, <b>Alarm</b> or <b>Warning</b>. By default, mail server mismatches return an <b>Alarm</b> condition; <b>Down</b> is reserved for when the DNS server fails to respond at all. </p>
-<p><i>Filename: com.dartware.dns.txt</i><br />
-<i>Version: 1.2</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.dns.txt</span><br />
+Version:  <span class="code">1.2</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; FTP &gt; FTP (Login)<a name="Servers_Standard_FTP_FTP__Login_"></a></h2>
@@ -209,8 +209,8 @@
 <p><i>User ID</i> - the account name used to login to the FTP server.</p>
 <p><i>Password</i> - the account password used to verify the User ID's identity.</p>
 <p><b>Note:</b>  If the probe queries the FTP server often, and at regular intervals, the FTP server's log files contain a succession of "Login" and "Logout" log lines.</p>
-<p><i>Filename: com.dartware.tcp.ftp.login</i><br />
-<i>Version: 1.9</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.ftp.login</span><br />
+Version:  <span class="code">1.9</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; FTP &gt; FTP (No Login)<a name="Servers_Standard_FTP_FTP__No_Login_"></a></h2>
@@ -221,8 +221,8 @@
 <p><b>Note:</b> Use this script if you are going to be probing the FTP server frequently. Unlike the FTP (login) probe, this probe does generate numerous entries in your FTP logs.</p>
 <p><b>Parameters</b></p>
 <p>None.</p>
-<p><i>Filename: com.dartware.tcp.ftp.nologin</i><br />
-<i>Version: 1.9</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.ftp.nologin</span><br />
+Version:  <span class="code">1.9</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Gopher<a name="Servers_Standard_Gopher"></a></h2>
@@ -232,8 +232,8 @@
 <p>This script connects to a Gopher server and sends the specified <i>Selector string</i>.  By default, the <i>Selector string</i> is empty; the Gopher server returns top level information as a sequence of lines.  This script simply checks that data is returned by the gopher server; it does not validate the data's contents.</p>
 <p><b>Parameters</b></p>
 <p><i>Selector string</i> - the string sent to the Gopher server.  By default, this string is empty.</p>
-<p><i>Filename: com.dartware.tcp.gopher</i><br />
-<i>Version: 1.7</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.gopher</span><br />
+Version:  <span class="code">1.7</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Host Resources<a name="Servers_Standard_Host_Resources"></a></h2>
@@ -254,8 +254,8 @@
 <p><i>Fifteen-minute Load Average Alarm</i> - Specifies the fifteen-minute load average value to enter ALARM state.</p>
 <p><i>Fifteen-minute Load Average Warning</i> - Specifies the fifteen-minute load average value to enter WARNING state.</p>
 <p><i>Ignore storage table indices</i>  After the device is polled, select the storage table entries you want to ignore. The selected entries do not cause alarms or warnings and are not be displayed in the Status window.</p>
-<p><i>Filename: com.dartware.snmp.hrmib</i><br />
-<i>Version: 1.13</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.snmp.hrmib</span><br />
+Version:  <span class="code">1.13</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTP (Follow Redirects)<a name="Servers_Standard_HTTP___HTTPS_HTTP__Follow_Redirects_"></a></h2>
@@ -270,8 +270,8 @@
 <p><i>User ID</i> - the user name typed into the web browser's password dialog. Leave this blank unless you want to test a web page that requires authentication.</p>
 <p><i>Password</i> - the password for the web browser's dialog. Leave this blank unless you want to test a web page that requires authentication.</p>
 <p><i>Redirect Limit</i> is the maximum number of redirects to follow.</p>
-<p><i>Filename: com.dartware.tcp.http.follow</i><br />
-<i>Version: 1.3</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.http.follow</span><br />
+Version:  <span class="code">1.3</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTP (Post)<a name="Servers_Standard_HTTP___HTTPS_HTTP__Post_"></a></h2>
@@ -284,8 +284,8 @@
 <p>  <i>URL Path</i> - the full path to the desired CGI on the web server (e.g. "/index.cgi"). The first character must be a '/'.</p>
 <p>  <i>Form Data</i> - the encoded data sent in the body of the POST message.</p>
 <p>  <i>String to verify</i> - a string expected to find in HTTP server's response. For example, if you post form data that is designed to generate an error, you might search for "sorry" or "could not be processed" to verify that the CGI is properly rejecting the data. If this string is not found, the device will go into alarm.</p>
-<p><i>Filename: com.dartware.tcp.http.cgi.post</i><br />
-<i>Version: 2.8</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.http.cgi.post</span><br />
+Version:  <span class="code">2.8</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTP (Proxy)<a name="Servers_Standard_HTTP___HTTPS_HTTP__Proxy_"></a></h2>
@@ -299,8 +299,8 @@
 <p><i>Proxy Password</i> is your password for the proxy server. Leave this field blank if no authentication is required to use the proxy server.</p>
 <p><i>String to verify</i> is a string to verify in the data returned by the HTTP server.  For example, if you are retrieving a web page, you might search for "&lt;HTML" or "&lt;P&gt;" to verify that the data is HTML. If this string is not found, the device will go into alarm.</p>
 <p><i>User Agent</i> is the string that identifies this InterMapper client probe to the proxy web server. Some proxy servers block traffic at the proxy based on the User-Agent identity. This parameter lets you optionally override InterMapper's default User-Agent setting. If you leave this parameter blank, InterMapper sends a User-Agent  string of "InterMapper/version", where version is the current version number of InterMapper.</p>
-<p><i>Filename: com.dartware.tcp.http.proxy</i><br />
-<i>Version: 2.8</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.http.proxy</span><br />
+Version:  <span class="code">2.8</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTP (Redirect)<a name="Servers_Standard_HTTP___HTTPS_HTTP__Redirect_"></a></h2>
@@ -314,8 +314,8 @@
 <p><i>Redirect URL</i> is the complete URL that the given URL Path is redirected to. The URL should begin with "http://".</p>
 <p><i>User ID</i> is the user name typed into the web browser's password dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.</p>
 <p><i>Password</i> is the password for the web browser's dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.</p>
-<p><i>Filename: com.dartware.tcp.http.redirect</i><br />
-<i>Version: 1.14</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.http.redirect</span><br />
+Version:  <span class="code">1.14</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTP<a name="Servers_Standard_HTTP___HTTPS_HTTP"></a></h2>
@@ -329,8 +329,8 @@
 <p><i>String to verify</i> - the string to verify in the data returned by the HTTP server.  For example, if you are retrieving a web page, you might search for "&lt;HTML" or "&lt;P&gt;" to verify that the data is HTML. If this string is not found, the device will go into alarm.</p>
 <p><i>User ID</i> - the user name typed into the web browser's password dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.</p>
 <p><i>Password</i> - the password for the web browser's dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.</p>
-<p><i>Filename: com.dartware.tcp.http</i><br />
-<i>Version: 2.12</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.http</span><br />
+Version:  <span class="code">2.12</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTPS (Follow Redirects)<a name="Servers_Standard_HTTP___HTTPS_HTTPS__Follow_Redirects_"></a></h2>
@@ -345,8 +345,8 @@
 <p><i>User ID</i> - the user name typed into the web browser's password dialog. Leave this blank unless you want to test a web page that requires authentication.</p>
 <p><i>Password</i> - the password for the web browser's dialog. Leave this blank unless you want to test a web page that requires authentication.</p>
 <p><i>Redirect Limit</i> - the maximum number of redirects to follow.</p>
-<p><i>Filename: com.dartware.tcp.https.follow</i><br />
-<i>Version: 1.2</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.https.follow</span><br />
+Version:  <span class="code">1.2</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTPS (Post)<a name="Servers_Standard_HTTP___HTTPS_HTTPS__Post_"></a></h2>
@@ -360,8 +360,8 @@
 <p><i>Form Data</i> - the encoded data sent in the body of the POST message.</p>
 <p><i>String to verify</i> - a string to verify in the server's response. For example, if you post form data that is designed to generate an error response, you might search for "sorry" or "could not be processed" to verify that the CGI is properly rejecting the data. If the string is not found, the device goes into <b>Alarm</b>.</p>
 <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOSX.</p>
-<p><i>Filename: com.dartware.tcp.https.cgi.post</i><br />
-<i>Version: 1.14</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.https.cgi.post</span><br />
+Version:  <span class="code">1.14</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTPS (Redirect)<a name="Servers_Standard_HTTP___HTTPS_HTTPS__Redirect_"></a></h2>
@@ -375,8 +375,8 @@
 <p><i>Redirect URL</i> - the complete URL that the given URL Path is redirected to. The URL should begin with "http://".</p>
 <p><i>User ID</i> - the user name typed into the web browser's password dialog. The default is to leave this blank. You should set this parameter if you want to test a web page that requires authentication.</p>
 <p><i>Password</i> - the password for the web browser's dialog. Leave this blank unless you want to test a web page that requires authentication.</p>
-<p><i>Filename: com.dartware.tcp.https.redirect.txt</i><br />
-<i>Version: 1.5</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.https.redirect.txt</span><br />
+Version:  <span class="code">1.5</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTPS (SSLv3)<a name="Servers_Standard_HTTP___HTTPS_HTTPS__SSLv3_"></a></h2>
@@ -389,8 +389,8 @@
 <p><i>URL Path</i> - the full path of the desired file on the web server (Example: "/index.html"). The first character must be a '/'.</p>
 <p><i>String to verify</i> - a string to verify in the server's response. For example, if you are retrieving a web page, you could search for "&lt;HTML" or "&lt;P&gt;" to verify that the data is HTML. If the string is not found, the device goes into <b>Alarm</b>.</p>
 <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOSX.</p>
-<p><i>Filename: com.dartware.tcp.https.notls.txt</i><br />
-<i>Version: 1.4</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.https.notls.txt</span><br />
+Version:  <span class="code">1.4</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; HTTP &amp; HTTPS &gt; HTTPS<a name="Servers_Standard_HTTP___HTTPS_HTTPS"></a></h2>
@@ -403,8 +403,8 @@
 <p><i>URL Path</i> is the full path of the desired file on the web server (e.g. "/index.html"). The first character must be a '/'.</p>
 <p><i>String to verify</i> is a string to verify in the data returned by the HTTP server.  For example, if you are retrieving a web page, you might search for "&lt;HTML" or "&lt;P&gt;" to verify that the data is HTML. If this string is not found, the device will go into alarm.</p>
 <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOSX.</p>
-<p><i>Filename: com.dartware.tcp.https</i><br />
-<i>Version: 2.8</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.https</span><br />
+Version:  <span class="code">2.8</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; IPMI v2.0<a name="Servers_Standard_IPMI_v2_0"></a></h2>
@@ -420,8 +420,8 @@
 <li> For Dell Servers, the Apple XServe 2009, and any other product set the "Dialect" parameter to "Other".</li>
 </ul>
 <p>This probe supports one-key, non-anonymous logins only. Internally, it uses RAKP-HMAC-SHA1 and AES-CBS-128 for authentication and confidentiality, respectively. The firewall configuration of the BMC must permit UDP packets from InterMapper.</p>
-<p><i>Filename: com.dartware.ipmi.txt</i><br />
-<i>Version: 1.2</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.ipmi.txt</span><br />
+Version:  <span class="code">1.2</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; IRC<a name="Servers_Standard_IRC"></a></h2>
@@ -434,8 +434,8 @@
 <p><i>Username</i> - the username, hostname, servername and realname of the new user. Typically, the hostname and servername are ignored for client connections. The realname must be prefixed with a ':'.</p>
 <p><i>String to verify</i> - a string to verify in the IRC server's response. For example, you might check for a string returned in the IRC server's welcome message.</p>
 <p> </p>
-<p><i>Filename: com.dartware.tcp.irc</i><br />
-<i>Version: 1.7</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.irc</span><br />
+Version:  <span class="code">1.7</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; LDAP &gt; LDAP SSL<a name="Servers_Standard_LDAP_LDAP_SSL"></a></h2>
@@ -451,8 +451,8 @@
 <p><i>Search Base</i> - optional base for the search.</p>
 <p><i>Field to Match[cn,sn,uid]</i> - enter one of the listed fields to check for a match.</p>
 <p><i>Minimum No. of Results</i> - enter an expected minimum number of records returned.</p>
-<p><i>Filename: com.dartware.tcp.ldap.ssl</i><br />
-<i>Version: 1.10</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.ldap.ssl</span><br />
+Version:  <span class="code">1.10</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; LDAP &gt; LDAP<a name="Servers_Standard_LDAP_LDAP"></a></h2>
@@ -468,8 +468,8 @@
 <p><i>Search Base</i> - optional base for the search.</p>
 <p><i>Field to Match[cn,sn,uid]</i> - enter one of the listed fields to check for a match.</p>
 <p><i>Minimum No. of Results</i> - enter an expected minimum number of records returned.</p>
-<p><i>Filename: com.dartware.tcp.ldap</i><br />
-<i>Version: 1.10</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.ldap</span><br />
+Version:  <span class="code">1.10</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; LPR<a name="Servers_Standard_LPR"></a></h2>
@@ -478,8 +478,8 @@
 <p>The print server protocol used to print over a TCP/IP network, as defined in <a href="http://www.ietf.org/rfc/rfc1179.txt">RFC 1179</a>. The default TCP port number for LPR connections is port 515.</p>
 <p><b>Parameters</b></p>
 <p><i>Queue Name</i> - the name of the print queue you want to monitor.</p>
-<p><i>Filename: com.dartware.tcp.lpr</i><br />
-<i>Version: 1.8</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.lpr</span><br />
+Version:  <span class="code">1.8</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Mail &gt; IMAP4 SSL<a name="Servers_Standard_Mail_IMAP4_SSL"></a></h2>
@@ -489,8 +489,8 @@
 <p>This TCP script connects to the IMAP4 server and issues a CAPABILITY command, a NOOP command, and finally terminates with a LOGOUT command.  The script checks the server's response to the CAPABILITY command to verify that the server supports IMAP4 or IMAP4rev1.</p>
 <p><b>Parameters</b></p>
 <p>None.</p>
-<p><i>Filename: com.dartware.tcp.imap4.ssl</i><br />
-<i>Version: 1.8</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.imap4.ssl</span><br />
+Version:  <span class="code">1.8</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Mail &gt; IMAP4<a name="Servers_Standard_Mail_IMAP4"></a></h2>
@@ -500,8 +500,8 @@
 <p>This TCP script connects to the IMAP4 server and issues a CAPABILITY command, a NOOP command, and finally terminates with a LOGOUT command.  The script checks the server's response to the CAPABILITY command to verify that the server supports IMAP4 or IMAP4rev1.</p>
 <p><b>Parameters</b></p>
 <p>None.</p>
-<p><i>Filename: com.dartware.tcp.imap4</i><br />
-<i>Version: 1.8</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.imap4</span><br />
+Version:  <span class="code">1.8</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Mail &gt; POP3 SSL<a name="Servers_Standard_Mail_POP3_SSL"></a></h2>
@@ -513,8 +513,8 @@
 <p><i>User Name</i> - if left empty, the probe verifies that the server sends "+OK" as its initial greeting, then immediately sends the QUIT command. If specified, the probe attempts to use the specified <i>Password</i> to login to the POP3 server. If the login fails , the device is set to <b>Warning</b>.</p>
 <p><i>Use APOP if supported</i> - By default, the probe uses the APOP command to authenticate the user if the server supports it. To authenticate via USER and PASS commands for a particular user, set this parameter to <b><i>False</i></b>.</p>
 <p><b>Note:</b> If APOP is not supported by the server, the <i>Use APOP if supported</i> option has no effect.</p>
-<p><i>Filename: com.dartware.tcp.pop3.ssl</i><br />
-<i>Version: 2.7</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.pop3.ssl</span><br />
+Version:  <span class="code">2.7</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Mail &gt; POP3<a name="Servers_Standard_Mail_POP3"></a></h2>
@@ -525,8 +525,8 @@
 <p><i>User Name</i> - if left empty, the probe verifies that the server sends "+OK" as its initial greeting, then immediately sends the QUIT command. If specified, the probe attempts to use the specified <i>Password</i> to login to the POP3 server. If the login fails , the device is set to <b>Warning</b>.</p>
 <p><i>Use APOP if supported</i> - By default, the probe uses the APOP command to authenticate the user if the server supports it. To authenticate via USER and PASS commands for a particular user, set this parameter to <b><i>False</i></b>.</p>
 <p><b>Note:</b> If APOP is not supported by the server, the <i>Use APOP if supported</i> option has no effect.</p>
-<p><i>Filename: com.dartware.tcp.pop3</i><br />
-<i>Version: 2.7</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.pop3</span><br />
+Version:  <span class="code">2.7</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Mail &gt; Roundtrip IMAP<a name="Servers_Standard_Mail_Roundtrip_IMAP"></a></h2>
@@ -540,8 +540,8 @@
 <p><i>Email From</i> - The From: address in the message.</p>
 <p><i>IMAP User</i> and <i>IMAP Password</i> - The user name and password used to log into the IMAP server to retrieve the message.</p>
 <p><i>Timeout</i> - Measured in seconds.</p>
-<p><i>Filename: com.dartware.email.imap.txt</i><br />
-<i>Version: 1.4</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.email.imap.txt</span><br />
+Version:  <span class="code">1.4</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Mail &gt; Roundtrip POP<a name="Servers_Standard_Mail_Roundtrip_POP"></a></h2>
@@ -555,8 +555,8 @@
 <p><i>Email From</i> - The From: address in the message.</p>
 <p><i>POP User</i> and <i>POP Password</i> - The user name and password used to log into the POP server to retrieve the message.</p>
 <p><i>Timeout</i> - Measured in seconds.</p>
-<p><i>Filename: com.dartware.email.pop.txt</i><br />
-<i>Version: 1.4</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.email.pop.txt</span><br />
+Version:  <span class="code">1.4</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Mail &gt; SMTP TLS<a name="Servers_Standard_Mail_SMTP_TLS"></a></h2>
@@ -566,8 +566,8 @@
 <p>This probe tries to verify that a specified email address exists on the SMTP server, using the VRFY command. It connects to the SMTP server, introduces itself using the HELO command, then issues a VRFY command for the specified email address.  When it receives a response, the script sends the QUIT command and closes its connection to the server.</p>
 <p><b>Parameters</b></p>
 <p><i>Email Address</i> - the name or email address to verify.</p>
-<p><i>Filename: com.dartware.tcp.smtp.tls</i><br />
-<i>Version: 1.9</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.smtp.tls</span><br />
+Version:  <span class="code">1.9</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Mail &gt; SMTP<a name="Servers_Standard_Mail_SMTP"></a></h2>
@@ -577,8 +577,8 @@
 <p>This probe tries to verify that a specified email address exists on the SMTP server, using the VRFY command. It connects to the SMTP server, introduces itself using the HELO command, then issues a VRFY command for the specified email address.  When it receives a response, the script sends the QUIT command and closes its connection to the server.</p>
 <p><b>Parameters</b></p>
 <p><i>Email Address</i> - the name or email address to verify.</p>
-<p><i>Filename: com.dartware.tcp.smtp</i><br />
-<i>Version: 2.0</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.smtp</span><br />
+Version:  <span class="code">2.0</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Multimedia &gt; Multicast Listener<a name="Servers_Standard_Multimedia_Multicast_Listener"></a></h2>
@@ -590,8 +590,8 @@
 <p><i>Multicast IP Address</i> - the optional multicast IP address to listen on.</p>
 <p><i>Seconds to wait</i> - the maximum number of seconds to wait between packets.  If a packet is not received within the specified number of seconds, the device's status is set to DOWN. The timer is reset each time a packet is received.</p>
 <p><i>Verify Source Address</i> - specify whether the probe should count packets only from the IP address of the targeted device.</p>
-<p><i>Filename: com.dartware.udplistener</i><br />
-<i>Version: 2.1</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.udplistener</span><br />
+Version:  <span class="code">2.1</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Multimedia &gt; RTSP<a name="Servers_Standard_Multimedia_RTSP"></a></h2>
@@ -609,8 +609,8 @@
 <p><i>Movie Name</i> - the name of the file you want to stream.</p>
 <p><i>Seconds to play</i> - the number of seconds you want to stream the specified file.</p>
 <p><i>RFC2326bis-02 or later</i> - indicate whether the RFC2326 version is RFC2326bis-02 or newer.</p>
-<p><i>Filename: com.dartware.tcp.rtsp</i><br />
-<i>Version: 2.2</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.rtsp</span><br />
+Version:  <span class="code">2.2</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Network Time<a name="Servers_Standard_Network_Time"></a></h2>
@@ -620,8 +620,8 @@
 <p>This probe sends a client-mode current-time request to the NTP server. By default, NTP requests are sent to UDP port 123.</p>
 <p><b>Parameters</b></p>
 <p>None.</p>
-<p><i>Filename: com.dartware.ntp</i><br />
-<i>Version: 1.6</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.ntp</span><br />
+Version:  <span class="code">1.6</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; NNTP<a name="Servers_Standard_NNTP"></a></h2>
@@ -631,8 +631,8 @@
 <p>This script connects to a news server and uses the GROUP command to request information about a specific newsgroup name. The script then issues the QUIT command to tell the server it is closing the connection.</p>
 <p><b>Parameters</b></p>
 <p><i>Newsgroup</i> - the name of the newsgroup to verify.</p>
-<p><i>Filename: com.dartware.tcp.nntp</i><br />
-<i>Version: 1.7</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.nntp</span><br />
+Version:  <span class="code">1.7</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; RADIUS<a name="Servers_Standard_RADIUS"></a></h2>
@@ -644,8 +644,8 @@
 <p><i>Shared Secret</i> - InterMapper's unique password into the RADIUS server. Since it is used for authentication, the same value must be configured in the RADIUS server as well.</p>
 <p><i>User Name</i> - The user name to be used for InterMapper's authentication.</p>
 <p><i>Password</i> - The password for the specified user name. The password is not sent in the clear; it is encrypted using the shared secret.</p>
-<p><i>Filename: com.dartware.radius</i><br />
-<i>Version: 1.9</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.radius</span><br />
+Version:  <span class="code">1.9</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; SIP over UDP<a name="Servers_Standard_SIP_over_UDP"></a></h2>
@@ -656,8 +656,8 @@
 <p><b>Parameters</b></p>
 <p><i>URI</i> - The SIP uniform resource identifier in the request.</p>
 <p><i>Command</i> - The SIP command to send in the request.</p>
-<p><i>Filename: com.dartware.sip.txt</i><br />
-<i>Version: 1.1</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.sip.txt</span><br />
+Version:  <span class="code">1.1</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; SNPP<a name="Servers_Standard_SNPP"></a></h2>
@@ -669,8 +669,8 @@
 <p>If no connection was made, or if an unexpected response is received, device status is set to <b>Down</b>.</p>
 <p><b>Parameters</b></p>
 <p><i>PagerID</i> - your Pager ID on the specified SNPP server.</p>
-<p><i>Filename: com.dartware.tcp.snpp</i><br />
-<i>Version: 1.6</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.snpp</span><br />
+Version:  <span class="code">1.6</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; SSH<a name="Servers_Standard_SSH"></a></h2>
@@ -680,8 +680,8 @@
 <p>This probe opens a TCP connection to the specified port and looks for the identification string that indicates an SSH server as specified in <a href="http://www.ietf.org/rfc/rfc4253.txt">RFC 4253</a>.</p>
 <p><b>Parameters</b></p>
 <p><i>Require SSH 2.0</i> - If set to <b><i>true</i></b> and the server doesn't require SSH 2.0, the device is set to <b>Alarm</b>.</p>
-<p><i>Filename: com.dartware.tcp.ssh.txt</i><br />
-<i>Version: 1.4</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.ssh.txt</span><br />
+Version:  <span class="code">1.4</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Subversion &gt; SVN (Apache)<a name="Servers_Standard_Subversion_SVN__Apache_"></a></h2>
@@ -694,8 +694,8 @@
 <p><i>User ID</i> - the user name used for authentication by the subversion server, if required.</p>
 <p><i>Password</i> - the password used for authentication by the subversion server, if required.</p>
 <p>Subversion is a version control system intended as a replacement for CVS. The software is released under an Apache/BSD style open-source license. The project can be found at <a href="http://subversion.tigris.org">http://subversion.tigris.org</a>.</p>
-<p><i>Filename: com.dartware.tcp.svn.apache</i><br />
-<i>Version: 1.1</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.svn.apache</span><br />
+Version:  <span class="code">1.1</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Subversion &gt; SVN (Svnserve)<a name="Servers_Standard_Subversion_SVN__Svnserve_"></a></h2>
@@ -708,8 +708,8 @@
 <p><i>Password</i> - the password used for authentication by the subversion server, if required.</p>
 <p>Subversion is a version control system intended as a replacement for CVS. The software is released under an Apache/BSD style open-source license. The project can be found at <a href="http://subversion.tigris.org">http://subversion.tigris.org</a>.</p>
 <p>A description of the custom protocol used by svnserve can be found at <a href="http://svn.collab.net/repos/svn/trunk/subversion/libsvn_ra_svn/protocol">http://svn.collab.net/repos/svn/trunk/subversion/libsvn_ra_svn/protocol</a>.</p>
-<p><i>Filename: com.dartware.tcp.svn.svnserve</i><br />
-<i>Version: 1.1</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.svn.svnserve</span><br />
+Version:  <span class="code">1.1</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; Telnet<a name="Servers_Standard_Telnet"></a></h2>
@@ -725,8 +725,8 @@
 <p><i>Reply #2</i> - your reply to the second prompt, such as your response to the "Password:" prompt.</p>
 <p><i>Third Prompt</i> - the string to match in the third prompt. If this parameter is empty, the probe ignores the prompt string and its reply.</p>
 <p><i>Reply #3</i> - your reply to the third prompt.</p>
-<p><i>Filename: com.dartware.tcp.telnet</i><br />
-<i>Version: 1.7</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.telnet</span><br />
+Version:  <span class="code">1.7</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 <h2>Servers Standard &gt; VNC Server<a name="Servers_Standard_VNC_Server"></a></h2>
@@ -736,8 +736,8 @@
 <p>The Virtual Network Computer (VNC) protocol was originally designed at AT&amp;T Labs in Cambridge. There are many implementations: the developers now support it from the RealVNC site at <a href="http://www.realvnc.com/">http://www.realvnc.com/</a>.</p>
 <p><b>Parameters</b></p>
 <p>None.</p>
-<p><i>Filename: com.dartware.tcp.vnc</i><br />
-<i>Version: 1.8</i></p>
+<p class="probeinfo">Filename: <span class="code">com.dartware.tcp.vnc</span><br />
+Version:  <span class="code">1.8</span></p>
 <p><a href="Servers_Standard.htm">Back to Top</a></p>
 </blockquote>
 </body>

@@ -31,13 +31,15 @@
 \g0i++\For Liebert Series 300 UPS devices.\p--\
 \b++\A. Probed MIB(s)\p--\
 \i\This probe works best with devices which have implemented the listed MIB(s).\p\
-(1 of 1) \b\LIEBERT-SERIES-300-UPS-MIB\p\ [... enterprises.emerson.liebertCorp.liebertUps.luExtensions.luCore / ... 1.476.1.1.1.1] and [... luExtensions.luUPStationS / ... 1.2]
+\b\LIEBERT-SERIES-300-UPS-MIB\p\ [... enterprises.emerson.liebertCorp.liebertUps.luExtensions.luCore / ... 1.476.1.1.1.1] and [... luExtensions.luUPStationS / ... 1.2]
 
 \b++\B. Displayed Values\p--\
-vendor, model, software version, firmware version, output load (%), battery voltage, battery current, (\i\three input, output, and bypass phases:\p\ voltage, current),(\i\frequencies:\p\ input, output, bypass)
+vendor, model, software version, firmware version, output load (%), battery voltage, battery current,
+\i\three input, output, and bypass phases:\p\ voltage, current
+\i\frequencies:\p\ input, output, bypass
 
 \b++\C. Alarms\p--\
-(1 of 1) If the device is reporting any alarms. (The MIB includes a comprehensive list of alarms).
+If the device is reporting any alarms. (The MIB includes a comprehensive list of alarms).
 
 \b\Parameters\p\
 

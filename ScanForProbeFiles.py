@@ -22,6 +22,7 @@ cr          = "\r"
 lf          = "\n"
 pTag        = '<p>'
 pTagNoPrint = '<p MadCap:conditions="Primary.online">'
+pTagProbeinfo = '<p class="probeinfo">'
 closepTag   = '</p>'
 liTag       = '<li>'
 closeliTag  = '</li>'
@@ -300,8 +301,8 @@ def ProcessProbeFile(probepath, infile, outfile):
     myfile.write("%s|%s|%02d|%s" % (category, filename, 3, "<h3>"+getBottomCat(category)+"</h3>"+lf))
     for i in range(1,len(definitions)):
         myfile.write("%s|%s|%02d|%s" % (category, filename, i+4, definitions[i]))
-    myfile.write("%s|%s|%02d|%s" % (category, filename, i+5, pTag+"<i>Filename: "+filename+"</i><br />"+lf))
-    myfile.write("%s|%s|%02d|%s" % (category, filename, i+6, "<i>Version: "+version+"</i>"+closepTag+lf))    
+    myfile.write("%s|%s|%02d|%s" % (category, filename, i+5, pTagProbeinfo+'Filename: <span class="code">'+filename+"</span><br />"+lf))
+    myfile.write("%s|%s|%02d|%s" % (category, filename, i+6, 'Version:  <span class="code">'+version+"</span>"+closepTag+lf))    
     myfile.write("%s|%s|%02d|%s" % (category, filename, i+7, pTag+'<a href="'+getBaseFileName(category)+'">Back to Top</a>'+closepTag+lf))    
     myfile.write("%s|%s|%02d|%s" % (category, filename, i+8, "</blockquote>"+lf))    
     myfile.close()

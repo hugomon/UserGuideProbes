@@ -35,14 +35,17 @@
 \g0i++\For Liebert UPS devices that have the OpenComms Network Management Card.\p--\
 \b++\A. Probed MIB(s)\p--\
 \i\This probe works best with devices which have implemented the listed MIB(s).\p\
-(1 of 2) \b\UPS MIB (RFC 1628)\p\ [... mib-2.upsMIB / ... 1.33]
-(2 of 2) \b\Liebert Global Products MIB\p\ [... enterprises.emerson.liebertCorp.liebertGlobalProducts / ... 1.476.1.42]
+* \b\UPS MIB (RFC 1628)\p\ [... mib-2.upsMIB / ... 1.33]
+* \b\Liebert Global Products MIB\p\ [... enterprises.emerson.liebertCorp.liebertGlobalProducts / ... 1.476.1.42]
 
 \b++\B. Displayed Values\p--\
-vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current, (\i\three input lines:\p\ Hz, volts, amps, kWatts), (\i\three output lines:\p\ Hz, volts, amps, kWatts, output load percent); (\i\temperatures:\p\ battery, ambient)
+vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current
+\i\three input lines:\p\ Hz, volts, amps, kWatts
+\i\three output lines:\p\ Hz, volts, amps, kWatts, output load percent
+\i\temperatures:\p\ battery, ambient
 
 \b++\C. Alarms\p--\
-(1 of 1) If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).
+* If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).
 
 \b\Parameters\p\
 

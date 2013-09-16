@@ -31,14 +31,16 @@
 \g0i++\For Exide UPS devices.\p--\
 \b++\A. Probed MIB(s)\p--\
 \i\This probe works best with devices which have implemented the listed MIB(s).\p\
-(1 of 2) \b\UPS MIB (RFC 1628)\p\ [... mib-2.upsMIB / ... 1.33]
-(2 of 2) \b\Exide XUPS MIB\p\ [... enterprises.powerware / ... 1.534]
+* \b\UPS MIB (RFC 1628)\p\ [... mib-2.upsMIB / ... 1.33]
+* \b\Exide XUPS MIB\p\ [... enterprises.powerware / ... 1.534]
 
 \b++\B. Displayed Values\p--\
-vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current, (\i\three input lines:\p\ Hz, volts, amps, kWatts), (\i\three output lines:\p\ Hz, volts, amps, kWatts, output load percent)
+vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current, 
+\i\three input lines:\p\ Hz, volts, amps, kWatts, 
+\i\three output lines:\p\ Hz, volts, amps, kWatts, output load percent
 
 \b++\C. Alarms\p--\
-(1 of 1) If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).
+If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).
 
 \b\Parameters\p\
 

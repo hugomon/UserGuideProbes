@@ -39,20 +39,23 @@
 \g0i++\For APC UPS devices that have the AP961x Network Management Card.\p--\
 \b++\A. Probed MIB(s)\p--\
 \i\This probe works best with devices which have implemented the listed MIB(s).\p\
-(1 of 2) \b\APC UPS MIB\p\ [... enterprises.apc.products.hardware.ups / ... 1.3.6.1.4.1.318.1.1.1]
-(2 of 2) \b\APC Environmental Monitoring MIB\p\ [... enterprises.apc.products.hardware.environmentalMonitor / ... 1.3.6.1.4.1.318.1.1.10]
+* \b\APC UPS MIB\p\ [... enterprises.apc.products.hardware.ups / ... 1.3.6.1.4.1.318.1.1.1]
+* \b\APC Environmental Monitoring MIB\p\ [... enterprises.apc.products.hardware.environmentalMonitor / ... 1.3.6.1.4.1.318.1.1.10]
 
 \b++\B. Displayed Values\p--\
-UPS: model, firmware, status, (\i\battery\p\: capacity, time remaining, temperature, replacement status), (\i\output\p\: load percent, volts, amps, frequency), (\i\input\p\: volts, voltage range over last minute, frequency, last input failure).
+UPS: model, firmware, status, 
+\i\battery\p\: capacity, time remaining, temperature, replacement status, 
+\i\output\p\: load percent, volts, amps, frequency, 
+\i\input\p\: volts, voltage range over last minute, frequency, last input failure,
 Enviromental Monitor: probe name, number of probes, current temperature & humidity, high & low threshold configurations.
 
 \b++\C. Alarms\p--\
-(1 of 3) If unit goes onto battery or goes off-line.
-(2 of 3) If battery needs replacement.
-(3 of 3) If the UPS' internal temperature/humidity threshold is exceeded (must also be enabled).
+* If unit goes onto battery or goes off-line.
+* If battery needs replacement.
+* If the UPS' internal temperature/humidity threshold is exceeded (must also be enabled).
 
 \b++\D. Warnings\p--\
-(1 of 1) If unit goes onto "Smart Trim" or "Smart Boost"
+If unit goes onto "Smart Trim" or "Smart Boost"
 
 \b\Parameters\p\
 

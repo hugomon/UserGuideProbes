@@ -38,18 +38,20 @@
 \g0i++\For BestPower UPS devices.\p--\
 \b++\A. Probed MIB(s)\p--\
 \i\This probe works best with devices which have implemented the listed MIB(s).\p\
-(1 of 1) \b\BestPower MIB \p\ [... enterprises.bestPower.bestLink / ... 1.2947.1]
+\b\BestPower MIB \p\ [... enterprises.bestPower.bestLink / ... 1.2947.1]
 
 \b++\B. Displayed Values\p--\
-vendor, model, firmware version, VA Rating, time on battery, time remaining, (\i\input & output:\p\ voltage, current, frequency), output power, internal temperature.
+vendor, model, firmware version, VA Rating, time on battery, time remaining, 
+\i\input & output:\p\ voltage, current, frequency, 
+output power, internal temperature.
 
 \b++\C. Alarms & Warnings\p--\
-(1 of 2) Warning: If UPS loses AC power.
-(2 of 2) Alarm: If minutes of battery life remaining is less than specified threshold.
+* Warning: If UPS loses AC power.
+* Alarm: If minutes of battery life remaining is less than specified threshold.
 
 \b\Parameters\p\
 
-(1 of 1) \i\BatteryRemainingAlarm\p\: Threshold for alarm state (see above).
+\i\BatteryRemainingAlarm\p\: Threshold for alarm state (see above).
 
 </description>
 
