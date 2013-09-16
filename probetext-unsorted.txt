@@ -1900,7 +1900,7 @@ Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|20|<p>If un
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|21|<p><b>Parameters</b></p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|22|<p>None.</p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|23|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.apc-ap961x.txt</span><br />
-Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|24|Version:  <span class="code">3.5</span></p>
+Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|24|Version:  <span class="code">3.6</span></p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|25|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|26|</blockquote>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_APC_UPS">Network Devices &gt; UPS &gt; APC UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_APC_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -1928,7 +1928,7 @@ Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|22|<p><i>Warning Threshold 
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|23|<p><i>Warning Threshold - High Temp</i>: Threshold for warning state (see above).</p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|24|<p><i>Alarm Threshold - High Temp</i>: Threshold for warning state (see above).</p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|25|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.apc.txt</span><br />
-Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|26|Version:  <span class="code">3.5</span></p>
+Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|26|Version:  <span class="code">3.6</span></p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|27|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|28|</blockquote>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_BestPower_UPS">Network Devices &gt; UPS &gt; BestPower UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_BestPower_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -1948,7 +1948,7 @@ Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|14|<li> Alarm: 
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|15|<p><b>Parameters</b></p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|16|<p><i>BatteryRemainingAlarm</i>: Threshold for alarm state (see above).</p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|17|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.bestpower.txt</span><br />
-Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|18|Version:  <span class="code">2.11</span></p>
+Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|18|Version:  <span class="code">2.12</span></p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|19|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|20|</blockquote>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS___OpenComms">Network Devices &gt; UPS &gt; Liebert UPS   OpenComms<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS___OpenComms" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -1969,7 +1969,7 @@ Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.t
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|16|<p><b>Parameters</b></p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|17|<p>None.</p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|18|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.liebert-opencomms.txt</span><br />
-Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|19|Version:  <span class="code">2.13</span></p>
+Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|19|Version:  <span class="code">2.14</span></p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|20|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|21|</blockquote>
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS___Series_300">Network Devices &gt; UPS &gt; Liebert UPS   Series 300<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS___Series_300" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -1988,7 +1988,7 @@ Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|14|<p><b>Parameters</b></p>
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|15|<p>None.</p>
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|16|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.liebert-series300.txt</span><br />
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|17|Version:  <span class="code">2.7</span></p>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|17|Version:  <span class="code">2.8</span></p>
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|18|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|19|</blockquote>
 Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS">Network Devices &gt; UPS &gt; Liebert UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -2007,7 +2007,7 @@ Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|13|<p>MIB, vend
 Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|14|<p><b>Parameters</b></p>
 Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|15|<p>None.</p>
 Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|16|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.liebert-ups.txt</span><br />
-Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|17|Version:  <span class="code">2.7</span></p>
+Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|17|Version:  <span class="code">2.8</span></p>
 Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|18|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|19|</blockquote>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_Standard_UPS__RFC1628_">Network Devices &gt; UPS &gt; Standard UPS (RFC1628)<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_Standard_UPS__RFC1628_" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -2027,7 +2027,7 @@ Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|14|<li>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|15|<p><b>Parameters</b></p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|16|<p><i>UserHighBatteryTemperatureAlarm</i> - Threshold for alarm state (see above). This alarm is disabled when the threshold is set to "0" (default).</p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|17|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.standard.txt</span><br />
-Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|18|Version:  <span class="code">3.5</span></p>
+Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|18|Version:  <span class="code">3.6</span></p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|19|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|20|</blockquote>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_TrippLite_UPS">Network Devices &gt; UPS &gt; TrippLite UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_TrippLite_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -2048,7 +2048,7 @@ Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|15|<p>If the de
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|16|<p><b>Parameters</b></p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|17|<p>None.</p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|18|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.tripplite.txt</span><br />
-Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|19|Version:  <span class="code">2.12</span></p>
+Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|19|Version:  <span class="code">2.13</span></p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|20|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|21|</blockquote>
 WMI/WMI CPU Utilization|com.dartware.wmi.cpu_utilization.txt|00|<li><a href="WMI.htm#WMI_WMI_CPU_Utilization">WMI &gt; WMI CPU Utilization<MadCap:xref href="WMI.htm#WMI_WMI_CPU_Utilization" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -3585,6 +3585,6 @@ Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|14|<p>If the device is re
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|15|<p><b>Parameters</b></p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|16|<p>None.</p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|17|<p class="probeinfo">Filename: <span class="code">shef.ac.uk.ups.exide.txt</span><br />
-Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|18|Version:  <span class="code">2.12</span></p>
+Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|18|Version:  <span class="code">2.13</span></p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|19|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|20|</blockquote>
