@@ -23,7 +23,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.standard"
     "human_name"    =  "Standard UPS (RFC1628)"
-    "version"       =  "3.5"
+    "version"       =  "3.6"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Standard UPS (RFC1628)"

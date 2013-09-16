@@ -17,7 +17,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.liebert-ups"
     "human_name"    =  "Liebert UPS"
-    "version"       =  "2.7"
+    "version"       =  "2.8"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Liebert UPS"

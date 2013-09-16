@@ -21,7 +21,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.liebert-opencomms"
     "human_name"    =  "Liebert UPS - OpenComms"
-    "version"       =  "2.13"
+    "version"       =  "2.14"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Liebert UPS - OpenComms"

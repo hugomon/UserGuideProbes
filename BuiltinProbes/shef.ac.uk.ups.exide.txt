@@ -21,7 +21,7 @@
     "package"       =  "shef.ac.uk"
     "probe_name"    =  "ups.exide"
     "human_name"    =  "Exide UPS"
-    "version"       =  "2.12"
+    "version"       =  "2.13"
     "address_type"  =  "IP"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Exide UPS"

@@ -21,7 +21,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.tripplite"
     "human_name"    =  "TrippLite UPS"
-    "version"       =  "2.12"
+    "version"       =  "2.13"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/TrippLite UPS"

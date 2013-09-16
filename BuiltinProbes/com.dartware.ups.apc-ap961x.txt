@@ -25,7 +25,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.apc-ap961x"
     "human_name"    =  "APC UPS - AP961x"
-    "version"       =  "3.5"
+    "version"       =  "3.6"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/APC UPS - AP961x"
