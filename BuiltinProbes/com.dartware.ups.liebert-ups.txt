@@ -17,7 +17,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.liebert-ups"
     "human_name"    =  "Liebert UPS"
-    "version"       =  "2.8"
+    "version"       =  "2.9"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Liebert UPS"
@@ -35,7 +35,7 @@
 \b\Liebert UPS MIB\p\ [... enterprises.emerson.liebertCorp.liebertUps / ... 1.476.1.1]
 
 \b++\B. Displayed Values\p--\
-MIB, vendor, model, & software version
+\i\UPS\p\: MIB, vendor, model, & software version
 
 \b\Parameters\p\
 

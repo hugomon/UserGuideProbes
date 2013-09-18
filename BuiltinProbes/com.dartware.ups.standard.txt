@@ -36,12 +36,13 @@
 \b\UPS MIB (RFC 1628)\p\ [... mib-2.upsMIB / ... 1.33]
 
 \b++\B. Displayed Values\p--\
-vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current, 
-\i\three input lines:\p\ Hz, volts, amps, kWatts,
-\i\three output lines:\p\ Hz, volts, amps, kWatts, output load percent
+\i\UPS\p\: vendor, model, software version, firmware version, 
+\i\Device Status\p\: alarm status, output source, battery status, battery voltage, battery current, battery temperature
+\i\Three input lines\p\: Hz, volts, amps, kWatts,
+\i\Three output lines\p\: Hz, volts, amps, kWatts, output load percent
 
 \b++\C. Alarms\p--\
-* Alarm: If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).
+* Alarm: If the device is reporting any alarms (The UPS MIB includes a comprehensive list of alarms).
 * Alarm: If the battery temp exceeds a user-defined threshold.
 
 \b\Parameters\p\

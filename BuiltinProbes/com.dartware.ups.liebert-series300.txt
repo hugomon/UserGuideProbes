@@ -17,7 +17,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.liebert-series300"
     "human_name"    =  "Liebert UPS - Series 300"
-    "version"       =  "2.8"
+    "version"       =  "2.9"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Liebert UPS - Series 300"
@@ -34,12 +34,13 @@
 \b\LIEBERT-SERIES-300-UPS-MIB\p\ [... enterprises.emerson.liebertCorp.liebertUps.luExtensions.luCore / ... 1.476.1.1.1.1] and [... luExtensions.luUPStationS / ... 1.2]
 
 \b++\B. Displayed Values\p--\
-vendor, model, software version, firmware version, output load (%), battery voltage, battery current,
-\i\three input, output, and bypass phases:\p\ voltage, current
-\i\frequencies:\p\ input, output, bypass
+\i\UPS\p\: vendor, model, software version, firmware version, 
+\i\Device Status\p\: alarm status, output load (%), battery voltage, battery current,
+\i\Three input, output, and bypass phases\p\: voltage, current
+\i\Frequencies\p\: input, output, bypass
 
 \b++\C. Alarms\p--\
-If the device is reporting any alarms. (The MIB includes a comprehensive list of alarms).
+If the device is reporting any alarms (The MIB includes a comprehensive list of alarms).
 
 \b\Parameters\p\
 

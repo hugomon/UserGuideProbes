@@ -24,7 +24,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.bestpower"
     "human_name"    =  "BestPower UPS"
-    "version"       =  "2.12"
+    "version"       =  "2.13"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/BestPower UPS"
@@ -41,9 +41,9 @@
 \b\BestPower MIB \p\ [... enterprises.bestPower.bestLink / ... 1.2947.1]
 
 \b++\B. Displayed Values\p--\
-vendor, model, firmware version, VA Rating, time on battery, time remaining, 
-\i\input & output:\p\ voltage, current, frequency, 
-output power, internal temperature.
+\i\UPS\p\: vendor, model, VA Rating, firmware version, 
+\i\Battery\p\: time on battery, time remaining, internal temperature
+\i\Input & Output\p\: voltage, current, frequency, output power (true and apparent)
 
 \b++\C. Alarms & Warnings\p--\
 * Warning: If UPS loses AC power.
@@ -51,7 +51,7 @@ output power, internal temperature.
 
 \b\Parameters\p\
 
-\i\BatteryRemainingAlarm\p\: Threshold for alarm state (see above).
+\i\BatteryRemainingAlarm\p\: Threshold for alarm state (see above)
 
 </description>
 
