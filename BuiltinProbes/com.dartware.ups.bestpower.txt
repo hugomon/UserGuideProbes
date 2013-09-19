@@ -24,7 +24,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.bestpower"
     "human_name"    =  "BestPower UPS"
-    "version"       =  "2.13"
+    "version"       =  "2.14"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/BestPower UPS"
@@ -41,7 +41,7 @@
 \b\BestPower MIB \p\ [... enterprises.bestPower.bestLink / ... 1.2947.1]
 
 \b++\B. Displayed Values\p--\
-\i\UPS\p\: vendor, model, VA Rating, firmware version, 
+\i\UPS\p\: vendor, model, VA Rating, firmware versio, 
 \i\Battery\p\: time on battery, time remaining, internal temperature
 \i\Input & Output\p\: voltage, current, frequency, output power (true and apparent)
 

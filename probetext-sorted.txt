@@ -364,11 +364,11 @@ Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|06|<p><i>Th
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|07|<li> <b>APC UPS MIB</b> [... enterprises.apc.products.hardware.ups / ... 1.3.6.1.4.1.318.1.1.1]</li>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|08|<li> <b>APC Environmental Monitoring MIB</b> [... enterprises.apc.products.hardware.environmentalMonitor / ... 1.3.6.1.4.1.318.1.1.10]</li>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|09|<p><b>B. Displayed Values</b></p>
-Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|10|<p><i>UPS</i>: model, firmware, status, </p>
-Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|11|<p><i>Battery</i>: capacity, time remaining, temperature, replacement status, </p>
-Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|12|<p><i>Output</i>: load percent, volts, amps, frequency, </p>
-Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|13|<p><i>Input</i>: volts, voltage range over last minute, frequency, last input failure,</p>
-Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|14|<p><i>Enviromental Monitor</i>: probe name, number of probes, current temperature &amp; humidity, high &amp; low threshold configurations.</p>
+Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|10|<p><i>UPS</i>: model, firmware, status </p>
+Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|11|<p><i>Battery</i>: capacity, time remaining, temperature, replacement status </p>
+Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|12|<p><i>Output</i>: load percent, volts, amps, frequency </p>
+Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|13|<p><i>Input</i>: volts, voltage range over last minute, frequency, last input failure</p>
+Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|14|<p><i>Enviromental Monitor</i>: probe name, number of probes, current temperature &amp; humidity, high &amp; low threshold configurations</p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|15|<p><b>C. Alarms</b></p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|16|<li> If unit goes onto battery or goes off-line.</li>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|17|<li> If battery needs replacement.</li>
@@ -378,7 +378,7 @@ Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|20|<p>If un
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|21|<p><b>Parameters</b></p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|22|<p>None.</p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|23|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.apc-ap961x.txt</span><br />
-Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|24|Version:  <span class="code">3.7</span></p>
+Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|24|Version:  <span class="code">3.8</span></p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|25|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/APC UPS - AP961x|com.dartware.ups.apc-ap961x.txt|26|</blockquote>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_APC_UPS">Network Devices &gt; UPS &gt; APC UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_APC_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -389,9 +389,9 @@ Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|05|<p><b>A. Probed MIB(s)</
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|06|<p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|07|<p><b>APC UPS MIB</b> [... enterprises.apc.products.hardware.ups / ... 1.3.6.1.4.1.318.1.1.1]</p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|08|<p><b>B. Displayed Values</b></p>
-Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|09|<p><i>UPS</i>: model, firmware, status,</p>
-Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|10|<p><i>Battery</i>: capacity, time remaining, temperature, replacement status, </p>
-Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|11|<p><i>Output</i>: load percent, volts, amps, frequency, </p>
+Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|09|<p><i>UPS</i>: model, firmware, status</p>
+Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|10|<p><i>Battery</i>: capacity, time remaining, temperature, replacement status </p>
+Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|11|<p><i>Output</i>: load percent, volts, amps, frequency </p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|12|<p><i>Input</i>: volts, voltage range over last minute, frequency, last input failure</p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|13|<p><b>C. Alarms</b></p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|14|<li> If unit goes onto battery or goes off-line.</li>
@@ -407,7 +407,7 @@ Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|23|<p><i>Warning Threshold 
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|24|<p><i>Warning Threshold - High Temp</i>: Threshold for warning state (see above).</p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|25|<p><i>Alarm Threshold - High Temp</i>: Threshold for warning state (see above).</p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|26|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.apc.txt</span><br />
-Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|27|Version:  <span class="code">3.7</span></p>
+Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|27|Version:  <span class="code">3.8</span></p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|28|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/APC UPS|com.dartware.ups.apc.txt|29|</blockquote>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_BestPower_UPS">Network Devices &gt; UPS &gt; BestPower UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_BestPower_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -418,7 +418,7 @@ Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|05|<p><b>A. Pro
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|06|<p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|07|<p><b>BestPower MIB </b> [... enterprises.bestPower.bestLink / ... 1.2947.1]</p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|08|<p><b>B. Displayed Values</b></p>
-Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|09|<p><i>UPS</i>: vendor, model, VA Rating, firmware version, </p>
+Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|09|<p><i>UPS</i>: vendor, model, VA Rating, firmware versio, </p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|10|<p><i>Battery</i>: time on battery, time remaining, internal temperature</p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|11|<p><i>Input &amp; Output</i>: voltage, current, frequency, output power (true and apparent)</p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|12|<p><b>C. Alarms &amp; Warnings</b></p>
@@ -427,7 +427,7 @@ Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|14|<li> Alarm: 
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|15|<p><b>Parameters</b></p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|16|<p><i>BatteryRemainingAlarm</i>: Threshold for alarm state (see above)</p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|17|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.bestpower.txt</span><br />
-Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|18|Version:  <span class="code">2.13</span></p>
+Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|18|Version:  <span class="code">2.14</span></p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|19|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/BestPower UPS|com.dartware.ups.bestpower.txt|20|</blockquote>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_Exide_UPS">Network Devices &gt; UPS &gt; Exide UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_Exide_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -439,9 +439,9 @@ Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|06|<p><i>This probe works
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|07|<li> <b>UPS MIB (RFC 1628)</b> [... mib-2.upsMIB / ... 1.33]</li>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|08|<li> <b>Exide XUPS MIB</b> [... enterprises.powerware / ... 1.534]</li>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|09|<p><b>B. Displayed Values</b></p>
-Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|10|<p><i>UPS</i>: vendor, model, software version, firmware version, </p>
-Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|11|<p><i>Battery</i>: alarm status, output source, battery status, battery voltage, battery current, </p>
-Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|12|<p><i>Three input lines</i>: Hz, volts, amps, kWatts, </p>
+Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|10|<p><i>UPS</i>: vendor, model, software version, firmware version </p>
+Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|11|<p><i>Battery</i>: alarm status, output source, battery status, battery voltage, battery current </p>
+Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|12|<p><i>Three input lines</i>: Hz, volts, amps, kWatts </p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|13|<p><i>Three output lines</i>: Hz, volts, amps, kWatts, output load percent</p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|14|<p><i>Three frequency lines</i>: input, output, bypass</p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|15|<p><b>C. Alarms</b></p>
@@ -449,7 +449,7 @@ Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|16|<p>If the device is re
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|17|<p><b>Parameters</b></p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|18|<p>None.</p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|19|<p class="probeinfo">Filename: <span class="code">shef.ac.uk.ups.exide.txt</span><br />
-Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|20|Version:  <span class="code">2.14</span></p>
+Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|20|Version:  <span class="code">2.15</span></p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|21|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/Exide UPS|shef.ac.uk.ups.exide.txt|22|</blockquote>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS___OpenComms">Network Devices &gt; UPS &gt; Liebert UPS   OpenComms<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS___OpenComms" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -461,8 +461,8 @@ Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.t
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|07|<li> <b>UPS MIB (RFC 1628)</b> [... mib-2.upsMIB / ... 1.33]</li>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|08|<li> <b>Liebert Global Products MIB</b> [... enterprises.emerson.liebertCorp.liebertGlobalProducts / ... 1.476.1.42]</li>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|09|<p><b>B. Displayed Values</b></p>
-Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|10|<p><i>UPS</i>: vendor, model, software version, firmware version, alarm status</p>
-Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|11|<p><i>Battery</i>: output source, battery status, battery voltage, battery current</p>
+Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|10|<p><i>UPS</i>: vendor, model, software version, firmware version</p>
+Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|11|<p><i>Battery</i>: alarm status, output source, battery status, battery voltage, battery current</p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|12|<p><i>Three input lines</i>: Hz, volts, amps, kWatts</p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|13|<p><i>Three output lines</i>: Hz, volts, amps, kWatts, output load percent</p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|14|<p><i>Temperatures</i>: battery, ambient</p>
@@ -472,7 +472,7 @@ Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.t
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|18|<p><b>Parameters</b></p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|19|<p>None.</p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|20|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.liebert-opencomms.txt</span><br />
-Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|21|Version:  <span class="code">2.15</span></p>
+Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|21|Version:  <span class="code">2.16</span></p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|22|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/Liebert UPS - OpenComms|com.dartware.ups.liebert-opencomms.txt|23|</blockquote>
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS___Series_300">Network Devices &gt; UPS &gt; Liebert UPS   Series 300<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS___Series_300" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -483,18 +483,17 @@ Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|06|<p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|07|<p><b>LIEBERT-SERIES-300-UPS-MIB</b> [... enterprises.emerson.liebertCorp.liebertUps.luExtensions.luCore / ... 1.476.1.1.1.1] and [... luExtensions.luUPStationS / ... 1.2]</p>
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|08|<p><b>B. Displayed Values</b></p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|09|<p><i>UPS</i>: vendor, model, software version, firmware version, </p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|10|<p><i>Device Status</i>: alarm status, output load (%), battery voltage, battery current,</p>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|09|<p><i>UPS</i>: vendor, model, software version, firmware version </p>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|10|<p><i>Device Status</i>: alarm status, output load (%), battery voltage, battery current</p>
 Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|11|<p><i>Three input, output, and bypass phases</i>: voltage, current</p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|12|<p><i>Frequencies</i>: input, output, bypass</p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|13|<p><b>C. Alarms</b></p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|14|<p>If the device is reporting any alarms (The MIB includes a comprehensive list of alarms).</p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|15|<p><b>Parameters</b></p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|16|<p>None.</p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|17|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.liebert-series300.txt</span><br />
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|18|Version:  <span class="code">2.9</span></p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|19|<p><a href="Network_Devices.htm">Back to Top</a></p>
-Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|20|</blockquote>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|12|<p><b>C. Alarms</b></p>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|13|<p>If the device is reporting any alarms (The MIB includes a comprehensive list of alarms).</p>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|14|<p><b>Parameters</b></p>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|15|<p>None.</p>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|16|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.liebert-series300.txt</span><br />
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|17|Version:  <span class="code">2.10</span></p>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|18|<p><a href="Network_Devices.htm">Back to Top</a></p>
+Network Devices/UPS/Liebert UPS - Series 300|com.dartware.ups.liebert-series300.txt|19|</blockquote>
 Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS">Network Devices &gt; UPS &gt; Liebert UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_Liebert_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
 Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|01|<h2>Network Devices &gt; UPS &gt; Liebert UPS<a name="Network_Devices_UPS_Liebert_UPS"></a></h2>
 Network Devices/UPS/Liebert UPS|com.dartware.ups.liebert-ups.txt|02|<blockquote>
@@ -522,9 +521,9 @@ Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|05|<p><
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|06|<p><i>This probe works best with devices which have implemented the listed MIB(s).</i></p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|07|<p><b>UPS MIB (RFC 1628)</b> [... mib-2.upsMIB / ... 1.33]</p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|08|<p><b>B. Displayed Values</b></p>
-Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|09|<p><i>UPS</i>: vendor, model, software version, firmware version, </p>
+Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|09|<p><i>UPS</i>: vendor, model, software version, firmware version </p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|10|<p><i>Device Status</i>: alarm status, output source, battery status, battery voltage, battery current, battery temperature</p>
-Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|11|<p><i>Three input lines</i>: Hz, volts, amps, kWatts,</p>
+Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|11|<p><i>Three input lines</i>: Hz, volts, amps, kWatts</p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|12|<p><i>Three output lines</i>: Hz, volts, amps, kWatts, output load percent</p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|13|<p><b>C. Alarms</b></p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|14|<li> Alarm: If the device is reporting any alarms (The UPS MIB includes a comprehensive list of alarms).</li>
@@ -532,7 +531,7 @@ Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|15|<li>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|16|<p><b>Parameters</b></p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|17|<p><i>UserHighBatteryTemperatureAlarm</i> - Threshold for alarm state (see above). This alarm is disabled when the threshold is set to "0" (default).</p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|18|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.standard.txt</span><br />
-Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|19|Version:  <span class="code">3.6</span></p>
+Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|19|Version:  <span class="code">3.7</span></p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|20|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/Standard UPS (RFC1628)|com.dartware.ups.standard.txt|21|</blockquote>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_TrippLite_UPS">Network Devices &gt; UPS &gt; TrippLite UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_TrippLite_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -544,17 +543,17 @@ Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|06|<p><i>This p
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|07|<li> <b>UPS MIB (RFC 1628)</b> [... mib-2.upsMIB / ... 1.33]</li>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|08|<li> <b>TrippUPS MIB</b> [... enterprises.tripplite.trippUPS.trippUpsEnvironment / 1.850.0.3]</li>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|09|<p><b>B. Displayed Values</b></p>
-Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|10|<p><i>UPS</i>: vendor, model, software version, firmware version, </p>
-Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|11|<p><i>Device Status</i>: output source, battery status, battery voltage, battery current,</p>
+Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|10|<p><i>UPS</i>: vendor, model, software version, firmware version </p>
+Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|11|<p><i>Device Status</i>: alarm status, output source, battery status, battery voltage, battery current</p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|12|<p><i>Three input lines</i>: Hz, volts, amps, kWatts</p>
-Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|13|<p><i>Three output lines</i>"" Hz, volts, amps, kWatts, output load percent</p>
+Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|13|<p><i>Three output lines</i>: Hz, volts, amps, kWatts, output load percent</p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|14|<p><i>EnviroSense Unit info</i>: ambient humidity, ambient temperature</p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|15|<p><b>C. Alarms</b></p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|16|<p>If the device is reporting any alarms (The UPS MIB includes a comprehensive list of alarms).</p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|17|<p><b>Parameters</b></p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|18|<p>None.</p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|19|<p class="probeinfo">Filename: <span class="code">com.dartware.ups.tripplite.txt</span><br />
-Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|20|Version:  <span class="code">2.14</span></p>
+Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|20|Version:  <span class="code">2.15</span></p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|21|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/TrippLite UPS|com.dartware.ups.tripplite.txt|22|</blockquote>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|00|<li><a href="Network_Devices.htm#Network_Devices_UPS_Victron_UPS">Network Devices &gt; UPS &gt; Victron UPS<MadCap:xref href="Network_Devices.htm#Network_Devices_UPS_Victron_UPS" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>
@@ -562,11 +561,11 @@ Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|01|<h2>Netwo
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|02|<blockquote>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|03|<h3>Victron UPS</h3>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|05|<p>This probe monitors important values in the Victron UPS.</p>
-Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|06|<p><b>B. Displayed Values</b></p>
+Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|06|<p><b>A. Displayed Values</b></p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|07|<p><i>UPS</i>: battery status, battery remaining, low voltage warning</p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|08|<p><i>Input Voltage</i>: Phase 1, 2, and 3</p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|09|<p><i>Ouput Voltage</i>: Phase 1, 2, and 3</p>
-Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|10|<p><i>Victron Alarm Points defined</i>: (three values)</p>
+Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|10|<p><i>Victron Alarm Points defined</i>: Voltage1, Voltage2, Voltage3</p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|11|<p><b>Parameters</b></p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|12|<p><i>UPS Battery Status - Alarm</i> - ALARM threshold for Battery Status.</p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|13|<li> If the value is 2, the UPS working normally.</li>
@@ -576,7 +575,7 @@ Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|16|<p><i>UPS
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|17|<p><i>Low Input Voltage line [1,2, or 3] - Alarm</i> - ALARM threshold for the mininmum specified input voltage on phase 1, 2, or 3. If the input voltage drops below this threshold, the device is set to <b>Alarm</b>.</p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|18|<p><i>Low Output Voltage line [1,2, or 3] - Alarm</i> - ALARM threshold for the mininmum specified output voltage on phase 1, 2, or 3. If the output voltage drops below this threshold, the device is set to <b>Alarm</b>.</p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|19|<p class="probeinfo">Filename: <span class="code">de.medianet.freinet.ups.victron.txt</span><br />
-Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|20|Version:  <span class="code">3.1</span></p>
+Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|20|Version:  <span class="code">3.2</span></p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|21|<p><a href="Network_Devices.htm">Back to Top</a></p>
 Network Devices/UPS/Victron UPS|de.medianet.freinet.ups.victron.txt|22|</blockquote>
 Probe Groups/Probe Group|com.dartware.probegroup.txt|00|<li><a href="Probe_Groups.htm#Probe_Groups_Probe_Group">Probe Groups &gt; Probe Group<MadCap:xref href="Probe_Groups.htm#Probe_Groups_Probe_Group" target="" title="" alt="" MadCap:conditions="Primary.print"></MadCap:xref></a></li>

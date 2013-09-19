@@ -21,7 +21,7 @@
     "package"       =  "shef.ac.uk"
     "probe_name"    =  "ups.exide"
     "human_name"    =  "Exide UPS"
-    "version"       =  "2.14"
+    "version"       =  "2.15"
     "address_type"  =  "IP"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Exide UPS"
@@ -35,9 +35,9 @@
 * \b\Exide XUPS MIB\p\ [... enterprises.powerware / ... 1.534]
 
 \b++\B. Displayed Values\p--\
-\i\UPS\p\: vendor, model, software version, firmware version, 
-\i\Battery\p\: alarm status, output source, battery status, battery voltage, battery current, 
-\i\Three input lines\p\: Hz, volts, amps, kWatts, 
+\i\UPS\p\: vendor, model, software version, firmware version 
+\i\Battery\p\: alarm status, output source, battery status, battery voltage, battery current 
+\i\Three input lines\p\: Hz, volts, amps, kWatts 
 \i\Three output lines\p\: Hz, volts, amps, kWatts, output load percent
 \i\Three frequency lines\p\: input, output, bypass
 

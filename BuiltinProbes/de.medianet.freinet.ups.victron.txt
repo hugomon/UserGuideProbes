@@ -18,7 +18,7 @@
     package       =  "de.medianet.freinet"
     probe_name    =  "ups.victron"
     human_name    =  "Victron UPS"
-    version       =  "3.1"
+    version       =  "3.2"
     address_type  =  "IP,AT"
     port_number   =  "161"
     display_name  =  "Network Devices/UPS/Victron UPS"
@@ -29,11 +29,11 @@
 
 This probe monitors important values in the Victron UPS.
 
-\b++\B. Displayed Values\p--\
+\b++\A. Displayed Values\p--\
 \i\UPS\p\: battery status, battery remaining, low voltage warning
 \i\Input Voltage\p\: Phase 1, 2, and 3
 \i\Ouput Voltage\p\: Phase 1, 2, and 3
-\i\Victron Alarm Points defined\p\: (three values)
+\i\Victron Alarm Points defined\p\: Voltage1, Voltage2, Voltage3
 
 \b\Parameters\p\
 

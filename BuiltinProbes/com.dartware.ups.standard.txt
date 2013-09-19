@@ -23,7 +23,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.standard"
     "human_name"    =  "Standard UPS (RFC1628)"
-    "version"       =  "3.6"
+    "version"       =  "3.7"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/Standard UPS (RFC1628)"
@@ -36,9 +36,9 @@
 \b\UPS MIB (RFC 1628)\p\ [... mib-2.upsMIB / ... 1.33]
 
 \b++\B. Displayed Values\p--\
-\i\UPS\p\: vendor, model, software version, firmware version, 
+\i\UPS\p\: vendor, model, software version, firmware version 
 \i\Device Status\p\: alarm status, output source, battery status, battery voltage, battery current, battery temperature
-\i\Three input lines\p\: Hz, volts, amps, kWatts,
+\i\Three input lines\p\: Hz, volts, amps, kWatts
 \i\Three output lines\p\: Hz, volts, amps, kWatts, output load percent
 
 \b++\C. Alarms\p--\

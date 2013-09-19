@@ -21,7 +21,7 @@
     "package"       =  "com.dartware"
     "probe_name"    =  "ups.tripplite"
     "human_name"    =  "TrippLite UPS"
-    "version"       =  "2.14"
+    "version"       =  "2.15"
     "address_type"  =  "IP,AT"
     "port_number"   =  "161"
     "display_name"  =  "Network Devices/UPS/TrippLite UPS"
@@ -35,10 +35,10 @@
 * \b\TrippUPS MIB\p\ [... enterprises.tripplite.trippUPS.trippUpsEnvironment / 1.850.0.3]
 
 \b++\B. Displayed Values\p--\
-\i\UPS\p\: vendor, model, software version, firmware version, 
-\i\Device Status\p\: output source, battery status, battery voltage, battery current,
+\i\UPS\p\: vendor, model, software version, firmware version 
+\i\Device Status\p\: alarm status, output source, battery status, battery voltage, battery current
 \i\Three input lines\p\: Hz, volts, amps, kWatts
-\i\Three output lines\p\"" Hz, volts, amps, kWatts, output load percent
+\i\Three output lines\p\: Hz, volts, amps, kWatts, output load percent
 \i\EnviroSense Unit info\p\: ambient humidity, ambient temperature
 
 \b++\C. Alarms\p--\
