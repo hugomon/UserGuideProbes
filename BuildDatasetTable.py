@@ -46,7 +46,7 @@ def getFlareDoc(part,title):
         hdr += '</head>'+lf
         hdr += '<body>'+lf
         hdr += '<h1 class="L2">Automatically-Recorded Data Values</h1>'+lf
-        hdr += '<p>When recording data from built-in probes, Dartware has selected values for each probe which seem sensible to record.</p>'+lf
+        hdr += '<p>The following values were selected to be recorded automatically from built-in probes.</p>'+lf
         hdr += '<table style="margin-left: 0;margin-right: auto;caption-side: top;">'+lf
         hdr += '<col style="width: 5.00em;" />'+lf+col+lf+col+lf+col+lf+col+lf+'<col style="width: 4.00em;" />'+lf
         hdr += tr+lf
