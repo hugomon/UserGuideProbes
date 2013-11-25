@@ -44,7 +44,7 @@
 \i\Three input lines\p\: Hz, volts, amps, kWatts
 \i\Three output lines\p\: Hz, volts, amps, kWatts, output load percent
 \i\Temperatures\p\: battery, ambient
-\i\UPS alarm table\p\: (link to view table) 
+\i\UPS alarm table\p\: [link to the Table Viewer] 
 
 \b++\C. Alarms\p--\
 * If the device is reporting any alarms (The UPS MIB includes a comprehensive list of alarms).
